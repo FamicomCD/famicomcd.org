@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="8.0600004mm"
+   width="8mm"
    height="61.178001mm"
-   viewBox="0 0 1.4140353 10.732983"
+   viewBox="0 0 1.4035089 10.732983"
    version="1.1"
    id="svg1"
    inkscape:export-filename="famicomcdbanner.svg"
@@ -26,9 +26,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="2"
-     inkscape:cx="93.5"
-     inkscape:cy="150.25"
+     inkscape:zoom="8"
+     inkscape:cx="40.4375"
+     inkscape:cy="124.9375"
      inkscape:window-width="1920"
      inkscape:window-height="1121"
      inkscape:window-x="-9"
@@ -43,75 +43,75 @@
      id="layer1"
      transform="translate(0.00186035,0.02169066)">
     <rect
-       style="fill:#574aaa;fill-opacity:1;stroke-width:0.275907"
+       style="fill:#574aaa;fill-opacity:1;stroke-width:0.277028"
        id="rect2"
-       width="1.4184337"
+       width="1.429988"
        height="9.2630186"
-       x="-0.0041331896"
+       x="-0.016436538"
        y="-0.10392842"
        ry="0" />
     <rect
-       style="fill:#483c97;fill-opacity:1;stroke-width:0.296364"
+       style="fill:#483c97;fill-opacity:1;stroke-width:0.297562"
        id="rect1"
-       width="1.0046215"
-       height="1.0046215"
-       x="0.42778161"
-       y="-0.57244176"
-       transform="matrix(0.70385389,0.71034478,-0.70385389,0.71034478,0,0)" />
+       width="1.008684"
+       height="1.008684"
+       x="0.42083088"
+       y="-0.56607598"
+       transform="matrix(0.70672949,0.70748387,-0.70672949,0.70748387,0,0)" />
     <rect
-       style="fill:#483c97;fill-opacity:1;stroke-width:0.296736"
+       style="fill:#483c97;fill-opacity:1;stroke-width:0.29794"
        id="rect1-2"
-       width="1.0058786"
-       height="1.0058786"
-       x="1.4311363"
-       y="0.43201283"
-       transform="matrix(0.70485647,0.70934996,-0.70485647,0.70934996,0,0)" />
+       width="1.0099577"
+       height="1.0099577"
+       x="1.4282717"
+       y="0.44243312"
+       transform="matrix(0.70772805,0.70648496,-0.70772805,0.70648496,0,0)" />
     <rect
-       style="fill:#483c97;fill-opacity:1;stroke-width:0.296364"
+       style="fill:#483c97;fill-opacity:1;stroke-width:0.297562"
        id="rect1-8"
-       width="1.0046215"
-       height="1.0046215"
-       x="2.4334629"
-       y="1.4327791"
-       transform="matrix(0.70385389,0.71034478,-0.70385389,0.71034478,0,0)" />
+       width="1.008684"
+       height="1.008684"
+       x="2.4346225"
+       y="1.4472535"
+       transform="matrix(0.70672949,0.70748387,-0.70672949,0.70748387,0,0)" />
     <rect
-       style="fill:#483c97;fill-opacity:1;stroke-width:0.296736"
+       style="fill:#483c97;fill-opacity:1;stroke-width:0.29794"
        id="rect1-2-5"
-       width="1.0058786"
-       height="1.0058786"
-       x="3.4395661"
-       y="2.4399834"
-       transform="matrix(0.70485647,0.70934996,-0.70485647,0.70934996,0,0)" />
+       width="1.0099577"
+       height="1.0099577"
+       x="3.4448462"
+       y="2.4585464"
+       transform="matrix(0.70772805,0.70648496,-0.70772805,0.70648496,0,0)" />
     <rect
-       style="fill:#483c97;fill-opacity:1;stroke-width:0.296364"
+       style="fill:#483c97;fill-opacity:1;stroke-width:0.297562"
        id="rect1-4"
-       width="1.0046215"
-       height="1.0046215"
-       x="4.4399352"
-       y="3.4386678"
-       transform="matrix(0.70385389,0.71034478,-0.70385389,0.71034478,0,0)" />
+       width="1.008684"
+       height="1.008684"
+       x="4.4492087"
+       y="3.4612534"
+       transform="matrix(0.70672949,0.70748387,-0.70672949,0.70748387,0,0)" />
     <rect
-       style="fill:#483c97;fill-opacity:1;stroke-width:0.296736"
+       style="fill:#483c97;fill-opacity:1;stroke-width:0.29794"
        id="rect1-2-0"
-       width="1.0058786"
-       height="1.0058786"
-       x="5.448915"
-       y="4.44875"
-       transform="matrix(0.70485647,0.70934996,-0.70485647,0.70934996,0,0)" />
+       width="1.0099577"
+       height="1.0099577"
+       x="5.4623437"
+       y="4.4754591"
+       transform="matrix(0.70772805,0.70648496,-0.70772805,0.70648496,0,0)" />
     <rect
-       style="fill:#483c97;fill-opacity:1;stroke-width:0.296364"
+       style="fill:#483c97;fill-opacity:1;stroke-width:0.297562"
        id="rect1-8-1"
-       width="1.0046215"
-       height="1.0046215"
-       x="6.4456162"
-       y="5.4438872"
-       transform="matrix(0.70385389,0.71034478,-0.70385389,0.71034478,0,0)" />
+       width="1.008684"
+       height="1.008684"
+       x="6.4630003"
+       y="5.4745817"
+       transform="matrix(0.70672949,0.70748387,-0.70672949,0.70748387,0,0)" />
     <rect
-       style="fill:#574aaa;fill-opacity:1;stroke-width:0.296357"
+       style="fill:#574aaa;fill-opacity:1;stroke-width:0.297562"
        id="rect3"
-       width="0.0041341144"
+       width="0.0041677901"
        height="0.0010430597"
-       x="1.5021231"
+       x="1.5020894"
        y="10.710003" />
   </g>
 </svg>
