@@ -12,29 +12,59 @@
   src: url(fonts/FOT-Seurat-ProB.otf);
 }
 
+a:link {
+  color: #483c97;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #483c97;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #C8C3E8;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 .mainpage{
- padding: 0;
+ padding:0;
  margin:0;
  font-size: 20px;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
 }
 
 .sitesoonmessage{
  font-family: "Seurat Pro", sans-serif;
  text-align: center; 
  font-size: 20px;
- padding-top: 110px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 300px;
+ width: 100%;
 }
 
 .legalmumbojumbo{
  font-family: "Seurat Pro", sans-serif;
  text-align: center; 
- font-size: 12px;
- margin: 260px;
+ font-size: 11px;
+}
+
+.footer {
+padding: 10px;
+background-color: #483c97;
+margin-top: auto;
 }
 
 #famicomcdbanner{
 background: url(graphics/famicomcdbanner.svg);
-height: 300px;
+height: 215px;
 position: relative;
 background-position: top center;
 background-repeat: repeat-x;
@@ -49,18 +79,30 @@ text-align: center;
 	
 <div id=famicomcdbanner>
 
- <img src="graphics/famicomcdlogowhite.png" alt="FamicomCD Logo" style="width:602px;height:auto;">
+<img src="graphics/famicomcdlogowhite.png" alt="FamicomCD Logo" style="width:602px;height:auto;">
 
 </div>
 
 <div class=sitesoonmessage>
- <p>FamicomCD site soon! Stay tuned and look out for news on our <a href="https://www.twitter.com/FamicomCD">Twitter</a> and <a href="https://www.youtube.com/@FamicomCD">YouTube</a>!</p>
+<p>FamicomCD site soon! Stay tuned and look out for news on our <a href="https://www.twitter.com/FamicomCD">Twitter</a>, <a href="https://www.youtube.com/@FamicomCD">YouTube</a>, and <a href="https://www.discord.gg/wpSGt5aTuw">Discord</a>!</p>
  </div>
  
-<div class=legalmumbojumbo>
- <p>The FamicomCD Team and The Super Mario Bros. CD Team are not affiliated in anyway to Nintendo. The Famicom name and trademark, as well as Mario, Yoshi, and related characters are not owned or under copyright of this site.</p>
+<footer class=footer>
+<div class=legalmumbojumbo style="color: #C8C3E8">
+ <p>The FamicomCD Team and The Super Mario Bros. CD Team are not affiliated in anyway to Nintendo. The Famicom name and trademark, as well as Mario, Yoshi, and related characters are not owned or under copyright of this site. All other copyrights are the property of their respective owners. Any FamicomCD project sold for monetary gain (such as cartridges, or soundtrack CDs) are not produced or endorsed by The FamicomCD Team. All projects created by The FamicomCD Team are free and will remain free.</p>
+   <div style="display: inline-flex;">
+   <a href="https://www.twitter.com/FamicomCD"><img src="graphics/twittersocialicon.png" style="width:40px; height:auto; border-radius: 17%;">
+
+  <a href="https://www.youtube.com/@FamicomCD"><img src="graphics/youtubesocialicon.png" style="width:40px;height:auto; padding-left: 7px; padding-right: 7px; border-radius: 22%;">
+  
+    <a href="https://bsky.app/profile/famicomcd.bsky.social"><img src="graphics/blueskysocialicon.png" style="width:40px; height:auto; border-radius: 17%;">
+  </div>
  </div>
+</footer> 
 
 
 	</body>
+	
+	
+	
 </html>
