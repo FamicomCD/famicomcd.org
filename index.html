@@ -15,25 +15,14 @@
   src: url(fonts/FOT-Seurat-ProB.otf);
 }
 
-@media screen and (max-width: 767px) {
-    body {
-        zoom: 1;
-    }
-	
-	.graphics/famicomcdlogowhite.png {
-	width: 300px;
-	height: auto;
-	}
-}
-
 a:link {
-  color: #d8e0ff;
+  color: #483c97;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: #d8e0ff;
+  color: #483c97;
   background-color: transparent;
   text-decoration: none;
 }
@@ -51,6 +40,7 @@ a:active {
  min-height: 100vh;
  display: flex;
  flex-direction: column;
+ font-family: "Seurat Pro";
 }
 
 .sitesoonmessage{
@@ -90,6 +80,24 @@ text-align: center;
 padding: 10px;
 background-color: #483c97;
 margin-top: auto;
+
+a:link {
+  color: #d8e0ff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #d8e0ff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #C8C3E8;
+  background-color: transparent;
+  text-decoration: none;
+}
 }
 
 #famicomcdbanner{
@@ -108,15 +116,16 @@ text-align: center;
 <!-- This shit is a mess, but it works for now. It will definitely need a rewrite at some point. -->		
 	<body class=mainpage>
 	
+	
 <div id=famicomcdbanner>
 
 <a href="index"><img src="graphics/famicomcdlogowhite.png" alt="FamicomCD Logo" style="width:602px;height:auto;"></a>
 
 </div>
 
-<div class=sitesoonmessage>
+ <div class=sitesoonmessage>
  <p>FamicomCD site soon! Stay tuned and look out for news on our <a href="https://www.twitter.com/FamicomCD">Twitter</a>, <a href="https://www.youtube.com/@FamicomCD">YouTube</a>, and <a href="https://www.discord.gg/wpSGt5aTuw">Discord</a>!</p>
- </div>
+ </div> 
  
 
  
