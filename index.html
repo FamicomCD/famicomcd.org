@@ -3,7 +3,7 @@
 	
 		<head>
 		
-		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1, minimum-scale=0.75, maximum-scale=2.5"/>
+		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=0.80, minimum-scale=0.75, maximum-scale=2.5"/>
 		
 		<title>FamicomCD</title>
 		<link rel="tab icon" href="graphics/diskette.png">
@@ -100,9 +100,22 @@ a:active {
 }
 }
 
+logo {
+ display: grid;
+ height: 100%;
+}
+
+.center-fit {
+max-width: 100%;
+max-height: 100vh;
+margin: auto;
+}
+
+
 #famicomcdbanner{
 background: url(graphics/famicomcdbanner.svg);
 height: 215px;
+width:auto;
 position: relative;
 background-position: top center;
 background-repeat: repeat-x;
@@ -119,13 +132,15 @@ text-align: center;
 	
 <div id=famicomcdbanner>
 
-<a href="index"><img src="graphics/famicomcdlogowhite.png" alt="FamicomCD Logo" style="width:602px;height:auto;"></a>
+<div class=logo>
+<a href="index"><img class="center-fit" src="graphics/famicomcdlogowhite.png" alt="FamicomCD Logo" style="width:602px;height:auto;"></a>
+</div>
 
 </div>
 
- <div class=sitesoonmessage>
+<div class=sitesoonmessage>
  <p>FamicomCD site soon! Stay tuned and look out for news on our <a href="https://www.twitter.com/FamicomCD">Twitter</a>, <a href="https://www.youtube.com/@FamicomCD">YouTube</a>, and <a href="https://www.discord.gg/wpSGt5aTuw">Discord</a>!</p>
- </div> 
+ </div>
  
 
  
