@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+			<html lang="en">
+	
+		<head>
+		
+		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=0.80, minimum-scale=0.75, maximum-scale=2.5"/>
+		<meta name="google-site-verification" content="EYxQGXvx_TFMhVJT9UELPA8aoOIBnjt_QR9szmBkuX4" />
+		
+		<title>FamicomCD - SMBCD MSU-1 Setup</title>
+		<link rel="tab icon" href="graphics/diskette.png">
+	
+		<style>
+
+@font-face {
+  font-family: "Seurat Pro";
+  src: url(fonts/FOT-Seurat-ProB.otf);
+}
+
+a:link {
+  color: #C1C2FF;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #C1C2FF;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #C8C3E8;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.mainpage{
+ padding:0;
+ margin:0;
+ font-size: 20px;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ font-family: "Seurat Pro";
+ background-color: #d8e0ff;
+ 
+a:link {
+  color: #C1C2FF;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #C1C2FF;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #C8C3E8;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+}
+
+.sitesoonmessage{
+ font-family: "Seurat Pro", sans-serif;
+ text-align: center; 
+ font-size: 20px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 300px;
+ width: 100%;
+}
+
+.legalmumbojumbo{
+ font-family: "Seurat Pro", sans-serif;
+ text-align: center; 
+ font-size: 11px;
+}
+
+.SMBCDProjectBox {
+text-align: center;
+padding-bottom: 50px; 
+}
+
+.banners {
+padding-top: 20px;
+text-align: center;
+}
+
+.ProjectsText {
+ font-family: "Seurat Pro", sans-serif;
+ text-align: center; 
+ font-size: 30px;
+}
+
+.footer {
+padding: 15px;
+background-color: #483c97;
+margin-top: auto;
+
+a:link {
+  color: #d8e0ff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #d8e0ff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #C8C3E8;
+  background-color: transparent;
+  text-decoration: none;
+}
+}
+
+.sidebyside {
+display:inline-flex;
+}
+
+logo {
+ display: grid;
+ height: 100%;
+}
+
+.center-fit {
+max-width: 100%;
+max-height: 100vh;
+margin: auto;
+}
+
+.theboxthatholdsthetext {
+padding: 100px
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #6f62c2;
+width: 990px;
+height:auto;
+margin: auto;
+border-radius: 10px;
+font-size: 14px;
+}
+
+.centerwhenneeded {
+text-align:center;
+}
+
+.checkthatflex {
+display: inline-flex;
+}
+
+.paddingwhenneeded {
+padding-top:10px;
+}
+
+.thesmallerfont {
+font-size:13px;
+}
+
+.thesmallerfontonphones {
+font-size:12px;
+float:left;
+}
+
+.thebigfont {
+font-size:24px;
+width: 550px;
+margin: auto;
+text-align:center;
+}
+
+
+.backbutton {
+width:200px;
+height: auto;
+}
+
+@media screen and (max-width: 1006px) {
+	
+	.theboxthatholdsthetext {
+	width:auto;
+	height:auto;
+	margin: auto;
+	font-size: 13px;
+	}
+	
+	.checkthatflex {
+	display: block;
+	}
+	
+	.paddingwhenneeded {
+	padding-top:0;
+	}
+	
+	.thesmallerfontonphones {
+	float:none;
+	}
+	
+	.sidebyside {
+	display:block;
+	}
+	
+	.thesmallerfont {
+	font-size:12px;
+	}
+	
+	.thebigfont {
+    font-size:22px;
+    }
+	
+	.memberbody {
+	width:auto;
+	}
+
+}
+
+
+@media screen and (max-width: 650px) {
+	.legalmumbojumbo{
+	font-size: 9px;
+	}
+	
+	.theboxthatholdsthetext {
+	font-size: 13px;
+	}
+	
+	.thesmallerfont {
+	font-size:11px;
+	}
+	
+	.thesmallerfontonphones {
+	padding-bottom:15px;
+	}
+	
+	.thebigfont {
+	font-size:20px;
+	width:auto;
+    }
+	
+	.icons {
+	width: 150px;
+	height: auto;
+	}
+	
+	.name {
+	padding-top:10px;
+	}
+	
+}
+
+@media screen and (max-width: 396px) {
+	.legalmumbojumbo{
+	font-size: 7px;
+	}
+	
+	.theboxthatholdsthetext {
+	font-size: 11px;
+	}
+	
+	.thesmallerfont {
+	font-size:10px;
+	}
+	
+	.thesmallerfontonphones {
+	font-size:10px;
+	}
+	
+		.icons {
+	width: 100px;
+	height: auto;
+	}
+	
+	.name {
+	padding-top:2px;
+	}
+	
+}
+
+#famicomcdbanner{
+background: url(graphics/famicomcdbanner.svg);
+height: 215px;
+width:auto;
+position: relative;
+background-position: top center;
+background-repeat: repeat-x;
+text-align: center;
+}
+
+
+		</style>
+		</head>
+		
+<!-- This shit is a mess, but it works for now. It will definitely need a rewrite at some point. -->		
+	<body class=mainpage>
+	
+	
+<div id=famicomcdbanner>
+
+<div class=logo style="padding-left:15px; padding-right:15px;">
+<a href="index.html"><img class="center-fit" src="graphics/famicomcdlogowhite.png" alt="FamicomCD Logo" style="width:602px;height:auto;"></a>
+</div>
+
+</div>
+
+<!-- just separating this from the rest of the code. gonna be a lot -->
+
+
+<div class=center-fit style="padding-top:30px;"> 
+ <div class=backbutton>
+  <div>
+  <a href="smbcd.html"><img class="center-fit" src="graphics/banners/back.png" alt="[Back]" style="border-radius: 10px;width: 500px;height: auto;"></a>
+ </div>
+</div> 
+</div>
+ 
+ <div style="padding-bottom:30px;">
+ <div class=theboxthatholdsthetext style="color:white;padding:20px;">
+ <div class=thebigfont style="padding-top:20px;border-bottom: 3px dotted #352063;">
+ <p style="margin-top:0;">Things to Note</p>
+ </div> 
+ 
+ <p style="font-size: 14px; padding-top:20px;">This guide covers both how to install SMW rom hacks, and how to use MSU-1. Though the guide mentions SMBCD, the instructions could apply to most other Super NES rom hacks.</p>
+ 
+ <p style="font-size: 14px; padding-top:2px;">MSU-1 is the main way that SMBCD delivers its rich CD quality audio among other features that a real Super NES would struggle with, and as such MSU-1 is required for SMBCD to start. If you're missing MSU-1 or haven't installed it correctly, SMBCD will not start. If you have followed the guide and installed all the required MSU-1 files but SMBCD still will not start, check if your emulator supports MSU-1 or join the FamicomCD Discord for support.</p>
+ 
+  <p style="font-size: 14px; padding:10px;border: 3px dashed #ff2e2e;"><b>Important: </b>You need your own USA Super Mario World SMC/SFC to patch SMBCD's BPS file. We recommend that you dump your own official SMW Super NES cartridge. We will not instruct you on how or where to get the game files if you don't want to or can't dump your own cartridge.</p>
+ 
+ 
+  <div class=thebigfont style="padding-top:20px;border-bottom: 3px dotted #352063;">
+ <p style="margin-top:0;">Setting up SMBCD and MSU-1</p>
+  </div> 
+ <p style="font-size: 14px;">(The first few steps are for general SMW Hack setup. If you already know how to set up SMW hacks, skip to step 5).</p>
+ 
+ 
+  <p style="font-size: 14px; padding-top:20px;"> <b>Step 1: </b>First of all, download a version of SMBCD from the <a href="download.html">Version Downloads</a> page. It will download as a zip file.</p>
+  
+<div class=centerwhenneeded>
+<img class="center-fit" src="graphics/MSU1Setup/zip.png" alt="[zipimage]" style="border-radius: 10px;width: 400px;height: auto;">
+</div>
+
+  <p style="font-size: 14px; padding-top:50px;"> <b>Step 2: </b>Open the zip to reveal its contents. If you don't have a zip archive opener, we recommend using 7-Zip.</p>
+
+
+
+  <p style="font-size: 14px; padding-top:50px;"> <b>Step 3: </b>When opening the zip archive to a SMBCD build, you will see the SMBCD BPS patch file, an MSU file, and PCM files. You only have to worry about the BPS for now. This is where your USA SMW SMC/SFC comes into play.</p>
+
+<div class=centerwhenneeded>
+<img class="center-fit" src="graphics/MSU1Setup/bps.png" alt="[bpsimage]" style="border-radius: 10px;width: 550px;height: auto;">
+</div>
+
+  <p style="font-size: 14px; padding-top:50px;"> <b>Step 4: </b>Patch the SMBCD BPS to the USA SMW SMC/SFC using <a href="https://www.smwcentral.net/?a=details&id=11474&p=section">Floating IPS</a> or <a href=https://www.marcrobledo.com/RomPatcher.js>Marc Robledo's Onliner Patcher</a>.</p>
+
+<div class=centerwhenneeded>
+<div class=sidebyside>
+<div class=logo>
+<p style="font-size: 14px; padding-top:5px;">Floating IPS Method<p>
+<img class="center-fit" src="graphics/MSU1Setup/flips.png" alt="[flipsimage]" style="border-radius: 10px;width: 390px;height: auto;">
+</div>
+<div style="padding:8px;"></div>
+<div class=logo>
+<p style="font-size: 14px; padding-top:5px;">Marc's Online Patcher Method<p>
+<img class="center-fit" src="graphics/MSU1Setup/marc.png" alt="[marcimage]" style="border-radius: 10px;width: 390px;height: auto;">
+</div>
+</div>
+</div>
+
+  <p style="font-size: 14px; padding-top:50px;"> <b>Step 5: </b>Once you have your SMBCD SMC file, test if it works. If the MSU-1 required screen appears, you've done patched it correctly, but you're not done yet. You'll need the MSU-1 files to complete the installation.</p>
+
+<div class=centerwhenneeded>
+<img class="center-fit" src="graphics/MSU1Setup/testing.png" alt="[testingimage]" style="border-radius: 10px;width: 350px;height: auto;">
+</div>
+
+  <p style="font-size: 14px; padding-top:50px;"> <b>Step 6: </b>Remember the MSU file and PCM files from before? You need these files to be in the same directory and the same name* as your SMBCD SMC file. For organization, it's recommended that you store all of SMBCD's file in their own folder.</p>
+  <p style="font-size: 14px;">*PCM files only half follow this rule as they need their track number to come after the name. This is indicated by the hyphen and the number.</p>
+
+<div class=centerwhenneeded>
+<img class="center-fit" src="graphics/MSU1Setup/samefolder.png" alt="[samefolderimage]" style="border-radius: 10px;width: 550px;height: auto;">
+</div>
+
+  <p style="font-size: 14px; padding-top:50px;"> <b>Step 7: </b>Once all of the files are in place, SMBCD should start as normal. If you are still getting the MSU-1 is missing error, please make sure your emulator is supported under the  <a href="emulatorsupportsheet.html">SMBCD Emulator Support Sheet</a> or join the FamicomCD Discord for support.</p>
+
+
+ </div>
+ </div>
+ 
+ 
+ 
+ <!-- For what ever reason, 9px right 8px left evens it out. It's stupid but it works. -->
+
+<footer class=footer>
+<div class=legalmumbojumbo style="color: #C8C3E8">
+ <p>The FamicomCD Team and The Super Mario Bros. CD Team are not affiliated in anyway to Nintendo. The Famicom name and trademark, as well as Mario, Yoshi, and related characters are not owned or under copyright of this site. All other copyrights are the property of their respective owners. Any FamicomCD project sold for monetary gain (such as cartridges, or soundtrack CDs) are not produced or endorsed by The FamicomCD Team. All projects created by The FamicomCD Team are free and will remain free.</p>
+ 
+
+   <div style="display: inline-flex;vertical-align:middle;font-size: 12px;m:0;">
+   <p><a href="about.html">About •</a> <a href="languageswitcher.html"> Language Switcher •</a> <a href="https://discord.gg/wpSGt5aTuw"> Discord</a></p>
+   </div>
+   <div style="display: inline-flex;padding: 10px;"> </div> 
+   <div style="display: inline-flex;vertical-align:middle;">
+   <a href="https://www.twitter.com/FamicomCD"><img src="graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+<div style="padding-right:9px"> </div>  
+  <a href="https://www.youtube.com/@FamicomCD"><img src="graphics/youtubesocialicon.png" alt="YouTube" style="width:30px;height:auto; border-radius: 6px;"></a>
+ <div style="padding-left:8px"> </div> 
+    <a href="https://bsky.app/profile/famicomcd.bsky.social"><img src="graphics/blueskysocialicon.png" alt=Bluesky style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div>
+</footer> 
+
+
+	</body>
+	
+	
+	
+</html>

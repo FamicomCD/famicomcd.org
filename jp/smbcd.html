@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+			<html lang="ja">
+	
+		<head>
+		
+		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=0.80, minimum-scale=0.75, maximum-scale=2.5"/>
+		<meta name="google-site-verification" content="EYxQGXvx_TFMhVJT9UELPA8aoOIBnjt_QR9szmBkuX4" />
+		
+		<title>ファミコンCD - スーパーマリオブラザーズCD</title>
+		<link rel="tab icon" href="../graphics/diskette.png">
+	
+		<style>
+
+@font-face {
+  font-family: "Seurat Pro";
+  src: url(../fonts/FOT-Seurat-ProB.otf);
+}
+
+a:link {
+  color: #28205c;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #28205c;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #2f266a;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.mainpage{
+ padding:0;
+ margin:0;
+ font-size: 20px;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ font-family: "Seurat Pro";
+ background-color: #d8e0ff;
+ 
+ a:link {
+  color: #483c97;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #483c97;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #C8C3E8;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+}
+
+.sitesoonmessage{
+ font-family: "Seurat Pro", sans-serif;
+ text-align: center; 
+ font-size: 20px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 300px;
+ width: 100%;
+}
+
+.legalmumbojumbo{
+ font-family: "Seurat Pro", sans-serif;
+ text-align: center; 
+ font-size: 11px;
+}
+
+.SMBCDProjectBox {
+text-align: center;
+padding-bottom: 50px; 
+}
+
+.banners {
+padding-top: 20px;
+text-align: center;
+}
+
+.ProjectsText {
+ font-family: "Seurat Pro", sans-serif;
+ text-align: center; 
+ font-size: 30px;
+}
+
+.footer {
+padding: 15px;
+background-color: #483c97;
+margin-top: auto;
+
+a:link {
+  color: #d8e0ff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #d8e0ff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #C8C3E8;
+  background-color: transparent;
+  text-decoration: none;
+}
+}
+
+logo {
+ display: grid;
+ height: 100%;
+}
+
+.center-fit {
+max-width: 100%;
+max-height: 100vh;
+margin: auto;
+}
+
+.theboxthatholdsthetext {
+padding: 100px
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #6f62c2;
+width: 990px;
+height:auto;
+margin: auto;
+border-radius: 10px;
+text-align:center;
+font-size: 14px;
+}
+
+.checkthatflex {
+display: inline-flex;
+}
+
+.paddingwhenneeded {
+padding-top:10px;
+}
+
+.thesmallerfont {
+font-size:13px;
+}
+
+.thesmallerfontonphones {
+font-size:14px;
+}
+
+.thebigfont {
+font-size:24px;
+width: 400px;
+margin: auto;
+}
+
+.thebigfontbigedition {
+font-size:24px;
+width: 450px;
+margin: auto;
+}
+
+.thebigfontsmalledition {
+font-size:24px;
+width: 500px;
+margin: auto;
+}
+
+.pushwiththetrailer {
+padding-left: 10px;
+}
+
+.pushwiththeexpectations {
+padding-right: 10px;
+}
+
+@media screen and (max-width: 1006px) {
+	
+	.theboxthatholdsthetext {
+	width:auto;
+	height:auto;
+	margin: auto;
+	font-size: 13px;
+	}
+	
+	.checkthatflex {
+	display: block;
+	}
+	
+	.paddingwhenneeded {
+	padding-top:0;
+	}
+	
+	.thesmallerfont {
+	font-size:12px;
+	}
+	
+	.thebigfont {
+    font-size:22px;
+    }
+	
+	.pushwiththetrailer {
+	padding-left: 0px;
+	}
+	
+	.pushwiththeexpectations {
+	padding-right: 0px;
+	}
+
+}
+
+
+@media screen and (max-width: 650px) {
+	.legalmumbojumbo{
+	font-size: 9px;
+	}
+	
+	.theboxthatholdsthetext {
+	font-size: 13px;
+	}
+	
+	.thesmallerfont {
+	font-size:11px;
+	}
+	
+	.thesmallerfontonphones {
+	padding-bottom:15px;
+	}
+	
+	.thebigfont {
+	width:auto;
+    }
+	
+	.thebigfontbigedition {
+	font-size:20px;
+	width: auto;
+	margin: auto;
+	}
+	
+}
+
+@media screen and (max-width: 396px) {
+	.legalmumbojumbo{
+	font-size: 7px;
+	}
+	
+	.theboxthatholdsthetext {
+	font-size: 11px;
+	}
+	
+	.thesmallerfont {
+	font-size:10px;
+	}
+	
+	.thesmallerfontonphones {
+	font-size:10px;
+	}
+	
+}
+
+#famicomcdbanner{
+background: url(../graphics/famicomcdbanner.svg);
+height: 215px;
+width:auto;
+position: relative;
+background-position: top center;
+background-repeat: repeat-x;
+text-align: center;
+}
+
+
+		</style>
+		</head>
+		
+<!-- This shit is a mess, but it works for now. It will definitely need a rewrite at some point. -->		
+	<body class=mainpage>
+	
+	
+<div id=famicomcdbanner>
+
+<div class=logo style="padding-left:15px; padding-right:15px;">
+<a href="../jp.html"><img class="center-fit" src="graphics/famicomcdlogowhitejp.png" alt="FamicomCD Logo" style="width:602px;height:auto;"></a>
+</div>
+
+</div>
+
+<!-- just separating this from the rest of the code. gonna be a lot -->
+
+
+
+
+ 
+<div class=SMBCDProjectBox> 
+ <div class=logo>
+<img class="center-fit" src="../graphics/smbcdlogo/smbcdlogojp.png" alt="Super Mario Bros. CD" style="width: 785px;height: auto;padding-top:40px;">
+ </div>
+ </div>
+ 
+  <div>
+ <div class=theboxthatholdsthetext style="color:white;padding:10px;">
+ <p style="font-size: 16px; padding-top:20px;">マリオCDスピードラン大会が開催中です！以下のボタンで詳しく見ましょう！</p>
+ 
+<div class=banners style="padding:12px;">
+ <div class=logo>
+ <a href="smbcdspeedruncomp.html"><img class="center-fit" src="../graphics/banners/smbcdspeedruncomp.png" alt="[Super Mario Bros. CD Speedrun Competition]" style="border-radius: 10px;width: 500px;height: auto;"></a>
+ </div>
+ 
+ </div>
+ </div>
+ 
+ <div class=banners style="padding-top:12px;">
+ <div class=logo>
+ <a href="emulatorsupportsheet.html"><img class="center-fit" src="graphics/banners/smbcdemulatorsupportjp.png" alt="[SMBCD Emulator Support Sheet]" style="border-radius: 10px;width: 500px;height: auto;"></a>
+ 
+ <a href="msu1setup.html"><img class="center-fit" src="graphics/banners/smbcdmsu1setupguidejp.png" alt="[MSU-1 Setup Guide]" style="border-radius: 10px;width: 500px;height: auto;"></a>
+ </div>
+ </div>
+ 
+  <div class=banners style="padding-top:1px;">
+ <div class=logo>
+ <a href="smbcdteam.html"><img class="center-fit" src="graphics/banners/smbcdteammembersjp.png" alt="[SMBCD Team Members]" style="border-radius: 10px;width: 500px;height: auto;"></a>
+ 
+ <a href="download.html"><img class="center-fit" src="graphics/banners/smbcdversiondownloadsjp.png" alt="[SMBCD Version Downloads]" style="border-radius: 10px;width: 500px;height: auto;"></a>
+ </div>
+ 
+ 
+ <div style="padding-bottom:30px;">
+ <div class=theboxthatholdsthetext style="color:white;padding:10px;">
+ 
+ <div class=thebigfont style="padding-top:20px;border-bottom: 3px dotted #352063;">
+ <p style="margin-top:0;">概要</p>
+ </div> 
+ 
+ <div style="padding-top:20px;padding-bottom: 10px;">
+ <p>スーパーマリオブラザーズCD (マリオCD)はCDゲーム機のスーパーマリオのイメージを実装したスーパーマリオワールドのモッドです。この仮定のゲーム機は「ファミコンCD」、ファミコンのもしもの周辺機器。※スーパーファミコンのCDドライブとは別物です。</p>
+ </div> 
+ 
+ <div class=checkthatflex style="padding:20px;">
+ <div class=paddingwhenneeded>
+ <p class=thesmallerfont">マリオCDはMSU-1を使い、高音質のCD音声、完全に新しいアニメーションのシーンやさらに細かい背景を実装してます。さらに、マリオCDはモード０機能でさらに奥の深いステージを作ることが可能になってます。モード０はスーパーファミコンの背景の機能で、４枚のレイヤーを使えるかわりにタイルごとに８色に限られます。</p>
+ </div>
+ 
+ <div style="padding-left: 30px;padding-right: 30px;">
+ <video width="auto" height="250" autoplay loop muted>
+ <source src="../graphics/SMBCDMode0Showoff.mp4" type="video/mp4" />
+ Your browser does not support the video tag.
+ </video>
+ </div>
+ </div>
+ 
+ <div class=thebigfont style="border-bottom: 3px dotted #352063;">
+ <p style="margin-top:0;">あらすじ</p>
+ </div> 
+ 
+ <div style="padding-top:10px">
+ <p>マリオCDの舞台は遠く遠くの小さな諸島のブクレイ諸島。ある日、ブクレイの守り神「ガーディアン」がおかしくなり、自然界を乱し始めました。ほとんどの村人は怖がり逃げ、自然現象を調べようとした少ない人たちは二度と見られませんでした。</p>
+ 
+ <p>ガーディアンの攻撃をきっかけに、村人たちはマリオたちを呼び出しました。キノコ王国の人々に応援されながらマリオとルイージは船でブクレイ諸島に向かいます。さらに冒険の途中で新しい仲間と合うかも？</p>
+ </div> 
+ 
+  <div class=checkthatflex>
+ <div class=pushwiththeexpectations>
+ <div class=thebigfontsmalledition style="border-bottom: 3px dotted #352063;">
+ <p>内容</p>
+ </div> 
+ <div>
+<p class=thesmallerfontonphones>• 1つの繋がったストーリーを語る40以上のステージ</p>
+
+<p class=thesmallerfontonphones>• アニメーションとステージをかけた物語</p>
+
+<p class=thesmallerfontonphones>• 80年代、シティポップを元にした完全新規のサウンドトラック</p>
+
+<p class=thesmallerfontonphones>• 冒険を楽にする新しい、懐かしいアイテム</p>
+
+<p class=thesmallerfontonphones>• マリオの旅を難しくする様々な敵の軍団</p>
+ </div> 
+ </div>
+ 
+ <div class=pushwiththetrailer>
+ <div class=thebigfontbigedition style="border-bottom: 3px dotted #352063;">
+ <p>予告編を見よう！</p>
+ </div>
+ <iframe style="padding-top:20px;" width="400" height="300" src="https://www.youtube.com/embed/Ue3QpLb_GQo?si=laajYlK2nOmEzqNz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ </div>
+</div> 
+
+ <div class=thebigfont style="padding-top:20px;border-bottom: 3px dotted #352063;">
+ <p style="margin-top:0;">スクリーンショット</p>
+ </div>
+
+<div style="padding-top:20px;padding-bottom:20px;">
+ <a href="../graphics/smbcdscreenshots/SMBCD025.png"><img class="center-fit" src="../graphics/smbcdscreenshots/SMBCD025.png" style="width:220px;height:auto;"></a>
+ <a href="../graphics/smbcdscreenshots/SMBCD027.png"><img class="center-fit" src="../graphics/smbcdscreenshots/SMBCD027.png" style="width:220px;height:auto;"></a>
+ <a href="../graphics/smbcdscreenshots/SMBCD028.png"><img class="center-fit" src="../graphics/smbcdscreenshots/SMBCD028.png" style="width:220px;height:auto;"></a>
+ <a href="../graphics/smbcdscreenshots/SMBCD030.png"><img class="center-fit" src="../graphics/smbcdscreenshots/SMBCD030.png" style="width:220px;height:auto;"></a>
+ <a href="../graphics/smbcdscreenshots/SMBCD031.png"><img class="center-fit" src="../graphics/smbcdscreenshots/SMBCD031.png" style="width:220px;height:auto;"></a>
+ <a href="../graphics/smbcdscreenshots/SMBCD032.png"><img class="center-fit" src="../graphics/smbcdscreenshots/SMBCD032.png" style="width:220px;height:auto;"></a>
+ <a href="../graphics/smbcdscreenshots/SMBCD034.png"><img class="center-fit" src="../graphics/smbcdscreenshots/SMBCD034.png" style="width:220px;height:auto;"></a>
+ <a href="../graphics/smbcdscreenshots/SMBCD035.png"><img class="center-fit" src="../graphics/smbcdscreenshots/SMBCD035.png" style="width:220px;height:auto;"></a>
+</div> 
+
+ 
+ </div>
+ </div>
+ 
+ 
+ 
+ 
+ <!-- For what ever reason, 9px right 8px left evens it out. It's stupid but it works. -->
+
+<footer class=footer>
+<div class=legalmumbojumbo style="color: #C8C3E8">
+ <p>ファミコンCDチーム、及びスーパーマリオブラザーズCDチームは任天堂と一切関係ありません。ファミコンの名称とトレードマーク、及びマリオ、ヨッシー等のキャラクターは我々のものではありません。その他著作権はそれぞれの持ち主の著作物となります。ファミコンCDの名称で売られている製品(ゲームカート、サウンドトラックのCD等)はファミコンCDチームの公式の製品でなく、支持されていません。ファミコンCDチームのプロジェクトはすべて永久的に無料とされます。</p>
+ 
+
+   <div style="display: inline-flex;vertical-align:middle;font-size: 12px;m:0;">
+   <p><a href="about.html">概要 •</a> <a href="../languageswitcher.html"> 言語選択 •</a> <a href="https://discord.gg/wpSGt5aTuw"> Discord</a></p>
+   </div>
+   <div style="display: inline-flex;padding: 10px;"> </div> 
+   <div style="display: inline-flex;vertical-align:middle;">
+   <a href="https://www.twitter.com/FamicomCD"><img src="../graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+<div style="padding-right:9px"> </div>  
+  <a href="https://www.youtube.com/@FamicomCD"><img src="../graphics/youtubesocialicon.png" alt="YouTube" style="width:30px;height:auto; border-radius: 6px;"></a>
+ <div style="padding-left:8px"> </div> 
+    <a href="https://bsky.app/profile/famicomcd.bsky.social"><img src="../graphics/blueskysocialicon.png" alt=Bluesky style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div>
+ <img class="center-fit" src="../graphics/WuwuFlower.gif" style="width:50px;height:auto;">
+</footer>  
+
+
+	</body>
+	
+	
+	
+</html>

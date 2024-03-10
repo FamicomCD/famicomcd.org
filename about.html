@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+			<html lang="en">
+	
+		<head>
+		
+		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=0.80, minimum-scale=0.75, maximum-scale=2.5"/>
+		<meta name="google-site-verification" content="EYxQGXvx_TFMhVJT9UELPA8aoOIBnjt_QR9szmBkuX4" />
+		
+		<title>FamicomCD - About FamicomCD</title>
+		<link rel="tab icon" href="graphics/diskette.png">
+	
+		<style>
+
+@font-face {
+  font-family: "Seurat Pro";
+  src: url(fonts/FOT-Seurat-ProB.otf);
+}
+
+a:link {
+  color: #28205c;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #28205c;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #2f266a;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.mainpage{
+ padding:0;
+ margin:0;
+ font-size: 20px;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ font-family: "Seurat Pro";
+ background-color: #d8e0ff;
+ 
+ a:link {
+  color: #483c97;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #483c97;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #C8C3E8;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+}
+
+.sitesoonmessage{
+ font-family: "Seurat Pro", sans-serif;
+ text-align: center; 
+ font-size: 20px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 300px;
+ width: 100%;
+}
+
+.legalmumbojumbo{
+ font-family: "Seurat Pro", sans-serif;
+ text-align: center; 
+ font-size: 11px;
+}
+
+.SMBCDProjectBox {
+text-align: center;
+padding-bottom: 50px; 
+}
+
+.banners {
+padding-top: 20px;
+text-align: center;
+}
+
+.ProjectsText {
+ font-family: "Seurat Pro", sans-serif;
+ text-align: center; 
+ font-size: 30px;
+}
+
+.footer {
+padding: 15px;
+background-color: #483c97;
+margin-top: auto;
+
+a:link {
+  color: #d8e0ff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #d8e0ff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #C8C3E8;
+  background-color: transparent;
+  text-decoration: none;
+}
+}
+
+logo {
+ display: grid;
+ height: 100%;
+}
+
+.center-fit {
+max-width: 100%;
+max-height: 100vh;
+margin: auto;
+}
+
+.theboxthatholdsthetext {
+padding: 100px
+display: flex;
+background-color: #6f62c2;
+width: 990px;
+height:auto;
+margin: auto;
+border-radius: 10px;
+font-size: 14px;
+}
+
+.checkthatflex {
+display: inline-flex;
+}
+
+.paddingwhenneeded {
+padding-top:10px;
+}
+
+.thesmallerfont {
+font-size:13px;
+}
+
+.thesmallerfontonphones {
+font-size:12px;
+float:left;
+}
+
+.thebigfont {
+font-size:24px;
+width: 550px;
+margin: auto;
+text-align:center;
+}
+
+.thebignfont {
+font-size:24px;
+width: 700px;
+margin: auto;
+text-align:center;
+}
+
+
+.backbutton {
+width:200px;
+height: auto;
+}
+
+@media screen and (max-width: 1006px) {
+	
+	.theboxthatholdsthetext {
+	width:auto;
+	height:auto;
+	margin: auto;
+	font-size: 13px;
+	}
+	
+	.checkthatflex {
+	display: block;
+	}
+	
+	.paddingwhenneeded {
+	padding-top:0;
+	}
+	
+	.thesmallerfontonphones {
+	float:none;
+	}
+	
+	.thesmallerfont {
+	font-size:12px;
+	}
+	
+	.thebigfont {
+    font-size:22px;
+    }
+	
+	.thebignfont {
+    font-size:22px;
+    }
+
+}
+
+
+@media screen and (max-width: 650px) {
+	.legalmumbojumbo{
+	font-size: 9px;
+	}
+	
+	.theboxthatholdsthetext {
+	font-size: 13px;
+	}
+	
+	.thesmallerfont {
+	font-size:11px;
+	}
+	
+	.thesmallerfontonphones {
+	padding-bottom:15px;
+	}
+	
+	.thebigfont {
+	font-size:20px;
+	width:auto;
+    }
+	
+	.thebignfont {
+	font-size:20px;
+	width:auto;
+    }
+	
+}
+
+@media screen and (max-width: 396px) {
+	.legalmumbojumbo{
+	font-size: 7px;
+	}
+	
+	.theboxthatholdsthetext {
+	font-size: 11px;
+	}
+	
+	.thesmallerfont {
+	font-size:10px;
+	}
+	
+	.thesmallerfontonphones {
+	font-size:10px;
+	}
+	
+}
+
+#famicomcdbanner{
+background: url(graphics/famicomcdbanner.svg);
+height: 215px;
+width:auto;
+position: relative;
+background-position: top center;
+background-repeat: repeat-x;
+text-align: center;
+}
+
+
+		</style>
+		</head>
+		
+<!-- This shit is a mess, but it works for now. It will definitely need a rewrite at some point. -->		
+	<body class=mainpage>
+	
+	
+<div id=famicomcdbanner>
+
+<div class=logo style="padding-left:15px; padding-right:15px;">
+<a href="index.html"><img class="center-fit" src="graphics/famicomcdlogowhite.png" alt="FamicomCD Logo" style="width:602px;height:auto;"></a>
+</div>
+
+</div>
+
+
+ 
+ <div style="padding-bottom:30px;padding-top:30px;">
+ <div class=theboxthatholdsthetext style="color:white;padding:20px;">
+ 
+ <div>
+ <div class=thebigfont style="padding-top:20px;border-bottom: 3px dotted #352063;">
+ <p style="margin-top:0;">What is FamicomCD?</p>
+ </div> 
+ 
+ <p style="font-size: 14px; padding-top:20px;">FamicomCD is the name of a fictitious Famicom add-on/all-in-one console, the add-on portion akin to the Famicom Disk System. The FamicomCD project was created by King Mayro in Feburary 2023. It was originally created to share mockups of games and software that could've have been on the FamicomCD console/add-on, and soon Super Mario Bros. CD was adapted for the concept as the original SMBCD project had come far before the creation of FamicomCD.</p>
+ 
+ 
+  <div class=thebignfont style="padding-top:40px;border-bottom: 3px dotted #352063;">
+ <p style="margin-top:0;">What is FamicomCD in Terms of Alternate Reality?</p>
+ </div> 
+ 
+  <p style="font-size: 14px; padding-top:10px;">In terms of alternate reality, FamicomCD is an add-on for the Famicom, as well as an all-in-one console that released in 1989/1990. There were rumors before this of a floppy disk based add-on called the Famicom Disk System, but nothing came of it and it was soon replaced by the concept of the FamicomCD.</p>
+  <p style="font-size: 14px; padding-top:10px;">1987 - R&D1 is developing/conceiving the FamicomCD and SMBCD (instead of the Game Boy/Super Mario Land like in our timeline).</p>
+  <p style="font-size: 14px; padding-top:10px;">1989 - They release the FamicomCD to japanese audiences/consumers - it's moderately successful. (Gameboy/Super Mario Land does not exist, at least not yet).</p>
+  <p style="font-size: 14px; padding-top:10px;">1990 - FamicomCD makes it to the US (branded around the NES) with Super Mario Bros. CD as well as an 'all-in-one console' variant of the NES exclusive to US markets. It makes a splash but is unfortunately not as successful as hoped.</p>
+  <p style="font-size: 14px; padding-top:10px;">1991 - The all-in-one console is quietly discontinued (due to low demand and being expensive to produce) as Nintendo puts the spotlight on the SNES from 1991 and onwards, but the CD add-on is still sold throughout the 90's. Meanwhile it's more popular in Japan, with special editions of games made for the CD like Mother 1, Metroid and others.</p>
+  <p style="font-size: 14px; padding-top:10px;">1990/1991 - R&D1 is developing/conceiving the Gameboy (though it's more like the Gameboy Color) and Super Mario Land (it reworks many elements from SMBCD while bringing many new elements to the table for the portable form factor of the Gameboy).</p>
+  <p style="font-size: 14px; padding-top:60px;padding-bottom:20px;">The FamicomCD wasn't just Famicom games with CD quality audio though, it was an excellent upgrade to every aspect of the Famicom:</p>
+ </div> 
+ 
+  <p style="font-size: 14px;">• A 16-Bit CPU</p>
+  <p style="font-size: 14px;">• 4 layers allowing for lots of parallax and playfield layering (such as 2 layers to represent foreground and 2 layers to represent backgrounds).</p>
+  <p style="font-size: 14px;">• CD quality audio</p>
+  <p style="font-size: 14px;">• 1 Extra DPCM Channel (for a total of 2) and 1 FM Synthesizer Channel when playing CD audio</p>
+  <p style="font-size: 14px;">• 8 DPCM Channels and 1 Expanded FM Synthesizer Channel when not playing CD audio</p>
+  <p style="font-size: 14px;padding-bottom:15px;">(All sound is built on the Famicom's original 2A03)</p>
+  <p style="font-size: 14px;">• Transparency effects on one layer at once only</p>
+  <p style="font-size: 14px;">• Tilemap/FMV streaming</p>
+  <p style="font-size: 14px;">• 112 Sprites on screen at once</p>
+  <p style="font-size: 14px;">• Expanded FamicomCD controllers with a D-PAD, Start, Select, 4 face buttons, and L/R buttons on the top. Despite the new controller, the FamicomCD supports original Famicom controllers, and games can choose to limit which controller can be used.</p>
+  <p style="font-size: 14px;">• Color upload where the system can upload colors directly to the palette or upload colors directly to a pixel on the screen. These colors are 15bit RGB values instead of the Famicom's specific colors, but colors are uploaded each frame so more CPU time is used).</p>
+ 
+<div>
+ <div class=thebignfont style="padding-top:40px;border-bottom: 3px dotted #352063;">
+ <p style="margin-top:0;">Will Nintendo Take FamicomCD or SMBCD Down?</p>
+ </div> 
+ 
+ <p style="font-size: 14px; padding-top:20px;">With any unlicensed IP use, there's always a risk of anything happening but considering the precedent of stuff like our project Super Mario Bros. CD being a Super Mario World romhack, an avenue of romhacking that's been around for decades now with very little to no interference of Nintendo, we'd imagine we are just as safe as other SMW hacks have been for years.</p>
+ <p style="font-size: 14px;">We are not intending to infringe copyright or facilitate piracy with the SMBCD project, nor do we intend on making profit from our projects in any way.</p>
+ 
+  <p style="font-size: 14px;padding-top:30px;">Ultimately, there is no hard yes or no on this matter as Nintendo legally can do whatever they want to a project like this, but we don't really have any reason to think they will for the reasons above.</p>
+ </div>  
+ 
+ </div>
+ </div>
+ 
+ 
+ 
+ <!-- For what ever reason, 9px right 8px left evens it out. It's stupid but it works. -->
+
+<footer class=footer>
+<div class=legalmumbojumbo style="color: #C8C3E8">
+ <p>The FamicomCD Team and The Super Mario Bros. CD Team are not affiliated in anyway to Nintendo. The Famicom name and trademark, as well as Mario, Yoshi, and related characters are not owned or under copyright of this site. All other copyrights are the property of their respective owners. Any FamicomCD project sold for monetary gain (such as cartridges, or soundtrack CDs) are not produced or endorsed by The FamicomCD Team. All projects created by The FamicomCD Team are free and will remain free.</p>
+ 
+
+   <div style="display: inline-flex;vertical-align:middle;font-size: 12px;m:0;">
+   <p><a href="about.html">About •</a> <a href="languageswitcher.html"> Language Switcher •</a> <a href="https://discord.gg/wpSGt5aTuw"> Discord</a></p>
+   </div>
+   <div style="display: inline-flex;padding: 10px;"> </div> 
+   <div style="display: inline-flex;vertical-align:middle;">
+   <a href="https://www.twitter.com/FamicomCD"><img src="graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+<div style="padding-right:9px"> </div>  
+  <a href="https://www.youtube.com/@FamicomCD"><img src="graphics/youtubesocialicon.png" alt="YouTube" style="width:30px;height:auto; border-radius: 6px;"></a>
+ <div style="padding-left:8px"> </div> 
+    <a href="https://bsky.app/profile/famicomcd.bsky.social"><img src="graphics/blueskysocialicon.png" alt=Bluesky style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div>
+</footer> 
+
+
+	</body>
+	
+	
+	
+</html>

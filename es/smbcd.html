@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+			<html lang="es">
+	
+		<head>
+		
+		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=0.80, minimum-scale=0.75, maximum-scale=2.5"/>
+		<meta name="google-site-verification" content="EYxQGXvx_TFMhVJT9UELPA8aoOIBnjt_QR9szmBkuX4" />
+		
+		<title>FamicomCD - SMBCD</title>
+		<link rel="tab icon" href="../graphics/diskette.png">
+	
+		<style>
+
+@font-face {
+  font-family: "Seurat Pro";
+  src: url(../fonts/FOT-Seurat-ProB.otf);
+}
+
+a:link {
+  color: #28205c;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #28205c;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #2f266a;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.mainpage{
+ padding:0;
+ margin:0;
+ font-size: 20px;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ font-family: "Seurat Pro";
+ background-color: #d8e0ff;
+ 
+ a:link {
+  color: #483c97;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #483c97;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #C8C3E8;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+}
+
+.sitesoonmessage{
+ font-family: "Seurat Pro", sans-serif;
+ text-align: center; 
+ font-size: 20px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 300px;
+ width: 100%;
+}
+
+.legalmumbojumbo{
+ font-family: "Seurat Pro", sans-serif;
+ text-align: center; 
+ font-size: 11px;
+}
+
+.SMBCDProjectBox {
+text-align: center;
+padding-bottom: 50px; 
+}
+
+.banners {
+padding-top: 20px;
+text-align: center;
+}
+
+.ProjectsText {
+ font-family: "Seurat Pro", sans-serif;
+ text-align: center; 
+ font-size: 30px;
+}
+
+.footer {
+padding: 15px;
+background-color: #483c97;
+margin-top: auto;
+
+a:link {
+  color: #d8e0ff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #d8e0ff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #C8C3E8;
+  background-color: transparent;
+  text-decoration: none;
+}
+}
+
+logo {
+ display: grid;
+ height: 100%;
+}
+
+.center-fit {
+max-width: 100%;
+max-height: 100vh;
+margin: auto;
+}
+
+.theboxthatholdsthetext {
+padding: 100px
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #6f62c2;
+width: 990px;
+height:auto;
+margin: auto;
+border-radius: 10px;
+text-align:center;
+font-size: 14px;
+}
+
+.checkthatflex {
+display: inline-flex;
+}
+
+.paddingwhenneeded {
+padding-top:10px;
+}
+
+.thesmallerfont {
+font-size:13px;
+}
+
+.thesmallerfontonphones {
+font-size:12px;
+float:left;
+}
+
+.thebigfont {
+font-size:24px;
+width: 400px;
+margin: auto;
+}
+
+.thebigfontbigedition {
+font-size:24px;
+width: 450px;
+margin: auto;
+}
+
+.thebigfontsmalledition {
+font-size:24px;
+width: 500px;
+margin: auto;
+}
+
+.pushwiththetrailer {
+padding-left: 10px;
+}
+
+.pushwiththeexpectations {
+padding-right: 10px;
+}
+
+@media screen and (max-width: 1006px) {
+	
+	.theboxthatholdsthetext {
+	width:auto;
+	height:auto;
+	margin: auto;
+	font-size: 13px;
+	}
+	
+	.checkthatflex {
+	display: block;
+	}
+	
+	.paddingwhenneeded {
+	padding-top:0;
+	}
+	
+	.thesmallerfontonphones {
+	float:none;
+	}
+	
+	.thesmallerfont {
+	font-size:12px;
+	}
+	
+	.thebigfont {
+    font-size:22px;
+    }
+	
+	.pushwiththetrailer {
+	padding-left: 0px;
+	}
+	
+	.pushwiththeexpectations {
+	padding-right: 0px;
+	}
+
+}
+
+
+@media screen and (max-width: 650px) {
+	.legalmumbojumbo{
+	font-size: 9px;
+	}
+	
+	.theboxthatholdsthetext {
+	font-size: 13px;
+	}
+	
+	.thesmallerfont {
+	font-size:11px;
+	}
+	
+	.thesmallerfontonphones {
+	padding-bottom:15px;
+	}
+	
+	.thebigfont {
+	width:auto;
+    }
+	
+	.thebigfontbigedition {
+	font-size:20px;
+	width: auto;
+	margin: auto;
+	}
+	
+}
+
+@media screen and (max-width: 396px) {
+	.legalmumbojumbo{
+	font-size: 7px;
+	}
+	
+	.theboxthatholdsthetext {
+	font-size: 11px;
+	}
+	
+	.thesmallerfont {
+	font-size:10px;
+	}
+	
+	.thesmallerfontonphones {
+	font-size:10px;
+	}
+	
+}
+
+#famicomcdbanner{
+background: url(../graphics/famicomcdbanner.svg);
+height: 215px;
+width:auto;
+position: relative;
+background-position: top center;
+background-repeat: repeat-x;
+text-align: center;
+}
+
+
+		</style>
+		</head>
+		
+<!-- This shit is a mess, but it works for now. It will definitely need a rewrite at some point. -->		
+	<body class=mainpage>
+	
+	
+<div id=famicomcdbanner>
+
+<div class=logo style="padding-left:15px; padding-right:15px;">
+<a href="../es.html"><img class="center-fit" src="../graphics/famicomcdlogowhite.png" alt="FamicomCD Logo" style="width:602px;height:auto;"></a>
+</div>
+
+</div>
+
+<!-- just separating this from the rest of the code. gonna be a lot -->
+
+
+
+
+ 
+<div class=SMBCDProjectBox> 
+ <div class=logo>
+<img class="center-fit" src="../graphics/smbcdlogo/smbcdlogo.png" alt="Super Mario Bros. CD" style="width: 785px;height: auto;padding-top:40px;">
+ </div>
+ </div>
+ 
+  <div>
+ <div class=theboxthatholdsthetext style="color:white;padding:10px;">
+ <p style="font-size: 16px; padding-top:20px;">¡La Competencia de Speedrun para SMBCD empezará pronto! ¡Haz clic abajo para más info!</p>
+ 
+<div class=banners style="padding:12px;">
+ <div class=logo>
+ <a href="smbcdspeedruncomp.html"><img class="center-fit" src="../graphics/banners/smbcdspeedruncomp.png" alt="[Super Mario Bros. CD Speedrun Competition]" style="border-radius: 10px;width: 500px;height: auto;"></a>
+ </div>
+ 
+ </div>
+ </div>
+ 
+ <div class=banners style="padding-top:12px;">
+ <div class=logo>
+ <a href="emulatorsupportsheet.html"><img class="center-fit" src="graphics/banners/smbcdemulatorsupportes.png" alt="[SMBCD Emulator Support Sheet]" style="border-radius: 10px;width: 500px;height: auto;"></a>
+ 
+ <a href="msu1setup.html"><img class="center-fit" src="graphics/banners/smbcdmsu1setupguidees.png" alt="[MSU-1 Setup Guide]" style="border-radius: 10px;width: 500px;height: auto;"></a>
+ </div>
+ </div>
+ 
+  <div class=banners style="padding-top:1px;">
+ <div class=logo>
+ <a href="smbcdteam.html"><img class="center-fit" src="graphics/banners/smbcdteammemberses.png" alt="[SMBCD Team Members]" style="border-radius: 10px;width: 500px;height: auto;"></a>
+ 
+ <a href="download.html"><img class="center-fit" src="graphics/banners/smbcdversiondownloadses.png" alt="[SMBCD Version Downloads]" style="border-radius: 10px;width: 500px;height: auto;"></a>
+ </div>
+ 
+ 
+ <div style="padding-bottom:30px;">
+ <div class=theboxthatholdsthetext style="color:white;padding:10px;">
+ 
+ <div class=thebigfont style="padding-top:20px;border-bottom: 3px dotted #352063;">
+ <p style="margin-top:0;">Sobre el Proyecto</p>
+ </div> 
+ 
+ <div style="padding-top:20px;padding-bottom: 10px;">
+ <p>Super Mario Bros. CD (SMBCD) es un rom hack de Super Mario World que actúa como un vistazo a como un juego clásico de SMB se hubiera visto en una consola de CD-ROM. Esta particular consola de CD-ROM es el FamicomCD, un periférico ficticio para la Famicom/NES y NO es el Super NES CD, con la cual muchas personas parecen confundirse.</p>
+ </div> 
+ 
+ <div class=checkthatflex>
+ <div class=paddingwhenneeded>
+ <p class=thesmallerfont">SMBCD utiliza el poder del chip MSU-1 para transmitir audio CD de alta calidad creada exclusivamente para SMBCD, además de incluir cutscenes completamente animadas y niveles con entornos más complejos. SMBCD utiliza en gran medida el Mode 0 para varios de sus niveles, lo cual permite tener más objetos en primera plana y movimiento paralax para el fondo. El Mode 0 es un modo que afecta el fondo de juegos de Super NES y permite tener 4 capas diferentes al mismo tiempo, pero causa que todas las capas se limiten a estar en 2BPP o tener tan solo 4 colores por tile (esto es sin incluir capas de sprites los cuales retienen su capacidad de 16 colores).</p>
+ </div>
+ 
+ <div style="padding-left: 30px;padding-right: 30px;padding:20px;">
+ <video width="auto" height="250" autoplay loop muted>
+ <source src="../graphics/SMBCDMode0Showoff.mp4" type="video/mp4" />
+ Your browser does not support the video tag.
+ </video>
+ </div>
+ </div>
+ 
+ <div class=thebigfont style="border-bottom: 3px dotted #352063;">
+ <p style="margin-top:0;">La Historia</p>
+ </div> 
+ 
+ <div style="padding-top:10px">
+ <p>SMBCD toma lugar en el pequeño pero aun así diverso Archipiélago de Brixurei. Misteriosamente, la principal fuente de protección y seguridad del archipiélago, El Guardián de Brixurei, se ha enloquecido, lo cual ha causado mal clima y perturbación en la vida silvestre. Todo esto dejó a los lugareños confundidos y preocupados. Algunos decidieron averiguar lo que estaba pasando, así que salieron de sus ciudades. Nunca se volvió a escuchar nada de ellos...</p>
+ 
+ <p>Debido al caos que el Guardián estaba causando, los lugareños decidieron llamar al único e inigualable Mario para que los ayudara. Después de despedirse del Reino Champiñón, Mario se embarca en bote hacia Los Archipiélagos de Brixurei, llevándose a Luigi junto con él. Pero no estarán solos por mucho tiempo, ya que en esta aventura, los hermanos también se encontrarán con una nueva cara amistosa que los acompañará.</p>
+ </div> 
+ 
+  <div class=checkthatflex>
+ <div class=pushwiththeexpectations>
+ <div class=thebigfontsmalledition style="border-bottom: 3px dotted #352063;">
+ <p>Qué Esperar</p>
+ </div> 
+ <div>
+<p class=thesmallerfontonphones>• ¡Más de 40 niveles! Todos conectados de alguna manera, así creando una historia coherente.</p>
+<p class=thesmallerfontonphones>• Una historia a fondo que será contada a lo largo de tu progreso con la ayuda de varios cutscenes y niveles.</p>
+<p class=thesmallerfontonphones>• Una banda sonora completamente nueva, tomando inspiraciones de City Pop, y los años 80.</p>
+<p class=thesmallerfontonphones>• ¡Nuevos power-ups junto a varios power-ups clasicos te ayudarán a lo largo de tu aventura!</p>
+<p class=thesmallerfontonphones>• Nuevos enemigos, y algunas nuevas caras, tratarán de terminar con tu aventura. ¿Podrás con ellos?</p>
+ </div> 
+ </div>
+ 
+ <div class=pushwiththetrailer>
+ <div class=thebigfontbigedition style="border-bottom: 3px dotted #352063;">
+ <p>¿Aún no te hemos convencido? ¡Echa un vistazo a el trailer!</p>
+ </div>
+ <iframe style="padding-top:20px;" width="400" height="300" src="https://www.youtube.com/embed/Ue3QpLb_GQo?si=laajYlK2nOmEzqNz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ </div>
+</div> 
+
+ <div class=thebigfont style="padding-top:20px;border-bottom: 3px dotted #352063;">
+ <p style="margin-top:0;">Screenshots</p>
+ </div>
+
+<div style="padding-top:20px;padding-bottom:20px;">
+ <a href="../graphics/smbcdscreenshots/SMBCD025.png"><img class="center-fit" src="../graphics/smbcdscreenshots/SMBCD025.png" style="width:220px;height:auto;"></a>
+ <a href="../graphics/smbcdscreenshots/SMBCD027.png"><img class="center-fit" src="../graphics/smbcdscreenshots/SMBCD027.png" style="width:220px;height:auto;"></a>
+ <a href="../graphics/smbcdscreenshots/SMBCD028.png"><img class="center-fit" src="../graphics/smbcdscreenshots/SMBCD028.png" style="width:220px;height:auto;"></a>
+ <a href="../graphics/smbcdscreenshots/SMBCD030.png"><img class="center-fit" src="../graphics/smbcdscreenshots/SMBCD030.png" style="width:220px;height:auto;"></a>
+ <a href="../graphics/smbcdscreenshots/SMBCD031.png"><img class="center-fit" src="../graphics/smbcdscreenshots/SMBCD031.png" style="width:220px;height:auto;"></a>
+ <a href="../graphics/smbcdscreenshots/SMBCD032.png"><img class="center-fit" src="../graphics/smbcdscreenshots/SMBCD032.png" style="width:220px;height:auto;"></a>
+ <a href="../graphics/smbcdscreenshots/SMBCD034.png"><img class="center-fit" src="../graphics/smbcdscreenshots/SMBCD034.png" style="width:220px;height:auto;"></a>
+ <a href="../graphics/smbcdscreenshots/SMBCD035.png"><img class="center-fit" src="../graphics/smbcdscreenshots/SMBCD035.png" style="width:220px;height:auto;"></a>
+</div> 
+
+ 
+ </div>
+ </div>
+ 
+ 
+ 
+ 
+ <!-- For what ever reason, 9px right 8px left evens it out. It's stupid but it works. -->
+
+<footer class=footer>
+<div class=legalmumbojumbo style="color: #C8C3E8">
+ <p>El equipo FamicomCD y el equipo de Super Mario Bros CD no están afiliados de ninguna manera o forma con Nintendo. El nombre Famicom y su marca registrada, tal como Mario, Yoshi, y otros personajes relacionados, no pertenecen ni son marca registrada de este sitio web. Cualquier otra marca registrada son la propiedad de sus respectivos dueños. Cualquier producto de FamicomCD que sea vendido por fines monetarios (tales como cartuchos, o CDs de la banda sonora) no son producidos ni endosados por el equipo FamicomCD. Todos los proyectos creados por el equipo FamicomCD son, y permanecerán gratis.</p>
+
+
+   <div style="display: inline-flex;vertical-align:middle;font-size: 12px;m:0;">
+   <p><a href="about.html">Acerca de nosotros •</a> <a href="../languageswitcher.html"> Cambiar Idioma •</a> <a href="https://discord.gg/wpSGt5aTuw"> Discord</a></p>
+   </div>
+   <div style="display: inline-flex;padding: 10px;"> </div> 
+   <div style="display: inline-flex;vertical-align:middle;">
+   <a href="https://www.twitter.com/FamicomCD"><img src="../graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+<div style="padding-right:9px"> </div>  
+  <a href="https://www.youtube.com/@FamicomCD"><img src="../graphics/youtubesocialicon.png" alt="YouTube" style="width:30px;height:auto; border-radius: 6px;"></a>
+ <div style="padding-left:8px"> </div> 
+    <a href="https://bsky.app/profile/famicomcd.bsky.social"><img src="../graphics/blueskysocialicon.png" alt=Bluesky style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div>
+ <img class="center-fit" src="../graphics/WuwuFlower.gif" style="width:50px;height:auto;">
+</footer> 
+
+
+	</body>
+	
+	
+	
+</html>

@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+			<html lang="ja">
+	
+		<head>
+		
+		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=0.80, minimum-scale=0.75, maximum-scale=2.5"/>
+		<meta name="google-site-verification" content="EYxQGXvx_TFMhVJT9UELPA8aoOIBnjt_QR9szmBkuX4" />
+		
+		<title>ファミコンCD - マリオCD開発チーム</title>
+		<link rel="tab icon" href="../graphics/diskette.png">
+	
+		<style>
+
+@font-face {
+  font-family: "Seurat Pro";
+  src: url(../fonts/FOT-Seurat-ProB.otf);
+}
+
+a:link {
+  color: #28205c;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #28205c;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #2f266a;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.mainpage{
+ padding:0;
+ margin:0;
+ font-size: 20px;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ font-family: "Seurat Pro";
+ background-color: #d8e0ff;
+ 
+ a:link {
+  color: #483c97;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #483c97;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #C8C3E8;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+}
+
+.sitesoonmessage{
+ font-family: "Seurat Pro", sans-serif;
+ text-align: center; 
+ font-size: 20px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 300px;
+ width: 100%;
+}
+
+.legalmumbojumbo{
+ font-family: "Seurat Pro", sans-serif;
+ text-align: center; 
+ font-size: 11px;
+}
+
+.SMBCDProjectBox {
+text-align: center;
+padding-bottom: 50px; 
+}
+
+.banners {
+padding-top: 20px;
+text-align: center;
+}
+
+.ProjectsText {
+ font-family: "Seurat Pro", sans-serif;
+ text-align: center; 
+ font-size: 30px;
+}
+
+.footer {
+padding: 15px;
+background-color: #483c97;
+margin-top: auto;
+
+a:link {
+  color: #d8e0ff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #d8e0ff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #C8C3E8;
+  background-color: transparent;
+  text-decoration: none;
+}
+}
+
+logo {
+ display: grid;
+ height: 100%;
+}
+
+.center-fit {
+max-width: 100%;
+max-height: 100vh;
+margin: auto;
+}
+
+.theboxthatholdsthetext {
+padding: 100px
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #6f62c2;
+width: 1100px;
+height:auto;
+margin: auto;
+border-radius: 10px;
+text-align:center;
+font-size: 14px;
+}
+
+.checkthatflex {
+display: inline-flex;
+}
+
+.paddingwhenneeded {
+padding-top:10px;
+}
+
+.thesmallerfont {
+font-size:13px;
+}
+
+.thesmallerfontonphones {
+font-size:12px;
+float:left;
+}
+
+.thebigfont {
+font-size:24px;
+width: 550px;
+margin: auto;
+}
+
+.memberbody {
+display: inline-flex;
+width:450px;
+height: auto;
+}
+
+.icons {
+border-radius: 600px;
+width: 200px;
+height: auto;
+float: left;
+}
+
+.name {
+font-size:20px;
+padding-top:30px;
+padding-left:30px;
+float: left;
+margin-bottom:0;
+}
+
+.position {
+width:400px;
+padding-left:30px;
+margin-top:0;
+text-align:left;
+}
+
+.socialicons {
+display: inline-flex;
+float: left;
+padding-left:30px;
+}
+
+.backbutton {
+width:200px;
+height: auto;
+}
+
+@media screen and (max-width: 1006px) {
+	
+	.theboxthatholdsthetext {
+	width:auto;
+	height:auto;
+	margin: auto;
+	font-size: 13px;
+	}
+	
+	.checkthatflex {
+	display: block;
+	}
+	
+	.paddingwhenneeded {
+	padding-top:0;
+	}
+	
+	.thesmallerfontonphones {
+	float:none;
+	}
+	
+	.thesmallerfont {
+	font-size:12px;
+	}
+	
+	.thebigfont {
+    font-size:22px;
+    }
+	
+	.memberbody {
+	width:auto;
+	}
+
+}
+
+
+@media screen and (max-width: 650px) {
+	.legalmumbojumbo{
+	font-size: 9px;
+	}
+	
+	.theboxthatholdsthetext {
+	font-size: 13px;
+	}
+	
+	.thesmallerfont {
+	font-size:11px;
+	}
+	
+	.thesmallerfontonphones {
+	padding-bottom:15px;
+	}
+	
+	.thebigfont {
+	font-size:20px;
+	width:auto;
+    }
+	
+	.icons {
+	width: 150px;
+	height: auto;
+	}
+	
+	.name {
+	padding-top:10px;
+	}
+	
+}
+
+@media screen and (max-width: 396px) {
+	.legalmumbojumbo{
+	font-size: 7px;
+	}
+	
+	.theboxthatholdsthetext {
+	font-size: 11px;
+	}
+	
+	.thesmallerfont {
+	font-size:10px;
+	}
+	
+	.thesmallerfontonphones {
+	font-size:10px;
+	}
+	
+		.icons {
+	width: 100px;
+	height: auto;
+	}
+	
+	.name {
+	padding-top:2px;
+	}
+	
+}
+
+#famicomcdbanner{
+background: url(../graphics/famicomcdbanner.svg);
+height: 215px;
+width:auto;
+position: relative;
+background-position: top center;
+background-repeat: repeat-x;
+text-align: center;
+}
+
+
+		</style>
+		</head>
+		
+<!-- This shit is a mess, but it works for now. It will definitely need a rewrite at some point. -->		
+	<body class=mainpage>
+	
+	
+<div id=famicomcdbanner>
+
+<div class=logo style="padding-left:15px; padding-right:15px;">
+<a href="../jp.html"><img class="center-fit" src="graphics/famicomcdlogowhitejp.png" alt="FamicomCD Logo" style="width:602px;height:auto;"></a>
+</div>
+
+</div>
+
+<!-- just separating this from the rest of the code. gonna be a lot -->
+
+
+<div class=center-fit style="padding-top:30px;"> 
+ <div class=backbutton>
+  <div>
+  <a href="smbcd.html"><img class="center-fit" src="graphics/banners/backjp.png" alt="[Back]" style="border-radius: 10px;width: 500px;height: auto;"></a>
+ </div>
+</div> 
+</div>
+ 
+ <div style="padding-bottom:30px;">
+ <div class=theboxthatholdsthetext style="color:white;padding:20px;">
+ 
+ <div class=thebigfont style="padding-top:20px;border-bottom: 3px dotted #352063;">
+ <p style="margin-top:0;">スーパーマリオブラザーズCDチーム一同</p>
+ </div> 
+ 
+ 
+ 
+ <!-- Don't know how the fuck this is working, but I'm not gonna fuck around with it too much 
+ just replace the names, text, and social media icons. -->
+ 
+ <div class=memberbody>
+ <div style="padding-top:20px;padding-bottom: 10px;">
+ <div style=text-align:center;>
+ <img class=icons src=../smbcd/icons/KingMayro.png>
+ <div style="display: flex;">
+ <p class=name>King Mayro</p>
+ </div>
+  <div style="display: flex;">
+ <p class=position>監督・製作</p>
+ </div>
+ </div>
+    <div class=socialicons>
+   <a href="https://www.twitter.com/KingMayro"><img src="../graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+<div style="padding-right:9px"> </div>  
+  <a href="https://www.youtube.com/@KingMayro"><img src="../graphics/youtubesocialicon.png" alt="YouTube" style="width:30px;height:auto; border-radius: 6px;"></a>
+ <div style="padding-left:8px"> </div> 
+    <a href="https://bsky.app/profile/kingmayro.bsky.social"><img src="../graphics/blueskysocialicon.png" alt=Bluesky style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div> 
+ </div>
+ 
+ 
+ 
+ <div class=memberbody>
+  <div style="padding-top:20px;padding-bottom: 10px;">
+ <div>
+ <img class=icons src=../smbcd/icons/RetriDoti.png>
+ <div style="display: flex;">
+ <p class=name>RetriDoti</p>
+ </div>
+  <div style="display: flex;">
+ <p class=position>アートディレクター</p>
+ </div>
+ </div>
+    <div class=socialicons>
+   <a href="https://www.twitter.com/RetriDoti"><img src="../graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+<div style="padding-right:8px"> </div>  
+    <a href="https://bsky.app/profile/retridoti.bsky.social"><img src="../graphics/blueskysocialicon.png" alt=Bluesky style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div> 
+ </div>
+ 
+ 
+  <div class=memberbody>
+ <div style="padding-top:20px;padding-bottom: 10px;">
+ <div style=text-align:center;>
+ <img class=icons src=../smbcd/icons/Goatsoup.jpg>
+ <div style="display: flex;">
+ <p class=name>Goatsoup.mp3</p>
+ </div>
+  <div style="display: flex;">
+ <p class=position>音声ディレクター</p>
+ </div>
+ </div>
+    <div class=socialicons>
+   <a href="https://www.twitter.com/gsoup3"><img src="../graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+<div style="padding-right:9px"> </div>  
+  <a href="https://www.youtube.com/@goatsoup"><img src="../graphics/youtubesocialicon.png" alt="YouTube" style="width:30px;height:auto; border-radius: 6px;"></a>
+ <div style="padding-left:8px"> </div> 
+    <a href="https://bsky.app/profile/goatsoup.bsky.social"><img src="../graphics/blueskysocialicon.png" alt=Bluesky style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div> 
+ </div>
+ 
+ 
+   <div class=memberbody>
+ <div style="padding-top:20px;padding-bottom: 10px;">
+ <div style=text-align:center;>
+ <img class=icons src=../smbcd/icons/cubby.jpg>
+ <div style="display: flex;">
+ <p class=name>Cubby Crazes</p>
+ </div>
+  <div style="display: flex;">
+ <p class=position>アート</p>
+ </div>
+ </div>
+    <div class=socialicons>
+ <a href="https://www.youtube.com/@cubbycrazes"><img src="../graphics/youtubesocialicon.png" alt="YouTube" style="width:30px;height:auto; border-radius: 6px;"></a>
+  </div>
+ </div> 
+ </div>
+ 
+ 
+    <div class=memberbody>
+ <div style="padding-top:20px;padding-bottom: 10px;">
+ <div style=text-align:center;>
+ <img class=icons src=../smbcd/icons/irri.jpg>
+ <div style="display: flex;">
+ <p class=name>Irrigamii</p>
+ </div>
+  <div style="display: flex;">
+ <p class=position>音声</p>
+ </div>
+ </div>
+    <div class=socialicons>
+ <a href="https://bsky.app/profile/irrigamii.bsky.social"><img src="../graphics/blueskysocialicon.png" alt=Bluesky style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div> 
+ </div>
+ 
+ 
+     <div class=memberbody>
+ <div style="padding-top:20px;padding-bottom: 10px;">
+ <div style=text-align:center;>
+ <img class=icons src=../smbcd/icons/Hatster.jpg>
+ <div style="display: flex;">
+ <p class=name>Hatster</p>
+ </div>
+  <div style="display: flex;">
+ <p class=position>アート</p>
+ </div>
+ </div>
+    <div class=socialicons>
+   <a href="https://www.twitter.com/RetriDoti"><img src="../graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+<div style="padding-right:9px"> </div>  
+    <a href="https://bsky.app/profile/retridoti.bsky.social"><img src="../graphics/blueskysocialicon.png" alt=Bluesky style="width:30px; height:auto; border-radius: 6px;"></a>
+	<div style="padding-right:8px"> </div>  
+    <a href="https://www.tumblr.com/heehoohatman"><img src="../graphics/tumblrsocialicon.png" alt="Tumblr" style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div> 
+ </div>
+ 
+ 
+     <div class=memberbody>
+ <div style="padding-top:20px;padding-bottom: 10px;">
+ <div style=text-align:center;>
+ <img class=icons src=../smbcd/icons/Tydany.jpg>
+ <div style="display: flex;">
+ <p class=name>Tydany</p>
+ </div>
+  <div style="display: flex;">
+ <p class=position>アート</p>
+ </div>
+ </div>
+    <div class=socialicons>
+   <a href="https://www.twitter.com/RetriDoti"><img src="../graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+<div style="padding-right:8px"> </div>  
+    <a href="https://bsky.app/profile/retridoti.bsky.social"><img src="../graphics/blueskysocialicon.png" alt=Bluesky style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div> 
+ </div>
+ 
+ 
+     <div class=memberbody>
+ <div style="padding-top:20px;padding-bottom: 10px;">
+ <div style=text-align:center;>
+ <img class=icons src=../smbcd/icons/Reski.png>
+ <div style="display: flex;">
+ <p class=name>Reski</p>
+ </div>
+  <div style="display: flex;">
+ <p class=position>音声</p>
+ </div>
+ </div>
+    <div class=socialicons>
+   <a href="https://www.youtube.com/@iwontbeforgotten"><img src="../graphics/youtubesocialicon.png" alt="YouTube" style="width:30px; height:auto; border-radius: 6px;"></a>
+<div style="padding-right:8px"> </div>  
+    <a href="https://iwontbeforgotten.tumblr.com/"><img src="../graphics/tumblrsocialicon.png" alt="Tumblr" style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div> 
+ </div>
+ 
+ 
+     <div class=memberbody>
+ <div style="padding-top:20px;padding-bottom: 10px;">
+ <div style=text-align:center;>
+ <img class=icons src=../smbcd/icons/Nicky.png>
+ <div style="display: flex;">
+ <p class=name>SmoothCrumbinal</p>
+ </div>
+  <div style="display: flex;">
+ <p class=position>音声</p>
+ </div>
+ </div>
+    <div class=socialicons>
+   <a href="https://twitter.com/8nuuy"><img src="../graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+<div style="padding-right:9px"> </div>  
+<a href="https://www.youtube.com/@hotpocketyummy"><img src="../graphics/youtubesocialicon.png" alt="YouTube" style="width:30px;height:auto; border-radius: 6px;"></a>
+<div style="padding-right:8px"> </div> 
+    <a href="https://www.tumblr.com/smoothcrumbinal"><img src="../graphics/tumblrsocialicon.png" alt="Tumblr" style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div> 
+ </div>
+ 
+ 
+     <div class=memberbody>
+ <div style="padding-top:20px;padding-bottom: 10px;">
+ <div style=text-align:center;>
+ <img class=icons src=../smbcd/icons/ArieJuice.png>
+ <div style="display: flex;">
+ <p class=name>Arie-Juice</p>
+ </div>
+  <div style="display: flex;">
+ <p class=position>音声</p>
+ </div>
+ </div>
+    <div class=socialicons>
+<a href="https://twitter.com/Arie_Juice"><img src="../graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+  <div style="padding-right:8px"> </div> 
+  <a href="https://youtube.com/@ArieJuice"><img src="../graphics/youtubesocialicon.png" alt="YouTube" style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div> 
+ </div>
+ 
+ 
+     <div class=memberbody>
+ <div style="padding-top:20px;padding-bottom: 10px;">
+ <div style=text-align:center;>
+ <img class=icons src=../smbcd/icons/rabbid.png>
+ <div style="display: flex;">
+ <p class=name>Rabbid4240</p>
+ </div>
+  <div style="display: flex;">
+ <p class=position>アート</p>
+ </div>
+ </div>
+    <div class=socialicons>
+ <a href="https://twitter.com/Rabbid4240"><img src="../graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div> 
+ </div>
+ 
+ 
+     <div class=memberbody>
+ <div style="padding-top:20px;padding-bottom: 10px;">
+ <div style=text-align:center;>
+ <img class=icons src=../smbcd/icons/Nonpost.jpg>
+ <div style="display: flex;">
+ <p class=name>Nonpost</p>
+ </div>
+  <div style="display: flex;">
+ <p class=position>ASMプログラミング</p>
+ </div>
+ </div>
+    <div class=socialicons>
+	<a href="https://youtube.com/@nonpost"><img src="../graphics/youtubesocialicon.png" alt="YouTube" style="width:30px;height:auto; border-radius: 6px;"></a>
+	<div style="padding-right:8px"> </div> 
+    <a href="https://bsky.app/profile/nonpost.bsky.social"><img src="../graphics/blueskysocialicon.png" alt=Bluesky style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div> 
+ </div>
+ 
+ 
+     <div class=memberbody>
+ <div style="padding-top:20px;padding-bottom: 10px;">
+ <div style=text-align:center;>
+ <img class=icons src=../smbcd/icons/Cyanworld.jpg>
+ <div style="display: flex;">
+ <p class=name>Cyanworld</p>
+ </div>
+  <div style="display: flex;">
+ <p class=position>アート</p>
+ </div>
+ </div>
+    <div class=socialicons>
+ <a href="https://twitter.com/Cyanw0rld"><img src="../graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div> 
+ </div>
+ 
+ 
+     <div class=memberbody>
+ <div style="padding-top:20px;padding-bottom: 10px;">
+ <div style=text-align:center;>
+ <img class=icons src=../smbcd/icons/Yavooti.jpg>
+ <div style="display: flex;">
+ <p class=name>Yavooti</p>
+ </div>
+  <div style="display: flex;">
+ <p class=position>アート</p>
+ </div>
+ </div>
+    <div class=socialicons>
+ <a href="https://twitter.com/Yavooti"><img src="../graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div> 
+ </div>
+ 
+ 
+      <div class=memberbody>
+ <div style="padding-top:20px;padding-bottom: 10px;">
+ <div style=text-align:center;>
+ <img class=icons src=../smbcd/icons/MrTsuyo.jpg>
+ <div style="display: flex;">
+ <p class=name>MrTsuyo</p>
+ </div>
+  <div style="display: flex;">
+ <p class=position>アート・アニメーション</p>
+ </div>
+ </div>
+    <div class=socialicons>
+   <a href="https://twitter.com/HeyIamTsuyo"><img src="../graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+<div style="padding-right:8px"> </div>  
+  <a href="https://www.youtube.com/@mrtsuyo7016"><img src="../graphics/youtubesocialicon.png" alt="YouTube" style="width:30px;height:auto; border-radius: 6px;"></a>
+  </div>
+ </div> 
+ </div>
+ 
+ 
+      <div class=memberbody>
+ <div style="padding-top:20px;padding-bottom: 10px;">
+ <div style=text-align:center;>
+ <img class=icons src=../smbcd/icons/Chloesoft.png>
+ <div style="display: flex;">
+ <p class=name>Chloesoft</p>
+ </div>
+  <div style="display: flex;">
+ <p class=position>アート</p>
+ </div>
+ </div>
+    <div class=socialicons>
+   <a href="https://twitter.com/__CHLOESOFFT__"><img src="../graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div> 
+ </div>
+ 
+ 
+      <div class=memberbody>
+ <div style="padding-top:20px;padding-bottom: 10px;">
+ <div style=text-align:center;>
+ <img class=icons src=../smbcd/icons/jinjin.jpg>
+ <div style="display: flex;">
+ <p class=name>Jinjin2612</p>
+ </div>
+  <div style="display: flex;">
+ <p class=position>声優</p>
+ </div>
+ </div>
+    <div class=socialicons>
+  <a href="https://twitter.com/BooneIsBritish"><img src="../graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+  <div style="padding-right:8px"> </div> 
+  <a href="https://www.youtube.com/@mr.jinjin"><img src="../graphics/youtubesocialicon.png" alt="YouTube" style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div> 
+ </div>
+ 
+ 
+      <div class=memberbody>
+ <div style="padding-top:20px;padding-bottom: 10px;">
+ <div style=text-align:center;>
+ <img class=icons src=../smbcd/icons/Uplink2000.jpg>
+ <div style="display: flex;">
+ <p class=name>Uplink2000</p>
+ </div>
+  <div style="display: flex;">
+ <p class=position>アート</p>
+ </div>
+ </div>
+    <div class=socialicons>
+   <a href="https://twitter.com/Uplink2000"><img src="../graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div> 
+ </div>
+ 
+ 
+       <div class=memberbody>
+ <div style="padding-top:20px;padding-bottom: 10px;">
+ <div style=text-align:center;>
+ <img class=icons src=../smbcd/icons/cablechords.png>
+ <div style="display: flex;">
+ <p class=name>Cablechords</p>
+ </div>
+  <div style="display: flex;">
+ <p class=position>音声</p>
+ </div>
+ </div>
+    <div class=socialicons>
+  <a href="https://cablechords.com/"><img src="../graphics/websitesocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div> 
+ </div>
+ 
+ 
+       <div class=memberbody>
+ <div style="padding-top:20px;padding-bottom: 10px;">
+ <div style=text-align:center;>
+ <img class=icons src=../smbcd/icons/Retroshaffer.jpg>
+ <div style="display: flex;">
+ <p class=name>Retroshaffer</p>
+ </div>
+  <div style="display: flex;">
+ <p class=position> </p>
+ </div>
+ </div>
+    <div class=socialicons>
+   <a href="https://twitter.com/retroshaffer"><img src="../graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div> 
+ </div>
+ 
+ 
+       <div class=memberbody>
+ <div style="padding-top:20px;padding-bottom: 10px;">
+ <div style=text-align:center;>
+ <img class=icons src=../smbcd/icons/Marc.jpg>
+ <div style="display: flex;">
+ <p class=name>Mischievous Marc</p>
+ </div>
+  <div style="display: flex;">
+ <p class=position>ASMプログラミング</p>
+ </div>
+ </div>
+    <div class=socialicons>
+   <a href="https://twitter.com/Pancake0014"><img src="../graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+   <div style="padding-right:9px"> </div>  
+  <a href="https://www.youtube.com/@Pancake001smw"><img src="../graphics/youtubesocialicon.png" alt="YouTube" style="width:30px;height:auto; border-radius: 6px;"></a>
+  </div>
+ </div> 
+ </div>
+ 
+ 
+        <div class=memberbody>
+ <div style="padding-top:20px;padding-bottom: 10px;">
+ <div style=text-align:center;>
+ <img class=icons src=../smbcd/icons/Twin.png>
+ <div style="display: flex;">
+ <p class=name>Twin</p>
+ </div>
+  <div style="display: flex;">
+ <p class=position>アート・アニメーション</p>
+ </div>
+ </div>
+    <div class=socialicons>
+ <a href="https://www.youtube.com/@TwinTailzArt"><img src="../graphics/youtubesocialicon.png" alt="YouTube" style="width:30px;height:auto; border-radius: 6px;"></a>
+  </div>
+ </div> 
+ </div>
+ 
+
+ <div class=thebigfont style="padding-top:20px;border-bottom: 3px dotted #352063;">
+ <p style="margin-top:0;">翻訳者</p>
+ </div> 
+ 
+        <div class=memberbody>
+ <div style="padding-top:20px;padding-bottom: 10px;">
+ <div style=text-align:center;>
+ <img class=icons src=../smbcd/icons/ThunderLeon.jpg> <!--If the quality is already jpg'd, mind as well not convert-->
+ <div style="display: flex;">
+ <p class=name>ThunderLeon</p>
+ </div>
+  <div style="display: flex;">
+ <p class=position>スペイン語翻訳</p>
+ </div>
+ </div>
+    <div class=socialicons>
+ <a href="https://twitter.com/ThunderLeon7"><img src="../graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div> 
+ </div>
+ 
+ 
+         <div class=memberbody>
+ <div style="padding-top:20px;padding-bottom: 10px;">
+ <div style=text-align:center;>
+ <img class=icons src=../smbcd/icons/JessWill.png>
+ <div style="display: flex;">
+ <p class=name>Jess Williamson</p>
+ </div>
+  <div style="display: flex;">
+ <p class=position>日本語翻訳</p>
+ </div>
+ </div>
+    <div class=socialicons>
+<a href="https://jesswilliamson.carrd.co/"><img src="../graphics/websitesocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div> 
+ </div>
+ 
+ 
+ 
+ 
+ 
+ </div>
+ </div>
+ 
+ 
+ 
+ 
+ <!-- For what ever reason, 9px right 8px left evens it out. It's stupid but it works. -->
+
+<footer class=footer>
+<div class=legalmumbojumbo style="color: #C8C3E8">
+ <p>ファミコンCDチーム、及びスーパーマリオブラザーズCDチームは任天堂と一切関係ありません。ファミコンの名称とトレードマーク、及びマリオ、ヨッシー等のキャラクターは我々のものではありません。その他著作権はそれぞれの持ち主の著作物となります。ファミコンCDの名称で売られている製品(ゲームカート、サウンドトラックのCD等)はファミコンCDチームの公式の製品でなく、支持されていません。ファミコンCDチームのプロジェクトはすべて永久的に無料とされます。</p>
+ 
+
+   <div style="display: inline-flex;vertical-align:middle;font-size: 12px;m:0;">
+   <p><a href="jp/about.html">概要 •</a> <a href="../languageswitcher.html"> 言語選択 •</a> <a href="https://discord.gg/wpSGt5aTuw"> Discord</a></p>
+   </div>
+   <div style="display: inline-flex;padding: 10px;"> </div> 
+   <div style="display: inline-flex;vertical-align:middle;">
+   <a href="https://www.twitter.com/FamicomCD"><img src="../graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+<div style="padding-right:9px"> </div>  
+  <a href="https://www.youtube.com/@FamicomCD"><img src="../graphics/youtubesocialicon.png" alt="YouTube" style="width:30px;height:auto; border-radius: 6px;"></a>
+ <div style="padding-left:8px"> </div> 
+    <a href="https://bsky.app/profile/famicomcd.bsky.social"><img src="../graphics/blueskysocialicon.png" alt=Bluesky style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div>
+</footer> 
+
+
+	</body>
+	
+	
+	
+</html>

@@ -6,7 +6,7 @@
 		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=0.80, minimum-scale=0.75, maximum-scale=2.5"/>
 		<meta name="google-site-verification" content="EYxQGXvx_TFMhVJT9UELPA8aoOIBnjt_QR9szmBkuX4" />
 		
-		<title>FamicomCD</title>
+		<title>FamicomCD - Language Switcher</title>
 		<link rel="tab icon" href="graphics/diskette.png">
 	
 		<style>
@@ -94,7 +94,13 @@ text-align: center;
 .ProjectsText {
  font-family: "Seurat Pro", sans-serif;
  text-align: center; 
- font-size: 30px;
+ font-size: 35px;
+}
+
+.LanguageText {
+ font-family: "Seurat Pro", sans-serif;
+ text-align: center; 
+ font-size: 25px;
 }
 
 .footer {
@@ -132,7 +138,7 @@ max-height: 100vh;
 margin: auto;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
 	.legalmumbojumbo{
 	font-size: 9px;
 	}
@@ -143,6 +149,7 @@ margin: auto;
 	font-size: 7px;
 	}
 }
+
 
 #famicomcdbanner{
 background: url(graphics/famicomcdbanner.svg);
@@ -169,30 +176,28 @@ text-align: center;
 </div>
 
 </div>
+
+<!-- <div class=sitesoonmessage>
+ <p>FamicomCD site soon! Stay tuned and look out for news on our <a href="https://www.twitter.com/FamicomCD">Twitter</a>, <a href="https://www.youtube.com/@FamicomCD">YouTube</a>, and <a href="https://www.discord.gg/wpSGt5aTuw">Discord</a>!</p>
+ </div> -->
  
+<div style="padding-bottom:40px;">
 <div class=ProjectsText>
-<p>Projects</p>
+<p>Select a Language:</p>
 </div>
  
-<div class=SMBCDProjectBox> 
- <div class=logo>
- <a href="smbcd.html"><img class="center-fit" src="graphics/smbcdlogo/smbcdlogo.png" alt="Super Mario Bros. CD" style="width: 585px;height: auto;"></a>
- </div>
- </div>
+ <!-- Using emojis is probably not a good idea, but we'll see how it goes over. -->
  
-<div class=banners style=padding:12px;>
- <div class=logo>
- <a href="https://discord.gg/wpSGt5aTuw"><img class="center-fit" src="graphics/banners/famicomcddiscord.png" alt="[FamicomCD Discord]" style="border-radius: 10px;width: 500px;height: auto;"></a>
- 
- <a href="smbcdspeedruncomp.html"><img class="center-fit" src="graphics/banners/smbcdspeedruncomp.png" alt="[Super Mario Bros. CD Speedrun Competition]" style="border-radius: 10px;width: 500px;height: auto;"></a>
- </div>
- 
- <div class=logo>
-  <a href="languageswitcher.html"><img class="center-fit" src="graphics/banners/languageswitcher.png" alt="[Language Switcher]" style="border-radius: 10px;width: 500px;height: auto;"></a>
-  
-  <a href="about.html"><img class="center-fit" src="graphics/banners/aboutfamicomcd.png" alt="[About FamicomCD]" style="border-radius: 10px;width: 500px;height: auto;"></a>
- </div>
-</div> 
+<div class=LanguageText>
+<a href="index.html">🇺🇸 English</a>
+</div>
+<div class=LanguageText>
+<a href="es.html">🇪🇸 Spanish</a>
+</div>
+<div class=LanguageText>
+<a href="jp.html">🇯🇵 Japanese</a>
+</div>
+</div>
  
  <!-- For what ever reason, 9px right 8px left evens it out. It's stupid but it works. -->
 <footer class=footer>
