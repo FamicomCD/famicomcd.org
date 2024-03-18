@@ -9,9 +9,13 @@
 		
 			<script src="jquery.js"></script> 
 			<script> 
-			$(function(){
-			$("#footer").load("reuse/footer.html"); 
-			});
+			$(function () {
+			var includes = $('[data-include]')
+			$.each(includes, function () {
+			var file = 'views/' + $(this).data('include') + '.html'
+			$(this).load(file)
+			})
+			})
 			</script>	
 		
 		<title>FamicomCD - SMBCD Download</title>
@@ -339,7 +343,7 @@ text-align: center;
  
  <!-- For what ever reason, 9px right 8px left evens it out. It's stupid but it works. -->
 
-     <div id="footer"></div>
+     <div data-include="footer"></div>
 
 
 
