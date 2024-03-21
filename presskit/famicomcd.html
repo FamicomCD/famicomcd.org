@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+			<html lang="en">
+	
+		<head>
+		
+		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=0.80, minimum-scale=0.75, maximum-scale=2.5"/>
+		<meta name="google-site-verification" content="EYxQGXvx_TFMhVJT9UELPA8aoOIBnjt_QR9szmBkuX4" />
+		
+		<title>FamicomCD - FamicomCD Presskit</title>
+		<link rel="tab icon" href="../graphics/diskette.png">
+	
+		<style>
+
+@font-face {
+  font-family: "Seurat Pro";
+  src: url(../fonts/FOT-Seurat-ProB.otf);
+}
+
+a:link {
+  color: #6f62c2;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #6f62c2;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #C8C3E8;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.mainpage{
+ padding:0;
+ margin:0;
+ font-size: 20px;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ font-family: "Seurat Pro";
+ background-color: #827eec;
+ 
+ 
+}
+
+.legalmumbojumbo{
+ font-family: "Seurat Pro", sans-serif;
+ text-align: center; 
+ font-size: 11px;
+}
+
+.SMBCDProjectBox {
+text-align: center;
+padding-bottom: 50px; 
+}
+
+.banners {
+padding-top: 20px;
+text-align: center;
+}
+
+.ProjectsText {
+ font-family: "Seurat Pro", sans-serif;
+ text-align: center; 
+ font-size: 30px;
+}
+
+.footer {
+padding: 15px;
+background-color: #483c97;
+margin-top: auto;
+
+}
+
+.logo {
+ height: 100%;
+}
+
+.logoboxes {
+ height: 100%;
+ display: inline-flex;
+}
+
+.center-fit {
+max-width: 100%;
+max-height: 100vh;
+margin: auto;
+}
+
+.center-fit-logo {
+max-width: 100%;
+max-height: 100vh;
+margin: auto;
+width:302px;
+height:auto;
+}
+
+.center-fit-boxes {
+max-width: 100%;
+max-height: 100vh;
+margin: auto;
+width:400px;
+height:auto;
+}
+
+.theboxthatholdsthetext {
+padding: 100px
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #6f62c2;
+width: 990px;
+height:auto;
+margin: auto;
+border-radius: 10px;
+text-align:center;
+font-size: 14px;
+
+}
+
+.checkthatflex {
+display: inline-flex;
+}
+
+.paddingwhenneeded {
+padding-top:10px;
+}
+
+.thesmallerfont {
+font-size:13px;
+}
+
+.thesmallerfontonphones {
+font-size:12px;
+float:right;
+}
+
+.thebigfont {
+font-size:24px;
+width: 550px;
+margin: auto;
+}
+
+
+.backbutton {
+width:200px;
+height: auto;
+}
+
+.navtop {
+padding-top:12px;
+padding-right: 20px;
+float: right;
+font-size: 18px;
+}
+
+.borderthepage {
+padding-left: 125px;
+padding-right: 125px;
+}
+
+.headingfont {
+font-size: 24px;
+}
+
+#famicomcdbanner{
+background-color: #FFFFFF;
+height: 100px;
+width:auto;
+position: relative;
+background-position: top center;
+text-align: left;
+}
+
+
+@media screen and (max-width: 1006px) {
+	
+	.theboxthatholdsthetext {
+	width:auto;
+	height:auto;
+	margin: auto;
+	font-size: 13px;
+	}
+	
+	.checkthatflex {
+	display: block;
+	}
+	
+	.paddingwhenneeded {
+	padding-top:0;
+	}
+	
+	.thesmallerfontonphones {
+	float:none;
+	}
+	
+	.thesmallerfont {
+	font-size:12px;
+	}
+	
+	.thebigfont {
+    font-size:22px;
+    }
+	
+	.memberbody {
+	width:auto;
+	}
+	
+	.borderthepage {
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+	
+	.headingfont {
+	font-size: 20px;
+	}
+}
+
+
+@media screen and (max-width: 650px) {
+	.legalmumbojumbo{
+	font-size: 9px;
+	}
+	
+	.theboxthatholdsthetext {
+	font-size: 13px;
+	}
+	
+	.thesmallerfont {
+	font-size:11px;
+	}
+	
+	.thesmallerfontonphones {
+	padding-bottom:15px;
+	}
+	
+	.thebigfont {
+	font-size:20px;
+	width:auto;
+    }
+	
+	.icons {
+	width: 150px;
+	height: auto;
+	}
+	
+	.name {
+	padding-top:10px;
+	}
+	
+	#famicomcdbanner{
+	text-align: center;
+	}
+	
+	.navtop {
+	display:none;
+	}
+	
+	.borderthepage {
+	padding-left: 5px;
+	padding-right: 5px;
+	}
+	
+	.logoboxes {
+	height: 100%;
+	display: block;
+	}
+	
+	.center-fit-boxes {
+	max-width: 100%;
+	max-height: 100vh;
+	margin: auto;
+	width:300px;
+	height:auto;
+	}
+
+	
+}
+
+@media screen and (max-width: 396px) {
+	.legalmumbojumbo{
+	font-size: 7px;
+	}
+	
+	.theboxthatholdsthetext {
+	font-size: 11px;
+	}
+	
+	.thesmallerfont {
+	font-size:10px;
+	}
+	
+	.thesmallerfontonphones {
+	font-size:10px;
+	}
+	
+		.icons {
+	width: 100px;
+	height: auto;
+	}
+	
+	.name {
+	padding-top:2px;
+	}
+	
+}
+
+
+		</style>
+		</head>
+		
+<!-- This shit is a mess, but it works for now. It will definitely need a rewrite at some point. -->		
+	<body class=mainpage>
+	
+	
+<div id=famicomcdbanner>
+
+<div class=logo style="padding-left:15px; padding-right:15px;display:inline-flex;">
+<a href="../index.html"><img class="center-fit-logo" src="../graphics/famicomcdlogo.png" alt="FamicomCD Logo"></a>
+</div>
+
+ <div class=navtop>
+   <p><a style=padding-right:20px; href="../about.html"> About </a> <a style=padding-right:20px; href="../news.html"> News </a> <a style=padding-right:20px; href="../contact.html"> Contact Us </a>
+ </div>  
+
+</div>
+
+<div class=borderthepage style="color:white;">
+<p class=headingfont>FamicomCD and its Branding</p>
+<p style="font-size:16px;padding-bottom:30px;">FamicomCD is a group specializing in creating non-profit video games and video game modifications/hacks. The name relates both to the team, and the fictional Nintendo Famicom add-on that our games are based on. 
+<br><br>Referring to the FamicomCD Team is different from referring to the teams of our projects such as The Super Mario Bros. CD Team (SMBCD Team). Similarly, referring to our mascot and the group is different. Our mascot is named Discette.</p>
+
+ <p class=headingfont>FamicomCD Logo</p>
+ 
+ <p style=font-size:16px>Here is our main logo! It has three variations to fit all sorts of color situations:</p>
+ <p style=font-size:16px>We have a full color logo which is our main logo and works best on most solid colors such as white and black, a white logo which works well in most situations aside from white and midtones, and a dark blue logo that works well with midtones. You'll have to right-click to download individual logos.</p>
+ 
+ <div style="text-align:center;padding-top:40px;padding-bottom:50px;">
+<div class=logoboxes>
+
+<div style="padding:20px;background-color:white;border-radius:15px;">
+<img class="center-fit-boxes" src="graphics/FamicomCD Logo Full Color.png" style="padding-top:10px;">
+</div>
+
+<div style="padding-left:10px;padding-bottom:20px;"></div>
+
+<div style="padding:20px;background-color:#322c5a;border-radius:15px;">
+<img class="center-fit-boxes" src="graphics/FamicomCD Logo White.png" style="padding-top:10px;">
+</div>
+
+<div style="padding-left:10px;padding-bottom:20px;"></div>
+
+<div style="padding:20px;background-color:#9a92fd;border-radius:15px;">
+<img class="center-fit-boxes" src="graphics/FamicomCD Logo Midtone.png" style="padding-top:10px;">
+</div>
+
+</div>
+</div>
+
+
+  <p class=headingfont>FamicomCD Logo (Without Mascot)</p>
+  
+ <p style=font-size:16px>We prefer the usage of the FamicomCD logo with the mascot, but for certain use cases, we have these logos handy.</p>
+
+ <div style="text-align:center;padding-top:40px;padding-bottom:50px;">
+<div class=logoboxes>
+
+<div style="padding:20px;background-color:white;border-radius:15px;">
+<img class="center-fit-boxes" src="graphics/FamicomCD Logo Full Color Without Mascot.png" style="padding-top:10px;">
+</div>
+
+<div style="padding-left:10px;padding-bottom:20px;"></div>
+
+<div style="padding:20px;background-color:#322c5a;border-radius:15px;">
+<img class="center-fit-boxes" src="graphics/FamicomCD Logo White Without Mascot.png" style="padding-top:10px;">
+</div>
+
+<div style="padding-left:10px;padding-bottom:20px;"></div>
+
+<div style="padding:20px;background-color:#9a92fd;border-radius:15px;">
+<img class="center-fit-boxes" src="graphics/FamicomCD Logo Midtone Without Mascot.png" style="padding-top:10px;">
+</div>
+
+</div>
+<a href="graphics/FamicomCD No Mascot Logos" style=font-size:16px;>Download all three! (.zip)</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+ 
+ 
+ <!-- For what ever reason, 9px right 8px left evens it out. It's stupid but it works. -->
+
+<footer class=footer>
+<div class=legalmumbojumbo style="color: #C8C3E8">
+ <p>The FamicomCD Team and The Super Mario Bros. CD Team are not affiliated in anyway to Nintendo. The Famicom name and trademark, as well as Mario, Yoshi, and related characters are not owned or under copyright of this site. All other copyrights are the property of their respective owners. Any FamicomCD project sold for monetary gain (such as cartridges, or soundtrack CDs) are not produced or endorsed by The FamicomCD Team. All projects created by The FamicomCD Team are free and will remain free.</p>
+
+   <div style="display: inline-flex;vertical-align:middle;font-size: 12px;m:0;">
+   </div>
+   <div style="display: inline-flex;vertical-align:middle;">
+   <a href="https://www.twitter.com/FamicomCD"><img src="../graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+<div style="padding-right:9px"> </div>  
+  <a href="https://www.youtube.com/@FamicomCD"><img src="../graphics/youtubesocialicon.png" alt="YouTube" style="width:30px;height:auto; border-radius: 6px;"></a>
+ <div style="padding-left:8px"> </div> 
+    <a href="https://bsky.app/profile/famicomcd.bsky.social"><img src="../graphics/blueskysocialicon.png" alt=Bluesky style="width:30px; height:auto; border-radius: 6px;"></a>
+	 <div style="padding-left:8px"> </div> 
+    <a href="https://discord.gg/wpSGt5aTuw"><img src="../graphics/discordsocialicon.png" alt=Bluesky style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div>
+</footer> 
+
+
+	</body>
+	
+	
+	
+</html>
