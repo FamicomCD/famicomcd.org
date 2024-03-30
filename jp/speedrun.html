@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-			<html lang="ja">
+			<html lang="en">
 	
 		<head>
 		
 		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=0.80, minimum-scale=0.75, maximum-scale=2.5"/>
 		<meta name="google-site-verification" content="EYxQGXvx_TFMhVJT9UELPA8aoOIBnjt_QR9szmBkuX4" />
 		
-		<title>ファミコンCD - マリオCDスピードラン大会</title>
+		<title>ファミコンCD - スーパーマリオブラザーズCD Speedrun</title>
 		<link rel="tab icon" href="../graphics/diskette.png">
 	
 		<style>
@@ -17,19 +17,19 @@
 }
 
 a:link {
-  color: #28205c;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: #28205c;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:active {
-  color: #2f266a;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
@@ -42,16 +42,16 @@ a:active {
  display: flex;
  flex-direction: column;
  font-family: "Seurat Pro";
- background-color: #d8e0ff;
+ background-color: #312963;
  
  a:link {
-  color: #483c97;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: #483c97;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
@@ -62,17 +62,6 @@ a:active {
   text-decoration: none;
 }
 
-}
-
-.sitesoonmessage{
- font-family: "Seurat Pro", sans-serif;
- text-align: center; 
- font-size: 20px;
- display: flex;
- justify-content: center;
- align-items: center;
- height: 300px;
- width: 100%;
 }
 
 .legalmumbojumbo{
@@ -99,7 +88,7 @@ text-align: center;
 
 .footer {
 padding: 15px;
-background-color: #483c97;
+background-color: #39317b;
 margin-top: auto;
 
 a:link {
@@ -121,6 +110,28 @@ a:active {
 }
 }
 
+
+.downloadbuttons {
+background-color:#866dd7;
+border-radius: 10px;
+width:400px;
+}
+
+.downloadbuttons:active {
+background-color:#7057c5;
+}
+
+.buttons {
+padding-top:120px;
+padding-right:30px;
+}
+
+.alltheneatstuff {
+display:inline-flex;
+}
+
+
+
 logo {
  display: grid;
  height: 100%;
@@ -137,7 +148,7 @@ padding: 100px
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: #6f62c2;
+background-color: #5a4aad;
 width: 990px;
 height:auto;
 margin: auto;
@@ -204,8 +215,29 @@ height: auto;
     font-size:22px;
     }
 	
-	.memberbody {
+	.downloadbuttons {
 	width:auto;
+	}
+	
+	.buttons {
+	padding-right:15px;
+	}
+
+}
+
+@media screen and (max-width: 850px) {
+
+	.alltheneatstuff {
+	display: block;
+	padding-top:20px;
+	}
+	
+	.downloadbuttons {
+	width:auto;
+	}
+	
+	.buttons {
+	padding-top:0px;
 	}
 
 }
@@ -233,15 +265,6 @@ height: auto;
 	width:auto;
     }
 	
-	.icons {
-	width: 150px;
-	height: auto;
-	}
-	
-	.name {
-	padding-top:10px;
-	}
-	
 }
 
 @media screen and (max-width: 396px) {
@@ -261,19 +284,10 @@ height: auto;
 	font-size:10px;
 	}
 	
-		.icons {
-	width: 100px;
-	height: auto;
-	}
-	
-	.name {
-	padding-top:2px;
-	}
-	
 }
 
 #famicomcdbanner{
-background: url(../graphics/famicomcdbanner.svg);
+background: url(../graphics/famicomcdspeedruncompbanner.svg);
 height: 215px;
 width:auto;
 position: relative;
@@ -300,6 +314,7 @@ text-align: center;
 
 <!-- just separating this from the rest of the code. gonna be a lot -->
 
+
 <div class=center-fit style="padding-top:30px;"> 
  <div class=backbutton>
   <div>
@@ -307,16 +322,6 @@ text-align: center;
  </div>
 </div> 
 </div>
-
-
-<div style="text-align:center;padding-bottom:30px;">
-  <div class=theboxthatholdsthetext style="color:white;padding:10px;">
- <p style="font-size: 16px;">このページはまだ翻訳されていません。ご迷惑をおかけして申し訳ありません。</p>
- 
- </div>
- </div>
-
-
  
  <div style="padding-bottom:30px;">
  <div class=theboxthatholdsthetext style="color:white;padding:20px;">
@@ -324,21 +329,80 @@ text-align: center;
  <p style="margin-top:0;">Speedrun Competition</p>
  </div> 
  
- <p style="font-size: 16px; padding-top:20px;">The Speedrun Competition starts around March 20th, 2024! Mark your calenders!</p>
+ <p style="font-size: 16px; padding-top:20px;">Version 2.2!!!!<p>
  
- <p style="font-size: 16px; padding-top:20px;">The SMBCD Speedrun Competition Demo is two things in one! It's a demo for those who just want to try out the game, as well as a competition for those who want to speedrun the levels for a chance to become playtesters for development builds, or simply just want to speedrun the game!</p>
+<p style="font-size: 16px;text-align:left;">The game has been patched to include bugfixes, graphical/color changes, and speedrun mechanic improvements! Now you can get even fast times by stomping on Goombas, Sidesteppers, Tweeters, and Cheep Cheeps, as well as restart runs faster by pressing L and R! Download it below! Also, the competition end date has been moved to April 12th to compensate for the demo's update!</p>
  
-  <p style="font-size: 16px; padding-top:20px;">More info about the demo and competition will be given when the competition starts!</p>
+ <p style="font-size: 16px; padding-top:40px;text-align:left;">Get ready to take off running with the SMBCD Speedrun Competition!</p>
+ 
+ <p style="font-size: 16px; padding-top:20px;text-align:left;">The SMBCD Speedrun Competition Demo is two things in one! It's a demo for those who just want to try out the game, as well as a competition for those who want to speedrun the levels for a chance to become playtesters for development builds, or simply just want to speedrun the game!</p>
+ 
+  <p style="font-size: 16px; padding-top:20px;text-align:left;">The game has a built-in timer, so you don't need to worry about your own timers! The competition is split into three categories due to different control schemes, so be sure to mark which one you're using in your video title:</p>
+  
+  <div>
+  <div>
+  <div style="display:inline-flex;padding-top:20px;">
+  <img src="../graphics/icons/cartridge.png" style="width:90px;height:65px;">
+  <p style="padding-left:20px;font-size: 16px;vertical-align:middle;">Hardware (SNES/SFC or FPGA Solutions)</p>
+  </div>
+  </div>
+  
+  <div>
+  <div style="display:inline-flex;padding-top:20px;padding-right:138px;">
+  <img src="../graphics/icons/keyboard.png" style="width:90px;height:65px;">
+  <p style="padding-left:20px;font-size: 16px;vertical-align:middle;">Emulator using Keyboard</p>
+  </div>
+  </div>
+  
+  <div>
+  <div style="display:inline-flex;padding-top:20px;padding-right:76px;">
+  <img src="../graphics/icons/controllertouch.png" style="width:90px;height:65px;">
+  <p style="padding-left:20px;font-size: 16px;vertical-align:middle;">Emulator using Controller/Touch</p>
+  </div>
+  </div>
+  </div>
+  
+    <p style="font-size: 16px; padding-top:20px;">Join our Discord to submit runs!*<br>*Do not submit runs using v1.3 and do not submit runs with the game display stretched to anything more than 4:3 or a square aspect ratio (8:7, 1:1, etc.), so runs submitted with the game in something like 16:9 are not accepted (your video size can be these sizes, just not the game).</p>
+
+<div class=alltheneatstuff>
+<div class=buttons>
+	<a href="../SMBCDDownload/SpeedrunCompDemo/SMBCD Speedrun Comp 2.2.zip"><div class=downloadbuttons>
+	<p style=font-size:28px;>Download v2.2!</p>
+	</div></a>
+	
+	<a href="https://drive.google.com/file/d/1B2TDYusKlpjhVH5EYLXo_o9h2rod7V9c/view?usp=drive_link"><div class=downloadbuttons>
+	<p style=font-size:19px;>Download v2.2 Mirror (Google Drive)</p>
+	</div></a>
+	
+	<a href="../SMBCDDownload/SpeedrunCompDemo/SMBCD Speedrun Comp 1.3.zip"><div class=downloadbuttons>
+	<p style=font-size:19px;>Download v1.3</p>
+	</div></a>
+	</div>
+	
+	
+  <div>	
+	 <div class=thebigfont style="padding-top:20px;border-bottom: 3px dotted #352063;">
+      <p style="margin-top:0;">Watch the Announcement!</p>
+     </div> 
+ 
+     <iframe style="padding-top:20px;" width="460" height="260" src="https://www.youtube.com/embed/y2eLLYUZIlI?si=ByDPNzkNpUg_Wmld" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</div>
+ 
+ 
+ 
  
  <div class=thebigfont style="padding-top:30px;border-bottom: 3px dotted #352063;">
  <p style="margin-top:0;">Screenshots</p>
  </div> 
  
  <div style="padding-top:20px;padding-bottom:20px;">
- <a href="../graphics/smbcdscreenshots/speed2.png"><img class="center-fit" src="../graphics/smbcdscreenshots/speed2.png" style="width:220px;height:auto;"></a>
- <a href="../graphics/smbcdscreenshots/speed1.png"><img class="center-fit" src="../graphics/smbcdscreenshots/speed1.png" style="width:220px;height:auto;"></a>
- <a href="../graphics/smbcdscreenshots/speed3.png"><img class="center-fit" src="../graphics/smbcdscreenshots/speed3.png" style="width:220px;height:auto;"></a>
- <a href="../graphics/smbcdscreenshots/speed4.png"><img class="center-fit" src="../graphics/smbcdscreenshots/speed4.png" style="width:220px;height:auto;"></a>
+ <a href="../graphics/smbcdscreenshots/demos/speedruncomp2.2/SMBCD040.png"><img class="center-fit" src="../graphics/smbcdscreenshots/demos/speedruncomp2.2/SMBCD040.png" style="width:220px;height:auto;"></a>
+ <a href="../graphics/smbcdscreenshots/demos/speedruncomp2.2/SMBCD041.png"><img class="center-fit" src="../graphics/smbcdscreenshots/demos/speedruncomp2.2/SMBCD041.png" style="width:220px;height:auto;"></a>
+ <a href="../graphics/smbcdscreenshots/demos/speedruncomp2.2/SMBCD042.png"><img class="center-fit" src="../graphics/smbcdscreenshots/demos/speedruncomp2.2/SMBCD042.png" style="width:220px;height:auto;"></a>
+ <a href="../graphics/smbcdscreenshots/demos/speedruncomp2.2/SMBCD043.png"><img class="center-fit" src="../graphics/smbcdscreenshots/demos/speedruncomp2.2/SMBCD043.png" style="width:220px;height:auto;"></a>
+ <a href="../graphics/smbcdscreenshots/demos/speedruncomp2.2/SMBCD045.png"><img class="center-fit" src="../graphics/smbcdscreenshots/demos/speedruncomp2.2/SMBCD045.png" style="width:220px;height:auto;"></a>
+ <a href="../graphics/smbcdscreenshots/demos/speedruncomp2.2/SMBCD046.png"><img class="center-fit" src="../graphics/smbcdscreenshots/demos/speedruncomp2.2/SMBCD046.png" style="width:220px;height:auto;"></a>
 </div> 
  
 
@@ -349,26 +413,7 @@ text-align: center;
  
  <!-- For what ever reason, 9px right 8px left evens it out. It's stupid but it works. -->
 
-<footer class=footer>
-<div class=legalmumbojumbo style="color: #C8C3E8">
- <p>ファミコンCDチーム、及びスーパーマリオブラザーズCDチームは任天堂と一切関係ありません。ファミコンの名称とトレードマーク、及びマリオ、ヨッシー等のキャラクターは我々のものではありません。その他著作権はそれぞれの持ち主の著作物となります。ファミコンCDの名称で売られている製品(ゲームカート、サウンドトラックのCD等)はファミコンCDチームの公式の製品でなく、支持されていません。ファミコンCDチームのプロジェクトはすべて永久的に無料とされます。</p>
- 
-
-   <div style="display: inline-flex;vertical-align:middle;font-size: 12px;m:0;">
-   <p><a href="about.html">概要 •</a> <a href="../news.html">お知らせ •</a> <a href="contact.html">連絡先 •</a> <a href="../languageswitcher.html"> 言語選択</a></p>
-   </div>
-   <div style="display: inline-flex;padding: 10px;"> </div> 
-   <div style="display: inline-flex;vertical-align:middle;">
-   <a href="https://www.twitter.com/FamicomCD"><img src="../graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
-<div style="padding-right:9px"> </div>  
-  <a href="https://www.youtube.com/@FamicomCD"><img src="../graphics/youtubesocialicon.png" alt="YouTube" style="width:30px;height:auto; border-radius: 6px;"></a>
- <div style="padding-left:8px"> </div> 
-    <a href="https://bsky.app/profile/famicomcd.bsky.social"><img src="../graphics/blueskysocialicon.png" alt=Bluesky style="width:30px; height:auto; border-radius: 6px;"></a>
-	 <div style="padding-left:8px"> </div> 
-    <a href="https://discord.gg/wpSGt5aTuw"><img src="../graphics/discordsocialicon.png" alt=Discord style="width:30px; height:auto; border-radius: 6px;"></a>
-  </div>
- </div>
-</footer>  
+<iframe src="https://famicomcd.github.io/reuse/footerjp.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">The footer couldn't load properly :[ Please make sure your browser supports iframes.</iframe>
 
 
 	</body>
