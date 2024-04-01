@@ -6,7 +6,7 @@
 		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=0.80, minimum-scale=0.75, maximum-scale=2.5"/>
 		<meta name="google-site-verification" content="EYxQGXvx_TFMhVJT9UELPA8aoOIBnjt_QR9szmBkuX4" />
 		
-		<title>FamicomCD - SMBCD Emulator Support Sheet</title>
+		<title>FamicomCD - SMBCD Emulador Compatibilidad</title>
 		<link rel="tab icon" href="../graphics/diskette.png">
 	
 		<style>
@@ -107,7 +107,7 @@ margin: auto;
 padding: 100px
 display: flex;
 background-color: #6f62c2;
-width: 1100px;
+width: 1200px;
 height:auto;
 margin: auto;
 border-radius: 10px;
@@ -165,9 +165,10 @@ text-align:center;
 .tabledatasdesc {
 border-left:2px solid #483c97;
 border-collapse: collapse;
+font-size:12px;
 }
 
-@media screen and (max-width: 1006px) {
+@media screen and (max-width: 1206px) {
 	
 	.theboxthatholdsthetext {
 	width:auto;
@@ -198,6 +199,15 @@ border-collapse: collapse;
 	
 	.memberbody {
 	width:auto;
+	}
+
+}
+
+
+@media screen and (max-width: 1000px) {
+
+	.tabledatasdesc {
+	font-size:10px;
 	}
 
 }
@@ -234,6 +244,49 @@ border-collapse: collapse;
 	padding-top:10px;
 	}
 	
+	.tabledatasdesc {
+	font-size:8px;
+	}
+	
+	.tabledatas {
+	font-size:10px;
+	}
+	
+	.tableheaders {
+	font-size:10px;
+	}
+
+	.tableheadersnoleft {
+	font-size:10px;
+	}
+
+	
+}
+
+@media screen and (max-width: 570px) {
+
+	.tabledatasdesc {
+	border-left:2px solid #483c97;
+	border-collapse: collapse;
+	font-size:10px;
+	}
+	
+	.tabledatasdesc {
+	font-size:6px;
+	}
+	
+	.tabledatas {
+	font-size:8px;
+	}
+	
+	.tableheaders {
+	font-size:8px;
+	}
+
+	.tableheadersnoleft {
+	font-size:8px;
+	}
+
 }
 
 @media screen and (max-width: 396px) {
@@ -285,7 +338,7 @@ text-align: center;
 <div id=famicomcdbanner>
 
 <div class=logo style="padding-left:15px; padding-right:15px;">
-<a href="../index.html"><img class="center-fit" src="../graphics/famicomcdlogowhite.png" alt="FamicomCD Logo" style="width:602px;height:auto;"></a>
+<a href="../es.html"><img class="center-fit" src="../graphics/famicomcdlogowhite.png" alt="FamicomCD Logo" style="width:602px;height:auto;"></a>
 </div>
 
 </div>
@@ -300,8 +353,7 @@ text-align: center;
  </div>
 </div> 
 </div>
-
-
+ 
  <div style="padding-bottom:30px;padding-bottom:20px;">
  <div class=theboxthatholdsthetext style="color:white;padding:20px;padding-bottom:30px;">
  
@@ -315,119 +367,222 @@ text-align: center;
  
 <div>
 
-<div> 
-<table style="width:100%;border-radius: 10px 10px 0px 0px;background-color:#8c75ea;border-collapse: collapse;">
-  <tr>
-    <th class=tableheadersnoleft style="width:16%;font-size:12px;">Emulador/Hardware</th>
-    <th class=tableheaders style="width:15%;font-size:12px;">Compatible con MSU-1</th>
-    <th class=tableheaders style="width:12%;font-size:12px;">Tipo de compatibilidad</th>
-	<th class=tableheaders style="width:31%;font-size:12px;">Descripción</th>
-	<th class=tableheaders style="width:16%;font-size:12px;">Versión de SMBCD probada</th>
-	<th class=tableheaders style="width:15%;font-size:12px;">Probada por</th>
-  </tr>
-</div>
   
 <div>
 </table>
-<table style="width:100%;border-left:2px solid #483c97;border-right:2px solid #483c97;border-collapse: collapse;">
+<table style="width:100%;border-collapse: collapse;">
+
+<div> 
+<table style="width:100%;border-collapse: collapse;">
+  <tr>
+    <th class=tableheadersnoleft style="width:16%;background-color:#8c75ea;border-radius: 10px 0px 0px 0px;">Emulador/Hardware</th>
+    <th class=tableheaders style="width:6%;background-color:#8c75ea;">MSU-1</th>
+    <th class=tableheaders style="width:8%;background-color:#8c75ea;">Plataforma</th>
+    <th class=tableheaders style="width:12%;background-color:#8c75ea;">Tipo de compatibilidad</th>
+	<th class=tableheaders style="width:27%;background-color:#8c75ea;">Descripción</th>
+	<th class=tableheaders style="width:14%;background-color:#8c75ea;">Versión de SMBCD probada</th>
+	<th class=tableheaders style="width:16%;background-color:#8c75ea;border-radius: 0px 10px 0px 0px;">Probada por</th>
+  </tr>
+</div>
 
   <tr style="border-bottom:2px solid #483c97;">
     <td class=tabledatas style="width:16%;">SNES/SFC</td>
-    <td class=tabledatas style="width:15%;">Sí (SD2SNES)</td>
+    <td class=tabledatas style="width:6%;">Sí</td>
+	<th class=tabledatas style="width:8%;"> <img style="width:44px;height:auto;padding-top:9%;" src="../graphics/icons/consoles/superfamicom.png" title="Super Famicom/Super NES"> </th>
     <td class=tabledatas style="width:12%;">Hardware</td>
-	<td class=tabledatasdesc style="width:31%;font-size:12px;">I know it's not an emulator, but sometimes SMW hacks aren't compatible with hardware, so it's at least good to know it works here!</td>
-	<td class=tabledatas style="width:16%;">Pre-Rel 13.007</td>
-	<td class=tabledatas style="width:15%;">FamicomCD</td>
+	<td class=tabledatasdesc style="width:27%;">I know it's not an emulator, but sometimes SMW hacks aren't compatible with hardware, so it's at least good to know it works here!</td>
+	<td class=tabledatas style="width:14%;">Pre-Rel 13.029</td>
+	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">FamicomCD</td>
   </tr>
   
    <tr style="border-bottom:2px solid #483c97;">
     <td class=tabledatas style="width:16%;">SuperNT</td>
-    <td class=tabledatas style="width:15%;">?</td>
-    <td class=tabledatas style="width:12%;">Hardware</td>
-	<td class=tabledatasdesc style="width:31%;font-size:12px;">Someone please test.</td>
-	<td class=tabledatas style="width:16%;">Sin probar</td>
-	<td class=tabledatas style="width:15%;">Sin probar</td>
+    <td class=tabledatas style="width:6%;">Sí</td>
+	<th class=tabledatas style="width:8%;"> <img style="width:44px;height:auto;padding-top:9%;" src="../graphics/icons/consoles/analogue.png" title="Analogue SuperNT"> </th>
+    <td class=tabledatas style="width:12%;">FPGA Hardware</td>
+	<td class=tabledatasdesc style="width:27%;">Work just like SNES/SFC, so SMBCD will run fine!</td>
+	<td class=tabledatas style="width:14%;">SpeedrunComp 2.2</td>
+	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">Bro3256</td>
+  </tr>
+  
+     <tr style="border-bottom:2px solid #483c97;">
+    <td class=tabledatas style="width:16%;">MiSTer</td>
+    <td class=tabledatas style="width:6%;">Sí</td>
+	<th class=tabledatas style="width:8%;"> <img style="width:44px;height:auto;padding-top:9%;" src="../graphics/icons/consoles/mister.png" title="MiSTer"> </th>
+    <td class=tabledatas style="width:12%;">FPGA Hardware</td>
+	<td class=tabledatasdesc style="width:27%;">Work just like SNES/SFC, so SMBCD will run fine!</td>
+	<td class=tabledatas style="width:14%;">SpeedrunComp 2.2</td>
+	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">waluigi4smash2018 and VG Esoterica</td>
   </tr>
   
    <tr style="border-bottom:2px solid #483c97;">
-    <td class=tabledatas style="width:16%;">SNES Classic (Canoe)</td>
-    <td class=tabledatas style="width:15%;">Sí</td>
+    <td class=tabledatas style="width:16%;">SNES/SFC Classic</td>
+    <td class=tabledatas style="width:6%;">Sí</td>
+	<th class=tabledatas style="width:8%;">-</th>
     <td class=tabledatas style="width:12%;">Excelente</td>
-	<td class=tabledatasdesc style="width:31%;font-size:12px;">Since it's Retroarch, SNES Classic can run MSU-1 games when modded (which you can't play rom hacks with out modding anyway) so it will work.</td>
-	<td class=tabledatas style="width:16%;">Pre-Rel 13.028</td>
-	<td class=tabledatas style="width:15%;">FamicomCD</td>
+	<td class=tabledatasdesc style="width:27%;">Must be modded of course.</td>
+	<td class=tabledatas style="width:14%;">Pre-Rel 13.028</td>
+	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">FamicomCD</td>
   </tr>
   
    <tr style="border-bottom:2px solid #483c97;">
     <td class=tabledatas style="width:16%;">BSNES/Ares/Higan</td>
-    <td class=tabledatas style="width:15%;">Sí</td>
+    <td class=tabledatas style="width:6%;">Sí</td>
+	<th class=tabledatas style="width:8%;"> <img style="width:24px;height:auto;padding-top:9%;" src="../graphics/icons/consoles/windows.png" title="Windows"> <img style="width:24px;height:auto;" src="../graphics/icons/consoles/apple.png" title="Apple Mac"> <img style="width:24px;height:auto;" src="../graphics/icons/consoles/linux.png" title="Linux"> <img style="width:24px;height:auto;" src="../graphics/icons/consoles/switch.png" title="Nintendo Switch"> <img style="width:24px;height:auto;"src="../graphics/icons/consoles/xbox.png" title="Xbox"> <img style="width:24px;height:auto;"src="../graphics/icons/consoles/retroarch.png" title="Libretro"></th>
     <td class=tabledatas style="width:12%;">Perfecto</td>
-	<td class=tabledatasdesc style="width:31%;font-size:12px;">As expected, BSNES/Ares/Higan preforms all that is asked of it with no issues.</td>
-	<td class=tabledatas style="width:16%;">Pre-Rel 13.028</td>
-	<td class=tabledatas style="width:15%;">FamicomCD</td>
+	<td class=tabledatasdesc style="width:27%;">As expected, BSNES/Ares/Higan preforms all that is asked of it with no issues.</td>
+	<td class=tabledatas style="width:14%;">Pre-Rel 13.028</td>
+	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">FamicomCD</td>
   </tr>
   
      <tr style="border-bottom:2px solid #483c97;">
-    <td class=tabledatas style="width:16%;">Mesen</td>
-    <td class=tabledatas style="width:15%;">Sí</td>
+    <td class=tabledatas style="width:16%;">Mesen (v2.0.0+)</td>
+    <td class=tabledatas style="width:6%;">Sí</td>
+	<th class=tabledatas style="width:8%;"> <img style="width:24px;height:auto;padding-top:9%;" src="../graphics/icons/consoles/windows.png" title="Windows"> <img style="width:24px;height:auto;" src="../graphics/icons/consoles/linux.png" title="Linux"> <img style="width:24px;height:auto;"src="../graphics/icons/consoles/retroarch.png" title="Libretro"> </th>
     <td class=tabledatas style="width:12%;">Perfecto</td>
-	<td class=tabledatasdesc style="width:31%;font-size:12px;">As expected, Mesen preforms all that is asked of it with no issues.</td>
-	<td class=tabledatas style="width:16%;">Pre-Rel 13.007</td>
-	<td class=tabledatas style="width:15%;">FamicomCD</td>
+	<td class=tabledatasdesc style="width:27%;">As expected, Mesen preforms all that is asked of it with no issues.</td>
+	<td class=tabledatas style="width:14%;">Pre-Rel 13.007</td>
+	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">FamicomCD</td>
   </tr>
   
        <tr style="border-bottom:2px solid #483c97;">
-    <td class=tabledatas style="width:16%;">SNES9x</td>
-    <td class=tabledatas style="width:15%;">Sí</td>
+    <td class=tabledatas style="width:16%;">SNES9x (v1.55+)</td>
+    <td class=tabledatas style="width:6%;">Sí</td>
+	<th class=tabledatas style="width:8%;font-size:13px;">Cualquiera</th>
     <td class=tabledatas style="width:12%;">Perfecto</td>
-	<td class=tabledatasdesc style="width:31%;font-size:12px;">As expected, SNES9x preforms all that is asked of it with little to no issues.</td>
-	<td class=tabledatas style="width:16%;">Pre-Rel 13.028</td>
-	<td class=tabledatas style="width:15%;">FamicomCD</td>
+	<td class=tabledatasdesc style="width:27%;">As expected, SNES9x preforms all that is asked of it with little to no issues. Also, fair warning: MSU-1 support was added to SNES9x in version 1.55, so anything before v1.55 will not run SMBCD.</td>
+	<td class=tabledatas style="width:14%;">Pre-Rel 13.028</td>
+	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">FamicomCD</td>
   </tr>
   
        <tr style="border-bottom:2px solid #483c97;">
-    <td class=tabledatas style="width:16%;">SNES9xGX</td>
-    <td class=tabledatas style="width:15%;">Sí</td>
+    <td class=tabledatas style="width:16%;">SNES9xGX/SNES9xTX</td>
+    <td class=tabledatas style="width:6%;">Sí</td>
+	<th class=tabledatas style="width:8%;"> <img style="width:50px;height:auto;padding-top:9%;" src="../graphics/icons/consoles/wii.png" title="Nintendo Wii"> </th>
     <td class=tabledatas style="width:12%;">Excelente</td>
-	<td class=tabledatasdesc style="width:31%;font-size:12px;">As expected from a port of SNES9x, SNES9xGX preforms all that is asked of it with little to no issues. A few hiccups are present, but nothing that hinders gameplay.</td>
-	<td class=tabledatas style="width:16%;">Pre-Rel 13.028</td>
-	<td class=tabledatas style="width:15%;">FamicomCD</td>
+	<td class=tabledatasdesc style="width:27%;">As expected from a port of SNES9x, SNES9xGX and SNES9xTX preform all that is asked of them with little to no issues. A few hiccups are present, but nothing that truly hinders gameplay.</td>
+	<td class=tabledatas style="width:14%;">Pre-Rel 13.028</td>
+	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">FamicomCD</td>
   </tr>
   
-       <tr style="border-bottom:2px solid #483c97;">
-    <td class=tabledatas style="width:16%;">SNES9xTX</td>
-    <td class=tabledatas style="width:15%;">Sí</td>
+         <tr style="border-bottom:2px solid #483c97;">
+    <td class=tabledatas style="width:16%;">SNES9x EX+</td>
+    <td class=tabledatas style="width:6%;">Sí</td>
+	<th class=tabledatas style="width:8%;"> <img style="width:60px;height:auto;padding-top:9%;" src="../graphics/icons/consoles/android.png" title="Android"> </th>
+    <td class=tabledatas style="width:12%;">Excelente</td>
+	<td class=tabledatasdesc style="width:27%;">As expected from a port of SNES9x, SNES9x EX+ preform all that is asked of them with little to no issues.</td>
+	<td class=tabledatas style="width:14%;">Pre-Rel 13.028</td>
+	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">FamicomCD</td>
+  </tr>
+  
+           <tr style="border-bottom:2px solid #483c97;">
+    <td class=tabledatas style="width:16%;">Analogue Pocket</td>
+    <td class=tabledatas style="width:6%;">No</td>
+	<th class=tabledatas style="width:8%;"> <img style="width:30px;height:auto;padding-top:9%;" src="../graphics/icons/consoles/analogue.png" title="Analogue Pocket"> </th>
+    <td class=tabledatas style="width:12%;">Excelente</td>
+	<td class=tabledatasdesc style="width:27%;">No support for MSU-1. If it had support for MSU-1, the game would run similar to SNES9x's support.</td>
+	<td class=tabledatas style="width:14%;">SpeedrunComp 2.2</td>
+	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">Bro3256</td>
+  </tr>
+  
+                 <tr style="border-bottom:2px solid #483c97;">
+    <td class=tabledatas style="width:16%;">pSNES Console</td>
+    <td class=tabledatas style="width:6%;">?</td>
+	<th class=tabledatas style="width:8%;"> <img style="width:50px;height:auto;" src="../graphics/icons/consoles/psvita.png" title="Playstation Vita"> <img style="width:24px;height:auto;padding-top:9%;" src="../graphics/icons/consoles/switch.png" title="Nintendo Switch"> </th>
+    <td class=tabledatas style="width:12%;">-</td>
+	<td class=tabledatasdesc style="width:27%;">Someone please test. Apparently the Vita/Switch version of pSNES supports MSU-1.</td>
+	<td class=tabledatas style="width:14%;">Untested</td>
+	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">Untested</td>
+  </tr>
+  
+               <tr style="border-bottom:2px solid #483c97;">
+    <td class=tabledatas style="width:16%;">pSNES PC</td>
+    <td class=tabledatas style="width:6%;">?</td>
+	<th class=tabledatas style="width:8%;"> <img style="width:24px;height:auto;padding-top:9%;" src="../graphics/icons/consoles/windows.png" title="Windows"> <img style="width:24px;height:auto;" src="../graphics/icons/consoles/linux.png" title="Linux"> </th>
     <td class=tabledatas style="width:12%;">Bueno</td>
-	<td class=tabledatasdesc style="width:31%;font-size:12px;">A fork of SNES9xGX. It can run SMBCD perfectly fine, but will sometimes stop and hang for unknown reasons.</td>
-	<td class=tabledatas style="width:16%;">Pre-Rel 13.028</td>
-	<td class=tabledatas style="width:15%;">FamicomCD</td>
+	<td class=tabledatasdesc style="width:27%;">I couldn't get MSU-1 to work for the PC version of pSNES, so I'm unsure if it works.</td>
+	<td class=tabledatas style="width:14%;">Pre-Rel 13.029</td>
+	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">FamicomCD</td>
+  </tr>
+  
+             <tr style="border-bottom:2px solid #483c97;">
+    <td class=tabledatas style="width:16%;">SNES9x 3DS (bubble2k16)</td>
+    <td class=tabledatas style="width:6%;">No</td>
+	<th class=tabledatas style="width:8%;"> <img style="width:50px;height:auto;" src="../graphics/icons/consoles/3ds.png" title="Nintendo 3DS"> </th>
+    <td class=tabledatas style="width:12%;">OK</td>
+	<td class=tabledatasdesc style="width:27%;">Since the SNES9x 3DS port is based on version 1.43, it does not support MSU-1.</td>
+	<td class=tabledatas style="width:14%;">Pre-Rel 13.029</td>
+	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">FamicomCD</td>
+  </tr>
+  
+             <tr style="border-bottom:2px solid #483c97;">
+    <td class=tabledatas style="width:16%;">BlargSNES</td>
+    <td class=tabledatas style="width:6%;">No</td>
+	<th class=tabledatas style="width:8%;"> <img style="width:50px;height:auto;" src="../graphics/icons/consoles/3ds.png" title="Nintendo 3DS"> </th>
+    <td class=tabledatas style="width:12%;">OK</td>
+	<td class=tabledatasdesc style="width:27%;">No support for MSU-1.</td>
+	<td class=tabledatas style="width:14%;">Pre-Rel 13.029</td>
+	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">FamicomCD</td>
+  </tr>
+  
+               <tr style="border-bottom:2px solid #483c97;">
+    <td class=tabledatas style="width:16%;">Sodium64</td>
+    <td class=tabledatas style="width:6%;">No</td>
+	<th class=tabledatas style="width:8%;"> <img style="width:34px;height:auto;padding-top:9%;" src="../graphics/icons/consoles/n64.png" title="Nintendo 64"> </th>
+    <td class=tabledatas style="width:12%;">OK</td>
+	<td class=tabledatasdesc style="width:27%;">No support for MSU-1.</td>
+	<td class=tabledatas style="width:14%;">Pre-Rel 13.029</td>
+	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">FamicomCD</td>
+  </tr>
+  
+           <tr style="border-bottom:2px solid #483c97;">
+    <td class=tabledatas style="width:16%;">NO$SNS</td>
+    <td class=tabledatas style="width:6%;">No</td>
+	<th class=tabledatas style="width:8%;"> <img style="width:24px;height:auto;padding-top:9%;" src="../graphics/icons/consoles/windows.png" title="Windows"> </th>
+    <td class=tabledatas style="width:12%;">Malo</td>
+	<td class=tabledatasdesc style="width:27%;">No support for MSU-1.</td>
+	<td class=tabledatas style="width:14%;">Pre-Rel 13.028</td>
+	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">FamicomCD</td>
   </tr>
   
        <tr style="border-bottom:2px solid #483c97;">
     <td class=tabledatas style="width:16%;">zSNES</td>
-    <td class=tabledatas style="width:15%;">No</td>
-    <td class=tabledatas style="width:12%;">Malo</td>
-	<td class=tabledatasdesc style="width:31%;font-size:12px;">Since zSNES has not been updated since 2007, it lacks MSU-1, so you can't play SMBCD, and it's overall just an inaccurate emulator. Just go for SNES9x, ZMZ, Mesen or BSNES.</td>
-	<td class=tabledatas style="width:16%;">Pre-Rel 13.007</td>
-	<td class=tabledatas style="width:15%;">FamicomCD</td>
+    <td class=tabledatas style="width:6%;">No</td>
+	<th class=tabledatas style="width:8%;"> <img style="width:24px;height:auto;padding-top:9%;" src="../graphics/icons/consoles/windows.png" title="Windows"> <img style="width:24px;height:auto;" src="../graphics/icons/consoles/apple.png" title="Apple Mac"> <img style="width:24px;height:auto;" src="../graphics/icons/consoles/linux.png" title="Linux"> </th>
+    <td class=tabledatas style="width:12%;">Pobre</td>
+	<td class=tabledatasdesc style="width:27%;">Since zSNES has not been updated since 2007, it lacks MSU-1, so you can't play SMBCD, and it's overall just an inaccurate emulator. Just go for SNES9x, or BSNES.</td>
+	<td class=tabledatas style="width:14%;">Pre-Rel 13.007</td>
+	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">FamicomCD</td>
+  </tr>
+  
+         <tr style="border-bottom:2px solid #483c97;">
+    <td class=tabledatas style="width:16%;">SnemulDS/lolSnes</td>
+    <td class=tabledatas style="width:6%;">No</td>
+	<th class=tabledatas style="width:8%;"> <img style="width:50px;height:auto;" src="../graphics/icons/consoles/ds.png" title="Nintendo DS"> </th>
+    <td class=tabledatas style="width:12%;">Pobre</td>
+	<td class=tabledatasdesc style="width:27%;">The DS is barely powerful enough to run SNES games, let alone MSU-1 games. Even if you somehow got past the MSU-1 error, there is no MODE 0 support, so it would be hard to play.</td>
+	<td class=tabledatas style="width:14%;">Pre-Rel 13.028</td>
+	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">FamicomCD</td>
   </tr>
   
          <tr style="border-bottom:2px solid #483c97;">
     <td class=tabledatas style="width:16%;">Bizhawk</td>
-    <td class=tabledatas style="width:15%;">-</td>
+    <td class=tabledatas style="width:6%;">-</td>
+	<th class=tabledatas style="width:8%;"> <img style="width:24px;height:auto;padding-top:9%;" src="../graphics/icons/consoles/windows.png" title="Windows"> <img style="width:24px;height:auto;" src="../graphics/icons/consoles/linux.png" title="Linux"> </th>
     <td class=tabledatas style="width:12%;">-</td>
-	<td class=tabledatasdesc style="width:31%;font-size:12px;">Depends on what core you're using. Best bet is the BSNES core.</td>
-	<td class=tabledatas style="width:16%;">-</td>
-	<td class=tabledatas style="width:15%;">FamicomCD</td>
+	<td class=tabledatasdesc style="width:27%;">Depends on what core you're using. Best bet is the BSNES core.</td>
+	<td class=tabledatas style="width:14%;">-</td>
+	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">-</td>
   </tr>
   
            <tr style="border-bottom:2px solid #483c97;">
-    <td class=tabledatas style="width:16%;">Retroarch</td>
-    <td class=tabledatas style="width:15%;">-</td>
+    <td class=tabledatas style="width:16%;">Retroarch/Libretro</td>
+    <td class=tabledatas style="width:6%;">-</td>
+	<th class=tabledatas style="width:8%;font-size:13px;">Cualquiera</th>
     <td class=tabledatas style="width:12%;">-</td>
-	<td class=tabledatasdesc style="width:31%;font-size:12px;">Depends on what core you're using. Best bet is the BSNES core.</td>
-	<td class=tabledatas style="width:16%;">-</td>
-	<td class=tabledatas style="width:15%;">FamicomCD</td>
+	<td class=tabledatasdesc style="width:27%;">Depends on what core you're using. Best bet is the BSNES core.</td>
+	<td class=tabledatas style="width:14%;">-</td>
+	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">-</td>
   </tr>
   
 </table>
@@ -440,28 +595,8 @@ text-align: center;
  
  
  
- <!-- For what ever reason, 9px right 8px left evens it out. It's stupid but it works. -->
+<iframe src="https://famicomcd.github.io/reuse/footeres.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">The footer couldn't load properly :[ Please make sure your browser supports iframes.</iframe>
 
- <footer class=footer>
-<div class=legalmumbojumbo style="color: #C8C3E8">
- <p>El equipo FamicomCD y el equipo de Super Mario Bros CD no están afiliados de ninguna manera o forma con Nintendo. El nombre Famicom y su marca registrada, tal como Mario, Yoshi, y otros personajes relacionados, no pertenecen ni son marca registrada de este sitio web. Cualquier otra marca registrada son la propiedad de sus respectivos dueños. Cualquier producto de FamicomCD que sea vendido por fines monetarios (tales como cartuchos, o CDs de la banda sonora) no son producidos ni endosados por el equipo FamicomCD. Todos los proyectos creados por el equipo FamicomCD son, y permanecerán gratis.</p>
- 
-
-   <div style="display: inline-flex;vertical-align:middle;font-size: 12px;m:0;">
-   <p><a href="about.html">Acerca de nosotros •</a> <a href="../news.html">Noticias •</a> <a href="contact.html">Contáctanos •</a> <a href="../languageswitcher.html">Cambiar Idioma</a></p>
-   </div>
-   <div style="display: inline-flex;padding: 10px;"> </div> 
-   <div style="display: inline-flex;vertical-align:middle;">
-   <a href="https://www.twitter.com/FamicomCD"><img src="../graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
-<div style="padding-right:9px"> </div>  
-  <a href="https://www.youtube.com/@FamicomCD"><img src="../graphics/youtubesocialicon.png" alt="YouTube" style="width:30px;height:auto; border-radius: 6px;"></a>
- <div style="padding-left:8px"> </div> 
-    <a href="https://bsky.app/profile/famicomcd.bsky.social"><img src="../graphics/blueskysocialicon.png" alt=Bluesky style="width:30px; height:auto; border-radius: 6px;"></a>
-	 <div style="padding-left:8px"> </div> 
-    <a href="https://discord.gg/wpSGt5aTuw"><img src="../graphics/discordsocialicon.png" alt=Discord style="width:30px; height:auto; border-radius: 6px;"></a>
-  </div>
- </div>
-</footer> 
 
 
 	</body>
