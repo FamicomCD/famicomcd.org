@@ -353,6 +353,12 @@ text-align: center;
  </div>
 </div> 
 </div>
+
+<div style="padding-bottom:20px;text-align:center;">
+<div class=theboxthatholdsthetext style="color:white;padding:20px;">
+ <p style="font-size: 16px;">We're testing out a double table setup for hardware and emulators, currently only for English. If you have any feedback or suggestions regarding the setup, please let us know via Discord or email!<p>
+</div>
+</div>
  
  <div style="padding-bottom:30px;padding-bottom:20px;">
  <div class=theboxthatholdsthetext style="color:white;padding:20px;padding-bottom:30px;">
@@ -364,26 +370,64 @@ text-align: center;
  
 
 </div> 
- 
-<div>
 
-  
-<div>
-</table>
+
+
+
+
+
+
+<div style="padding-bottom:40px;">
+
 <table style="width:100%;border-collapse: collapse;">
+<tr>
+<th class=tableheadersnoleft style="width:6%;background-color:#8c75ea;font-size:20px;border-radius: 10px 10px 0px 0px;">Hardware and Flashcarts</th>
+</tr>
+</table>
 
-<div> 
+
+
 <table style="width:100%;border-collapse: collapse;">
   <tr>
-    <th class=tableheadersnoleft style="width:16%;background-color:#8c75ea;border-radius: 10px 0px 0px 0px;">Emulator/Hardware</th>
+    <th class=tableheadersnoleft style="width:16%;background-color:#8c75ea;">Hardware</th>
     <th class=tableheaders style="width:6%;background-color:#8c75ea;">MSU-1</th>
-    <th class=tableheaders style="width:8%;background-color:#8c75ea;">Platform</th>
-    <th class=tableheaders style="width:12%;background-color:#8c75ea;">Support Type</th>
+    <th class=tableheaders style="width:8%;background-color:#8c75ea;">Icon</th>
+    <th class=tableheaders style="width:12%;background-color:#8c75ea;">Type</th>
 	<th class=tableheaders style="width:27%;background-color:#8c75ea;">Description</th>
 	<th class=tableheaders style="width:14%;background-color:#8c75ea;">Tested SMBCD Ver</th>
-	<th class=tableheaders style="width:16%;background-color:#8c75ea;border-radius: 0px 10px 0px 0px;">Tested By</th>
+	<th class=tableheaders style="width:16%;background-color:#8c75ea;">Tested By</th>
   </tr>
 </div>
+
+  <tr style="border-bottom:2px solid #483c97;">
+    <td class=tabledatas style="width:16%;">SD2SNES/FXPak Pro</td>
+    <td class=tabledatas style="width:6%;">Yes</td>
+	<th class=tabledatas style="width:8%;"> <img style="width:70px;height:auto;padding-top:9%;" src="../graphics/icons/consoles/fxpak.png" title="SD2SNES/FXPak Pro"> </th>
+    <td class=tabledatas style="width:12%;">Flashcart</td>
+	<td class=tabledatasdesc style="width:27%;">The SD2SNES/FXPak Pro supports most enhancement chips including the MSU-1 chip!</td>
+	<td class=tabledatas style="width:14%;">Pre-Rel 13.029</td>
+	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">FamicomCD</td>
+  </tr>
+  
+    <tr style="border-bottom:2px solid #483c97;">
+    <td class=tabledatas style="width:16%;">Super EverDrive X6</td>
+    <td class=tabledatas style="width:6%;">No</td>
+	<th class=tabledatas style="width:8%;"> <img style="width:70px;height:auto;padding-top:9%;" src="../graphics/icons/consoles/supereverdrivex6.png" title="Super EverDrive X6"> </th>
+    <td class=tabledatas style="width:12%;">Flashcart</td>
+	<td class=tabledatasdesc style="width:27%;">The Super EverDrive X6 supports more chips than the X5 (only the DSP chips), but it unfortunately does not support MSU-1 like the FXPak Pro does.</td>
+	<td class=tabledatas style="width:14%;">-</td>
+	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">-</td>
+  </tr>
+  
+    <tr style="border-bottom:2px solid #483c97;">
+    <td class=tabledatas style="width:16%;">Super EverDrive X5</td>
+    <td class=tabledatas style="width:6%;">No</td>
+	<th class=tabledatas style="width:8%;"> <img style="width:70px;height:auto;padding-top:9%;" src="../graphics/icons/consoles/supereverdrivex5.png" title="Super EverDrive X5"> </th>
+    <td class=tabledatas style="width:12%;">Flashcart</td>
+	<td class=tabledatasdesc style="width:27%;">The Super EverDrive X5 doesn't support any enhancement chips unlike the X6 and FXPak Pro.</td>
+	<td class=tabledatas style="width:14%;">-</td>
+	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">-</td>
+  </tr>
 
   <tr style="border-bottom:2px solid #483c97;">
     <td class=tabledatas style="width:16%;">SNES/SFC</td>
@@ -414,16 +458,35 @@ text-align: center;
 	<td class=tabledatas style="width:14%;">SpeedrunComp 2.2</td>
 	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">waluigi4smash2018 and VG Esoterica</td>
   </tr>
+</table>
+</div>
+
+
+ 
+
+
   
-   <tr style="border-bottom:2px solid #483c97;">
-    <td class=tabledatas style="width:16%;">SNES/SFC Classic</td>
-    <td class=tabledatas style="width:6%;">Yes</td>
-	<th class=tabledatas style="width:8%;">-</th>
-    <td class=tabledatas style="width:12%;">Excellent</td>
-	<td class=tabledatasdesc style="width:27%;">Must be modded of course.</td>
-	<td class=tabledatas style="width:14%;">Pre-Rel 13.028</td>
-	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">FamicomCD</td>
+<div>
+
+<table style="width:100%;border-collapse: collapse;">
+<tr>
+<th class=tableheadersnoleft style="width:6%;background-color:#8c75ea;font-size:20px;border-radius: 10px 10px 0px 0px;">Emulators</th>
+</tr>
+</table>
+
+
+<div> 
+<table style="width:100%;border-collapse: collapse;">
+  <tr>
+    <th class=tableheadersnoleft style="width:16%;background-color:#8c75ea;">Emulator</th>
+    <th class=tableheaders style="width:6%;background-color:#8c75ea;">MSU-1</th>
+    <th class=tableheaders style="width:8%;background-color:#8c75ea;">Platform</th>
+    <th class=tableheaders style="width:12%;background-color:#8c75ea;">Support Type</th>
+	<th class=tableheaders style="width:27%;background-color:#8c75ea;">Description</th>
+	<th class=tableheaders style="width:14%;background-color:#8c75ea;">Tested SMBCD Ver</th>
+	<th class=tableheaders style="width:16%;background-color:#8c75ea;">Tested By</th>
   </tr>
+</div>
   
    <tr style="border-bottom:2px solid #483c97;">
     <td class=tabledatas style="width:16%;">BSNES/Ares/Higan</td>
@@ -451,6 +514,16 @@ text-align: center;
 	<th class=tabledatas style="width:8%;font-size:13px;">Everything</th>
     <td class=tabledatas style="width:12%;">Flawless</td>
 	<td class=tabledatasdesc style="width:27%;">As expected, SNES9x preforms all that is asked of it with little to no issues. Also, fair warning: MSU-1 support was added to SNES9x in version 1.55, so anything before v1.55 will not run SMBCD.</td>
+	<td class=tabledatas style="width:14%;">Pre-Rel 13.028</td>
+	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">FamicomCD</td>
+  </tr>
+  
+      <tr style="border-bottom:2px solid #483c97;">
+    <td class=tabledatas style="width:16%;">SNES/SFC Classic</td>
+    <td class=tabledatas style="width:6%;">Yes</td>
+	<th class=tabledatas style="width:8%;"><img style="width:80px;height:auto;padding-top:9%;" src="../graphics/icons/consoles/snesclassic.png" title="SNES/SFC Classic Edition"></th>
+    <td class=tabledatas style="width:12%;">Excellent</td>
+	<td class=tabledatasdesc style="width:27%;">Must be modded of course.</td>
 	<td class=tabledatas style="width:14%;">Pre-Rel 13.028</td>
 	<td class=tabledatas style="width:16%;border-right:2px solid #483c97;">FamicomCD</td>
   </tr>
@@ -591,7 +664,7 @@ text-align: center;
 </div>
 
  </div>
- </div>
+
  
  
  
