@@ -22,13 +22,13 @@
 }
 
 a:link {
-  color: #6f62c2;
+  color: #6b4dc0;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: #6f62c2;
+  color: #6b4dc0;
   background-color: transparent;
   text-decoration: none;
 }
@@ -103,13 +103,8 @@ height:auto;
 }
 
 .theboxthatholdsthetext {
-padding: 100px
-display: flex;
-justify-content: center;
-align-items: center;
 background-color: white;
-<!-- background-color: #6f62c2; -->
-width: 1500px;
+width:1300px;
 height:auto;
 margin: auto;
 border-radius: 10px;
@@ -148,8 +143,11 @@ height: auto;
 .navtop {
 padding-top:12px;
 padding-right: 20px;
-float: right;
 font-size: 18px;
+}
+
+.navtext {
+float:right;
 }
 
 .borderthepage {
@@ -157,37 +155,12 @@ width:1200px;
 }
 
 
- a:link {
-  color: #cdcbff;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #cdcbff;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:active {
-  color: #B5C3E8;
-  background-color: transparent;
-  text-decoration: none;
-}
-}
-
 .headingfont {
 font-size: 24px;
 }
 
 .largerheadingfont {
 font-size: 30px;
-}
-
-.diskette {
-width:200px;
-height:200px;
-padding:80px 0px 60px 60px;
 }
 
 
@@ -201,26 +174,13 @@ text-align: left;
 }
 
 
-@media screen and (max-width: 1500px) {
-	.diskette {
-	width:170px;
-	height:170px;
-	padding:130px 0px 60px 60px;
-	}
+@media screen and (max-width: 1300px) {
 	
 	.theboxthatholdsthetext {
     width:auto;
 	}
 	
-}
-
-
-@media screen and (max-width: 1006px) {
-	
 	.theboxthatholdsthetext {
-	width:auto;
-	height:auto;
-	margin: auto;
 	font-size: 13px;
 	}
 	
@@ -255,10 +215,6 @@ text-align: left;
 	
 	.headingfont {
 	font-size: 20px;
-	}
-	
-	.diskette {
-	display:none;
 	}
 	
 }
@@ -376,42 +332,43 @@ text-align: left;
 <!-- This shit is a mess, but it works for now. It will definitely need a rewrite at some point. -->		
 	<body class=mainpage>
 	
-	
+<div style=display:inline-flex;>	
 <div id=famicomcdbanner>
-
 <div class=logo style="padding-left:15px; padding-right:15px;display:inline-flex;">
 <a href="https://famicomcd.github.io/index.html"><img class="center-fit-logo" src="https://famicomcd.github.io/graphics/famicomcdlogo.png" alt="FamicomCD Logo"></a>
 </div>
+</div>
 
-<div>
+ <div class=navtext>
  <div class=navtop>
    <p><a style=padding-right:20px; href="../about.html"> About </a> <a style=padding-right:20px; href="../news.html"> News </a> <a style=padding-right:20px; href="../contact.html"> Contact Us </a>
  </div>  
-</div>
+ </div>  
 
+</div>
 
 <div class=theboxthatholdsthetext>
 <div style="background-color:white;color:#7669d0;">
-<div style=display:inline-flex;>
 <div>
 <!-- font forge didn't work -->
+<div style="text-align:center;">
 <img src="fonts/FAMICOMCD FONT/A.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/B.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/O.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/U.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/T.svg" style="padding-right:30px;"><img src="fonts/FAMICOMCD FONT/U.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/S.svg">
-
+</div>
 
 <p style="font-size:16px;padding-bottom:70px;">We're is a group that specializes in creating non-profit video games and video game modifications/hacks! The name relates both to the team, and the fictional Nintendo Famicom add-on that our games are based on; it is not to be confused with the unreleased Super NES CD-ROM/Super Famicom CD.
 <br><br>Referring to the FamicomCD Team is different from referring to the teams of our projects such as The Super Mario Bros. CD Team (SMBCD Team) or TOASTERSOFT. Similarly, referring to our mascot and the group is different. Our mascot is named Discette or Disksan; Discette is usually used more by FamicomCD.
 <br><br>We prefer our name to be written as one word and in full (FamicomCD rather than Famicom CD), but if necessary, you can shorten it to FCD.
 </p> 
 </div>
-
-<img class=diskette src="https://famicomcd.github.io/graphics/diskette.png">
-</div>
 </div>
 
+<div style="text-align:center;">
+<img src="fonts/FAMICOMCD FONT/O.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/U.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/R.svg" style="padding-right:30px;"><img src="fonts/FAMICOMCD FONT/P.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/R.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/O.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/J.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/E.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/C.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/T.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/S.svg" style="padding-right:4px;">
 
-<img src="fonts/FAMICOMCD FONT/O.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/U.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/R.svg" style="padding-right:30px;"><img src="fonts/FAMICOMCD FONT/P.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/R.svg" style="padding-right:30px;"><img src="fonts/FAMICOMCD FONT/O.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/J.svg"><img src="fonts/FAMICOMCD FONT/E.svg"><img src="fonts/FAMICOMCD FONT/C.svg"><img src="fonts/FAMICOMCD FONT/T.svg"><img src="fonts/FAMICOMCD FONT/S.svg">
+
 <p>Check out the catelog of FamicomCD games!</p> 
 <p style="font-size:50%;">If you can't click on the logo, there isn't a presskit for that game yet.</p>
+</div>
 
  <div class=logo>
  <a href="presskit/smbcd"><img class="center-fit" src="presskit/graphics/SMBCD.png" alt="[Super Mario Bros. CD Presskit]" style="border-radius: 10px;width: 500px;height: auto;"></a>
@@ -423,7 +380,9 @@ text-align: left;
 
 <div class=borderthepage style="color:#7669d0;">
 
-<img src="fonts/FAMICOMCD FONT/B.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/R.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/A.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/N.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/D.svg">
+<div style="text-align:center;">
+<img src="fonts/FAMICOMCD FONT/B.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/R.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/A.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/N.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/D.svg" style="padding-right:30px;"><img src="fonts/FAMICOMCD FONT/A.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/N.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/D.svg" style="padding-right:30px;"><img src="fonts/FAMICOMCD FONT/M.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/A.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/S.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/C.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/O.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/T.svg">
+</div> 
  
  <p style=font-size:16px>Here is our main logo! It has three variations to fit all sorts of color situations:</p>
  <p style=font-size:16px>We have a full color logo which is our main logo and works best on most solid colors such as white and black, a white logo which works well in most situations aside from white and midtones, and a dark blue logo that works well with midtones. You'll have to right-click to download individual logos.</p>
@@ -478,12 +437,6 @@ text-align: left;
 </div>
 <a href="https://famicomcd.github.io/presskit/graphics/zips/FamicomCD No Mascot Logos.zip" style=font-size:16px;>Download all three! (.zip)</a>
 </div>
-
-
-</div>
-
-<div>
-
 
 
 </div>
