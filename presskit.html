@@ -7,13 +7,18 @@
 		<meta name="google-site-verification" content="EYxQGXvx_TFMhVJT9UELPA8aoOIBnjt_QR9szmBkuX4" />
 		
 		<title>FamicomCD - FamicomCD Presskit</title>
-		<link rel="tab icon" href="../graphics/diskette.png">
+		<link rel="tab icon" href="https://famicomcd.github.io//graphics/diskette.png">
 	
 		<style>
 
 @font-face {
   font-family: "Seurat Pro";
-  src: url(../fonts/FOT-Seurat-ProB.otf);
+  src: url(fonts/FOT-Seurat-ProB.otf);
+}
+
+@font-face {
+  font-family: "FamicomCD";
+  src: url(fonts/FamicomCD_Logo_Font.otf);
 }
 
 a:link {
@@ -42,7 +47,7 @@ a:active {
  display: flex;
  flex-direction: column;
  font-family: "Seurat Pro";
- background-color: #7669d0;
+ background-color: white;
  
  
 }
@@ -102,13 +107,12 @@ padding: 100px
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: #6f62c2;
-width: 990px;
+background-color: white;
+<!-- background-color: #6f62c2; -->
+width: 1500px;
 height:auto;
 margin: auto;
 border-radius: 10px;
-text-align:center;
-font-size: 14px;
 
 }
 
@@ -149,8 +153,10 @@ font-size: 18px;
 }
 
 .borderthepage {
-padding-left: 125px;
-padding-right: 125px;
+width:1200px;
+}
+
+
  a:link {
   color: #cdcbff;
   background-color: transparent;
@@ -195,16 +201,15 @@ text-align: left;
 }
 
 
-@media screen and (max-width: 1206px) {
+@media screen and (max-width: 1500px) {
 	.diskette {
 	width:170px;
 	height:170px;
 	padding:130px 0px 60px 60px;
 	}
 	
-	.borderthepage {
-	padding-left: 50px;
-	padding-right: 50px;
+	.theboxthatholdsthetext {
+    width:auto;
 	}
 	
 }
@@ -375,36 +380,50 @@ text-align: left;
 <div id=famicomcdbanner>
 
 <div class=logo style="padding-left:15px; padding-right:15px;display:inline-flex;">
-<a href="../index.html"><img class="center-fit-logo" src="../graphics/famicomcdlogo.png" alt="FamicomCD Logo"></a>
+<a href="https://famicomcd.github.io/index.html"><img class="center-fit-logo" src="https://famicomcd.github.io/graphics/famicomcdlogo.png" alt="FamicomCD Logo"></a>
 </div>
 
+<div>
  <div class=navtop>
    <p><a style=padding-right:20px; href="../about.html"> About </a> <a style=padding-right:20px; href="../news.html"> News </a> <a style=padding-right:20px; href="../contact.html"> Contact Us </a>
  </div>  
-
 </div>
 
 
-
-<div class=borderthepage style="background-color:white;color:#7669d0;">
+<div class=theboxthatholdsthetext>
+<div style="background-color:white;color:#7669d0;">
 <div style=display:inline-flex;>
 <div>
-<p class=largerheadingfont>FamicomCD and our Branding</p>
-<p style="font-size:16px;padding-bottom:70px;">FamicomCD is a group that specializes in creating non-profit video games and video game modifications/hacks. The name relates both to the team, and the fictional Nintendo Famicom add-on that our games are based on. 
-<br><br>Referring to the FamicomCD Team is different from referring to the teams of our projects such as The Super Mario Bros. CD Team (SMBCD Team) or TOASTERSOFT. Similarly, referring to our mascot and the group is different. Our mascot is named Discette or Disksan; Discette is usually used more by FamicomCD.</p> 
+<!-- font forge didn't work -->
+<img src="fonts/FAMICOMCD FONT/A.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/B.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/O.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/U.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/T.svg" style="padding-right:30px;"><img src="fonts/FAMICOMCD FONT/U.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/S.svg">
+
+
+<p style="font-size:16px;padding-bottom:70px;">We're is a group that specializes in creating non-profit video games and video game modifications/hacks! The name relates both to the team, and the fictional Nintendo Famicom add-on that our games are based on; it is not to be confused with the unreleased Super NES CD-ROM/Super Famicom CD.
+<br><br>Referring to the FamicomCD Team is different from referring to the teams of our projects such as The Super Mario Bros. CD Team (SMBCD Team) or TOASTERSOFT. Similarly, referring to our mascot and the group is different. Our mascot is named Discette or Disksan; Discette is usually used more by FamicomCD.
+<br><br>We prefer our name to be written as one word and in full (FamicomCD rather than Famicom CD), but if necessary, you can shorten it to FCD.
+</p> 
 </div>
 
-<img class=diskette src="../graphics/diskette.png">
+<img class=diskette src="https://famicomcd.github.io/graphics/diskette.png">
 </div>
 </div>
 
 
+<img src="fonts/FAMICOMCD FONT/O.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/U.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/R.svg" style="padding-right:30px;"><img src="fonts/FAMICOMCD FONT/P.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/R.svg" style="padding-right:30px;"><img src="fonts/FAMICOMCD FONT/O.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/J.svg"><img src="fonts/FAMICOMCD FONT/E.svg"><img src="fonts/FAMICOMCD FONT/C.svg"><img src="fonts/FAMICOMCD FONT/T.svg"><img src="fonts/FAMICOMCD FONT/S.svg">
+<p>Check out the catelog of FamicomCD games!</p> 
+<p style="font-size:50%;">If you can't click on the logo, there isn't a presskit for that game yet.</p>
+
+ <div class=logo>
+ <a href="presskit/smbcd"><img class="center-fit" src="presskit/graphics/SMBCD.png" alt="[Super Mario Bros. CD Presskit]" style="border-radius: 10px;width: 500px;height: auto;"></a>
+ 
+<img class="center-fit" src="presskit/graphics/Project Astria.png" alt="[Project Astria Presskit]" style="border-radius: 10px;width: 500px;height: auto;">
+ <!-- <a href="presskit/projectastria"><img class="center-fit" src="presskit/graphics/Project Astria.png" alt="[Project Astria Presskit]" style="border-radius: 10px;width: 500px;height: auto;"></a> -->
+ </div>
 
 
+<div class=borderthepage style="color:#7669d0;">
 
-<div class=borderthepage style="color:white;">
-
- <p class=headingfont>FamicomCD Logo</p>
+<img src="fonts/FAMICOMCD FONT/B.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/R.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/A.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/N.svg" style="padding-right:4px;"><img src="fonts/FAMICOMCD FONT/D.svg">
  
  <p style=font-size:16px>Here is our main logo! It has three variations to fit all sorts of color situations:</p>
  <p style=font-size:16px>We have a full color logo which is our main logo and works best on most solid colors such as white and black, a white logo which works well in most situations aside from white and midtones, and a dark blue logo that works well with midtones. You'll have to right-click to download individual logos.</p>
@@ -413,23 +432,23 @@ text-align: left;
 <div class=logoboxes>
 
 <div style="padding:20px;background-color:white;border-radius:15px;">
-<img class="center-fit-boxes" src="graphics/FamicomCD Logo Full Color.png" style="padding-top:10px;">
+<img class="center-fit-boxes" src="https://famicomcd.github.io/presskit/graphics/FamicomCD Logo Full Color.png" style="padding-top:10px;">
 </div>
 
 <div style="padding-left:10px;padding-bottom:20px;"></div>
 
 <div style="padding:20px;background-color:#322c5a;border-radius:15px;">
-<img class="center-fit-boxes" src="graphics/FamicomCD Logo White.png" style="padding-top:10px;">
+<img class="center-fit-boxes" src="https://famicomcd.github.io/presskit/graphics/FamicomCD Logo White.png" style="padding-top:10px;">
 </div>
 
 <div style="padding-left:10px;padding-bottom:20px;"></div>
 
 <div style="padding:20px;background-color:#9a92fd;border-radius:15px;">
-<img class="center-fit-boxes" src="graphics/FamicomCD Logo Midtone.png" style="padding-top:10px;">
+<img class="center-fit-boxes" src="https://famicomcd.github.io/presskit/graphics/FamicomCD Logo Midtone.png" style="padding-top:10px;">
 </div>
 
 </div>
-<a href="graphics/zips/FamicomCD Logos.zip" style=font-size:16px;>Download all three! (.zip)</a>
+<a href="https://famicomcd.github.io/presskit/graphics/zips/FamicomCD Logos.zip" style=font-size:16px;>Download all three! (.zip)</a>
 </div>
 
 
@@ -441,38 +460,33 @@ text-align: left;
 <div class=logoboxes>
 
 <div style="padding:20px;background-color:white;border-radius:15px;">
-<img class="center-fit-boxes" src="graphics/FamicomCD Logo Full Color Without Mascot.png" style="padding-top:10px;">
+<img class="center-fit-boxes" src="https://famicomcd.github.io/presskit/graphics/FamicomCD Logo Full Color Without Mascot.png" style="padding-top:10px;">
 </div>
 
 <div style="padding-left:10px;padding-bottom:20px;"></div>
 
 <div style="padding:20px;background-color:#322c5a;border-radius:15px;">
-<img class="center-fit-boxes" src="graphics/FamicomCD Logo White Without Mascot.png" style="padding-top:10px;">
+<img class="center-fit-boxes" src="https://famicomcd.github.io/presskit/graphics/FamicomCD Logo White Without Mascot.png" style="padding-top:10px;">
 </div>
 
 <div style="padding-left:10px;padding-bottom:20px;"></div>
 
 <div style="padding:20px;background-color:#9a92fd;border-radius:15px;">
-<img class="center-fit-boxes" src="graphics/FamicomCD Logo Midtone Without Mascot.png" style="padding-top:10px;">
+<img class="center-fit-boxes" src="https://famicomcd.github.io/presskit/graphics/FamicomCD Logo Midtone Without Mascot.png" style="padding-top:10px;">
 </div>
 
 </div>
-<a href="graphics/zips/FamicomCD No Mascot Logos.zip" style=font-size:16px;>Download all three! (.zip)</a>
+<a href="https://famicomcd.github.io/presskit/graphics/zips/FamicomCD No Mascot Logos.zip" style=font-size:16px;>Download all three! (.zip)</a>
 </div>
 
 
-
+</div>
 
 <div>
 
 
 
 </div>
-
-
-
-
-
 
 
 
@@ -488,13 +502,13 @@ text-align: left;
    <div style="display: inline-flex;vertical-align:middle;font-size: 12px;m:0;">
    </div>
    <div style="display: inline-flex;vertical-align:middle;">
-   <a href="https://www.twitter.com/FamicomCD"><img src="../graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+   <a href="https://www.twitter.com/FamicomCD"><img src="https://famicomcd.github.io/graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
 <div style="padding-right:9px"> </div>  
-  <a href="https://www.youtube.com/@FamicomCD"><img src="../graphics/youtubesocialicon.png" alt="YouTube" style="width:30px;height:auto; border-radius: 6px;"></a>
+  <a href="https://www.youtube.com/@FamicomCD"><img src="https://famicomcd.github.io/graphics/youtubesocialicon.png" alt="YouTube" style="width:30px;height:auto; border-radius: 6px;"></a>
  <div style="padding-left:8px"> </div> 
-    <a href="https://bsky.app/profile/famicomcd.bsky.social"><img src="../graphics/blueskysocialicon.png" alt=Bluesky style="width:30px; height:auto; border-radius: 6px;"></a>
+    <a href="https://bsky.app/profile/famicomcd.bsky.social"><img src="https://famicomcd.github.io/graphics/blueskysocialicon.png" alt=Bluesky style="width:30px; height:auto; border-radius: 6px;"></a>
 	 <div style="padding-left:8px"> </div> 
-    <a href="https://discord.gg/wpSGt5aTuw"><img src="../graphics/discordsocialicon.png" alt=Bluesky style="width:30px; height:auto; border-radius: 6px;"></a>
+    <a href="https://discord.gg/wpSGt5aTuw"><img src="https://famicomcd.github.io/graphics/discordsocialicon.png" alt=Discord style="width:30px; height:auto; border-radius: 6px;"></a>
   </div>
  </div>
 </footer> 
