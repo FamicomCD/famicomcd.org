@@ -125,6 +125,10 @@ padding-top:15px;
 margin-top:8%;
 }
 
+.centerwhenneeded {
+text-align:center;
+}
+
 .sidebyside {
 display:inline-flex;
 }
