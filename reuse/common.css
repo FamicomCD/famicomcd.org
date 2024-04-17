@@ -3,6 +3,24 @@
   src: url(https://famicomcd.github.io/fonts/FOT-Seurat-ProB.otf);
 }
 
+a:link {
+  color: #28205c;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #28205c;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #2f266a;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 .legalmumbojumbo{
  font-family: "Seurat Pro", sans-serif;
  text-align: center; 
