@@ -125,6 +125,10 @@ padding-top:15px;
 margin-top:8%;
 }
 
+.sidebyside {
+display:inline-flex;
+}
+
 
 @media screen and (max-width: 1006px) {
 	
@@ -165,6 +169,10 @@ margin-top:8%;
 	
 	.pushwiththeexpectations {
 	padding-right: 0px;
+	}
+	
+	.sidebyside {
+	display:block;
 	}
 
 }

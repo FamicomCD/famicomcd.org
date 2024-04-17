@@ -8,13 +8,13 @@
 		
 		<title>FamicomCD - SMBCD Competencia Speedrun</title>
 		<link rel="tab icon" href="../graphics/diskette.png">
+		<link rel="stylesheet" href="https://famicomcd.github.io/reuse/common.css">
+		<link rel="stylesheet" href="https://famicomcd.github.io/reuse/mainpage.css">
+		<link rel="stylesheet" href="https://famicomcd.github.io/reuse/smbcd.css">
 	
-		<style>		
+		<style>
 
-@font-face {
-  font-family: "Seurat Pro";
-  src: url(../fonts/FOT-Seurat-ProB.otf);
-}
+
 
 a:link {
   color: white;
@@ -33,83 +33,6 @@ a:active {
   background-color: transparent;
   text-decoration: none;
 }
-
-.mainpage{
- padding:0;
- margin:0;
- font-size: 20px;
- min-height: 100vh;
- display: flex;
- flex-direction: column;
- font-family: "Seurat Pro";
- background-color: #312963;
- 
- a:link {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:active {
-  color: #C8C3E8;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-}
-
-.legalmumbojumbo{
- font-family: "Seurat Pro", sans-serif;
- text-align: center; 
- font-size: 11px;
-}
-
-.SMBCDProjectBox {
-text-align: center;
-padding-bottom: 50px; 
-}
-
-.banners {
-padding-top: 20px;
-text-align: center;
-}
-
-.ProjectsText {
- font-family: "Seurat Pro", sans-serif;
- text-align: center; 
- font-size: 30px;
-}
-
-.footer {
-padding: 15px;
-background-color: #39317b;
-margin-top: auto;
-
-a:link {
-  color: #d8e0ff;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #d8e0ff;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:active {
-  color: #C8C3E8;
-  background-color: transparent;
-  text-decoration: none;
-}
-}
-
 
 .downloadbuttons {
 background-color:#866dd7;
@@ -130,90 +53,16 @@ padding-right:30px;
 display:inline-flex;
 }
 
-
-
-logo {
- display: grid;
- height: 100%;
+.footer {
+background-color: #39317b;
 }
 
-.center-fit {
-max-width: 100%;
-max-height: 100vh;
-margin: auto;
+.mainpage {
+background-color: #312963;
 }
 
-.theboxthatholdsthetext {
-padding: 100px
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: #5a4aad;
-width: 990px;
-height:auto;
-margin: auto;
-border-radius: 10px;
-text-align:center;
-font-size: 14px;
-}
-
-.checkthatflex {
-display: inline-flex;
-}
-
-.paddingwhenneeded {
-padding-top:10px;
-}
-
-.thesmallerfont {
-font-size:13px;
-}
-
-.thesmallerfontonphones {
-font-size:12px;
-float:left;
-}
-
-.thebigfont {
-font-size:24px;
-width: 550px;
-margin: auto;
-}
-
-
-.backbutton {
-width:200px;
-height: auto;
-}
 
 @media screen and (max-width: 1006px) {
-	
-	.theboxthatholdsthetext {
-	width:auto;
-	height:auto;
-	margin: auto;
-	font-size: 13px;
-	}
-	
-	.checkthatflex {
-	display: block;
-	}
-	
-	.paddingwhenneeded {
-	padding-top:0;
-	}
-	
-	.thesmallerfontonphones {
-	float:none;
-	}
-	
-	.thesmallerfont {
-	font-size:12px;
-	}
-	
-	.thebigfont {
-    font-size:22px;
-    }
 	
 	.downloadbuttons {
 	width:auto;
@@ -242,67 +91,16 @@ height: auto;
 
 }
 
-
-@media screen and (max-width: 650px) {
-	.legalmumbojumbo{
-	font-size: 9px;
-	}
-	
-	.theboxthatholdsthetext {
-	font-size: 13px;
-	}
-	
-	.thesmallerfont {
-	font-size:11px;
-	}
-	
-	.thesmallerfontonphones {
-	padding-bottom:15px;
-	}
-	
-	.thebigfont {
-	font-size:20px;
-	width:auto;
-    }
-	
-}
-
-@media screen and (max-width: 396px) {
-	.legalmumbojumbo{
-	font-size: 7px;
-	}
-	
-	.theboxthatholdsthetext {
-	font-size: 11px;
-	}
-	
-	.thesmallerfont {
-	font-size:10px;
-	}
-	
-	.thesmallerfontonphones {
-	font-size:10px;
-	}
-	
-}
-
 #famicomcdbanner{
-background: url(../graphics/famicomcdspeedruncompbanner.svg);
-height: 215px;
-width:auto;
-position: relative;
-background-position: top center;
-background-repeat: repeat-x;
-text-align: center;
+background: url(https://famicomcd.github.io/graphics/famicomcdspeedruncompbanner.svg);
 }
-
 
 		</style>
 		</head>
 		
 <!-- This shit is a mess, but it works for now. It will definitely need a rewrite at some point. -->		
-	<body class=mainpage>
-	
+	<body class=mainpage> <!--style="filter: hue-rotate(12deg) saturate(90%) sepia(5%);background-color: #312963;margin:0;"-->
+	<!--<div class=mainpage>-->
 	
 <div id=famicomcdbanner>
 
@@ -416,7 +214,7 @@ text-align: center;
 
 <iframe src="https://famicomcd.github.io/reuse/footeres.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">The footer couldn't load properly :[ Please make sure your browser supports iframes.</iframe>
 
-
+<!-- </div> -->
 	</body>
 	
 	

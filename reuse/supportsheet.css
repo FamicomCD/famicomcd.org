@@ -1,0 +1,91 @@
+.theboxthatholdsthetext {
+width: 1200px;
+}
+
+.tableheaders {
+border-left:2px solid #7a66cc;
+border-collapse: collapse;
+}
+
+.tableheadersnoleft {
+border-collapse: collapse;
+}
+
+.tabledatas {
+border-left:2px solid #483c97;
+border-collapse: collapse;
+text-align:center;
+}
+
+.tabledatasdesc {
+border-left:2px solid #483c97;
+border-collapse: collapse;
+font-size:12px;
+}
+
+@media screen and (max-width: 1206px) {
+	
+	.theboxthatholdsthetext {
+	width:auto;
+	height:auto;
+	margin: auto;
+	font-size: 13px;
+	}
+}
+
+
+@media screen and (max-width: 1000px) {
+
+	.tabledatasdesc {
+	font-size:10px;
+	}
+
+}
+
+
+@media screen and (max-width: 650px) {
+	
+	.tabledatasdesc {
+	font-size:8px;
+	}
+	
+	.tabledatas {
+	font-size:10px;
+	}
+	
+	.tableheaders {
+	font-size:10px;
+	}
+
+	.tableheadersnoleft {
+	font-size:10px;
+	}
+
+	
+}
+
+@media screen and (max-width: 570px) {
+
+	.tabledatasdesc {
+	border-left:2px solid #483c97;
+	border-collapse: collapse;
+	font-size:10px;
+	}
+	
+	.tabledatasdesc {
+	font-size:6px;
+	}
+	
+	.tabledatas {
+	font-size:8px;
+	}
+	
+	.tableheaders {
+	font-size:8px;
+	}
+
+	.tableheadersnoleft {
+	font-size:8px;
+	}
+
+}
