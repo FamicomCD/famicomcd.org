@@ -54,6 +54,12 @@ width: 400px;
 margin: auto;
 }
 
+.theeventfont {
+font-size:24px;
+width: 600px;
+margin: auto;
+}
+
 .thebigfontbigedition {
 font-size:24px;
 width: 450px;
@@ -73,6 +79,52 @@ padding-left: 10px;
 .pushwiththeexpectations {
 padding-right: 10px;
 }
+
+.downloadpagebuttons {
+background-color:#866dd7;
+border-radius: 10px;
+width:600px;
+height:80px;
+}
+
+.downloadpagebuttons:active {
+background-color:#2f266a;
+}
+
+.infobuttons {
+height:80px;
+background-color:#866dd7;
+border-radius: 10px;
+width:180px;
+}
+
+.infobuttons:active {
+background-color:#2f266a;
+}
+
+.svgcolor:active {
+filter: invert(48%) sepia(77%) saturate(1958%) hue-rotate(223deg) brightness(90%) contrast(86%);	
+}	
+
+.centerdownloadbuttons {
+margin-left:auto;
+margin-right:auto;
+width:800px
+}
+
+.backbutton {
+width:200px;
+height: auto;
+}
+
+.fakethecenter {
+padding-top:15px;	
+}
+
+.infomargin {
+margin-top:8%;
+}
+
 
 @media screen and (max-width: 1006px) {
 	
@@ -103,6 +155,10 @@ padding-right: 10px;
     font-size:22px;
     }
 	
+	.theeventfont {
+	width: auto;
+	}
+	
 	.pushwiththetrailer {
 	padding-left: 0px;
 	}
@@ -111,6 +167,32 @@ padding-right: 10px;
 	padding-right: 0px;
 	}
 
+}
+
+@media screen and (max-width: 780px) {
+
+	
+	.downloadpagebuttons {
+	height:120px;
+	}
+
+	.infomargin {
+	margin-top:32%;
+	}
+
+	.infobuttons {
+	height:120px;
+	width:100px;
+}
+
+	.downloadpagebuttons {
+	width:auto;
+	}
+
+	.centerdownloadbuttons {
+	width:auto;
+	}
+	
 }
 
 
@@ -138,6 +220,7 @@ padding-right: 10px;
 	}
 	
 }
+
 
 @media screen and (max-width: 396px) {
 	.theboxthatholdsthetext {

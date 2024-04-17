@@ -8,279 +8,30 @@
 		
 		<title>ファミコンCD - マリオCDダウンロード</title>
 		<link rel="tab icon" href="../graphics/diskette.png">
+		<link rel="stylesheet" href="https://famicomcd.github.io/reuse/common.css">
+		<link rel="stylesheet" href="https://famicomcd.github.io/reuse/smbcd.css">
 	
 		<style>
 
-@font-face {
-  font-family: "Seurat Pro";
-  src: url(../fonts/FOT-Seurat-ProB.otf);
-}
-
 a:link {
-  color: #28205c;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: #28205c;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:active {
-  color: #2f266a;
+  color: #866dd7;
   background-color: transparent;
   text-decoration: none;
 }
 
-.mainpage{
- padding:0;
- margin:0;
- font-size: 20px;
- min-height: 100vh;
- display: flex;
- flex-direction: column;
- font-family: "Seurat Pro";
- background-color: #d8e0ff;
- 
- a:link {
-  color: #483c97;
-  background-color: transparent;
-  text-decoration: none;
-}
 
-a:visited {
-  color: #483c97;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:active {
-  color: #C8C3E8;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-}
-
-.sitesoonmessage{
- font-family: "Seurat Pro", sans-serif;
- text-align: center; 
- font-size: 20px;
- display: flex;
- justify-content: center;
- align-items: center;
- height: 300px;
- width: 100%;
-}
-
-.legalmumbojumbo{
- font-family: "Seurat Pro", sans-serif;
- text-align: center; 
- font-size: 11px;
-}
-
-.SMBCDProjectBox {
-text-align: center;
-padding-bottom: 50px; 
-}
-
-.banners {
-padding-top: 20px;
-text-align: center;
-}
-
-.ProjectsText {
- font-family: "Seurat Pro", sans-serif;
- text-align: center; 
- font-size: 30px;
-}
-
-.footer {
-padding: 15px;
-background-color: #483c97;
-margin-top: auto;
-
-a:link {
-  color: #d8e0ff;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #d8e0ff;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:active {
-  color: #C8C3E8;
-  background-color: transparent;
-  text-decoration: none;
-}
-}
-
-logo {
- display: grid;
- height: 100%;
-}
-
-.center-fit {
-max-width: 100%;
-max-height: 100vh;
-margin: auto;
-}
-
-.theboxthatholdsthetext {
-padding: 100px
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: #6f62c2;
-width: 990px;
-height:auto;
-margin: auto;
-border-radius: 10px;
-text-align:center;
-font-size: 14px;
-}
-
-.checkthatflex {
-display: inline-flex;
-}
-
-.paddingwhenneeded {
-padding-top:10px;
-}
-
-.thesmallerfont {
-font-size:13px;
-}
-
-.thesmallerfontonphones {
-font-size:12px;
-float:left;
-}
-
-.thebigfont {
-font-size:24px;
-width: 550px;
-margin: auto;
-}
-
-
-.backbutton {
-width:200px;
-height: auto;
-}
-
-@media screen and (max-width: 1006px) {
-	
-	.theboxthatholdsthetext {
-	width:auto;
-	height:auto;
-	margin: auto;
-	font-size: 13px;
-	}
-	
-	.checkthatflex {
-	display: block;
-	}
-	
-	.paddingwhenneeded {
-	padding-top:0;
-	}
-	
-	.thesmallerfontonphones {
-	float:none;
-	}
-	
-	.thesmallerfont {
-	font-size:12px;
-	}
-	
-	.thebigfont {
-    font-size:22px;
-    }
-	
-	.memberbody {
-	width:auto;
-	}
-
-}
-
-
-@media screen and (max-width: 650px) {
-	.legalmumbojumbo{
-	font-size: 9px;
-	}
-	
-	.theboxthatholdsthetext {
-	font-size: 13px;
-	}
-	
-	.thesmallerfont {
-	font-size:11px;
-	}
-	
-	.thesmallerfontonphones {
-	padding-bottom:15px;
-	}
-	
-	.thebigfont {
-	font-size:20px;
-	width:auto;
-    }
-	
-	.icons {
-	width: 150px;
-	height: auto;
-	}
-	
-	.name {
-	padding-top:10px;
-	}
-	
-}
-
-@media screen and (max-width: 396px) {
-	.legalmumbojumbo{
-	font-size: 7px;
-	}
-	
-	.theboxthatholdsthetext {
-	font-size: 11px;
-	}
-	
-	.thesmallerfont {
-	font-size:10px;
-	}
-	
-	.thesmallerfontonphones {
-	font-size:10px;
-	}
-	
-		.icons {
-	width: 100px;
-	height: auto;
-	}
-	
-	.name {
-	padding-top:2px;
-	}
-	
-}
-
-#famicomcdbanner{
-background: url(../graphics/famicomcdbanner.svg);
-height: 215px;
-width:auto;
-position: relative;
-background-position: top center;
-background-repeat: repeat-x;
-text-align: center;
-}
 
 
 		</style>
@@ -293,7 +44,7 @@ text-align: center;
 <div id=famicomcdbanner>
 
 <div class=logo style="padding-left:15px; padding-right:15px;">
-<a href="../jp.html"><img class="center-fit" src="graphics/famicomcdlogowhitejp.png" alt="FamicomCD Logo" style="width:602px;height:auto;"></a>
+<a href="../index.html"><img class="center-fit" src="../graphics/famicomcdlogowhite.png" alt="FamicomCD Logo" style="width:602px;height:auto;"></a>
 </div>
 
 </div>
@@ -304,12 +55,10 @@ text-align: center;
 <div class=center-fit style="padding-top:30px;"> 
  <div class=backbutton>
   <div>
-  <a href="smbcd.html"><img class="center-fit" src="graphics/banners/backjp.png" alt="[Back]" style="border-radius: 10px;width: 500px;height: auto;"></a>
+  <a href="../smbcd.html"><img class="center-fit" src="../graphics/banners/back.png" alt="[Back]" style="border-radius: 10px;width: 500px;height: auto;"></a>
  </div>
 </div> 
 </div>
-
-
  
  <div style="padding-bottom:30px;">
  <div class=theboxthatholdsthetext style="color:white;padding:20px;">
@@ -317,17 +66,50 @@ text-align: center;
  <p style="margin-top:0;">Downloads</p>
  </div> 
  
- <p style="font-size: 16px; padding-top:20px;">残念ながら、まだマリオCDは配信されていません。今年の８月のSMWCentralのC3中に必ずデモが配信されるので、ぜひ楽しみにしてください！また、それ以前にデモが配信された場合ここからダウンロードできます。</p>
+ <p style="font-size: 16px; padding-top:20px;">Well, unfortunately there aren't any downloads in this section yet, but fret not! There is a guaranteed demo in August of 2024 during SMWCentral's C3. If any other demos are made available before then, they will appear here.</p>
  
- <p style="font-size: 16px; padding-top:20px;">マリオCDのスピードラン大会は開催時にデモが配信されます！以下から詳しく！</p>
+ <div class=theeventfont style="padding-top:20px;border-bottom: 3px dotted #352063;">
+ <p style="margin-top:0;">Special and Event Demos/Downloads</p>
+ </div> 
  
-<div class=banners style="padding:12px;">
- <div class=logo>
- <a href="speedrun.html"><img class="center-fit" src="../graphics/banners/smbcdspeedruncomp.png" alt="[Super Mario Bros. CD Speedrun Competition]" style="border-radius: 10px;width: 500px;height: auto;"></a>
+ 
+	<div class=centerdownloadbuttons>
+	
+<div style="display:flex;">
+	<a href="https://famicomcd.github.io/SMBCDDownload/SpeedrunCompDemo/SMBCD Speedrun Comp 2.2.zip"><div class=downloadpagebuttons>
+	<p class=fakethecenter style="font-size:23px;">SMBCD Speedrun Comp. Demo Download v2.2!</p>
+	</div></a>
+	
+	<div style=padding-right:20px;></div>
+	
+	<a href="https://famicomcd.github.io/speedrun.html"><div class=infobuttons>
+	<div class=svgcolor><p style=font-size:23px;><img src="../fonts/FAMICOMCD FONT/info.svg" class=infomargin style="width:50px;height:auto;"></p></div>
+	</div></a>
+	
+</div>	
+	
+	
+	
+	
+	
+<div style="display:flex;">
+	<a href="https://drive.google.com/file/d/1yWuHfCAimJFfj9hGGyCO2J4zssrz_0nY/view?usp=sharing"><div class=downloadpagebuttons>
+	<p style=font-size:20px;>SMBCD Speedrun Comp. Demo Download v2.2 Mirror (Google Drive)</p>
+	</div></a>
+	
+	<div style=padding-right:20px;></div>
+	
+	<a href="https://famicomcd.github.io/speedrun.html"><div class=infobuttons>
+	<div class=svgcolor><p style=font-size:20px;><img src="../fonts/FAMICOMCD FONT/info.svg" class=infomargin style="width:50px;height:auto;"></p></div>
+	</div></a>
+</div>
+	
+	
+	
+	
  </div>
  </div>
- </div>
- </div>
+  </div>
  
  
  
