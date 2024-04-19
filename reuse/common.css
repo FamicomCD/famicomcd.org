@@ -77,10 +77,6 @@ background-repeat: repeat-x;
 text-align: center;
 }
 
-.footerrealign {
-display: none;
-}
-
 @media screen and (max-width: 650px) {
 	.legalmumbojumbo{
 	font-size: 9px;
