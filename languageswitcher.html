@@ -17,31 +17,55 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta data-react-helmet="true" name="theme-color" content="#483c97"/>
 		
-		<link rel="stylesheet" href="https://famicomcd.github.io/reuse/common.css">
+		<link rel="stylesheet" href="https://famicomcd.github.io/reuse/common.css">		
+		<link rel="stylesheet" href="https://famicomcd.github.io/reuse/mainpage.css">	
 	
 		<style>
-
-.mainpage{
- padding:0;
- margin:0;
- font-size: 20px;
- min-height: 100vh;
- display: flex;
- flex-direction: column;
- font-family: "Seurat Pro";
- background-color: #d8e0ff;
+		
+a:link {
+  color: #6b4dc0;
+  background-color: transparent;
+  text-decoration: none;
 }
 
-.ProjectsText {
- font-family: "Seurat Pro", sans-serif;
- text-align: center; 
- font-size: 35px;
+a:visited {
+  color: #6b4dc0;
+  background-color: transparent;
+  text-decoration: none;
 }
 
-.LanguageText {
- font-family: "Seurat Pro", sans-serif;
- text-align: center; 
- font-size: 25px;
+a:active {
+  color: #C8C3E8;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.langbuttons {
+background-color:#c4c8ff;
+border-radius: 10px;
+width:400px;
+font-size:19px;
+transition: all 0.08s ease-in-out;
+}
+
+.langbuttons:hover {
+font-size:25px;
+transform: scale(1.2);
+}
+
+.langbuttons:active {
+background-color:#7057c5;
+transition: none;
+}
+
+.buttons {
+padding-top:120px;
+padding-right:30px;
+}
+
+.theboxthatholdsthetext {
+height:10px;
+margin:40px;
 }
 
 
@@ -64,22 +88,37 @@
  <p>FamicomCD site soon! Stay tuned and look out for news on our <a href="https://www.twitter.com/FamicomCD">Twitter</a>, <a href="https://www.youtube.com/@FamicomCD">YouTube</a>, and <a href="https://www.discord.gg/wpSGt5aTuw">Discord</a>!</p>
  </div> -->
  
-<div style="padding-bottom:40px;">
+<div style="padding-bottom:60px;">
 <div class=ProjectsText>
 <p>Select a Language:</p>
 </div>
  
  <!-- Using emojis is probably not a good idea, but we'll see how it goes over. -->
  
-<div class=LanguageText>
-<a href="https://famicomcd.github.io/">🇺🇸 English</a>
+<div class=theboxthatholdsthetext style="padding-bottom:30px;">
+	<div style="margin-left:auto;margin-right:auto;text-align:center;width:400px;">
+	<a href="presskit.html"><div class=langbuttons>
+	<p>🇺🇸 English</p>
+	</div></a>
+	</div>
 </div>
-<div class=LanguageText>
-<a href="https://famicomcd.github.io/es">🇪🇸 Spanish</a>
+
+<div class=theboxthatholdsthetext style="padding-bottom:30px;">	
+	<div style="margin-left:auto;margin-right:auto;text-align:center;width:400px;">
+	<a href="es/presskit.html"><div class=langbuttons>
+	<p>🇪🇸 Español / Spanish</p>
+	</div></a>
+	</div>
 </div>
-<div class=LanguageText>
-<a href="https://famicomcd.github.io/jp">🇯🇵 Japanese</a>
+ 
+<div class=theboxthatholdsthetext>	
+ 	<div style="margin-left:auto;margin-right:auto;text-align:center;width:400px;">
+ 	<a href="jp/presskit.html"><div class=langbuttons>
+	<p>🇯🇵 日本語 / Japanese</p>
+	</div></a>
+	</div>
 </div>
+
 </div>
  
 <iframe src="reuse/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">The footer couldn't load properly :[ Please make sure your browser supports iframes.</iframe>
