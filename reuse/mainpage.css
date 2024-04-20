@@ -24,3 +24,41 @@ text-align: center;
  text-align: center; 
  font-size: 30px;
 }
+
+.CaptionText {
+font-size: 20px;
+}
+
+.the404part {
+width:600px;
+padding:50px;
+}
+
+/* shit ass padding system*/
+.RandImage {
+padding-top:100px;
+padding-bottom:50px;
+padding-left:50px;
+padding-right:50px;
+}
+
+@media screen and (max-width: 1000px) {
+	
+.CaptionText {
+font-size: 17px;
+}
+
+.the404part {
+width:auto;
+padding:10px;	
+}
+
+.RandImage {
+padding-top:10px;
+padding-bottom:10px;
+padding-left:10px;
+padding-right:10px;
+display:grid;	
+}
+
+}

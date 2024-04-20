@@ -11,14 +11,15 @@
 		<link rel="icon" href="https://famicomcd.github.io/graphics/faviconcd.ico">
 		
 		<meta property="og:title" content="FamicomCD - 404"/>
-		<meta property="og:description" content="People don't usually link 404 pages, but to each their own! -- Home to many non-profit video game projects such as Super Mario Bros. CD and Project Astria! (Embeds are currently being tested and may not always stick around)!"/>
+		<meta property="og:description" content="People don't usually link 404 pages, but to each their own! -- Home to many non-profit video game projects such as Super Mario Bros. CD and Project Astria!"/>
 		<meta property="og:url" content="https://famicomcd.github.io/"/>
 		<meta property="og:image" content="https://famicomcd.github.io/embedimages/404embed.png"/>
 		<meta name="twitter:card" content="summary_large_image">
 		<meta data-react-helmet="true" name="theme-color" content=#483c97"/>
 		
 		<link rel="stylesheet" href="https://famicomcd.github.io/reuse/common.css">
-		<link rel="stylesheet" href="https://famicomcd.github.io/reuse/mainpage.css">
+		<link rel="stylesheet" href="reuse/mainpage.css">
+		<link rel="stylesheet" href="https://famicomcd.github.io/reuse/smbcd.css">
 	
 		<style>
 
@@ -39,21 +40,61 @@
 
 </div>
  
+ 
+<div class=checkthatflex style="margin:auto;"> 
+<div class=the404part>
 <div class=ProjectsText style="padding-top:80px;">
 <img src="https://famicomcd.github.io/fonts/FAMICOMCD FONT/4.svg" style="width:auto;height:100px;padding-right:4px;"><img src="https://famicomcd.github.io/fonts/FAMICOMCD FONT/O.svg" style="width:auto;height:100px;padding-right:4px;"><img src="https://famicomcd.github.io/fonts/FAMICOMCD FONT/4.svg" style="width:auto;height:100px;">
 </div>
 
-<div class=ProjectsText style="color: #6888fc;text-align:center;">
-<p>That page couldn't be found, sorry.</p>
+<div class=CaptionText style="color: #6888fc;text-align:center;">
+<div id="imageCaption"></div>
 </div>
+</div>
+
+<img class=RandImage id="randomImage" src="" alt="Random Image" style="width:270px;height:auto;margin:auto;">
+</div>    
+	
+	
+	
+
+    <script>
+        var images = [
+		//common strings
+            { src: "404icons/404paper.png", caption: "Oops! That page couldn't be found, maybe try looking elsewhere.", weight: 4 },
+            { src: "404icons/404ack.png", caption: "Unfortunately that page couldn't be found, Sorry!", weight: 5 },
+            { src: "404icons/404carts.png", caption: "Sorry! That page may've gotten lost in the carts! Try looking elsewhere.", weight: 4 },
+			{ src: "404icons/404upset.png", caption: "That page wasn't found, maybe you clicked a wrong link, oops!", weight: 5 },
+
+
+		//rare strings
+            { src: "404icons/404formal.png", caption: "My sincerest apologies for any inconvenience thus incurred. It hath come to my attention that the desired page may not be found within our digital annals.", weight: 1 }
+			
+        ];
+
+        // Calculate total weight
+        var totalWeight = images.reduce((acc, img) => acc + img.weight, 0);
+
+        // Generate a random number between 1 and totalWeight
+        var randomNumber = Math.floor(Math.random() * totalWeight) + 1;
+
+        // Select the image based on the random number and weights
+        var selectedImage;
+        for (var i = 0; i < images.length; i++) {
+            randomNumber -= images[i].weight;
+            if (randomNumber <= 0) {
+                selectedImage = images[i];
+                break;
+            }
+        }
+
+        document.getElementById("randomImage").src = selectedImage.src;
+        document.getElementById("imageCaption").textContent = selectedImage.caption;
+    </script>
  
  
 <iframe src="https://famicomcd.github.io/reuse/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">The footer couldn't load properly :[ Please make sure your browser supports iframes.</iframe>
 
 
-
 	</body>
-	
-	
-	
 </html>
