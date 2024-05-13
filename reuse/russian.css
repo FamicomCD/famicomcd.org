@@ -1,0 +1,16 @@
+.mainpage{
+ padding:0;
+ margin:0;
+ font-size: 20px;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ font-family: "Russian Seurat Pro", sans-serif;
+ background-color: #d8e0ff;
+}
+
+.ProjectsText {
+ font-family: "Russian Seurat Pro", sans-serif;
+ text-align: center; 
+ font-size: 30px;
+}

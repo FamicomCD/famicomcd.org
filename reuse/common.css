@@ -3,6 +3,11 @@
   src: url(https://famicomcd.github.io/fonts/FOT-Seurat-ProB.otf);
 }
 
+@font-face {
+  font-family: "Russian Seurat Pro";
+  src: url(https://famicomcd.github.io/fonts/Russian.otf);
+}
+
 a:link {
   color: #28205c;
   background-color: transparent;
