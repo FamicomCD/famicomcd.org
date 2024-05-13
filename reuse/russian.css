@@ -5,12 +5,12 @@
  min-height: 100vh;
  display: flex;
  flex-direction: column;
- font-family: "Russian Seurat Pro", sans-serif;
+ font-family: "Russian Seurat Pro";
  background-color: #d8e0ff;
 }
 
 .ProjectsText {
- font-family: "Russian Seurat Pro", sans-serif;
+ font-family: "Russian Seurat Pro";
  text-align: center; 
  font-size: 30px;
 }
