@@ -20,3 +20,20 @@
  text-align: center; 
  font-size: 11px;
 }
+
+.thesmallerfontonphones {
+float:none;
+}
+
+.pushwiththeexpectations {
+padding-top:35px;
+}
+
+
+@media screen and (max-width: 1006px) {
+
+	.pushwiththeexpectations {
+	padding-top:0px;
+	}
+
+}
