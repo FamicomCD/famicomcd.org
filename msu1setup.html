@@ -74,12 +74,20 @@ a:active {
  <p style="margin-top:0;text-align:center;">Things to Note</p>
  </div> 
  
- <p style="font-size: 14px; padding-top:20px;">This guide covers both how to install SMW rom hacks, and how to use MSU-1. Though the guide mentions SMBCD, the instructions could apply to most other Super NES rom hacks.</p>
+ <p style="font-size: 14px; padding-top:20px;">This guide covers both how to install Super Mario World (SMW) rom hacks, and how to use MSU-1. Though the guide mentions SMBCD, the instructions could apply to most other Super NES rom hacks.</p>
  
  <p style="font-size: 14px; padding-top:2px;">MSU-1 is the main way that SMBCD delivers its rich CD quality audio among other features that a real Super NES would struggle with, and as such MSU-1 is required for SMBCD to start. If you're missing MSU-1 or haven't installed it correctly, SMBCD will not start. If you have followed the guide and installed all the required MSU-1 files but SMBCD still will not start, check if your emulator supports MSU-1 or join the FamicomCD Discord for support.</p>
  
-  <p style="font-size: 14px; padding:10px;border: 3px dashed #ff2e2e;"><b>Important: </b>You need your own USA Super Mario World SMC/SFC to patch SMBCD's BPS file. We recommend that you dump your own official SMW Super NES cartridge. We will not instruct you on how or where to get the game files if you don't want to or can't dump your own cartridge.</p>
+  <p style="font-size: 14px; padding:10px;border: 3px dashed #ff2e2e;"><b>Important: </b>You need your own USA Super Mario World game file to patch SMBCD's BPS file. We recommend that you dump your own official SMW Super NES cartridge. We will not instruct you on how or where to get the game files if you don't want to or can't dump your own cartridge.</p>
  
+ 
+   <div class=thebigfont style="padding-top:20px;border-bottom: 3px dotted #352063;">
+ <p style="margin-top:0;text-align:center;">Video Version of the Guide</p>
+  </div> 
+  
+  <div>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/6SO7x1t4i2o?si=BsFv8fwt0SyeNeZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ </div>
  
   <div class=thebigfont style="padding-top:20px;border-bottom: 3px dotted #352063;">
  <p style="margin-top:0;text-align:center;">Setting up SMBCD and MSU-1</p>
@@ -87,7 +95,7 @@ a:active {
  <p style="font-size: 14px;">(The first few steps are for general SMW Hack setup. If you already know how to set up SMW hacks, skip to step 5).</p>
  
  
-  <p style="font-size: 14px; padding-top:20px;"> <b>Step 1: </b>First of all, download a version of SMBCD from the <a href="https://famicomcd.github.io/smbcd/download">Version Downloads</a> page. It will download as a zip file.</p>
+  <p style="font-size: 14px; padding-top:20px;"> <b>Step 1: </b>First of all, download a SMBCD build from the <a href="https://famicomcd.github.io/smbcd/download">Version Downloads</a> page. It will download as a zip file.</p>
   
 <div class=centerwhenneeded>
 <img class="center-fit" src="graphics/MSU1Setup/zip.png" alt="[zipimage]" style="border-radius: 10px;width: 400px;height: auto;">
@@ -97,13 +105,13 @@ a:active {
 
 
 
-  <p style="font-size: 14px; padding-top:50px;"> <b>Step 3: </b>When opening the zip archive to a SMBCD build, you will see the SMBCD BPS patch file, an MSU file, and PCM files. You only have to worry about the BPS for now. This is where your USA SMW SMC/SFC comes into play.</p>
+  <p style="font-size: 14px; padding-top:50px;"> <b>Step 3: </b>When opening the zip archive to a SMBCD build, you will see the SMBCD BPS patch file, an MSU file, and PCM files. You only have to worry about the BPS for now. This is where your USA SMW game file comes into play.</p>
 
 <div class=centerwhenneeded>
 <img class="center-fit" src="graphics/MSU1Setup/bps.png" alt="[bpsimage]" style="border-radius: 10px;width: 550px;height: auto;">
 </div>
 
-  <p style="font-size: 14px; padding-top:50px;"> <b>Step 4: </b>Patch the SMBCD BPS to the USA SMW SMC/SFC using <a href="https://www.smwcentral.net/?a=details&id=11474&p=section">Floating IPS</a> or <a href="https://www.marcrobledo.com/RomPatcher.js">Marc Robledo's Onliner Patcher</a>.</p>
+  <p style="font-size: 14px; padding-top:50px;"> <b>Step 4: </b>Patch the SMBCD BPS to the USA SMW game file using <a href="https://www.smwcentral.net/?a=details&id=11474&p=section">Floating IPS</a> or <a href="https://www.marcrobledo.com/RomPatcher.js">Marc Robledo's Online Patcher</a>.</p>
 
 <div class=centerwhenneeded>
 <div class=sidebyside>
@@ -119,20 +127,20 @@ a:active {
 </div>
 </div>
 
-  <p style="font-size: 14px; padding-top:50px;"> <b>Step 5: </b>Once you have your SMBCD SMC file, test if it works. If the MSU-1 required screen appears, you've done patched it correctly, but you're not done yet. You'll need the MSU-1 files to complete the installation.</p>
+  <p style="font-size: 14px; padding-top:50px;"> <b>Step 5: </b>Once you have your SMBCD game file, test if it works. If the MSU-1 required screen appears, you've patched it correctly, but you're not done yet. You'll need the MSU-1 files to complete the installation.</p>
 
 <div class=centerwhenneeded>
 <img class="center-fit" src="graphics/MSU1Setup/testing.png" alt="[testingimage]" style="border-radius: 10px;width: 350px;height: auto;">
 </div>
 
-  <p style="font-size: 14px; padding-top:50px;"> <b>Step 6: </b>Remember the MSU file and PCM files from before? You need these files to be in the same directory and the same name* as your SMBCD SMC file. For organization, it's recommended that you store all of SMBCD's file in their own folder.</p>
+  <p style="font-size: 14px; padding-top:50px;"> <b>Step 6: </b>Remember the MSU file and PCM files from before? You need these files to be in the same directory and the same name* as your SMBCD game file. For organization, it's recommended that you store all of SMBCD's files in a folder of its own.</p>
   <p style="font-size: 14px;">*PCM files only half follow this rule as they need their track number to come after the name. This is indicated by the hyphen and the number.</p>
 
 <div class=centerwhenneeded>
 <img class="center-fit" src="graphics/MSU1Setup/samefolder.png" alt="[samefolderimage]" style="border-radius: 10px;width: 550px;height: auto;">
 </div>
 
-  <p style="font-size: 14px; padding-top:50px;"> <b>Step 7: </b>Once all of the files are in place, SMBCD should start as normal. If you are still getting the MSU-1 is missing error, please make sure your emulator is supported under the  <a href="https://famicomcd.github.io/smbcd/supportsheet">SMBCD Emulator Support Sheet</a> or join the FamicomCD Discord for support.</p>
+  <p style="font-size: 14px; padding-top:50px;"> <b>Step 7: </b>Once all of the files are in place, SMBCD should start as normal. If you are still getting the MSU-1 is missing error, please make sure your emulator is supported under the  <a href="https://famicomcd.github.io/smbcd/supportsheet">SMBCD Support Sheet</a> or join the FamicomCD Discord for support.</p>
 
 
  </div>
@@ -140,8 +148,27 @@ a:active {
  
  
  
-<iframe src="reuse/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">The footer couldn't load properly :[ Please make sure your browser supports iframes.</iframe>
+<footer class=footer>
+<div class=legalmumbojumbo style="color: #C8C3E8">
+ <p>The FamicomCD Team and The Super Mario Bros. CD Team are not affiliated in anyway to Nintendo. The Famicom name and trademark, as well as Mario, Yoshi, and related characters are not owned or under copyright of this site. All other copyrights are the property of their respective owners. Any FamicomCD project sold for monetary gain (such as cartridges, or soundtrack CDs) are not produced or endorsed by The FamicomCD Team. All projects created by The FamicomCD Team are free and will remain free.</p>
 
+   <div style="display: inline-flex;vertical-align:middle;font-size: 12px;m:0;">
+   <p><a href="https://famicomcd.github.io/about"> About •</a> <a href="https://famicomcd.github.io/contact"> Contact Us •</a> <a href="https://famicomcd.github.io/languageswitcher"> Language Switcher</a></p>
+   </div>
+   <div style="display: inline-flex;padding: 10px;"> </div> 
+   <div style="display: inline-flex;vertical-align:middle;">
+   <a href="https://www.twitter.com/FamicomCD"><img src="https://famicomcd.github.io/graphics/twittersocialicon.png" alt="Twitter" style="width:30px; height:auto; border-radius: 6px;"></a>
+<div style="padding-right:9px"> </div>  
+  <a href="https://www.youtube.com/@FamicomCD"><img src="https://famicomcd.github.io/graphics/youtubesocialicon.png" alt="YouTube" style="width:30px;height:auto; border-radius: 6px;"></a>
+		 <div style="padding-left:8px"> </div> 
+    <a href="https://cohost.org/famicomcd"><img src="https://famicomcd.github.io/graphics/cohostsocialicon.png" alt=Cohost style="width:30px; height:auto; border-radius: 6px;"></a>
+	 <div style="padding-left:8px"> </div> 
+    <a href="https://bsky.app/profile/famicomcd.bsky.social"><img src="https://famicomcd.github.io/graphics/blueskysocialicon.png" alt=Bluesky style="width:30px; height:auto; border-radius: 6px;"></a>
+	 <div style="padding-left:8px"> </div> 
+    <a href="https://discord.gg/wpSGt5aTuw"><img src="https://famicomcd.github.io/graphics/discordsocialicon.png" alt=Discord style="width:30px; height:auto; border-radius: 6px;"></a>
+  </div>
+ </div>
+</footer> 
 
 
 	</body>
