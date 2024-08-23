@@ -25,8 +25,18 @@
 		
 		</head>
 		
-<!-- This shit is a mess, but it works for now. It will definitely need a rewrite at some point. -->		
-<!-- most images are converted to webp, but I didn't feel like changing every page, so I just renamed the extension to png. That seems to work fine. -->
+		
+		<style>
+		
+		.wait {
+		color:#483c97;
+		text-align:center;
+		font-size:30px;
+		}
+		
+		</style>
+		
+	
 	<body class=mainpage>
 	
 	
@@ -38,42 +48,50 @@
 
 </div>
  
-<div class=ProjectsText>
-<p>Projects</p>
-</div>
- 
-<div class=SMBCDProjectBox> 
- <div class=logo>
- <a href="https://famicomcd.github.io/smbcd"><img class="center-fit" src="graphics/smbcdlogo/smbcdlogo.png" alt="Super Mario Bros. CD" style="width: 585px;height: auto;"></a>
- </div>
- </div>
- 
-<div class=banners style=padding:12px;>
- <div class=logo>
- <a href="https://discord.gg/wpSGt5aTuw"><img class="center-fit" src="graphics/banners/famicomcddiscord.png" alt="[FamicomCD Discord]" style="border-radius: 10px;width: 500px;height: auto;"></a>
- 
-  <a href="https://famicomcd.github.io/speedrun"><img class="center-fit" src="graphics/banners/smbcdspeedruncomp.png" alt="[Super Mario Bros. CD Speedrun Competition]" style="border-radius: 10px;width: 500px;height: auto;"></a>
- </div>
- 
- <div class=logo>
-  <a href="https://famicomcd.github.io/languageswitcher"><img class="center-fit" src="graphics/banners/languageswitcher.png" alt="[Language Switcher]" style="border-radius: 10px;width: 500px;height: auto;"></a>
-  
-   <a href="https://famicomcd.github.io/about"><img class="center-fit" src="graphics/banners/aboutfamicomcd.png" alt="[About FamicomCD]" style="border-radius: 10px;width: 500px;height: auto;"></a>
- 
- </div>
- 
- <div class=logo>
-
-   
-  <a href="https://famicomcd.github.io/contact"><img class="center-fit" src="graphics/banners/contact.png" alt="[Contact Us]" style="border-radius: 10px;width: 500px;height: auto;"></a>
- </div>
- 
-</div> 
+<p class=wait>Detecting your language, please wait!</p>
  
 <iframe src="reuse/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">The footer couldn't load properly :[ Please make sure your browser supports iframes.</iframe>
 
 	</body>
 	
 	
+	
+	<script>
+	
+
+const languageUrls = {
+    'en': 'https://famicomcd.github.io/en',
+    'es': 'https://famicomcd.github.io/es',
+    'ja': 'https://famicomcd.github.io/jp',
+
+};
+
+const languageSelectionUrl = 'https://famicomcd.github.io/language';
+
+
+function getUserLanguage() {
+    return navigator.language || navigator.userLanguage;
+}
+
+function findBestMatchingUrl(userLanguage) {
+    if (languageUrls[userLanguage]) {
+        return languageUrls[userLanguage];
+    }
+
+    const baseLanguage = userLanguage.split('-')[0];
+    return languageUrls[baseLanguage] || languageSelectionUrl;
+}
+
+function redirectToLanguageUrl() {
+    const userLanguage = getUserLanguage();
+    const redirectUrl = findBestMatchingUrl(userLanguage);
+    window.location.href = redirectUrl;
+}
+
+redirectToLanguageUrl();
+
+
+	
+	</script>
 	
 </html>
