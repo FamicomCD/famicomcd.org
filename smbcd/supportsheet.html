@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+			<html lang="en">
+	
+		<head>
+		
+		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=0.80, minimum-scale=0.75, maximum-scale=2.5"/>
+		<meta name="google-site-verification" content="EYxQGXvx_TFMhVJT9UELPA8aoOIBnjt_QR9szmBkuX4" />
+
+		<title>FamicomCD - SMBCD Support Sheet</title>
+		<link rel="tab icon" href="https://famicomcd.github.io/graphics/diskette.png">
+		<link rel="icon" href="https://famicomcd.github.io/graphics/faviconcd.ico">
+		
+		<meta property="og:title" content="FamicomCD - SMBCD Support Sheet"/>
+		<meta property="og:description" content="If you need to check what emulators or flashcarts support Super Mario Bros. CD or MSU-1 games in general, this sheet has everything you'll need! (Embeds are currently being tested and may not always stick around)!"/>
+		<meta property="og:url" content="https://famicomcd.github.io/smbcd/supportsheet"/>
+		<meta property="og:image" content="https://famicomcd.github.io/embedimages/supportsheetembed.png"/>
+		<meta name="twitter:card" content="summary_large_image">
+		<meta data-react-helmet="true" name="theme-color" content="#483c97"/>
+		
+		<link rel="stylesheet" href="https://famicomcd.github.io/reuse/common.css">
+		<link rel="stylesheet" href="https://famicomcd.github.io/reuse/mainpage.css">
+		
+
+		
+		</head>
+		
+		
+		<style>
+		
+		.wait {
+		color:#483c97;
+		text-align:center;
+		font-size:30px;
+		}
+		
+		</style>
+		
+	
+	<body class=mainpage>
+	
+	
+<div id=famicomcdbanner>
+
+<div class=logo style="padding-left:15px; padding-right:15px;">
+<a href="https://famicomcd.github.io/"><img class="center-fit" src="graphics/famicomcdlogowhite.png" alt="FamicomCD Logo" style="width:602px;height:auto;"></a>
+</div>
+
+</div>
+ 
+<p class=wait>Detecting your language, please wait!</p>
+ 
+<iframe src="reuse/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">The footer couldn't load properly :[ Please make sure your browser supports iframes.</iframe>
+
+	</body>
+	
+	
+	
+	<script>
+	
+
+const languageUrls = {
+    'en': 'https://famicomcd.github.io/en/smbcd/supportsheet',
+    'es': 'https://famicomcd.github.io/es/smbcd/supportsheet',
+    'ja': 'https://famicomcd.github.io/jp/smbcd/supportsheet',
+
+};
+
+const languageSelectionUrl = 'https://famicomcd.github.io/languageswitcher';
+
+
+function getUserLanguage() {
+    return navigator.language || navigator.userLanguage;
+}
+
+function findBestMatchingUrl(userLanguage) {
+    if (languageUrls[userLanguage]) {
+        return languageUrls[userLanguage];
+    }
+
+    const baseLanguage = userLanguage.split('-')[0];
+    return languageUrls[baseLanguage] || languageSelectionUrl;
+}
+
+function redirectToLanguageUrl() {
+    const userLanguage = getUserLanguage();
+    const redirectUrl = findBestMatchingUrl(userLanguage);
+    window.location.href = redirectUrl;
+}
+
+redirectToLanguageUrl();
+
+
+	
+	</script>
+	
+</html>
