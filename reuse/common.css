@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "Russian Seurat Pro";
-  src: url(https://famicomcd.github.io/fonts/Russian.otf);
+  src: url(https://famicomcd.org/fonts/Russian.otf);
 }
 
 a:link {
@@ -73,7 +73,7 @@ padding: 10px;
 }
 
 #famicomcdbanner{
-background: url(https://famicomcd.github.io/graphics/famicomcdbanner.svg);
+background: url(https://famicomcd.org/graphics/famicomcdbanner.svg);
 height: 215px;
 width:auto;
 position: relative;
