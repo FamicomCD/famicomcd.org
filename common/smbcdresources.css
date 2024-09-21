@@ -1,0 +1,283 @@
+	.supportsheetname {
+	font-size:50px;
+	margin:0;
+	line-height:1;
+	}
+	
+	.supportsheetdescp2 {
+	margin-top: 10px;
+	}
+	
+	.supportsheetdescp2 a {
+	color:#c1baef;
+	}
+		
+	.supportsheetdescp2 a:hover {
+	color:#a8a1db;
+	}
+		
+	.supportsheetdescp2 a:active {
+	color:#8277cc;
+	}
+	
+	.supportsheetmargin {
+	padding:20px;
+	width:1420px;
+	margin-left:auto;
+	margin-right:auto;
+	color: white;
+	}
+	
+	.supportsheetcontainer {
+	width:1300px;
+	height:auto;
+	background-color:#594eaa;
+	border: 3px solid #4c4097;
+	border-radius: 30px;
+	margin-left:auto;
+	margin-right:auto;
+	color:white;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	}
+	
+	.supportsheetcontainer a {
+	color:white;
+	}
+		
+	.supportsheetcontainer a:hover {
+	color:white;
+	}
+		
+	.supportsheetcontainer a:active {
+	color:white;
+	}
+	
+	.switchbuttons {
+	float:right;
+	padding:15px 2% 10px 10px;
+	transition: ease-in 0.07s;
+	}
+	
+	.switchbuttongrid, .switchbuttonlist {
+	width:40px;
+	background-color: #51469d;
+	border: 3px solid #4c4097;
+	padding:10px;
+	border-radius: 15px;
+	transition: ease-in 0.07s;
+	}
+		
+	.supporttabname, .supporttabnamebottom {
+	font-size:40px;
+	margin:0;
+	padding-left:2%;
+	padding-top:60px;
+	}
+	
+	.supportcontentbar {
+	height:4px;
+	width:96%;
+	background-color: #4c4097;
+	margin-left:auto;
+	margin-right:auto;
+	}
+	
+	.supportcontent {
+	padding:35px 25px 20px 20px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 15px;
+	display: none;
+	}
+	
+	.supportcontentlist {
+	padding:35px 25px 20px 20px;
+	gap: 15px;
+	display: none;
+	
+	.supportthings {
+	margin-bottom:6px;
+	height: 90px;
+	}
+	
+	.supportstufficons {
+	padding: 1% 0% 2% 1.2%;
+	height: 64px;
+	display: inline-block;
+	}
+	
+	.supportstuffnames {
+	padding: 10px 0% 0% 2%;
+    display: inline-block;
+    vertical-align: top;
+	font-size: 33px;
+	}
+	
+	.supportplaformiconleft, .supportplatformicons {
+	vertical-align: top;
+	float:right;
+	height: 45px;
+	padding: 23px 1% 1% 0%;
+	}
+	
+	.supportplatformiconssmall {
+	width:auto;
+	height: 25px;
+	float:right;
+	padding: 33px 1% 1% 0%;
+	}
+	
+	@media (max-width: 819px) {
+	
+	.supportplaformiconleft, .supportplatformicons  {
+    height: 40px;
+	}
+	
+	}
+
+
+	}
+	
+	
+	.supportcontent.visible {
+	display: grid;
+	}
+	
+	.supportcontentlist.visible {
+	display: block;
+	}
+	
+	.switchbuttongrid.active {
+	background-color:#7d71cf;
+	border: 3px solid #6659b7;
+	}
+	
+	.switchbuttonlist.active {
+	background-color:#7d71cf;
+	border: 3px solid #6659b7;
+	}
+	
+	.supportthings {
+	width:100%;
+	height:auto;
+	background-color: #51469d;
+	border: 3px solid #4c4097;
+	border-radius: 30px;
+	transition: ease-in 0.07s;
+	cursor: pointer;
+	}
+	
+	.supportthings:hover, .switchbuttongrid:hover, .switchbuttonlist:hover {
+	transform: translateY(-3px) scale(1.01);
+	box-shadow: 0px 3px 5px rgba(11, 4, 60, 0.3);
+	}
+		
+	.supportthings:active, .switchbuttongrid:active, .switchbuttonlist:active {
+	transform: translateY(2px) scale(0.99);
+	filter: brightness(90%) hue-rotate(4deg);
+	box-shadow: 0px 4px 1px rgba(11, 4, 60, 0.0);
+	}
+	
+	.supportstufficons {
+	padding:6% 0% 0% 3%;
+	width:auto;
+	height: 135px;
+	text-align:center;
+	}
+
+	.supportstuffnames {
+	padding:0% 0% 0% 5%;
+	margin:0;
+	font-size:27px;
+	}
+	
+	.supportplatformfortext {
+	margin:0;
+	padding:0% 0% 6% 6%;
+	vertical-align:middle;
+	display:inline;
+	}
+	
+	.supportplatformicons, .supportplaformiconleft, .supportplatformiconssmall, .supportplatformiconleftsmall{
+	height: 26px;
+	vertical-align:middle;
+	display:inline;
+	padding:0% 0% 6% 0%;
+	}
+	
+	.supportplaformiconleft, .supportplatformiconleftsmall {
+	padding:0% 0% 6% 6%;
+	}
+	
+	.supportplatformiconssmall, .supportplatformiconleftsmall {
+	width: 60px;
+	height: auto;
+	}
+	
+	@media (max-width: 1459px) {
+	
+	.supportsheetmargin {
+	width:auto;
+	}
+	
+	.supportsheetcontainer {
+	width:auto;
+	border-radius: 0px;
+	}
+	
+	}
+	
+	@media (max-width: 670px) {
+	
+	.supporttabname {
+	text-align:center;
+	padding-left:0;
+	}
+	
+	.supporttabnamebottom {
+	text-align:center;
+	padding-left:0;
+	}
+	
+	.supportsheetname {
+	text-align: center;
+	}
+	
+	.switchbuttons {
+	padding:15px 2% 10px 10px;
+	transition: ease-in 0.07s;
+	width:200px;
+	display:none;
+	}
+	
+	.switchbuttongrid, .switchbuttonlist {
+	width:60px;
+	background-color: #51469d;
+	border: 3px solid #4c4097;
+	padding:10px;
+	border-radius: 15px;
+	transition: ease-in 0.07s;
+	}
+	
+	.supportstufficons {
+	padding: 3% 0% 0% 3%;
+    height: 80px;
+	}
+	
+	.supportstuffnames {
+	padding: 0% 0% 0% 3%;
+	}
+	
+	.supportplaformiconleft, .supportplatformiconleftsmall {
+	padding: 0% 0% 2% 4%;
+	}
+	
+	.supportplatformicons, .supportplatformiconssmall {
+	padding: 0% 0% 2% 0%;
+	}
+	
+	}
+	
