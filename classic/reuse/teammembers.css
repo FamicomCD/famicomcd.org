@@ -1,0 +1,118 @@
+a:link {
+  color: #d8e0ff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #d8e0ff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #C8C3E8;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+
+.theboxthatholdsthetext {
+width: 1100px;
+}
+
+.thebigfont {
+font-size:24px;
+width: 550px;
+margin: auto;
+}
+
+.memberbody {
+display: inline-flex;
+width:450px;
+height: auto;
+}
+
+.icons {
+border-radius: 600px;
+width: 200px;
+height: auto;
+float: left;
+}
+
+.name {
+font-size:20px;
+padding-top:30px;
+padding-left:30px;
+float: left;
+margin-bottom:0;
+}
+
+.position {
+width:400px;
+padding-left:30px;
+margin-top:0;
+text-align:left;
+}
+
+.socialicons {
+display: inline-flex;
+float: left;
+padding-left:30px;
+}
+
+@media screen and (max-width: 1150px) {
+	
+	.theboxthatholdsthetext {
+	width:auto;
+	height:auto;
+	margin: auto;
+	font-size: 13px;
+	}
+	
+	.memberbody {
+	width:auto;
+	}
+
+}
+
+
+@media screen and (max-width: 650px) {
+	
+	.theboxthatholdsthetext {
+	font-size: 13px;
+	}
+	
+	.thebigfont {
+	font-size:20px;
+	width:auto;
+    }
+	
+	.icons {
+	width: 150px;
+	height: auto;
+	}
+	
+	.name {
+	padding-top:10px;
+	}
+	
+}
+
+@media screen and (max-width: 396px) {
+
+	.theboxthatholdsthetext {
+	font-size: 11px;
+	}
+	
+	.icons {
+	width: 100px;
+	height: auto;
+	}
+	
+	.name {
+	padding-top:2px;
+	}
+	
+}

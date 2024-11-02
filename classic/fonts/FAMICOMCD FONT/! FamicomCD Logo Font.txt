@@ -1,0 +1,8 @@
+FamicomCD Font Family
+FamicomCD Logo Font
+
+Test Version 0.9
+
+Copyright 2024, King Mayro, FamicomCD Team
+
+Not for personal or commercial use without permission from King Mayro/FamicomCD Team.

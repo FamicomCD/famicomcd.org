@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-			<html lang="en">
+<html>
 	
-		<head>
+	<head>
 		
-		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=0.80, minimum-scale=0.75, maximum-scale=2.5"/>
-		<meta name="google-site-verification" content="EYxQGXvx_TFMhVJT9UELPA8aoOIBnjt_QR9szmBkuX4" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=0.80, minimum-scale=0.75, maximum-scale=1"/>
 
 		<title>FamicomCD</title>
 		<link rel="tab icon" href="graphics/diskette.png">
@@ -12,86 +12,128 @@
 		<meta name="keywords" content="Famicom, FamicomCD, SMBCD, Super Mario Bros. CD, SMW, rom hack, super mario bros cd">
 		
 		<meta property="og:title" content="FamicomCD"/>
-		<meta property="og:description" content="Home to many non-profit video game projects such as Super Mario Bros. CD and Project Astria!"/>
+		<meta property="og:description" content="Home to many non-profit video game projects such as Super Mario Bros. CD!"/>
 		<meta property="og:url" content="https://famicomcd.org/"/>
 		<meta property="og:image" content="https://famicomcd.org/embedimages/famicomcdembed.png"/>
 		<meta name="twitter:card" content="summary_large_image">
 		<meta data-react-helmet="true" name="theme-color" content="#483c97"/>
+
+		<!-- <link rel="stylesheet" href="reuse/common.css">
+		<link rel="stylesheet" href="https://famicomcd.org/reuse/mainpage.css"> -->
+		<link rel="stylesheet" href="common/global.css">
+		<script src="https://famicomcd.org/common/inserthtml.js"></script>
+		<script src="https://famicomcd.org/common/language.js"></script>
+
+	</head>
+
+
+
+
+
+	<body class=main>
+
+		<div class=headerholder>
 		
-		<link rel="stylesheet" href="https://famicomcd.org/reuse/common.css">
-		<link rel="stylesheet" href="https://famicomcd.org/reuse/mainpage.css">
-		
+			<img class=mainlogo data-imgid="famicomcd_main_logo" src="" alt="FamicomCD">
+			
+			
+			<div style="padding-bottom:20px;">
+				<img class="discette" src="https://famicomcd.org/graphics/diskette.png" alt="Discette! <3">
+				<p class=tagline data-strid="main_page_tagline"></p>
+			</div>
+			
+	
+			<div class="mainbuttons">
+			
+				<a href="https://famicomcd.org/about"><p class="headerbuttons" data-strid="about_button"></p></a>
+				<a href="https://famicomcd.org/contact"><p class="headerbuttons" data-strid="contact_button"></p></a>
+				<p class="headerbuttons" id="showLang" data-strid="language_button"></p>
+					
+				<div id="langSelect">
+					<div class="langtop" data-lang="en">English  🇺🇸</div>
+					<div class="divider"></div>
+					<div class="lang" data-lang="es">Español  🇪🇸</div>
+					<div class="divider"></div>
+					<!-- <div class="lang" data-lang="jp">日本語  🇯🇵</div>
+					<div class="divider"></div> -->
+					<div class="lang" data-lang="it">Italiano  🇮🇹</div>
+					<div class="divider"></div>
+					<!-- <div class="lang" data-lang="fr">Français  🇫🇷</div>
+					<div class="divider"></div> -->
+					<div class="langbot" data-lang="ru">Русский  🇷🇺</div>
+				</div>
+				
+			</div>
+			
+
+	
 
 		
-		</head>
-		
-		
-		<style>
-		
-		.wait {
-		color:#483c97;
-		text-align:center;
-		font-size:30px;
-		}
-		
-		</style>
-		
-	
-	<body class=mainpage>
-	
-	
-<div id=famicomcdbanner>
+		</div>
 
-<div class=logo style="padding-left:15px; padding-right:15px;">
-<a href="https://famicomcd.org/"><img class="center-fit" src="graphics/famicomcdlogowhite.png" alt="FamicomCD Logo" style="width:602px;height:auto;"></a>
-</div>
+		<div class=headerwave></div>
 
-</div>
- 
-<p class=wait>Detecting your language, please wait!</p>
- 
-<iframe src="reuse/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">The footer couldn't load properly :[ Please make sure your browser supports iframes.</iframe>
+
+		<div class="smbcdholder">
+		
+			<a href="https://famicomcd.org/smbcd"><img class="smbcdlogomini" src="https://famicomcd.org/graphics/smbcdlogo/smbcdlogo.png" alt="Super Mario Bros. CD Logo"></a>
+			<p class="smbcdtagline" data-strid="smbcd_tagline"></p>
+
+			<a href="https://famicomcd.org/smbcd"><p class="projectbuttons" data-strid="learn_more_button"></p></a>
+			<a href="https://famicomcd.org/smbcd/download"><p class="projectbuttons" data-strid="download_smbcd_button"></p></a>
+			<p id="showMore" class="moreprojectbuttons" data-strid="show_more_smbcd_button"></p>
+		</div>
+		
+		<div id="moreSMBCD" class="moreSMBCD">
+			<a href="https://famicomcd.org/smbcd/supportsheet"><p class="projectbuttons" data-strid="support_sheet_smbcd_button"></p></a>
+			<a href="https://famicomcd.org/smbcd/msu1setup"><p class="projectbuttons" data-strid="tutorial_smbcd_button"></p></a>
+			<a href="https://famicomcd.org/smbcd/smbcdteam"><p class="moreprojectbuttons" data-strid="smbcd_team_button"></p></a>
+		</div>
+
+		
+		<div class="mainpagebannerholders">
+			<div class="bannermainpagepaddingthing">
+				<a href="https://discord.gg/wpSGt5aTuw"><img class="mainpagebanners" data-imgid="discord_main_page_banner" src="" alt="Join our Discord!" loading="lazy"></a>
+			</div>
+			
+				<div class="mainpagebannerpad"></div>
+			
+			<div class="bannermainpagepaddingthing">
+				<a href="https://github.com/FamicomCD/famicomcd-translators"><img class="mainpagebanners" src="graphics/banners/famicomcdtranslators.webp" alt="Join our translation team!" loading="lazy"></a>
+			</div>
+		</div>
+
+
+		<div class="footerpadding"></div>
+
 
 	</body>
 	
+	<footer data-homepage="true">
 	
+		<div data-insert="https://famicomcd.org/common/footer.html"></div>
+	
+	</footer>
+	
+	
+
+
 	
 	<script>
-	
+		
+        const showMore = document.getElementById('showMore');
+        const moreSMBCD = document.getElementById('moreSMBCD');
 
-const languageUrls = {
-    'en': 'https://famicomcd.org/en',
-    'es': 'https://famicomcd.org/es',
-    'ja': 'https://famicomcd.org/jp',
+        showMore.addEventListener('click', () => {
+            moreSMBCD.classList.toggle('visible');
 
-};
-
-const languageSelectionUrl = 'https://famicomcd.org/languageswitcher';
-
-
-function getUserLanguage() {
-    return navigator.language || navigator.userLanguage;
-}
-
-function findBestMatchingUrl(userLanguage) {
-    if (languageUrls[userLanguage]) {
-        return languageUrls[userLanguage];
-    }
-
-    const baseLanguage = userLanguage.split('-')[0];
-    return languageUrls[baseLanguage] || languageSelectionUrl;
-}
-
-function redirectToLanguageUrl() {
-    const userLanguage = getUserLanguage();
-    const redirectUrl = findBestMatchingUrl(userLanguage);
-    window.location.href = redirectUrl;
-}
-
-redirectToLanguageUrl();
-
-
-	
+            if (moreSMBCD.classList.contains('visible')) {
+                showMore.setAttribute('data-strid', 'show_less_smbcd_button');
+            } else {
+                showMore.setAttribute('data-strid', 'show_more_smbcd_button');
+            }
+        });
+		
 	</script>
 	
 </html>

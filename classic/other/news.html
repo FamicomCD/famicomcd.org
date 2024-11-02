@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+			<html lang="en">
+	
+		<head>
+		
+		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=0.80, minimum-scale=0.75, maximum-scale=2.5"/>
+		<meta name="google-site-verification" content="EYxQGXvx_TFMhVJT9UELPA8aoOIBnjt_QR9szmBkuX4" />
+		
+		<title>FamicomCD - News</title>
+		<link rel="tab icon" href="graphics/diskette.png">
+		<link rel="icon" href="https://famicomcd.org/graphics/faviconcd.ico">
+	
+		<style>
+
+@font-face {
+  font-family: "Seurat Pro";
+  src: url(fonts/FOT-Seurat-ProB.otf);
+}
+
+a:link {
+  color: #d8e0ff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #d8e0ff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #C8C3E8;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.mainpage{
+ padding:0;
+ margin:0;
+ font-size: 20px;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ font-family: "Seurat Pro";
+ background-color: #d8e0ff;
+}
+
+.legalmumbojumbo{
+ font-family: "Seurat Pro", sans-serif;
+ text-align: center; 
+ font-size: 11px;
+}
+
+.SMBCDProjectBox {
+text-align: center;
+padding-bottom: 50px; 
+}
+
+.banners {
+padding-top: 20px;
+text-align: center;
+}
+
+.ProjectsText {
+ font-family: "Seurat Pro", sans-serif;
+ text-align: center; 
+ font-size: 30px;
+}
+
+.footer {
+padding: 15px;
+background-color: #483c97;
+margin-top: auto;
+}
+
+logo {
+ display: grid;
+ height: 100%;
+}
+
+.center-fit {
+max-width: 100%;
+max-height: 100vh;
+margin: auto;
+}
+
+.theboxthatholdsthetext {
+padding: 100px
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #6f62c2;
+width: 1100px;
+height:auto;
+margin: auto;
+border-radius: 10px;
+text-align:center;
+font-size: 14px;
+}
+
+.checkthatflex {
+display: inline-flex;
+}
+
+.paddingwhenneeded {
+padding-top:10px;
+}
+
+
+.memberbody {
+display: inline-flex;
+width:950px;
+height: auto;
+text-shadow: 2px 2px #483c97;
+}
+
+.icons {
+border-radius: 15px;
+width: 600px;
+height: auto;
+float: left;
+
+}
+
+.name {
+font-size:20px;
+padding-left:30px;
+float: left;
+margin-top:0;
+margin-bottom:0;
+}
+
+.position {
+width:700px;
+padding-left:30px;
+margin-top:0;
+text-align:left;
+}
+
+.thesmallerfont {
+font-size:13px;
+}
+
+.thesmallerfontonphones {
+font-size:12px;
+float:left;
+}
+
+.thebigfont {
+font-size:24px;
+width: 550px;
+margin: auto;
+}
+
+
+.backbutton {
+width:200px;
+height: auto;
+}
+
+.bannerflex {
+display: initial;
+}
+
+.nameflex {
+display: inline-flex;
+}
+
+.positionflex {
+display: flex;
+}
+
+@media screen and (max-width: 1206px) {
+	
+	.theboxthatholdsthetext {
+	width:auto;
+	height:auto;
+	margin: auto;
+	font-size: 13px;
+	}
+	
+	.checkthatflex {
+	display: block;
+	}
+	
+	.paddingwhenneeded {
+	padding-top:0;
+	}
+	
+	.thesmallerfontonphones {
+	float:none;
+	}
+	
+	.thesmallerfont {
+	font-size:12px;
+	}
+	
+	.thebigfont {
+    font-size:22px;
+    }
+	
+	.memberbody {
+	width:auto;
+	}
+	
+	.bannerflex {
+	display: flex;
+	}
+	
+	.name {
+	padding-top:0px;
+	padding-left:0px;
+	}
+	
+	.position {
+	width:540px;
+	margin-top:0;
+	text-align:center;
+	}
+	
+	.positionflex {
+	padding-left:0px;
+	display: flex;
+	}
+	
+	.icons {
+	width: 600px;
+	height: auto;
+	}
+
+}
+
+
+@media screen and (max-width: 650px) {
+	.legalmumbojumbo{
+	font-size: 9px;
+	}
+	
+	.theboxthatholdsthetext {
+	font-size: 13px;
+	}
+	
+	.thesmallerfont {
+	font-size:11px;
+	}
+	
+	.thesmallerfontonphones {
+	padding-bottom:15px;
+	}
+	
+	.thebigfont {
+	font-size:20px;
+	width:auto;
+    }
+	
+	.memberbody {
+	width:auto;
+	}
+	
+	.icons {
+	width: 450px;
+	height: auto;
+	}
+	
+	.name {
+	padding-top:10px;
+	width: auto;
+	}
+	
+	.position {
+	width: auto;
+	display: inline-flex;
+	text-align:left;
+	}
+	
+	.bannerflex {
+	width: 400px;
+	}
+
+	.nameflex {
+	width: 400px;
+	}
+
+	.positionflex {
+	width: 400px;
+	padding-right:50px;
+	}
+	
+}
+
+@media screen and (max-width: 396px) {
+	.legalmumbojumbo{
+	font-size: 7px;
+	}
+	
+	.theboxthatholdsthetext {
+	font-size: 11px;
+	}
+	
+	.thesmallerfont {
+	font-size:10px;
+	}
+	
+	.thesmallerfontonphones {
+	font-size:10px;
+	}
+	
+		.icons {
+	width: 300px;
+	height: auto;
+	}
+	
+	.name {
+	padding-top:2px;
+	}
+	
+}
+
+#famicomcdbanner{
+background: url(graphics/famicomcdbanner.svg);
+height: 215px;
+width:auto;
+position: relative;
+background-position: top center;
+background-repeat: repeat-x;
+text-align: center;
+}
+
+
+		</style>
+		</head>
+		
+<!-- This shit is a mess, but it works for now. It will definitely need a rewrite at some point. -->		
+	<body class=mainpage>
+	
+	
+<div id=famicomcdbanner>
+
+<div class=logo style="padding-left:15px; padding-right:15px;">
+<a href="index.html"><img class="center-fit" src="graphics/famicomcdlogowhite.png" alt="FamicomCD Logo" style="width:602px;height:auto;"></a>
+</div>
+
+</div>
+
+<!-- just separating this from the rest of the code. gonna be a lot -->
+
+
+<div class=center-fit style="padding-top:30px;"> 
+ <div class=backbutton>
+  <div>
+  <a href="index.html"><img class="center-fit" src="graphics/banners/back.png" alt="[Back]" style="border-radius: 10px;width: 500px;height: auto;"></a>
+ </div>
+</div> 
+</div>
+ 
+ <div style="padding-bottom:30px;">
+ <div class=theboxthatholdsthetext style="color:white;padding:20px;">
+ <div class=thebigfont style="padding-top:20px;border-bottom: 3px dotted #352063;">
+ <p style="margin-top:0;">News</p>
+ </div> 
+ 
+
+
+
+
+<a href="news/04022024.html">
+ <div class=memberbody>
+ <div style="padding-top:30px;">
+ <div style=text-align:center;>
+  <div class=bannerflex>
+ <img class=icons src="news/graphics/april22024/04022024banner.png">
+  </div>
+ <div class=nameflex>
+ <p class=name style="font-size:18px;">Emulator Support Sheet Updates</p>
+ </div>
+  <div class=positionflex>
+ <p class=position>Updates to the SMBCD emulator support sheet!<br>Tuesday, April 2nd, 2024</p>
+ </div>
+ </div>
+ </div>
+ </div> 
+ </a>
+
+
+
+
+<a href="news/03162024.html">
+ <div class=memberbody>
+ <div style="padding-top:30px;">
+ <div style=text-align:center;>
+  <div class=bannerflex>
+ <img class=icons src="news/graphics/march162024/03162024banner.png">
+  </div>
+ <div class=nameflex>
+ <p class=name>Website News: First Article!</p>
+ </div>
+  <div class=positionflex>
+ <p class=position>New FamicomCD website features and other stuff!<br>Saturday, March 16th, 2024</p>
+ </div>
+ </div>
+ </div>
+ </div> 
+ </a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  <div style=padding-bottom:40px;></div>
+ </div>
+
+
+ </div>
+ </div>
+ 
+ 
+<iframe src="https://famicomcd.org/reuse/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">The footer couldn't load properly :[ Please make sure your browser supports iframes.</iframe>
+
+
+
+	</body>
+	
+	
+	
+</html>

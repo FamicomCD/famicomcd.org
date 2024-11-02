@@ -1,95 +1,444 @@
 <!DOCTYPE html>
-			<html lang="en">
+<html>
 	
-		<head>
+	<head>
 		
-		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=0.80, minimum-scale=0.75, maximum-scale=2.5"/>
-		<meta name="google-site-verification" content="EYxQGXvx_TFMhVJT9UELPA8aoOIBnjt_QR9szmBkuX4" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=0.80, minimum-scale=0.75, maximum-scale=1"/>
 
-		<title>FamicomCD - SMBCD Support Sheet</title>
-		<link rel="tab icon" href="https://famicomcd.org/graphics/diskette.png">
-		<link rel="icon" href="https://famicomcd.org/graphics/faviconcd.ico">
+		<title>FamicomCD</title>
+		<link rel="tab icon" href="https://famicomcd.org/graphics/diskette.png" loading="lazy">
+		<link rel="icon" href="https://famicomcd.org/https://famicomcd.org/graphics/faviconcd.ico">
+		<meta name="keywords" content="Famicom, FamicomCD, SMBCD, Super Mario Bros. CD, SMW, rom hack, super mario bros cd">
 		
-		<meta property="og:title" content="FamicomCD - SMBCD Support Sheet"/>
-		<meta property="og:description" content="If you need to check what emulators or flashcarts support Super Mario Bros. CD or MSU-1 games in general, this sheet has everything you'll need! (Embeds are currently being tested and may not always stick around)!"/>
-		<meta property="og:url" content="https://famicomcd.org/smbcd/supportsheet"/>
-		<meta property="og:image" content="https://famicomcd.org/embedimages/supportsheetembed.png"/>
+		<meta property="og:title" content="FamicomCD"/>
+		<meta property="og:description" content="Home to many non-profit video game projects such as Super Mario Bros. CD and Project Astria!"/>
+		<meta property="og:url" content="https://famicomcd.org/"/>
+		<meta property="og:image" content="https://famicomcd.org/embedimages/famicomcdembed.png" loading="lazy"/>
 		<meta name="twitter:card" content="summary_large_image">
 		<meta data-react-helmet="true" name="theme-color" content="#483c97"/>
 		
 		<link rel="stylesheet" href="https://famicomcd.org/reuse/common.css">
 		<link rel="stylesheet" href="https://famicomcd.org/reuse/mainpage.css">
+		<link rel="stylesheet" href="../common/global.css">
+		<link rel="stylesheet" href="../common/smbcdresources.css">
 		
-
+		<script src="../common/inserthtml.js"></script>
 		
-		</head>
-		
-		
-		<style>
-		
-		.wait {
-		color:#483c97;
-		text-align:center;
-		font-size:30px;
-		}
-		
-		</style>
-		
+	</head>
 	
-	<body class=mainpage>
+	<style>
 	
 	
-<div id=famicomcdbanner>
+	
+	</style>
 
-<div class=logo style="padding-left:15px; padding-right:15px;">
-<a href="https://famicomcd.org/"><img class="center-fit" src="graphics/famicomcdlogowhite.png" alt="FamicomCD Logo" style="width:602px;height:auto;"></a>
-</div>
+	
+		
 
-</div>
- 
-<p class=wait>Detecting your language, please wait!</p>
- 
-<iframe src="reuse/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">The footer couldn't load properly :[ Please make sure your browser supports iframes.</iframe>
+	<body class=main>
+	
+		<div class="paddingbeforethenav"></div>
+		<div id="nav">
+			<a href="newhome.html"><img class="famicomcdlogo" src="https://famicomcd.org/graphics/famicomcdlogosm.png"></a>
+		</div>
+
+		<div class="supportsheetmargin">
+			<p class="supportsheetname" data-strid="support_sheet_name"></p>
+			<p class="supportsheetdesc" data-strid="support_sheet_description"></p>
+			<p class="supportsheetdescp2" data-strid="support_sheet_description_p2"></p>
+			<!-- <p class="supportsheetdescp2" data-strid="support_sheet_description_p3"></p> -->
+		</div>
+		
+		
+		
+		<div class="supportsheetcontainer">
+			<div class="switchbuttons">
+				<img class="switchbuttongrid" src="../graphics/icons/grid.png" loading="lazy" id="gridButton">
+				<img class="switchbuttonlist" src="../graphics/icons/list.png" loading="lazy" id="listButton">
+			</div>
+			
+		
+		
+			<div class="msu1supporttab">
+				<p class="supporttabname" data-strid="msu1_supported"></p>
+				<div class="supportcontentbar"></div>
+			</div>
+			
+			
+			
+			<div class="supportcontent visible">
+			
+			
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/SNES.webp" loading="lazy">
+					<p class="supportstuffnames" data-strid="hardware_superfamicom"></p>
+				</div>
+				
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/MiSTer.webp" loading="lazy">
+					<p class="supportstuffnames">MiSTer</p>
+				</div>
+				
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/Analogue.webp" loading="lazy">
+					<p class="supportstuffnames">Super NT</p>
+				</div>
+				
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/fxpak.webp" loading="lazy">
+					<p class="supportstuffnames">FXPak Pro</p>
+			
+				</div>
+	
+			
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/BSNES.webp" loading="lazy">
+					<p class="supportstuffnames">BSNES</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplaformiconleft" src="https://famicomcd.org/../graphics/icons/consoles/windows.png" loading="lazy"> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/apple.png" loading="lazy"> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/linux.png" loading="lazy"> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/switch.png" loading="lazy"> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/xbox.png" loading="lazy"> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/retroarch.png" loading="lazy">
+				</div>
+				
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/Mesen.png" loading="lazy">
+					<p class="supportstuffnames">Mesen</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplaformiconleft" src="https://famicomcd.org/../graphics/icons/consoles/windows.png" loading="lazy"> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/linux.png" loading="lazy">
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/SNES9x.webp" loading="lazy">
+					<p class="supportstuffnames">SNES9x</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplaformiconleft" src="https://famicomcd.org/../graphics/icons/consoles/windows.png" loading="lazy"> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/apple.png" loading="lazy"> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/linux.png" loading="lazy"> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/retroarch.png" loading="lazy">
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/SNESClassic.webp" loading="lazy">
+					<p class="supportstuffnames" data-strid="emulator_superfamicom"></p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplaformiconleft" src="https://famicomcd.org/../graphics/icons/consoles/retroarch.png" loading="lazy">
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/SNES9x.webp" loading="lazy">
+					<p class="supportstuffnames">SNES9xGX</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplaformiconleft" src="https://famicomcd.org/../graphics/icons/consoles/wii.png" loading="lazy">
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/SNES9x.webp" loading="lazy">
+					<p class="supportstuffnames">SNES9x EX+</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplaformiconleft" src="https://famicomcd.org/../graphics/icons/consoles/android.png" loading="lazy">
+				</div>
+			</div>
+		
+		
+			<div class="supportcontentlist">
+			
+			
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/SNES.webp" loading="lazy">
+					<p class="supportstuffnames" data-strid="hardware_superfamicom"></p>
+				</div>
+				
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/MiSTer.webp" loading="lazy">
+					<p class="supportstuffnames">MiSTer</p>
+				</div>
+				
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/Analogue.webp" loading="lazy">
+					<p class="supportstuffnames">Super NT</p>
+				</div>
+				
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/fxpak.webp" loading="lazy">
+					<p class="supportstuffnames">FXPak Pro</p>
+			
+				</div>
+	
+			
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/BSNES.webp" loading="lazy">
+					<p class="supportstuffnames">BSNES</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/retroarch.png" loading="lazy"> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/xbox.png" loading="lazy"> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/switch.png" loading="lazy"> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/linux.png" loading="lazy"> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/apple.png" loading="lazy"> <img class="supportplaformiconleft" src="https://famicomcd.org/../graphics/icons/consoles/windows.png" loading="lazy">
+
+				</div>
+				
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/Mesen.png" loading="lazy">
+					<p class="supportstuffnames">Mesen</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/linux.png" loading="lazy"> <img class="supportplaformiconleft" src="https://famicomcd.org/../graphics/icons/consoles/windows.png" loading="lazy">
+
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/SNES9x.webp" loading="lazy">
+					<p class="supportstuffnames">SNES9x</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/retroarch.png" loading="lazy"> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/linux.png" loading="lazy"> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/apple.png" loading="lazy"> <img class="supportplaformiconleft" src="https://famicomcd.org/../graphics/icons/consoles/windows.png" loading="lazy">
+
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/SNESClassic.webp" loading="lazy">
+					<p class="supportstuffnames" data-strid="emulator_superfamicom"></p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplaformiconleft" src="https://famicomcd.org/../graphics/icons/consoles/retroarch.png" loading="lazy">
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/SNES9x.webp" loading="lazy">
+					<p class="supportstuffnames">SNES9xGX</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplatformiconssmall" src="https://famicomcd.org/../graphics/icons/consoles/wii.png" loading="lazy">
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/SNES9x.webp" loading="lazy">
+					<p class="supportstuffnames">SNES9x EX+</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplaformiconleft" src="https://famicomcd.org/../graphics/icons/consoles/android.png" loading="lazy">
+				</div>
+				
+			</div>
+		
+				
+		
+		
+		
+		
+		
+		
+			<div class="msu1supporttab">
+				<p class="supporttabnamebottom" data-strid="msu1_unsupported"></p>
+				<div class="supportcontentbar"></div>
+			</div>
+			
+			
+			
+			
+			<div class="supportcontent visible">
+			
+			
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/supereverdrivex6.webp" loading="lazy">
+					<p class="supportstuffnames">Super EverDrive X6</p>
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/supereverdrivex5.webp" loading="lazy">
+					<p class="supportstuffnames">Super EverDrive X5</p>
+				</div>
+
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/Analogue.webp" loading="lazy">
+					<p class="supportstuffnames">Analogue Pocket</p>
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/Delta.webp" loading="lazy">
+					<p class="supportstuffnames">Delta</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplaformiconleft" src="https://famicomcd.org/../graphics/icons/consoles/apple.png" loading="lazy">
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/SNES9x.webp" loading="lazy">
+					<p class="supportstuffnames">pSNES (SNES9x)</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplaformiconleft" src="https://famicomcd.org/../graphics/icons/consoles/windows.png" loading="lazy"> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/linux.png" loading="lazy"> <img class="supportplatformiconssmall" src="https://famicomcd.org/../graphics/icons/consoles/psvita.png" loading="lazy"> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/switch.png" loading="lazy">
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/SNES9x.webp" loading="lazy">
+					<p class="supportstuffnames">SNES9x 3DS</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplatformiconleftsmall" src="https://famicomcd.org/../graphics/icons/consoles/3ds.png" loading="lazy">
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/BlargSNES.webp" loading="lazy">
+					<p class="supportstuffnames">BlargSNES</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplatformiconleftsmall" src="https://famicomcd.org/../graphics/icons/consoles/3ds.png" loading="lazy">
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/Sodium64.webp" loading="lazy">
+					<p class="supportstuffnames">Sodium64</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplaformiconleft" src="https://famicomcd.org/../graphics/icons/consoles/n64.png" loading="lazy">
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/noicon.webp" loading="lazy">
+					<p class="supportstuffnames">NO$SNS</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplaformiconleft" src="https://famicomcd.org/../graphics/icons/consoles/windows.png" loading="lazy">
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/ZSNES.webp" loading="lazy">
+					<p class="supportstuffnames">ZSNES</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplaformiconleft" src="https://famicomcd.org/../graphics/icons/consoles/windows.png" loading="lazy"> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/apple.png" loading="lazy"> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/linux.png" loading="lazy">
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/noicon.webp" loading="lazy">
+					<p class="supportstuffnames">SnemulDS</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplatformiconleftsmall" src="https://famicomcd.org/../graphics/icons/consoles/ds.png" loading="lazy">
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/noicon.webp" loading="lazy">
+					<p class="supportstuffnames">lolSNES</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplatformiconleftsmall" src="https://famicomcd.org/../graphics/icons/consoles/ds.png" loading="lazy">
+				</div>
+			</div>
+			
+			
+			<div class="supportcontentlist">
+			
+			
+								<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/supereverdrivex6.webp" loading="lazy">
+					<p class="supportstuffnames">Super EverDrive X6</p>
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/supereverdrivex5.webp" loading="lazy">
+					<p class="supportstuffnames">Super EverDrive X5</p>
+				</div>
+
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/Analogue.webp" loading="lazy">
+					<p class="supportstuffnames">Analogue Pocket</p>
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/Delta.webp" loading="lazy">
+					<p class="supportstuffnames">Delta</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/apple.png" loading="lazy">
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/SNES9x.webp" loading="lazy">
+					<p class="supportstuffnames">pSNES (SNES9x)</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/switch.png" loading="lazy"> <img class="supportplatformiconssmall" src="https://famicomcd.org/../graphics/icons/consoles/psvita.png" loading="lazy"> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/linux.png" loading="lazy"> <img class="supportplaformiconleft" src="https://famicomcd.org/../graphics/icons/consoles/windows.png" loading="lazy">
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/SNES9x.webp" loading="lazy">
+					<p class="supportstuffnames">SNES9x 3DS</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplatformiconssmall" src="https://famicomcd.org/../graphics/icons/consoles/3ds.png" loading="lazy">
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/BlargSNES.webp" loading="lazy">
+					<p class="supportstuffnames">BlargSNES</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplatformiconssmall" src="https://famicomcd.org/../graphics/icons/consoles/3ds.png" loading="lazy">
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/Sodium64.webp" loading="lazy">
+					<p class="supportstuffnames">Sodium64</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplaformiconleft" src="https://famicomcd.org/../graphics/icons/consoles/n64.png" loading="lazy">
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/noicon.webp" loading="lazy">
+					<p class="supportstuffnames">NO$SNS</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplaformiconleft" src="https://famicomcd.org/../graphics/icons/consoles/windows.png" loading="lazy">
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/ZSNES.webp" loading="lazy">
+					<p class="supportstuffnames">ZSNES</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/linux.png" loading="lazy"> <img class="supportplatformicons" src="https://famicomcd.org/../graphics/icons/consoles/apple.png" loading="lazy"> <img class="supportplaformiconleft" src="https://famicomcd.org/../graphics/icons/consoles/windows.png" loading="lazy">
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/noicon.webp" loading="lazy">
+					<p class="supportstuffnames">SnemulDS</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplatformiconssmall" src="https://famicomcd.org/../graphics/icons/consoles/ds.png" loading="lazy">
+				</div>
+				
+				<div class="supportthings">
+					<img class="supportstufficons" src="../graphics/icons/supportsheet/noicon.webp" loading="lazy">
+					<p class="supportstuffnames">lolSNES</p>
+					<!-- <p class="supportplatformfortext">For:</p> --> <img class="supportplatformiconssmall" src="https://famicomcd.org/../graphics/icons/consoles/ds.png" loading="lazy">
+				</div>
+			</div>
+				
+				
+		</div>
+
+
+
+		<div class="footerpadding"></div>
+
 
 	</body>
 	
+	<footer>
+	
+		<div data-insert="../common/footer.html"></div>
+	
+	</footer>
+	
+	
+	
+	<script src="../common/language.js"></script>
+	<script src="../common/global.js"></script>
 	
 	
 	<script>
 	
+        document.addEventListener('DOMContentLoaded', () => {
+            const gridButton = document.getElementById('gridButton');
+            const listButton = document.getElementById('listButton');
+            const supportContents = document.querySelectorAll('.supportcontent');
+            const supportContentLists = document.querySelectorAll('.supportcontentlist');
 
-const languageUrls = {
-    'en': 'https://famicomcd.org/en/smbcd/supportsheet',
-    'es': 'https://famicomcd.org/es/smbcd/supportsheet',
-    'ja': 'https://famicomcd.org/jp/smbcd/supportsheet',
+            const updateViewMode = () => {
+                if (window.innerWidth <= 670) {
+                    supportContents.forEach(el => el.classList.add('visible'));
+                    supportContentLists.forEach(el => el.classList.remove('visible'));
+                    gridButton.classList.add('active');
+                    listButton.classList.remove('active');
+                    localStorage.setItem('viewMode', 'grid');
+                } else {
+                    const viewMode = localStorage.getItem('viewMode');
+                    if (viewMode === 'list') {
+                        supportContents.forEach(el => el.classList.remove('visible'));
+                        supportContentLists.forEach(el => el.classList.add('visible'));
+                        gridButton.classList.remove('active');
+                        listButton.classList.add('active');
+                    } else {
+                        supportContents.forEach(el => el.classList.add('visible'));
+                        supportContentLists.forEach(el => el.classList.remove('visible'));
+                        gridButton.classList.add('active');
+                        listButton.classList.remove('active');
+                    }
+                }
+            };
 
-};
+            gridButton.addEventListener('click', () => {
+                supportContents.forEach(el => el.classList.add('visible'));
+                supportContentLists.forEach(el => el.classList.remove('visible'));
+                gridButton.classList.add('active');
+                listButton.classList.remove('active');
+                localStorage.setItem('viewMode', 'grid');
+            });
 
-const languageSelectionUrl = 'https://famicomcd.org/languageswitcher';
+            listButton.addEventListener('click', () => {
+                supportContents.forEach(el => el.classList.remove('visible'));
+                supportContentLists.forEach(el => el.classList.add('visible'));
+                gridButton.classList.remove('active');
+                listButton.classList.add('active');
+                localStorage.setItem('viewMode', 'list');
+            });
 
+            updateViewMode();
 
-function getUserLanguage() {
-    return navigator.language || navigator.userLanguage;
-}
-
-function findBestMatchingUrl(userLanguage) {
-    if (languageUrls[userLanguage]) {
-        return languageUrls[userLanguage];
-    }
-
-    const baseLanguage = userLanguage.split('-')[0];
-    return languageUrls[baseLanguage] || languageSelectionUrl;
-}
-
-function redirectToLanguageUrl() {
-    const userLanguage = getUserLanguage();
-    const redirectUrl = findBestMatchingUrl(userLanguage);
-    window.location.href = redirectUrl;
-}
-
-redirectToLanguageUrl();
-
-
+            window.addEventListener('resize', updateViewMode);
+        });
 	
 	</script>
 	

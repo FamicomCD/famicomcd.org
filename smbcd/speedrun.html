@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+			<html lang="en">
+	
+		<head>
+		
+		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=0.80, minimum-scale=0.75, maximum-scale=2.5"/>
+		<meta name="google-site-verification" content="EYxQGXvx_TFMhVJT9UELPA8aoOIBnjt_QR9szmBkuX4" />
+		
+		<title>FamicomCD - SMBCD Speedrun Competition</title>
+		<link rel="tab icon" href="graphics/diskette.png">
+		<link rel="icon" href="https://famicomcd.org/graphics/faviconcd.ico">
+		
+		<meta property="og:title" content="FamicomCD - SMBCD Speedrun Competition"/>
+		<meta property="og:description" content="Take off running with the Super Mario Bros. CD Speedrun Competition! Hopefully you've got what it takes to keep up the pace!"/>
+		<meta property="og:url" content="https://famicomcd.org/speedrun"/>
+		<meta property="og:image" content="https://famicomcd.org/embedimages/event/smbcdspeedrunembed.png"/>
+		<meta name="twitter:card" content="summary_large_image">
+		<meta data-react-helmet="true" name="theme-color" content="#483c97"/>
+		
+		<link rel="stylesheet" href="https://famicomcd.org/reuse/common.css">
+		<link rel="stylesheet" href="https://famicomcd.org/reuse/mainpage.css">
+		<link rel="stylesheet" href="https://famicomcd.org/reuse/smbcd.css">
+		
+		<link rel="stylesheet" href="../common/global.css">
+		<script src="https://famicomcd.org/common/inserthtml.js"></script>
+		<script src="../common/language.js"></script>
+		<script src="https://famicomcd.org/common/global.js"></script>
+	
+		<style>
+
+
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.downloadbuttons {
+background-color:#866dd7;
+border-radius: 10px;
+width:400px;
+}
+
+.downloadbuttons:active {
+background-color:#7057c5;
+}
+
+.buttons {
+padding-top:120px;
+padding-right:30px;
+}
+
+.alltheneatstuff {
+display:inline-flex;
+}
+
+.footer {
+background-color: #39317b;
+}
+
+.mainpage {
+background-color: #312963;
+}
+
+
+@media screen and (max-width: 1006px) {
+	
+	.downloadbuttons {
+	width:auto;
+	}
+	
+	.buttons {
+	padding-right:15px;
+	}
+
+}
+
+@media screen and (max-width: 850px) {
+
+	.alltheneatstuff {
+	display: block;
+	padding-top:20px;
+	}
+	
+	.downloadbuttons {
+	width:auto;
+	}
+	
+	.buttons {
+	padding-top:0px;
+	}
+
+}
+
+#famicomcdbanner{
+background: url(https://famicomcd.org/graphics/famicomcdspeedruncompbanner.svg);
+}
+
+		</style>
+		</head>
+		
+<!-- This shit is a mess, but it works for now. It will definitely need a rewrite at some point. -->		
+	<body class=mainpage>
+	
+	
+		<div class="paddingbeforethenav"></div>
+		<div id="nav">
+			<a href="https://famicomcd.org/"><img class="famicomcdlogo" src="https://famicomcd.org/graphics/famicomcdlogosm.png"></a>
+		</div>
+
+<!-- just separating this from the rest of the code. gonna be a lot -->
+
+
+<div class=center-fit style="padding-top:30px;"> 
+ <div class=backbutton>
+  <div>
+  <a href="https://famicomcd.org/smbcd"><img class="center-fit" src="https://famicomcd.org/graphics/banners/back.png" alt="[Back]" style="border-radius: 10px;width: 500px;height: auto;"></a>
+ </div>
+</div> 
+</div>
+ 
+ <div style="padding-bottom:30px;">
+ <div class=theboxthatholdsthetext style="color:white;padding:20px;">
+ <div class=thebigfont style="padding-top:20px;border-bottom: 3px dotted #352063;">
+ <p style="margin-top:0;" data-strid="deprecated_speedrun_name"></p>
+ </div> 
+ 
+  <p style="font-size: 20px; padding:20px;border: 5px dotted #866dd7;" data-strid="deprecated_speedrun_thanks"><p>
+ 
+ <p style="font-size: 16px; padding-top:20px;" data-strid="deprecated_speedrun_updatename"><p>
+ 
+<p style="font-size: 16px;text-align:left;" data-strid="deprecated_speedrun_descupdate"></p>
+ 
+ <p style="font-size: 16px; padding-top:40px;text-align:left;" data-strid="deprecated_speedrun_desc1"></p>
+ 
+ <p style="font-size: 16px; padding-top:20px;text-align:left;" data-strid="deprecated_speedrun_desc2"></p>
+ 
+  <p style="font-size: 16px; padding-top:20px;text-align:left;" data-strid="deprecated_speedrun_desc3"></p>
+  
+  <div>
+  <div>
+  <div style="display:inline-flex;padding-top:20px;">
+  <img src="https://famicomcd.org/graphics/icons/cartridge.png" style="width:90px;height:65px;">
+  <p style="padding-left:20px;font-size: 16px;vertical-align:middle;" data-strid="deprecated_speedrun_sfc"></p>
+  </div>
+  </div>
+  
+  <div>
+  <div style="display:inline-flex;padding-top:20px;padding-right:138px;">
+  <img src="https://famicomcd.org/graphics/icons/keyboard.png" style="width:90px;height:65px;">
+  <p style="padding-left:20px;font-size: 16px;vertical-align:middle;" data-strid="deprecated_speedrun_keyboard"></p>
+  </div>
+  </div>
+  
+  <div>
+  <div style="display:inline-flex;padding-top:20px;padding-right:76px;">
+  <img src="https://famicomcd.org/graphics/icons/controllertouch.png" style="width:90px;height:65px;">
+  <p style="padding-left:20px;font-size: 16px;vertical-align:middle;" data-strid="deprecated_speedrun_controller"></p>
+  </div>
+  </div>
+  </div>
+  
+    <p style="font-size: 16px; padding-top:20px;" data-strid="deprecated_speedrun_submit"></p>
+
+<div class=alltheneatstuff>
+<div class=buttons>
+	<a href="https://famicomcd.org/SMBCDDownload/SpeedrunCompDemo/SMBCD Speedrun Comp 2.2.zip"><div class=downloadbuttons>
+	<p style=font-size:28px; data-strid="deprecated_speedrun_2.2"></p>
+	</div></a>
+	
+	<a href="https://drive.google.com/file/d/1yWuHfCAimJFfj9hGGyCO2J4zssrz_0nY/view?usp=sharing"><div class=downloadbuttons>
+	<p style=font-size:19px; data-strid="deprecated_speedrun_2.2mirror"></p>
+	</div></a>
+	
+	<a href="https://famicomcd.org/SMBCDDownload/SpeedrunCompDemo/SMBCD Speedrun Comp 1.3.zip"><div class=downloadbuttons>
+	<p style=font-size:19px; data-strid="deprecated_speedrun_1.3"></p>
+	</div></a>
+	</div>
+	
+	
+  <div>	
+	 <div class=thebigfont style="padding-top:20px;border-bottom: 3px dotted #352063;">
+      <p style="margin-top:0;" data-strid="deprecated_speedrun_"></p>
+     </div> 
+ 
+     <iframe style="padding-top:20px;" width="460" height="260" src="https://www.youtube.com/embed/y2eLLYUZIlI?si=ByDPNzkNpUg_Wmld" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</div>
+ 
+ 
+ 
+ 
+ <div class=thebigfont style="padding-top:30px;border-bottom: 3px dotted #352063;">
+ <p style="margin-top:0;" data-strid="deprecated_smbcd_screenshots"></p>
+ </div> 
+ 
+ <div style="padding-top:20px;padding-bottom:20px;">
+ <a href="https://famicomcd.org/graphics/smbcdscreenshots/demos/speedruncomp2.2/SMBCD040.png"><img class="center-fit" src="https://famicomcd.org/graphics/smbcdscreenshots/demos/speedruncomp2.2/SMBCD040.png" style="width:220px;height:auto;"></a>
+ <a href="https://famicomcd.org/graphics/smbcdscreenshots/demos/speedruncomp2.2/SMBCD041.png"><img class="center-fit" src="https://famicomcd.org/graphics/smbcdscreenshots/demos/speedruncomp2.2/SMBCD041.png" style="width:220px;height:auto;"></a>
+ <a href="https://famicomcd.org/graphics/smbcdscreenshots/demos/speedruncomp2.2/SMBCD042.png"><img class="center-fit" src="https://famicomcd.org/graphics/smbcdscreenshots/demos/speedruncomp2.2/SMBCD042.png" style="width:220px;height:auto;"></a>
+ <a href="https://famicomcd.org/graphics/smbcdscreenshots/demos/speedruncomp2.2/SMBCD043.png"><img class="center-fit" src="https://famicomcd.org/graphics/smbcdscreenshots/demos/speedruncomp2.2/SMBCD043.png" style="width:220px;height:auto;"></a>
+ <a href="https://famicomcd.org/graphics/smbcdscreenshots/demos/speedruncomp2.2/SMBCD045.png"><img class="center-fit" src="https://famicomcd.org/graphics/smbcdscreenshots/demos/speedruncomp2.2/SMBCD045.png" style="width:220px;height:auto;"></a>
+ <a href="https://famicomcd.org/graphics/smbcdscreenshots/demos/speedruncomp2.2/SMBCD046.png"><img class="center-fit" src="https://famicomcd.org/graphics/smbcdscreenshots/demos/speedruncomp2.2/SMBCD046.png" style="width:220px;height:auto;"></a>
+</div> 
+ 
+
+ </div>
+ </div>
+ 
+ 
+ 
+	<footer>
+		<div data-insert="https://famicomcd.org/common/footer.html"></div>
+	</footer>
+	
+
+	</body>
+	
+	
+	
+</html>

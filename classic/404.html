@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+			<html lang="en">
+	
+		<head>
+		
+		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=0.80, minimum-scale=0.75, maximum-scale=2.5"/>
+		<meta name="google-site-verification" content="EYxQGXvx_TFMhVJT9UELPA8aoOIBnjt_QR9szmBkuX4" />
+		
+		<title>FamicomCD - 404</title>
+		<link rel="tab icon" href="https://famicomcd.org/graphics/diskette.png">
+		<link rel="icon" href="https://famicomcd.org/graphics/faviconcd.ico">
+		
+		<meta property="og:title" content="FamicomCD - 404"/>
+		<meta property="og:description" content="People don't usually link 404 pages, but to each their own! -- Home to many non-profit video game projects such as Super Mario Bros. CD and Project Astria!"/>
+		<meta property="og:url" content="https://famicomcd.org/"/>
+		<meta property="og:image" content="https://famicomcd.org/embedimages/404embed.png"/>
+		<meta name="twitter:card" content="summary_large_image">
+		<meta data-react-helmet="true" name="theme-color" content=#483c97"/>
+		
+		<link rel="stylesheet" href="https://famicomcd.org/reuse/common.css">
+		<link rel="stylesheet" href="https://famicomcd.org/reuse/mainpage.css">
+		<link rel="stylesheet" href="https://famicomcd.org/reuse/smbcd.css">
+	
+		<style>
+
+
+
+		</style>
+		</head>
+		
+<!-- This shit is a mess, but it works for now. It will definitely need a rewrite at some point. -->		
+	<body class=mainpage>
+	
+	
+<div id=famicomcdbanner>
+
+<div class=logo style="padding-left:15px; padding-right:15px;">
+<a href="https://famicomcd.org/"><img class="center-fit" src="https://famicomcd.org/graphics/famicomcdlogowhite.png" alt="FamicomCD Logo" style="width:602px;height:auto;"></a>
+</div>
+
+</div>
+ 
+ 
+<div class=checkthatflex style="margin:auto;"> 
+<div class=the404part>
+<div class=ProjectsText style="padding-top:80px;">
+<img src="https://famicomcd.org/fonts/FAMICOMCD FONT/4.svg" style="width:auto;height:100px;padding-right:4px;"><img src="https://famicomcd.org/fonts/FAMICOMCD FONT/O.svg" style="width:auto;height:100px;padding-right:4px;"><img src="https://famicomcd.org/fonts/FAMICOMCD FONT/4.svg" style="width:auto;height:100px;">
+</div>
+
+<div class=CaptionText style="color: #6888fc;text-align:center;">
+<div id="imageCaption"></div>
+</div>
+</div>
+
+<img class=RandImage id="randomImage" src="" alt="Random Image" style="width:270px;height:auto;margin:auto;">
+</div>    
+	
+<!--	<a onclick="history.go(-1);" href="javascript:void(0);">Previous Page</a> -->
+	
+	
+
+    <script>
+        var images = [
+		//common strings
+            { src: "https://famicomcd.org/404icons/404paper.png", caption: "Oops! That page couldn't be found, maybe try looking elsewhere.", weight: 4 },
+            { src: "https://famicomcd.org/404icons/404ack.png", caption: "Unfortunately that page couldn't be found, sorry!", weight: 5 },
+            { src: "https://famicomcd.org/404icons/404carts.png", caption: "Sorry! That page may've gotten lost in the carts! Try looking elsewhere.", weight: 4 },
+			{ src: "https://famicomcd.org/404icons/404upset.png", caption: "That page wasn't found, maybe you clicked a wrong link, oops!", weight: 5 },
+
+
+		//rare strings
+            { src: "https://famicomcd.org/404icons/404formal.png", caption: "My sincerest apologies for any inconvenience thus incurred. It hath come to my attention that the desired page may not be found within our digital annals.", weight: 1 }
+			
+        ];
+
+        // Calculate total weight
+        var totalWeight = images.reduce((acc, img) => acc + img.weight, 0);
+
+        // Generate a random number between 1 and totalWeight
+        var randomNumber = Math.floor(Math.random() * totalWeight) + 1;
+
+        // Select the image based on the random number and weights
+        var selectedImage;
+        for (var i = 0; i < images.length; i++) {
+            randomNumber -= images[i].weight;
+            if (randomNumber <= 0) {
+                selectedImage = images[i];
+                break;
+            }
+        }
+
+        document.getElementById("randomImage").src = selectedImage.src;
+        document.getElementById("imageCaption").textContent = selectedImage.caption;
+    </script>
+ 
+ 
+<iframe src="https://famicomcd.org/reuse/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">The footer couldn't load properly :[ Please make sure your browser supports iframes.</iframe>
+
+
+	</body>
+</html>

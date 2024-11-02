@@ -1,0 +1,580 @@
+		@font-face {
+		font-family: "Seurat Pro";
+		src: url(https://famicomcd.org/fonts/Seurat-Pro.woff2);
+		}
+		
+		a:link {
+		color: #28205c;
+		background-color: transparent;
+		text-decoration: none;
+		}
+
+		a:visited {
+		color: #28205c;
+		background-color: transparent;
+		text-decoration: none;
+		}
+
+		a:active {
+		color: #2f266a;
+		background-color: transparent;
+		text-decoration: none;
+		}
+		
+		body {
+		margin:0;
+		font-family: "Seurat Pro";
+		line-height: 2;
+		x-overflow:hidden;
+		}
+		
+		#nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		transition: top 0.5s ease;
+		z-index: 1000;
+		height:70px;
+		background-color: white;
+		/* backdrop-filter: blur(10px); */
+		/* background-color: rgba(256, 256, 256, 0.7); */
+		}
+		
+		.paddingbeforethenav {
+		height:70px;	
+		}
+		
+		.famicomcdlogo {
+		padding-left:16px;
+		padding-top:9px;
+		width:240px;
+		vertical-align:top;
+		}
+		
+		.main {
+		background-color:#6f62c2;
+		}
+		
+		.headerholder {
+		background-color:white;
+		height:auto;
+		padding-bottom:20px;
+		text-align:center;
+		}
+		
+		.headerwave {
+		background-color:white;
+		width:100%;
+		height:70px;
+		mask-repeat: no-repeat;
+		mask-size: 100%;
+		mask-image:  url('https://famicomcd.org/graphics/mask/wavemain.webp');
+		mask-size: 100% auto;
+		-webkit-mask-image:  url('https://famicomcd.org/graphics/mask/wavemain.webp');
+		-webkit-mask-size: 100% auto;
+		z-index:-1;
+		padding-bottom:22px;
+		transform: translateY(-3px);
+		}
+		
+		.logo {
+		padding-top:60px;
+		width:800px;
+		}
+		
+		.tagline {
+		color:#483c97;
+		margin-left:auto;
+		margin-right:auto;
+		display:inline-block;
+		vertical-align:top;
+		width:500px;
+		}
+		
+		.tagline a {
+		color:#9b93d1;
+		}
+		
+		.tagline a:hover {
+		color:#7b73b3;
+		}
+		
+		.tagline a:active {
+		color:#60579a;
+		}
+		
+		.discette {
+		width:100px;
+		display:inline;
+		}
+		
+		.headerbuttons, .projectbuttons, .moreprojectbuttons, .footerbuttons {
+		background-color:#6f62c2;
+		padding:25px;
+		font-size:20px;
+		width:255px;
+		display:inline-block;
+		line-height:0;
+		color:white;
+		border-radius: 30px;
+		border: 3px solid #54499a;
+		transition: ease-in 0.07s;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		z-index:14;
+		position:relative;
+		margin:6px;
+		cursor: pointer;
+		}
+		
+		.projectbuttons, .moreprojectbuttons {
+		background-color: #fff;
+		border: 3px solid #c2bcef;
+		color: #594eaa;
+		}
+		
+		.moreprojectbuttons {
+		width: 583px;
+		}
+		
+		.headerbuttons:hover, .projectbuttons:hover, .moreprojectbuttons:hover, .mainpagebanners:hover, .footerbuttons:hover {
+		transform: translateY(-3px) scale(1.01);
+		box-shadow: 0px 3px 5px rgba(11, 4, 60, 0.3);
+		}
+		
+		.headerbuttons:active, .projectbuttons:active, .moreprojectbuttons:active, .mainpagebanners:active, .footerbuttons:active {
+		transform: translateY(2px) scale(0.99);
+		filter: brightness(90%) hue-rotate(8deg);
+		box-shadow: 0px 4px 1px rgba(11, 4, 60, 0.0);
+		}
+		
+		.smbcdholder {
+		background-color: #594eaa;
+		width:800px;
+		padding:0px 40px 40px 40px;
+		height:auto;
+		margin-left: auto;
+		margin-right: auto;
+		text-align:center;
+		border-radius: 30px;
+		border: 3px solid #4c4097;
+		z-index:2;
+		position:relative;
+		overflow:hidden;
+		}
+		
+		.moreSMBCD {
+		display:none;
+		background-color: #51469d;
+		width:800px;
+		padding: 47px 40px 40px 40px;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		text-align:center;
+		border-radius: 0px 0px 30px 30px;
+		border: 3px solid #4c4097;
+		transform: translateY(-27px);
+		/* transition: ease-in 1.5s; */
+		position:relative;
+		overflow:hidden;
+		}
+		
+		.moreSMBCD.visible {
+		display:block;
+		z-index:1;
+		}
+		
+		.smbcdlogomini {
+		width:800px;
+		overflow:hidden;
+		}
+		
+		.smbcdtagline {
+		text-align:left;
+		color:white;
+		overflow:hidden;
+		}
+		
+		.divider {
+		width:100%;
+		height:4px;
+		background-color:#6155ac;
+		}
+		
+		#langSelect {
+		display: none;
+		color:white;
+		border-radius: 0px 0px 30px 30px;
+		border: 3px solid #54499a;
+		position: absolute;
+		background-color:#6f62c2;
+		padding:25px 25px 10px 25px;
+		font-size:18px;
+		width:251px;
+		height:154px;
+		overflow-y: scroll;
+		transform: translateY(-22px);
+		z-index:3;
+		box-shadow: 0px 3px 5px rgba(11, 4, 60, 0.3);
+        }
+		
+		.lang, .langtop, .langbot {
+		cursor: pointer;
+		padding-bottom: 7px;
+		}
+		
+		.langtop {
+		border-radius: 20px 20px 0px 0px;
+		}
+		
+		.langbot {
+		border-radius: 0px 0px 20px 20px;
+		}
+		
+		.lang:hover, .langtop:hover, .langbot:hover {
+		background-color: #675bb6;
+		}
+		
+		.mainpagebannerholders {
+		margin-left:auto;
+		margin-right:auto;
+		display:block;
+		position: relative;
+		width:1186px;
+		padding-top:60px;
+		}
+		
+		.mainpagebanners {
+		transition: ease-in 0.07s;
+		width:585px;
+		display:inline-block;
+		border-radius:25px;
+		display:inline;
+		}
+		
+		.bannermainpagepaddingthing {
+		display:inline;
+		}
+		
+		.mainpagebannerpad {
+		width:5px;
+		display:inline-block;
+		}
+		
+		.footerpadding {
+		padding-top:40px;
+		}
+		
+		footer {
+		background-color: #483c97;
+		height:auto;
+		color:white;
+		}
+		
+		footer .mainbuttons {
+		text-align:center;	
+		}
+		
+		footer #langSelect {
+		transform: translateY(-232px);
+		border-radius: 30px 30px 0px 0px;
+		padding: 10px 25px 25px 25px;
+		background-color: #fff;
+		border: 3px solid #c2bcef;
+		color: #594eaa;
+		}
+		
+		footer .divider {
+		background-color: #dad5fd;
+		}
+		
+		footer .headerbuttons {
+		background-color: #fff;
+		border: 3px solid #c2bcef;
+		color: #594eaa;
+		}
+		
+		footer .lang:hover, footer .langtop:hover, footer .langbot:hover {
+		background-color: #ece9ff;
+		}
+		
+
+
+		
+		.footerstuff {
+		width:1000px;
+		margin-right:auto;
+		margin-left:auto;
+		padding-top:10px;
+		}
+		
+		.footerstuff a {
+		color:#c1baef;
+		}
+		
+		.footerstuff a:hover {
+		color:#a8a1db;
+		}
+		
+		.footerstuff a:active {
+		color:#776db7;
+		}
+		
+		.learnmorefooter {
+		display: inline-block;
+		transition: transform 0.3s ease;
+		transform: translateX(4px);
+		}
+		
+		.learnmorefooter:hover {
+		transform: translateX(14px) scale(1.01);
+		}
+		
+		.socials {
+		width:40px;
+		display:inline;
+		float:right;
+		padding:3px;
+		border-radius: 13px;
+		transition: ease-in 0.1s;
+		}
+		
+		.socials:hover {
+		transform: scale(1.04);
+		}
+		
+		.socialdivider {
+		width:4px;
+		height:46px;
+		display:inline;
+		float:right;
+		background-color: #382c81;
+		}
+		
+		.padsocialdivider {
+		padding: 0px 10px 0px 10px;
+		display:inline;
+		float:right;
+		}
+		
+		.legalmumbojumbo {
+		text-align:left;
+		font-size:15px;
+		}
+		
+		.copyright {
+		display:inline-flex;
+		margin-top:7px;
+		}
+		
+		.socialgroup {
+		display:inline;
+		}
+
+		@media (min-width: 1962px) {
+			
+		#nav {
+		height:85px;
+		background-color:white;
+		}
+		
+		.paddingbeforethenav {
+		height:85px;	
+		}
+		
+		.famicomcdlogo {
+		padding-left:16px;
+		padding-top:9px;
+		width:300px;
+		vertical-align:top;
+		}
+	
+		.headerwave {
+		mask-repeat: no-repeat;
+		mask-size: 100%;
+		mask-image:  url('https://famicomcd.org/graphics/mask/wavemainbig.webp');
+		mask-size: 100% auto;
+		-webkit-mask-image:  url('https://famicomcd.org/graphics/mask/wavemainbig.webp');
+		-webkit-mask-size: 100% auto;
+		transform: translateY(-1px);
+		}
+		
+		}
+		
+		
+		@media (max-width: 1325px) {
+				
+		.mainpagebannerholders {
+		width:100%;
+		overflow:hidden;		
+		}
+		
+		.mainpagebanners {
+		width:47.5%;
+		border-radius:25px;
+		}
+		
+		.bannermainpagepaddingthing {
+		padding:1%;
+		}
+		
+		.mainpagebannerpad {
+		display:none;
+		}
+		
+		}
+		
+		
+		@media (max-width: 1025px) {
+		
+		.footerstuff {
+		width:96%;
+		}
+		
+		.logo {
+		width:90%;
+		}
+		
+		}
+
+
+		@media (max-width: 865px) {	
+
+		.headerwave {
+		mask-repeat: no-repeat;
+		mask-size: 100%;
+		mask-image:  url('https://famicomcd.org/graphics/mask/wavemainmobile.webp');
+		mask-size: 100% auto;
+		-webkit-mask-image:  url('https://famicomcd.org/graphics/mask/wavemainmobile.webp');
+		-webkit-mask-size: 100% auto;
+		}
+		
+		.moreSMBCD {
+		width:auto;
+		height:auto;
+		border-radius: 0px;
+		padding: 60px 20px 20px 20px;
+		}
+		
+		.smbcdholder {
+		width:auto;
+		height:auto;
+		border-radius: 0px;
+		padding: 0px 20px 20px 20px;
+		}
+		
+		.smbcdlogomini {
+		width:100%;
+		}
+		
+		.mainpagebanners {
+		width:100%;
+		border-radius:25px;
+		}
+		
+		.bannermainpagepaddingthing {
+		padding:0%;
+		}
+
+		}
+		
+		
+		@media (max-width: 800px) {
+		
+		#nav {
+		text-align:center;
+		height:80px;
+		}
+		
+		.paddingbeforethenav {
+		height:80px;	
+		}
+		
+		.famicomcdlogo {
+		padding-left: 0px;
+		width: 290px;
+		}
+			
+		}	
+		
+		
+		@media (max-width: 709px) {	
+
+		.headerbuttons, .projectbuttons, .moreprojectbuttons {
+		width: 85%;
+		}
+		
+		#langSelect {
+		width: 84.2%;
+		height: 200px;
+		}
+		
+		.tagline {
+		font-size:17px;
+		}
+		
+		footer #langSelect {
+		transform: translateY(-276px);
+		width: 80.6%;
+		}
+		
+		}
+		
+		
+		@media (max-width: 625px) {	
+		
+		.discette {
+		display:none;
+		}
+		
+		footer #langSelect {
+		width: 75.6%;
+		}
+		
+		.headerbuttons, .projectbuttons, .moreprojectbuttons {
+		width: 80%;
+		}
+		
+		#langSelect {
+		width: 79.2%;
+		}
+
+		}
+
+		
+		
+		@media (max-width: 600px) {	
+		
+		.footerstuff {
+		font-size:14px;
+		}
+		
+		.legalmumbojumbo {
+		text-align:center;
+		}
+		
+		.copyright {
+		display:block;
+		margin-top:7px;
+		text-align:center;
+		}
+		
+		.socialgroup {
+		display: table;
+		margin-left:auto;
+		margin-right:auto;
+		}
+		
+		footer {
+		padding-bottom:20px;
+		}
+		
+		.tagline {
+		width:93%;
+		}
+		
+		}

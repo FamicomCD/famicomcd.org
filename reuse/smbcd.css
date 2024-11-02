@@ -14,9 +14,17 @@ text-align: center;
 padding-bottom: 50px; 
 }
 
-.banners {
+.bannersdep {
 padding-top: 20px;
 text-align: center;
+}
+
+.bannnerfit {
+width:500px;
+}
+
+.smbcdlogodep{
+width: 785px;
 }
 
 .theboxthatholdsthetext {
@@ -178,6 +186,10 @@ display:inline-flex;
 	.sidebyside {
 	display:block;
 	}
+	
+	.smbcdlogodep {
+	width:95%;	
+	}
 
 }
 
@@ -203,6 +215,10 @@ display:inline-flex;
 
 	.centerdownloadbuttons {
 	width:auto;
+	}
+	
+	.bannnerfit {
+	width:100%;
 	}
 	
 }

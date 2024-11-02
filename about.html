@@ -5,7 +5,7 @@
 		
 		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=0.80, minimum-scale=0.75, maximum-scale=2.5"/>
 		<meta name="google-site-verification" content="EYxQGXvx_TFMhVJT9UELPA8aoOIBnjt_QR9szmBkuX4" />
-
+		
 		<title>FamicomCD - About FamicomCD</title>
 		<link rel="tab icon" href="graphics/diskette.png">
 		<link rel="icon" href="https://famicomcd.org/graphics/faviconcd.ico">
@@ -18,79 +18,217 @@
 		<meta data-react-helmet="true" name="theme-color" content="#483c97"/>
 		
 		<link rel="stylesheet" href="https://famicomcd.org/reuse/common.css">
-		<link rel="stylesheet" href="https://famicomcd.org/reuse/mainpage.css">
 		
-
-		
-		</head>
-		
-		
+			<link rel="stylesheet" href="common/global.css">
+		<script src="https://famicomcd.org/common/inserthtml.js"></script>
+		<script src="common/language.js"></script>
+		<script src="https://famicomcd.org/common/global.js"></script>
+	
 		<style>
-		
-		.wait {
-		color:#483c97;
-		text-align:center;
-		font-size:30px;
-		}
-		
+
+.mainpage{
+ padding:0;
+ margin:0;
+ font-size: 20px;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ font-family: "Seurat Pro";
+ background-color: #d8e0ff;
+}
+
+.SMBCDProjectBox {
+text-align: center;
+padding-bottom: 50px; 
+}
+
+logo {
+ display: grid;
+ height: 100%;
+}
+
+.center-fit {
+max-width: 100%;
+max-height: 100vh;
+margin: auto;
+}
+
+.theboxthatholdsthetext {
+padding: 100px
+display: flex;
+background-color: #6f62c2;
+width: 990px;
+height:auto;
+margin: auto;
+border-radius: 10px;
+font-size: 14px;
+}
+
+.thesmallerfont {
+font-size:13px;
+}
+
+.thesmallerfontonphones {
+font-size:12px;
+float:left;
+}
+
+.thebigfont {
+font-size:24px;
+width: 550px;
+margin: auto;
+text-align:center;
+}
+
+.thebignfont {
+font-size:24px;
+width: 700px;
+margin: auto;
+text-align:center;
+}
+
+
+.backbutton {
+width:200px;
+height: auto;
+}
+
+@media screen and (max-width: 1006px) {
+	
+	.theboxthatholdsthetext {
+	width:auto;
+	height:auto;
+	margin: auto;
+	font-size: 13px;
+	}
+	
+	.checkthatflex {
+	display: block;
+	}
+	
+	.paddingwhenneeded {
+	padding-top:0;
+	}
+	
+	.thesmallerfontonphones {
+	float:none;
+	}
+	
+	.thesmallerfont {
+	font-size:12px;
+	}
+	
+	.thebigfont {
+    font-size:22px;
+    }
+	
+	.thebignfont {
+    font-size:22px;
+    }
+
+}
+
+
+@media screen and (max-width: 650px) {
+	.theboxthatholdsthetext {
+	font-size: 13px;
+	}
+	
+	.thesmallerfont {
+	font-size:11px;
+	}
+	
+	.thesmallerfontonphones {
+	padding-bottom:15px;
+	}
+	
+	.thebigfont {
+	font-size:20px;
+	width:auto;
+    }
+	
+	.thebignfont {
+	font-size:20px;
+	width:auto;
+    }
+	
+}
+
+@media screen and (max-width: 396px) {
+	.theboxthatholdsthetext {
+	font-size: 11px;
+	}
+	
+	.thesmallerfont {
+	font-size:10px;
+	}
+	
+	.thesmallerfontonphones {
+	font-size:10px;
+	}
+	
+}
+
+
 		</style>
+		</head>
 		
 	
 	<body class=mainpage>
 	
 	
-<div id=famicomcdbanner>
+		<div class="paddingbeforethenav"></div>
+		<div id="nav">
+			<a href="https://famicomcd.org/"><img class="famicomcdlogo" src="https://famicomcd.org/graphics/famicomcdlogosm.png"></a>
+		</div>
 
-<div class=logo style="padding-left:15px; padding-right:15px;">
-<a href="https://famicomcd.org/"><img class="center-fit" src="graphics/famicomcdlogowhite.png" alt="FamicomCD Logo" style="width:602px;height:auto;"></a>
-</div>
 
-</div>
  
-<p class=wait>Detecting your language, please wait!</p>
+ <div style="padding-bottom:30px;padding-top:30px;">
+ <div class=theboxthatholdsthetext style="color:white;padding:20px;">
  
-<iframe src="reuse/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">The footer couldn't load properly :[ Please make sure your browser supports iframes.</iframe>
+ <div>
+ <div class=thebigfont style="padding-top:20px;border-bottom: 3px dotted #352063;">
+ <p style="margin-top:0;" data-strid="deprecated_about_famicomcd"></p>
+ </div> 
+ 
+ <p style="font-size: 14px; padding-top:20px;" data-strid="deprecated_about_famicomcddesc"></p>
+ 
+ 
+  <div class=thebignfont style="padding-top:40px;border-bottom: 3px dotted #352063;">
+ <p style="margin-top:0;" data-strid="deprecated_about_ar"></p>
+ </div> 
+ 
+  <p style="font-size: 14px; padding-top:10px;" data-strid="deprecated_about_ar1"></p>
+
+  <p style="font-size: 14px; padding-top:20px;padding-bottom:15px;" data-strid="deprecated_about_ar2"></p>
+ </div> 
+ 
+  <p style="font-size: 14px;" data-strid="deprecated_about_arwall"></p>
+
+ 
+<div>
+ <div class=thebignfont style="padding-top:40px;border-bottom: 3px dotted #352063;">
+ <p style="margin-top:0;" data-strid="deprecated_about_risk"></p>
+ </div> 
+ 
+ <p style="font-size: 14px; padding-top:20px;" data-strid="deprecated_about_riskdesc"></p>
+
+ </div>  
+ 
+ </div>
+ </div>
+ 
+ 
+	<footer>
+	
+		<div data-insert="https://famicomcd.org/common/footer.html"></div>
+	
+	</footer>
+
 
 	</body>
 	
 	
-	
-	<script>
-	
-
-const languageUrls = {
-    'en': 'https://famicomcd.org/en/about',
-    'es': 'https://famicomcd.org/es/about',
-    'ja': 'https://famicomcd.org/jp/about',
-
-};
-
-const languageSelectionUrl = 'https://famicomcd.org/languageswitcher';
-
-
-function getUserLanguage() {
-    return navigator.language || navigator.userLanguage;
-}
-
-function findBestMatchingUrl(userLanguage) {
-    if (languageUrls[userLanguage]) {
-        return languageUrls[userLanguage];
-    }
-
-    const baseLanguage = userLanguage.split('-')[0];
-    return languageUrls[baseLanguage] || languageSelectionUrl;
-}
-
-function redirectToLanguageUrl() {
-    const userLanguage = getUserLanguage();
-    const redirectUrl = findBestMatchingUrl(userLanguage);
-    window.location.href = redirectUrl;
-}
-
-redirectToLanguageUrl();
-
-
-	
-	</script>
 	
 </html>
