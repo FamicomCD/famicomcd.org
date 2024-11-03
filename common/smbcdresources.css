@@ -94,9 +94,17 @@
 	}
 	
 	.supportcontentlist {
+	.supportstufficons {
+	margin:0% 0% 0% 0% !important;
+	}
+	}
+	
+	.supportcontentlist {
 	padding:35px 25px 20px 20px;
 	gap: 15px;
 	display: none;
+	
+	
 	
 	.supportthings {
 	margin-bottom:6px;
