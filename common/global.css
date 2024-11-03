@@ -69,9 +69,9 @@
 		height:70px;
 		mask-repeat: no-repeat;
 		mask-size: 100%;
-		mask-image:  url('../graphics/mask/wavemain.webp');
+		mask-image:  url('https://famicomcd.org/graphics/mask/wavemain.webp');
 		mask-size: 100% auto;
-		-webkit-mask-image:  url('../graphics/mask/wavemain.webp');
+		-webkit-mask-image:  url('https://famicomcd.org/graphics/mask/wavemain.webp');
 		-webkit-mask-size: 100% auto;
 		z-index:-1;
 		padding-bottom:22px;
@@ -397,9 +397,9 @@
 		.headerwave {
 		mask-repeat: no-repeat;
 		mask-size: 100%;
-		mask-image:  url('graphics/mask/wavemainbig.webp');
+		mask-image:  url('https://famicomcd.org/graphics/mask/wavemainbig.webp');
 		mask-size: 100% auto;
-		-webkit-mask-image:  url('graphics/mask/wavemainbig.webp');
+		-webkit-mask-image:  url('https://famicomcd.org/graphics/mask/wavemainbig.webp');
 		-webkit-mask-size: 100% auto;
 		transform: translateY(-1px);
 		}
@@ -448,9 +448,9 @@
 		.headerwave {
 		mask-repeat: no-repeat;
 		mask-size: 100%;
-		mask-image:  url('graphics/mask/wavemainmobile.webp');
+		mask-image:  url('https://famicomcd.org/graphics/mask/wavemainmobile.webp');
 		mask-size: 100% auto;
-		-webkit-mask-image:  url('graphics/mask/wavemainmobile.webp');
+		-webkit-mask-image:  url('https://famicomcd.org/graphics/mask/wavemainmobile.webp');
 		-webkit-mask-size: 100% auto;
 		}
 		
