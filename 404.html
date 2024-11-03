@@ -25,6 +25,32 @@
 		<script src="https://famicomcd.org/common/inserthtml.js"></script>
 		<script src="https://famicomcd.org/common/language.js"></script>
 		<script src="https://famicomcd.org/common/global.js"></script>
+		
+		<script>
+		
+document.addEventListener("DOMContentLoaded", function() {
+
+    const languageIndicators = ["en", "es", "jp"];
+    
+
+    const url = window.location.href;
+    
+    const urlObj = new URL(url);
+    
+    const pathSegments = urlObj.pathname.split("/");
+
+    if (languageIndicators.includes(pathSegments[1])) {
+        pathSegments.splice(1, 1);
+        
+        const newPath = pathSegments.join("/");
+        
+        urlObj.pathname = newPath;
+        
+        window.location.replace(urlObj.href);
+    }
+});
+		
+		</script>
 	
 		<style>
 
@@ -93,29 +119,6 @@
 
         document.getElementById("randomImage").src = selectedImage.src;
         document.getElementById("imageCaption").textContent = selectedImage.caption;
-		
-		
-		document.addEventListener("DOMContentLoaded", function() {
-
-    const languageIndicators = ["en", "es", "jp"];
-    
-
-    const url = window.location.href;
-    
-    const urlObj = new URL(url);
-    
-    const pathSegments = urlObj.pathname.split("/");
-
-    if (languageIndicators.includes(pathSegments[1])) {
-        pathSegments.splice(1, 1);
-        
-        const newPath = pathSegments.join("/");
-        
-        urlObj.pathname = newPath;
-        
-        window.location.replace(urlObj.href);
-    }
-});
 		
 		
     </script>
