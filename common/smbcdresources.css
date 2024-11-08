@@ -26,6 +26,7 @@
 	margin-left:auto;
 	margin-right:auto;
 	color: white;
+	font-size:18px;
 	}
 	
 	.supportsheetcontainer {
@@ -117,11 +118,16 @@
 	display: inline-block;
 	}
 	
-	.supportstuffnames {
+	.supportstuffnames, .contactstuffnames {
 	padding: 10px 0% 0% 2%;
     display: inline-block;
     vertical-align: top;
-	font-size: 33px;
+	font-size: 25px;
+	}
+	
+	.contactstuffnames {
+	padding: 18px 0% 0% 1%;
+	margin:0;
 	}
 	
 	.supportplaformiconleft, .supportplatformicons {
@@ -146,8 +152,19 @@
 	
 	}
 
+	@media (max-width: 670px) {
+	
+	.contactstuffnames {
+	padding: 14px 0% 0% 2%;
+	font-size:23px;
+	}
+	
+	}
+
 
 	}
+
+
 	
 	
 	.supportcontent.visible {

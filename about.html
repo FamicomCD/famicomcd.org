@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-			<html lang="en">
+<html lang="en">
 	
-		<head>
+	<head>
 		
 		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=0.80, minimum-scale=0.75, maximum-scale=2.5"/>
 		<meta name="google-site-verification" content="EYxQGXvx_TFMhVJT9UELPA8aoOIBnjt_QR9szmBkuX4" />
@@ -11,7 +11,7 @@
 		<link rel="icon" href="https://famicomcd.org/graphics/faviconcd.ico">
 		
 		<meta property="og:title" content="FamicomCD - About FamicomCD"/>
-		<meta property="og:description" content="Home to many non-profit video game projects such as Super Mario Bros. CD and Project Astria!"/>
+		<meta property="og:description" content="Home to many non-profit video game projects such as Super Mario Bros. CD!"/>
 		<meta property="og:url" content="https://famicomcd.org/about"/>
 		<meta property="og:image" content="https://famicomcd.org/embedimages/famicomcdembed.png"/>
 		<meta name="twitter:card" content="summary_large_image">
@@ -19,216 +19,85 @@
 		
 		<link rel="stylesheet" href="https://famicomcd.org/reuse/common.css">
 		
-			<link rel="stylesheet" href="common/global.css">
+		<link rel="stylesheet" href="common/global.css">
 		<script src="https://famicomcd.org/common/inserthtml.js"></script>
-		<script src="common/language.js"></script>
+		<script src="https://famicomcd.org/common/language.js"></script>
 		<script src="https://famicomcd.org/common/global.js"></script>
-	
-		<style>
 
-.mainpage{
- padding:0;
- margin:0;
- font-size: 20px;
- min-height: 100vh;
- display: flex;
- flex-direction: column;
- font-family: "Seurat Pro";
- background-color: #d8e0ff;
-}
-
-.SMBCDProjectBox {
-text-align: center;
-padding-bottom: 50px; 
-}
-
-logo {
- display: grid;
- height: 100%;
-}
-
-.center-fit {
-max-width: 100%;
-max-height: 100vh;
-margin: auto;
-}
-
-.theboxthatholdsthetext {
-padding: 100px
-display: flex;
-background-color: #6f62c2;
-width: 990px;
-height:auto;
-margin: auto;
-border-radius: 10px;
-font-size: 14px;
-}
-
-.thesmallerfont {
-font-size:13px;
-}
-
-.thesmallerfontonphones {
-font-size:12px;
-float:left;
-}
-
-.thebigfont {
-font-size:24px;
-width: 550px;
-margin: auto;
-text-align:center;
-}
-
-.thebignfont {
-font-size:24px;
-width: 700px;
-margin: auto;
-text-align:center;
-}
-
-
-.backbutton {
-width:200px;
-height: auto;
-}
-
-@media screen and (max-width: 1006px) {
-	
-	.theboxthatholdsthetext {
-	width:auto;
-	height:auto;
-	margin: auto;
-	font-size: 13px;
-	}
-	
-	.checkthatflex {
-	display: block;
-	}
-	
-	.paddingwhenneeded {
-	padding-top:0;
-	}
-	
-	.thesmallerfontonphones {
-	float:none;
-	}
-	
-	.thesmallerfont {
-	font-size:12px;
-	}
-	
-	.thebigfont {
-    font-size:22px;
-    }
-	
-	.thebignfont {
-    font-size:22px;
-    }
-
-}
-
-
-@media screen and (max-width: 650px) {
-	.theboxthatholdsthetext {
-	font-size: 13px;
-	}
-	
-	.thesmallerfont {
-	font-size:11px;
-	}
-	
-	.thesmallerfontonphones {
-	padding-bottom:15px;
-	}
-	
-	.thebigfont {
-	font-size:20px;
-	width:auto;
-    }
-	
-	.thebignfont {
-	font-size:20px;
-	width:auto;
-    }
-	
-}
-
-@media screen and (max-width: 396px) {
-	.theboxthatholdsthetext {
-	font-size: 11px;
-	}
-	
-	.thesmallerfont {
-	font-size:10px;
-	}
-	
-	.thesmallerfontonphones {
-	font-size:10px;
-	}
-	
-}
-
-
-		</style>
-		</head>
+	</head>
 		
 	
-	<body class=mainpage>
+	<body class=main>
 	
 	
-		<div class="paddingbeforethenav"></div>
 		<div id="nav">
 			<a href="https://famicomcd.org/"><img class="famicomcdlogo" src="https://famicomcd.org/graphics/famicomcdlogosm.png"></a>
 		</div>
 
+		<div class=headerholder>
+			<div class="paddingbeforethenav"></div>
+		
+			<a href="#about"><p class="headerbuttons" data-strid="about_button"></p></a>
+			<a href="#copyright"><p class="headerbuttons" data-strid="about_copyright"></p></a>
+			<!-- <a href="#famicomcdteam"><p class="headerbuttons">FamicomCD Team</p></a> -->
+		</div>
+		<div class=headerwave></div>
 
- 
- <div style="padding-bottom:30px;padding-top:30px;">
- <div class=theboxthatholdsthetext style="color:white;padding:20px;">
- 
- <div>
- <div class=thebigfont style="padding-top:20px;border-bottom: 3px dotted #352063;">
- <p style="margin-top:0;" data-strid="deprecated_about_famicomcd"></p>
- </div> 
- 
- <p style="font-size: 14px; padding-top:20px;" data-strid="deprecated_about_famicomcddesc"></p>
- 
- 
-  <div class=thebignfont style="padding-top:40px;border-bottom: 3px dotted #352063;">
- <p style="margin-top:0;" data-strid="deprecated_about_ar"></p>
- </div> 
- 
-  <p style="font-size: 14px; padding-top:10px;" data-strid="deprecated_about_ar1"></p>
 
-  <p style="font-size: 14px; padding-top:20px;padding-bottom:15px;" data-strid="deprecated_about_ar2"></p>
- </div> 
- 
-  <p style="font-size: 14px;" data-strid="deprecated_about_arwall"></p>
+	<div id="about" class="aboutsections">
+		<div class="abouttextwidth">
+		
+		<h1 data-strid="about_button"></h1>
+		<p data-strid="about_about_famicomcd_desc"></p>
 
- 
-<div>
- <div id="copyright" class=thebignfont style="padding-top:40px;border-bottom: 3px dotted #352063;">
- <p style="margin-top:0;" data-strid="deprecated_about_risk"></p>
- </div> 
- 
- <p style="font-size: 14px; padding-top:20px;" data-strid="deprecated_about_riskdesc"></p>
-
- </div>  
- 
- </div>
- </div>
- 
- 
-	<footer>
+		<h1 data-strid="about_other_stuff"></h1>
+		<p data-strid="about_other_stuff_desc"></p>
+			
+		</div>
 	
-		<div data-insert="https://famicomcd.org/common/footer.html"></div>
+	</div>
 	
-	</footer>
-
-
+		
+	<div id="copyright" class="aboutsections">
+		<div class="abouttextwidth">
+		
+			<h1 data-strid="about_copyright_note"></h1>
+			<p data-strid="about_copyright_note_desc"></p>
+			
+			<h1 data-strid="about_copyright_legal"></h1>
+			<p data-strid="about_copyright_legal_desc"></p>
+		</div>
+	
+	</div>
+		
+		
+		
 	</body>
 	
+	
+	<div class=footerwave></div>
+	<footer>
+		<div data-insert="https://famicomcd.org/common/footer.html"></div>
+	</footer>
+	
+	
+  <script>
+	function aboutHash() {
+		const sectionIds = ["about", "copyright", "famicomcdteam"];
+		const hash = window.location.hash.substring(1);
+		const targetId = sectionIds.includes(hash) ? hash : "about";
+		
+		sectionIds.forEach(id => {
+			const element = document.getElementById(id);
+			if (element) {
+				element.style.display = id === targetId ? "block" : "none";
+			}
+		});
+	}
+
+	aboutHash();
+	window.addEventListener("hashchange", aboutHash);
+  </script>
 	
 	
 </html>

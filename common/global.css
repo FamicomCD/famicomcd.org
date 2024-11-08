@@ -63,7 +63,7 @@
 		text-align:center;
 		}
 		
-		.headerwave {
+		.headerwave, .footerwave {
 		background-color:white;
 		width:100%;
 		height:70px;
@@ -78,6 +78,11 @@
 		transform: translateY(-3px);
 		}
 		
+		.footerwave {
+		background-color:#483c97 !important;
+		transform: translateY(3px) rotate(180deg) !important;
+		}
+		
 		.mainlogo {
 		padding-top:60px;
 		width:800px;
@@ -90,6 +95,7 @@
 		display:inline-block;
 		vertical-align:top;
 		width:500px;
+		font-size:18px;
 		}
 		
 		.tagline a {
@@ -108,6 +114,7 @@
 		width:100px;
 		display:inline;
 		}
+		
 		
 		.headerbuttons, .projectbuttons, .moreprojectbuttons, .footerbuttons {
 		background-color:#6f62c2;
@@ -205,6 +212,14 @@
 		background-color:#6155ac;
 		}
 		
+		.abouttextwidth {
+		color:white;
+		font-size:18px;
+		width:1300px;
+		margin-left:auto;
+		margin-right:auto;
+		}
+		
 		#langSelect {
 		display: none;
 		color:white;
@@ -292,7 +307,7 @@
 		background-color: #dad5fd;
 		}
 		
-		footer .headerbuttons {
+		footer .headerbuttons, .footerbuttons {
 		background-color: #fff;
 		border: 3px solid #c2bcef;
 		color: #594eaa;
@@ -301,7 +316,6 @@
 		footer .lang:hover, footer .langtop:hover, footer .langbot:hover {
 		background-color: #ece9ff;
 		}
-		
 
 
 		
@@ -363,13 +377,13 @@
 		
 		.legalmumbojumbo {
 		text-align:left;
-		font-size:15px;
+		font-size:16px;
 		}
 		
 		.copyright {
 		display:inline-flex;
 		margin-top:7px;
-		font-size:15px;
+		font-size:16px;
 		}
 		
 		.socialgroup {
@@ -394,7 +408,7 @@
 		vertical-align:top;
 		}
 	
-		.headerwave {
+		.headerwave, .footerwave {
 		mask-repeat: no-repeat;
 		mask-size: 100%;
 		mask-image:  url('https://famicomcd.org/graphics/mask/wavemainbig.webp');
@@ -402,6 +416,15 @@
 		-webkit-mask-image:  url('https://famicomcd.org/graphics/mask/wavemainbig.webp');
 		-webkit-mask-size: 100% auto;
 		transform: translateY(-1px);
+		}
+		
+		}
+		
+		
+		@media (max-width: 1438px) {
+		
+		.abouttextwidth {
+		width:90%
 		}
 		
 		}
@@ -445,7 +468,7 @@
 
 		@media (max-width: 865px) {	
 
-		.headerwave {
+		.headerwave, .footerwave {
 		mask-repeat: no-repeat;
 		mask-size: 100%;
 		mask-image:  url('https://famicomcd.org/graphics/mask/wavemainmobile.webp');

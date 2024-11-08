@@ -6,7 +6,7 @@ strid "test_message"
 string "This is a test message!"
 
 strid "discette"
-string "Hiya! I'm Discette"
+string "Hiya! I'm Discette."
 
 
 
@@ -23,7 +23,7 @@ strid "language_button"
 string "Language Switcher 🇺🇸"
 
 strid "legal_mumbo_jumbo"
-string "The FamicomCD Team is not affiliated in anyway to Nintendo and all trademarks are the property of their respective owners. No copyright infringement intended. <a data-linkid="about_famicomcd" href="#" class="learnmorefooter">Learn More ➜</a>"
+string "The FamicomCD Team is not affiliated in anyway to Nintendo and all trademarks are the property of their respective owners. No copyright infringement intended. <a href="https://famicomcd.org/about#copyright" class="learnmorefooter">Learn More ➜</a>"
 
 strid "copyright"
 string "© 2022-2024  FamicomCD Team, King Mayro"
@@ -190,27 +190,53 @@ string "Copyright and Trademarks"
 strid "copyright_last_updated"
 string "Last updated: --/--/----"
 
+strid "about_about_famicomcd_desc"
+string "FamicomCD is a group that specializes in creating non-profit video games, software, and video game modifications/hacks. The name relates both to the team, and the fictional Famicom add-on that our games are based on; it should not be confused with the unreleased Super NES CD-ROM/Super Famicom CD-ROM.<br><br>The FamicomCD project was founded by King Mayro in Feburary of 2023. Originally, it was created with the intention of sharing mockups of games and software that could have been made for the FamicomCD add-on. Soon after, the first title, Super Mario Bros. CD, was adapted for the concept.<br><br>Currently we're only working on Super Mario Bros. CD, but we'd love to branch out and make all sorts of other games and software with the FamicomCD brand!"
+
+strid "about_other_stuff"
+string "Other stuff!"
+
+strid "about_other_stuff_desc"
+string "We prefer our name to be written as a full single word, FamicomCD, rather than separated as Famicom CD or abbreviated as FCD. If necessary, though, you may abbreviate it to FCD."
+
+strid "about_copyright"
+string "Copyright"
+
+strid "about_copyright_note"
+string "A Note For Our Supporters"
+
+strid "about_copyright_note_desc"
+string "With any unlicensed IP use, there's always a risk of Nintendo doing something, but considering the precedent of stuff like our project Super Mario Bros. CD being a Super Mario World rom hack, an avenue of rom hacking that's been around for decades now with very little to no interference of Nintendo, we'd imagine we are just as safe as other SMW hacks have been for years.<br><br>We are not intending to infringe copyright or facilitate piracy with the SMBCD project, nor do we intend on making profit from our projects in any way.<br><br>Ultimately, there is no hard yes or no on this matter as Nintendo legally can do whatever they want to a project like this, but we don't really have any reason to think they will for the reasons above."
+
+strid "about_copyright_legal"
+string "Legal Information"
+
+strid "about_copyright_legal_desc"
+string "FamicomCD and the FamicomCD Team are not affiliated with Nintendo in any way. The names Famicom and Family Computer, as well as related trademarks, are owned by Nintendo. The FamicomCD branding, mascot (Discette), and font (FamicomCD Logo Font Family) are property of King Mayro.<br><br>Any projects sold for monetary gain (such as cartridges, CD-ROMs, or soundtrack CDs) are not produced, supported, or endorsed by the FamicomCD Team. All projects created by the FamicomCD Team are free and will remain free.<br><br>FamicomCD does not host, share, or provide links to ROMs, ROM websites, or instructions for downloading ROMs.<br><br>Mario, Luigi, Yoshi, and related characters are the property of Nintendo. The Archipelago of Brixurei, Barracuda Barry, soundtrack, and other original concepts are the intellectual property of the FamicomCD Team and The Super Mario Bros. CD Team."
+
+
+
 
 
 & Images &
 
 imgid "famicomcd_main_logo"
-imagesrc "graphics/famicomcdlogo.png"
+imagesrc "https://famicomcd.org/graphics/famicomcdlogo.png"
 
 imgid "discord_main_page_banner"
-imagesrc "graphics/banners/famicomcddiscord.png"
+imagesrc "https://famicomcd.org/graphics/banners/famicomcddiscord.png"
 
 imgid "translators_main_page_banner"
-imagesrc "graphics/banners/famicomcdtranslators.webp"
+imagesrc "https://famicomcd.org/graphics/banners/famicomcdtranslators.webp"
 
 imgid "smbcd_main_logo"
 imagesrc "https://famicomcd.org/graphics/smbcdlogo/smbcdlogo.png"
 
 imgid "deprecated_general_back_button"
-imagesrc "graphics/banners/back.png"
+imagesrc "https://famicomcd.org/graphics/banners/back.png"
 
 imgid "kofi_main_page_banner"
-imagesrc "graphics/banners/smbcdspeedruncompreverse.png"
+imagesrc "https://famicomcd.org/graphics/banners/smbcdspeedruncompreverse.png"
 
 
 
@@ -310,7 +336,7 @@ strid "deprecated_tutorial_step6"
 string "<b>Step 6: </b>Remember the MSU file and PCM files from before? You need these files to be in the same directory and the same name* as your SMBCD game file. For organization, it's recommended that you store all of SMBCD's files in a folder of its own."
 
 strid "deprecated_tutorial_step7"
-string "<b>Step 7: </b>Once all of the files are in place, SMBCD should start as normal. If you are still getting the MSU-1 is missing error, please make sure your emulator is supported under the  <a href="https://famicomcd.org/en/smbcd/supportsheet">SMBCD Support Sheet</a> or join the FamicomCD Discord for support."
+string "<b>Step 7: </b>Once all of the files are in place, SMBCD should start as normal. If you are still getting the MSU-1 is missing error, please make sure your emulator is supported under the  <a href="https://famicomcd.org/smbcd/supportsheet">SMBCD Support Sheet</a> or join the FamicomCD Discord for support."
 
 
 strid "deprecated_smbcdteam_meet"
