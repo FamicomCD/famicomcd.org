@@ -112,10 +112,11 @@
 	height: 90px;
 	}
 	
-	.supportstufficons {
-	padding: 1% 0% 2% 1.2%;
+	.contactstufficons {
+	margin: 1% 0% 2% 1.2%;
 	height: 64px;
 	display: inline-block;
+	border-radius:20px;
 	}
 	
 	.supportstuffnames, .contactstuffnames {
