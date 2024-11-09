@@ -112,23 +112,11 @@
 	height: 90px;
 	}
 	
-	.contactstufficons {
-	margin: 1% 0% 2% 1.2%;
-	height: 64px;
-	display: inline-block;
-	border-radius:20px;
-	}
-	
-	.supportstuffnames, .contactstuffnames {
+	.supportstuffnames {
 	padding: 10px 0% 0% 2%;
     display: inline-block;
     vertical-align: top;
 	font-size: 25px;
-	}
-	
-	.contactstuffnames {
-	padding: 18px 0% 0% 1%;
-	margin:0;
 	}
 	
 	.supportplaformiconleft, .supportplatformicons {
@@ -153,19 +141,27 @@
 	
 	}
 
-	@media (max-width: 670px) {
+
+	}
+	
 	
 	.contactstuffnames {
-	padding: 14px 0% 0% 2%;
-	font-size:23px;
+	padding: 10px 0% 0% 2%;
+    display: inline-block;
+    vertical-align: top;
+	font-size: 25px;
+	padding: 18px 0% 0% 1%;
+	margin:0;
 	}
-	
+
+
+	.contactstufficons {
+	margin: 1% 0% 2% 1.2%;
+	height: 64px;
+	width: 64px;
+	display: inline-block;
+	border-radius:20px;
 	}
-
-
-	}
-
-
 	
 	
 	.supportcontent.visible {
@@ -316,6 +312,15 @@
 	
 	.supportplatformicons, .supportplatformiconssmall {
 	padding: 0% 0% 2% 4px;
+	}
+	
+	.contactstufficons {
+	margin: 6.5px 0 0 10px !important;
+	}
+	
+	.contactstuffnames {
+	padding: 14px 0% 0% 2%;
+	font-size:23px;
 	}
 	
 	}
