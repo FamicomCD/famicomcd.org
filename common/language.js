@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		en: 'https://raw.githubusercontent.com/FamicomCD/famicomcd-translators/refs/heads/main/en/en.txt',
 		es: 'https://raw.githubusercontent.com/FamicomCD/famicomcd-translators/refs/heads/main/es/es.txt',
 //		ja: 'https://raw.githubusercontent.com/FamicomCD/famicomcd-translators/refs/heads/main/ja/jp.txt',
+		fr: 'https://raw.githubusercontent.com/FamicomCD/famicomcd-translators/refs/heads/main/fr/fr.txt',
 		it: 'https://raw.githubusercontent.com/FamicomCD/famicomcd-translators/refs/heads/main/it/it.txt',
 		ru: 'https://raw.githubusercontent.com/FamicomCD/famicomcd-translators/refs/heads/main/ru/ru.txt'
     };
