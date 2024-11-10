@@ -119,7 +119,6 @@
 		.headerbuttons, .projectbuttons, .moreprojectbuttons, .footerbuttons {
 		background-color:#6f62c2;
 		padding:25px;
-		font-size:20px;
 		width:255px;
 		display:inline-block;
 		line-height:0;
@@ -135,6 +134,7 @@
 		position:relative;
 		margin:6px;
 		cursor: pointer;
+		font-size: 19px;
 		}
 		
 		.projectbuttons, .moreprojectbuttons {
