@@ -96,7 +96,8 @@
 	
 	.supportcontentlist {
 	.supportstufficons {
-	margin:0% 0% 0% 0% !important;
+	margin:1% 0% 0% 1% !important;
+    height:65px !important;
 	}
 	}
 	
@@ -116,7 +117,7 @@
 	padding: 10px 0% 0% 2%;
     display: inline-block;
     vertical-align: top;
-	font-size: 25px;
+	font-size: 23px;
 	}
 	
 	.supportplaformiconleft, .supportplatformicons {
@@ -213,7 +214,7 @@
 	.supportstuffnames {
 	padding:0% 0% 0% 5%;
 	margin:0;
-	font-size:27px;
+	font-size:25px;
 	}
 	
 	.supportplatformfortext {
