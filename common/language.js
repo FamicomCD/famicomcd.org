@@ -28,6 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
             loadLanguageFile(selectedLanguage);
         }
     });
+	
+	function getCorrectedLanguage(language) {
+		if (language === 'jp') {
+			return 'ja';
+		}
+		return language;
+	}
 
     function getMatchingLanguage(languageCode, supportedLanguages) {
         return Object.keys(supportedLanguages).find(lang => lang.startsWith(languageCode)) || Object.keys(supportedLanguages)[0];
@@ -35,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function loadLanguageFile(language) {
         const filePath = supportedLanguages[language];
+		language = getCorrectedLanguage(language);
         if (!filePath) {
             console.error(`Language file for '${language}' not found.`);
             return;
