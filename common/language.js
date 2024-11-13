@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const supportedLanguages = {
 		en: 'https://raw.githubusercontent.com/FamicomCD/famicomcd-translators/refs/heads/main/en/en.txt',
 		es: 'https://raw.githubusercontent.com/FamicomCD/famicomcd-translators/refs/heads/main/es/es.txt',
-		jp: 'https://raw.githubusercontent.com/FamicomCD/famicomcd-translators/refs/heads/main/ja/jp.txt',
+		ja: 'https://raw.githubusercontent.com/FamicomCD/famicomcd-translators/refs/heads/main/ja/jp.txt',
 		fr: 'https://raw.githubusercontent.com/FamicomCD/famicomcd-translators/refs/heads/main/fr/fr.txt',
 		it: 'https://raw.githubusercontent.com/FamicomCD/famicomcd-translators/refs/heads/main/it/it.txt',
 		ru: 'https://raw.githubusercontent.com/FamicomCD/famicomcd-translators/refs/heads/main/ru/ru.txt'
