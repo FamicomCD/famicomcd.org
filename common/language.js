@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 	
-	function getCorrectedLanguage(language) {
+	function correctLanguage(language) {
 		if (language === 'jp') {
 			return 'ja';
 		}
@@ -41,8 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function loadLanguageFile(language) {
+		language = correctLanguage(language);
+		
         const filePath = supportedLanguages[language];
-		language = getCorrectedLanguage(language);
         if (!filePath) {
             console.error(`Language file for '${language}' not found.`);
             return;
