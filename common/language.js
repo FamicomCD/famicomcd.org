@@ -107,15 +107,15 @@ document.addEventListener('DOMContentLoaded', () => {
         return { strings, images, links };
     }
 
-    function updateContent(strings) {
-        const elements = document.querySelectorAll('[data-strid]');
-        elements.forEach(element => {
-            const strid = element.getAttribute('data-strid');
-            if (strings[strid]) {
-                element.innerHTML = strings[strid];
-            }
-        });
-    }
+	function updateContent(strings) {
+		const elements = document.querySelectorAll('[data-strid]');
+		elements.forEach(element => {
+			const strid = element.getAttribute('data-strid');
+			if (strings[strid]) {
+				element.innerHTML = strings[strid];
+			}
+		});
+	}
 
     function updateImages(images) {
         const imgElements = document.querySelectorAll('[data-imgid]');

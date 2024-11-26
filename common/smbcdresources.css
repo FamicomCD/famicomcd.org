@@ -8,16 +8,16 @@
 	margin-top: 10px;
 	}
 	
-	.supportsheetdescp2 a {
-	color:#c1baef;
+	.supportsheetdescp2 a, .installguidetextholder a {
+	color:#c1baef !important;
 	}
 		
-	.supportsheetdescp2 a:hover {
-	color:#a8a1db;
+	.supportsheetdescp2 a:hover, .installguidetextholder a:hover {
+	color:#a8a1db !important;
 	}
 		
-	.supportsheetdescp2 a:active {
-	color:#8277cc;
+	.supportsheetdescp2 a:active, .installguidetextholder a:active {
+	color:#8277cc !important;
 	}
 	
 	.supportsheetmargin {
@@ -193,12 +193,21 @@
 	cursor: pointer;
 	}
 	
-	.supportthings:hover, .switchbuttongrid:hover, .switchbuttonlist:hover {
+	.supportthings:hover, .switchbuttongrid:hover, .switchbuttonlist:hover, .method:hover, .installstepdetailsbutton:hover {
 	transform: translateY(-3px) scale(1.01);
 	box-shadow: 0px 3px 5px rgba(11, 4, 60, 0.3);
+	
+	.installnotes {
+	opacity:1;
+	}
+	
+	}
+	
+	.installstepdetailsbutton:hover {
+	transform: translateY(0px) scale(1.01);
 	}
 		
-	.supportthings:active, .switchbuttongrid:active, .switchbuttonlist:active {
+	.supportthings:active, .switchbuttongrid:active, .switchbuttonlist:active, .method:active, .installstepdetailsbutton:active {
 	transform: translateY(2px) scale(0.99);
 	filter: brightness(90%) hue-rotate(4deg);
 	box-shadow: 0px 4px 1px rgba(11, 4, 60, 0.0);
@@ -240,6 +249,114 @@
 	height: auto;
 	}
 	
+	.method {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:1300px;
+	background-color: #594eaa;
+	border: 3px solid #4c4097;
+	border-radius:30px;
+	transition: ease-in 0.07s;
+	cursor: pointer;
+	margin-bottom:10px;
+	padding:10px 10px 0 10px;
+	color:white;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	}
+	
+	.installiconholder {
+	display:inline-block;
+	border-radius:25px;
+	width:383px;
+	}
+	
+	.installinfoholder {
+	display:inline-block;
+	vertical-align:top;
+	margin:33px 0 0 10px;
+	}
+	
+	.installname {
+	font-size:22px;
+	margin:0;
+	}
+	
+	.installnotes {
+	display:inline-block;
+	background-color:#4c4097;
+	padding:5px 20px 5px 20px;
+	border-radius:30px;
+	opacity:0.8;
+	margin:0;
+	transition: ease-in 0.07s;
+	}
+	
+	.installnoteicons {
+	width:20px;
+	vertical-align:middle;
+	margin:0 5px 4px 0;
+	}
+	
+	.installguidetextholder {
+	margin:20px;
+	font-size: 18px;
+	-webkit-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+	}
+	
+	.installstepdetailsbutton {
+	background-color: #51469d;
+	text-align:center;
+	padding:8px;
+	font-size:22px;
+	border: 3px solid #44388c;
+	border-radius: 30px;
+	transition: ease-in 0.07s;
+	margin:0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor:pointer;
+	margin-top: 20px;
+	}
+	
+	.installstepdetails {
+	background-color: #51469d;
+	padding:20px;
+	border-width: 0 3px 3px !important;
+	border: solid #44388c;
+	border-radius: 0 0 30px 30px;
+	}
+	
+	.guideimages, .guideimageswide, .guideimagescmd {
+	border-radius: 20px;
+	width:330px;
+	margin-left: auto;
+	display: block;
+	margin-right: auto;
+	margin-bottom: 20px;
+	}
+	
+	.guideimageswide {
+	width:auto;
+	height:190px;
+	}
+	
+	.installrequirements {
+	margin-bottom: 70px;
+	}
+	
+	.guideimagescmd {
+	width: 622px;
+	}
+	
 	@media (max-width: 1459px) {
 	
 	.supportsheetmargin {
@@ -251,7 +368,42 @@
 	border-radius: 0px;
 	}
 	
+	.method {
+	width:90%;
 	}
+	
+	.installiconholder {
+	width:303px;
+	}
+	
+	.installinfoholder {
+	margin:18px 0 0 10px;
+	}
+	
+	.installname {
+	font-size: 21px;
+	}
+	
+	}
+	
+	
+	@media (max-width: 1090px) {
+	
+	.installiconholder {
+	width:343px;
+	}
+
+	.installinfoholder {
+	margin:2px 0 18px 2px;
+	display:block;
+	}
+	
+	.installname {
+	font-size: 22px;
+	}
+	
+	}
+	
 	
 	@media (max-width: 670px) {
 	
@@ -322,6 +474,16 @@
 	.contactstuffnames {
 	padding: 14px 0% 0% 2%;
 	font-size:23px;
+	}
+	
+	.installiconholder {
+	width:100%;
+	display:block;
+	}
+	
+	.guideimages, .guideimageswide, .guideimagescmd {
+	width:80% !important;
+	height:auto !important;
 	}
 	
 	}

@@ -116,7 +116,7 @@
 		}
 		
 		
-		.headerbuttons, .projectbuttons, .moreprojectbuttons, .footerbuttons {
+		.headerbuttons, .projectbuttons, .moreprojectbuttons, .footerbuttons, .backbuttons {
 		background-color:#6f62c2;
 		padding:25px;
 		width:255px;
@@ -135,6 +135,7 @@
 		margin:6px;
 		cursor: pointer;
 		font-size: 19px;
+		text-align:center;
 		}
 		
 		.projectbuttons, .moreprojectbuttons {
@@ -147,15 +148,29 @@
 		width: 583px;
 		}
 		
-		.headerbuttons:hover, .projectbuttons:hover, .moreprojectbuttons:hover, .mainpagebanners:hover, .footerbuttons:hover {
+		.headerbuttons:hover, .projectbuttons:hover, .moreprojectbuttons:hover, .mainpagebanners:hover, .footerbuttons:hover, .backbuttons:hover {
 		transform: translateY(-3px) scale(1.01);
 		box-shadow: 0px 3px 5px rgba(11, 4, 60, 0.3);
 		}
 		
-		.headerbuttons:active, .projectbuttons:active, .moreprojectbuttons:active, .mainpagebanners:active, .footerbuttons:active {
+		.headerbuttons:active, .projectbuttons:active, .moreprojectbuttons:active, .mainpagebanners:active, .footerbuttons:active, .backbuttons:active {
 		transform: translateY(2px) scale(0.99);
 		filter: brightness(90%) hue-rotate(8deg);
 		box-shadow: 0px 4px 1px rgba(11, 4, 60, 0.0);
+		}
+		
+		.backbuttons {
+		background-color: #fff;
+		border: 3px solid #c2bcef;
+		color: #594eaa;
+		width:120px;
+		}
+		
+		.upperbackmargin {
+		margin-left:auto;
+		margin-right:auto;
+		display:block;
+		width: 1300px;
 		}
 		
 		.smbcdholder {
@@ -427,6 +442,10 @@
 		width:90%
 		}
 		
+		.upperbackmargin {
+		width: auto;
+		}
+		
 		}
 		
 		
@@ -546,6 +565,17 @@
 		width: 80.6%;
 		}
 		
+		}
+		
+		@media (max-width: 670px) {
+			
+		.backbuttons {
+		width: 250px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;	
+		}
+			
 		}
 		
 		

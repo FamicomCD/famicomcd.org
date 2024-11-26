@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=0.80, minimum-scale=0.75, maximum-scale=1"/>
+
+		<title>FamicomCD - SMBCD Support Sheet</title>
+		<link rel="tab icon" href="https://famicomcd.org/graphics/diskette.png">
+		<link rel="icon" href="https://famicomcd.org/graphics/faviconcd.ico">
+		<meta name="keywords" content="Famicom, FamicomCD, SMBCD, Super Mario Bros. CD, SMW, rom hack, super mario bros cd">
+		
+		<meta property="og:title" content="FamicomCD - SMBCD Support Sheet"/>
+		<meta property="og:description" content="If you need to check what emulators or flashcarts support Super Mario Bros. CD or MSU-1 games in general, this sheet has everything you'll need!"/>
+		<meta property="og:url" content="https://famicomcd.org/smbcd/supportsheet"/>
+		<meta property="og:image" content="https://famicomcd.org/embedimages/supportsheetembed.png" loading="lazy"/>
+		<meta name="twitter:card" content="summary_large_image">
+		<meta data-react-helmet="true" name="theme-color" content="#483c97"/>
+		
+		<link rel="stylesheet" href="https://famicomcd.org/reuse/common.css">
+		<link rel="stylesheet" href="https://famicomcd.org/reuse/mainpage.css">
+		<link rel="stylesheet" href="../common/global.css">
+		<link rel="stylesheet" href="../common/smbcdresources.css">
+		
+		<script src="../common/inserthtml.js"></script>
+		
+	</head>
+	
+	<style>
+	
+	.supporttabnamebottom {
+	padding-top:0 !important;
+	font-size: 38px !important;
+	}
+	
+	
+	</style>
+
+	
+		
+
+	<body class=main>
+	
+		<div class="paddingbeforethenav"></div>
+		<div id="nav">
+			<a href="https://famicomcd.org"><img class="famicomcdlogo" src="https://famicomcd.org/graphics/famicomcdlogosm.png"></a>
+		</div>
+
+		<div class="supportsheetmargin"></div>
+		
+		<div class="upperbackmargin">
+			<a href="https://famicomcd.org/smbcd/installation"><p class="backbuttons" data-strid="back_button"></p></a>
+		</div>
+		
+		<div class="supportsheetcontainer">
+		
+		
+			<div class="msu1supporttab">
+				<p id="methodname" class="supporttabnamebottom"></p>
+				<div class="supportcontentbar"></div>
+			</div>
+			
+			<div class="installguidetextholder">
+			
+				<p style="border:4px dashed #ef3b6d;padding:10px;" data-strid="install_guide_warning"></p>
+				<p data-strid="install_guide_requirements"></p>				
+				
+				<div id="flips">
+				
+					<p class="installrequirements" data-strid="install_guide_flips_requirements"></p>
+					
+					<p class="installstepdetailsbutton" id="prestepbutton" data-strid="install_guide_flips_prestep_button_show"></p>
+					<div class="installstepdetails" style="display: none;" id="prestep">
+						<p data-strid="install_guide_flips_prestep_step1"></p>
+						<p data-strid="install_guide_flips_prestep_step2"></p>
+						<p data-strid="install_guide_flips_prestep_step3"></p>
+						<p data-strid="install_guide_flips_prestep_step4"></p>
+					</div>
+
+					<p data-strid="install_guide_flips_marc_step1"></p>
+					<img class="guideimageswide" src="https://famicomcd.org/graphics/MSU1Setup/zip.png">
+					<p data-strid="install_guide_flips_marc_step2"></p>
+					<img class="guideimagescmd" src="../graphics/installtutorial/everythinginthere.png">
+					
+					<p  class="installstepdetailsbutton" id="step2button" data-strid="install_guide_flips_marc_step2_detailed_button_show"></p>
+					<div class="installstepdetails" style="display: none;" id="step2">
+						<p data-strid="install_guide_flips_marc_step2_detailed_stepa"></p>
+						<p data-strid="install_guide_flips_marc_step2_detailed_stepb"></p>
+						<p data-strid="install_guide_flips_marc_step2_detailed_stepc"></p>
+					</div>
+					
+					<p data-strid="install_guide_flips_step3"></p>
+					<img class="guideimageswide" src="../graphics/MSU1Setup/flips.png">
+					
+					<p  class="installstepdetailsbutton" id="step3button" data-strid="install_guide_flips_marc_step3_detailed_button_show"></p>
+					<div class="installstepdetails" style="display: none;" id="step3">
+						<p data-strid="install_guide_flips_step3_detailed_stepa"></p>
+						<p data-strid="install_guide_flips_step3_detailed_stepb"></p>
+						<p data-strid="install_guide_flips_step3_detailed_stepc"></p>
+						<p data-strid="install_guide_flips_step3_detailed_stepd"></p>
+					</div>
+					
+					<p data-strid="install_guide_flips_marc_step4"></p>
+					<img class="guideimages" src="../graphics/installtutorial/SMBCD050.png">
+					<p data-strid="install_guide_flips_marc_step5"></p>
+					<img class="guideimagescmd" src="../graphics/installtutorial/view.png">
+				
+				</div>
+
+
+				<div id="marcrobledo">
+
+					<p class="installrequirements" data-strid="install_guide_marc_requirements"></p>
+
+					<p data-strid="install_guide_flips_marc_step1"></p>
+					<img class="guideimageswide" src="https://famicomcd.org/graphics/MSU1Setup/zip.png">
+					<p data-strid="install_guide_flips_marc_step2"></p>
+					<img class="guideimagescmd" src="../graphics/installtutorial/everythinginthere.png">
+					
+					<p  class="installstepdetailsbutton" id="step2button" data-strid="install_guide_flips_marc_step2_detailed_button_show"></p>
+					<div class="installstepdetails" style="display: none;" id="step2">
+						<p data-strid="install_guide_flips_marc_step2_detailed_stepa"></p>
+						<p data-strid="install_guide_flips_marc_step2_detailed_stepb"></p>
+						<p data-strid="install_guide_flips_marc_step2_detailed_stepc"></p>
+					</div>
+					
+					<p data-strid="install_guide_marc_step3"></p>
+					<img class="guideimagescmd" src="../graphics/installtutorial/marcrobledoapply.png">
+					
+					<p  class="installstepdetailsbutton" id="step3button" data-strid="install_guide_flips_marc_step3_detailed_button_show"></p>
+					<div class="installstepdetails" style="display: none;" id="step3">
+						<p data-strid="install_guide_marc_step3_detailed_stepa"></p>
+						<p data-strid="install_guide_marc_step3_detailed_stepb"></p>
+						<p data-strid="install_guide_marc_step3_detailed_stepc"></p>
+						<p data-strid="install_guide_marc_step3_detailed_stepd"></p>
+						<p data-strid="install_guide_marc_step3_detailed_stepe"></p>
+						<p data-strid="install_guide_marc_step3_detailed_stepf"></p>
+						<p data-strid="install_guide_marc_step3_detailed_stepg"></p>
+					</div>
+					
+					<p data-strid="install_guide_flips_marc_step4"></p>
+					<img class="guideimages" src="../graphics/installtutorial/SMBCD050.png">
+					<p data-strid="install_guide_flips_marc_step5"></p>
+					<img class="guideimagescmd" src="../graphics/installtutorial/view.png">
+				
+				
+				</div>
+				
+				
+				<div id="autopatcher">
+				
+					<p class="installrequirements" data-strid="install_guide_autopatcher_requirements"></p>
+
+					<p data-strid="install_guide_autopatcher_step1"></p>
+					<img class="guideimageswide" src="../graphics/installtutorial/autopatcherdownload.png">
+					<p data-strid="install_guide_autopatcher_step2"></p>
+					<img class="guideimagescmd" src="../graphics/installtutorial/autopatchercmd.png">
+					<p data-strid="install_guide_autopatcher_step3"></p>
+					<img class="guideimagescmd" src="../graphics/installtutorial/autopatchercmdrom.png">
+					<p data-strid="install_guide_autopatcher_step4"></p>
+					<img class="guideimagescmd" src="../graphics/installtutorial/autopatchercmdfolder.png">
+					<p data-strid="install_guide_autopatcher_step5"></p>
+					<img class="guideimages" src="../graphics/installtutorial/SMBCD050.png">
+				
+				
+				</div>
+				
+				
+				 
+			</div>
+				
+			
+			
+		</div>
+
+
+
+		<div class="footerpadding"></div>
+
+
+	</body>
+	
+	<footer>
+	
+		<div data-insert="../common/footer.html"></div>
+	
+	</footer>
+	
+	
+	
+	<script src="../common/language.js"></script>
+	<script src="../common/global.js"></script>
+	
+	
+	<script>
+
+
+	function toggleStep(buttonId, targetId, stringShow, stringHide) {
+	  const buttons = document.querySelectorAll(`#${buttonId}`);
+	  const targets = document.querySelectorAll(`#${targetId}`);
+
+	  buttons.forEach(button => {
+		button.addEventListener('click', () => {
+		  const isHidden = Array.from(targets).every(target => target.style.display === 'none');
+
+
+		  targets.forEach(target => {
+			target.style.display = isHidden ? 'block' : 'none';
+		  });
+
+
+		  buttons.forEach(btn => {
+			if (isHidden) {
+
+			  btn.style.borderRadius = '30px 30px 0 0';
+			  btn.setAttribute('data-strid', stringHide);
+			} else {
+
+			  btn.style.borderRadius = '';
+			  btn.setAttribute('data-strid', stringShow);
+			}
+		  });
+		});
+	  });
+	}
+
+	toggleStep(
+	  'prestepbutton',
+	  'prestep',
+	  'install_guide_flips_prestep_button_show',
+	  'install_guide_flips_prestep_button_hide'
+	);
+
+	toggleStep(
+	  'step2button',
+	  'step2',
+	  'install_guide_flips_marc_step2_detailed_button_show',
+	  'install_guide_flips_marc_step2_detailed_button_hide'
+	);
+
+	toggleStep(
+	  'step3button',
+	  'step3',
+	  'install_guide_flips_marc_step3_detailed_button_show',
+	  'install_guide_flips_marc_step3_detailed_button_hide'
+	);
+
+
+function aboutHash() {
+    const sectionIds = ["flips", "marcrobledo", "autopatcher"];
+    const dataStridMap = {
+        flips: "install_method_flips",
+        marcrobledo: "install_method_marc",
+        autopatcher: "install_method_smbcmd"
+    };
+
+    const hash = window.location.hash.substring(1);
+    
+    if (!hash) {
+        window.location.href = "https://famicomcd.org/smbcd/installation";
+        return;
+    }
+
+    const targetId = sectionIds.includes(hash) ? hash : null;
+
+    // Update display of sections
+    sectionIds.forEach(id => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.style.display = id === targetId ? "block" : "none";
+        }
+    });
+
+    // Update data-strid attribute for the element with id="methodname"
+    const methodNameElement = document.getElementById("methodname");
+    if (methodNameElement && dataStridMap[targetId]) {
+        methodNameElement.setAttribute("data-strid", dataStridMap[targetId]);
+    }
+}
+
+aboutHash();
+window.addEventListener("hashchange", aboutHash);
+
+
+	
+	</script>
+	
+</html>
