@@ -86,12 +86,17 @@
 	margin-right:auto;
 	}
 	
-	.supportcontent {
+	.supportcontent, .smbcdteamgrids {
 	padding:35px 25px 20px 20px;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 15px;
 	display: none;
+	}
+	
+	.smbcdteamgrids {
+	grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+	display: grid !important;
 	}
 	
 	.supportcontentlist {
