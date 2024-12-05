@@ -66,7 +66,7 @@
 				<p style="border:4px dashed #ef3b6d;padding:10px;" data-strid="install_guide_warning"></p>
 				<p data-strid="install_guide_requirements"></p>				
 				
-				<div id="flips">
+				<div data-methods="flips">
 				
 					<p class="installrequirements" data-strid="install_guide_flips_requirements"></p>
 					
@@ -109,7 +109,7 @@
 				</div>
 
 
-				<div id="marcrobledo">
+				<div data-methods="marcrobledo">
 
 					<p class="installrequirements" data-strid="install_guide_marc_requirements"></p>
 
@@ -148,7 +148,7 @@
 				</div>
 				
 				
-				<div id="autopatcher">
+				<div data-methods="autopatcher">
 				
 					<p class="installrequirements" data-strid="install_guide_autopatcher_requirements"></p>
 
@@ -246,41 +246,41 @@
 	  'install_guide_flips_marc_step3_detailed_button_hide'
 	);
 
+	
+	function aboutHash() {
+		const dataMethods = ["flips", "marcrobledo", "autopatcher"];
+		const dataStridMap = {
+			autopatcher: "install_method_smbcmd",
+			flips: "install_method_flips",
+			marcrobledo: "install_method_marc"
+		};
 
-function aboutHash() {
-    const sectionIds = ["flips", "marcrobledo", "autopatcher"];
-    const dataStridMap = {
-        flips: "install_method_flips",
-        marcrobledo: "install_method_marc",
-        autopatcher: "install_method_smbcmd"
-    };
+		const hash = window.location.hash.substring(1);
 
-    const hash = window.location.hash.substring(1);
-    
-    if (!hash) {
-        window.location.href = "https://famicomcd.org/smbcd/installation";
-        return;
-    }
+		if (!hash) {
+			window.location.href = "https://famicomcd.org/smbcd/installation";
+			return;
+		}
 
-    const targetId = sectionIds.includes(hash) ? hash : null;
+		const targetMethod = dataMethods.includes(hash) ? hash : null;
 
-    // Update display of sections
-    sectionIds.forEach(id => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.style.display = id === targetId ? "block" : "none";
-        }
-    });
+		dataMethods.forEach(method => {
+			const elements = document.querySelectorAll(`[data-methods="${method}"]`);
+			elements.forEach(element => {
+				element.style.display = method === targetMethod ? "block" : "none";
+			});
+		});
 
-    // Update data-strid attribute for the element with id="methodname"
-    const methodNameElement = document.getElementById("methodname");
-    if (methodNameElement && dataStridMap[targetId]) {
-        methodNameElement.setAttribute("data-strid", dataStridMap[targetId]);
-    }
-}
+		const methodNameElement = document.getElementById("methodname");
+		if (methodNameElement && dataStridMap[targetMethod]) {
+			methodNameElement.setAttribute("data-strid", dataStridMap[targetMethod]);
+		}
+	}
 
-aboutHash();
-window.addEventListener("hashchange", aboutHash);
+	aboutHash();
+	window.addEventListener("hashchange", aboutHash);
+
+
 
 
 	
