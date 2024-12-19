@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		fr: 'https://raw.githubusercontent.com/FamicomCD/famicomcd-translators/refs/heads/main/fr/fr.txt',
 		it: 'https://raw.githubusercontent.com/FamicomCD/famicomcd-translators/refs/heads/main/it/it.txt',
 		ru: 'https://raw.githubusercontent.com/FamicomCD/famicomcd-translators/refs/heads/main/ru/ru.txt'
+		pt: 'https://raw.githubusercontent.com/FamicomCD/famicomcd-translators/refs/heads/main/pt/pt.txt'
     };
 
     let strings = {};
