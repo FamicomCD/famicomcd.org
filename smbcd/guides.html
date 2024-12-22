@@ -63,8 +63,8 @@
 			
 			<div class="installguidetextholder">
 			
-				<p style="border:4px dashed #ef3b6d;padding:10px;" data-strid="install_guide_warning"></p>
-				<p data-strid="install_guide_requirements"></p>				
+				<p class="hideguideelement" style="border:4px dashed #ef3b6d;padding:10px;" data-strid="install_guide_warning"></p>
+				<p class="hideguideelement" data-strid="install_guide_requirements"></p>				
 				
 				<div data-methods="flips">
 				
@@ -167,6 +167,38 @@
 				</div>
 				
 				
+				
+				<div data-methods="retroarch">				
+				
+				<p data-strid="tutorial_ios_retroarch_note1"></p>
+				
+				<p data-strid="tutorial_ios_retroarch_note2"></p>
+
+				<p style="margin-bottom:0;" data-strid="tutorial_ios_retroarch_step1"></p><pre style="margin-top: 0;text-wrap: auto;font-size: 20px;" data-strid="tutorial_ios_retroarch_step1_directory"></pre>
+
+				<div style="text-align:center;">
+					<img class="iosimages" src="../graphics/installtutorial/ios/IMG_5978.png">
+					<img class="iosimages" src="../graphics/installtutorial/ios/IMG_5980.png">
+					<img class="iosimages" src="../graphics/installtutorial/ios/IMG_5981.png">
+					<img class="iosimages" src="../graphics/installtutorial/ios/IMG_5982.png">
+					<img class="iosimages" src="../graphics/installtutorial/ios/IMG_5983.png">
+				</div>
+
+				<p data-strid="tutorial_ios_retroarch_step2"></p>
+
+				<div style="text-align:center;">
+					<img class="iosimages" src="../graphics/installtutorial/ios/IMG_5984.png">
+					<img class="iosimages" src="../graphics/installtutorial/ios/IMG_5985.png">
+					<img class="iosimages" src="../graphics/installtutorial/ios/IMG_5986.png">
+					<img class="iosimages" src="../graphics/installtutorial/ios/IMG_5988.png">
+					<img class="iosimages" src="../graphics/installtutorial/ios/IMG_5989.png">
+				</div>
+
+				<p data-strid="tutorial_ios_retroarch_note3"></p>
+				
+				
+				</div>				
+				 
 				 
 			</div>
 				
@@ -248,11 +280,12 @@
 
 	
 	function aboutHash() {
-		const dataMethods = ["flips", "marcrobledo", "autopatcher"];
+		const dataMethods = ["flips", "marcrobledo", "autopatcher", "retroarch"];
 		const dataStridMap = {
 			autopatcher: "install_method_smbcmd",
 			flips: "install_method_flips",
-			marcrobledo: "install_method_marc"
+			marcrobledo: "install_method_marc",
+			retroarch: "tutorial_ios_retroarch"
 		};
 
 		const hash = window.location.hash.substring(1);
@@ -275,12 +308,15 @@
 		if (methodNameElement && dataStridMap[targetMethod]) {
 			methodNameElement.setAttribute("data-strid", dataStridMap[targetMethod]);
 		}
+
+		const hideGuideElements = document.querySelectorAll(".hideguideelement");
+		hideGuideElements.forEach(element => {
+			element.style.display = targetMethod === "retroarch" ? "none" : "block";
+		});
 	}
 
 	aboutHash();
 	window.addEventListener("hashchange", aboutHash);
-
-
 
 
 	

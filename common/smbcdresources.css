@@ -349,6 +349,12 @@
 	margin-bottom: 20px;
 	}
 	
+	.iosimages {
+	display:inline;
+	border-radius: 20px;	
+	height: 536px;
+	}
+	
 	.guideimageswide {
 	width:auto;
 	height:190px;
@@ -489,6 +495,11 @@
 	.guideimages, .guideimageswide, .guideimagescmd {
 	width:80% !important;
 	height:auto !important;
+	}
+	
+	.iosimages {
+	height: auto;
+	width: 74%;
 	}
 	
 	}
