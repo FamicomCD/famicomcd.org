@@ -148,12 +148,12 @@
 		width: 583px;
 		}
 		
-		.headerbuttons:hover, .projectbuttons:hover, .moreprojectbuttons:hover, .mainpagebanners:hover, .footerbuttons:hover, .backbuttons:hover {
+		.headerbuttons:hover, .projectbuttons:hover, .moreprojectbuttons:hover, .mainpagebanners:hover, .footerbuttons:hover, .backbuttons:hover, #playButton:hover, .learnmorebutton:hover, .convincingbutton:hover, .smbcdmainbuttons:hover {
 		transform: translateY(-3px) scale(1.01);
 		box-shadow: 0px 3px 5px rgba(11, 4, 60, 0.3);
 		}
 		
-		.headerbuttons:active, .projectbuttons:active, .moreprojectbuttons:active, .mainpagebanners:active, .footerbuttons:active, .backbuttons:active {
+		.headerbuttons:active, .projectbuttons:active, .moreprojectbuttons:active, .mainpagebanners:active, .footerbuttons:active, .backbuttons:active, #playButton:active, .learnmorebutton:active, .convincingbutton:active, .smbcdmainbuttons:active {
 		transform: translateY(2px) scale(0.99);
 		filter: brightness(90%) hue-rotate(8deg);
 		box-shadow: 0px 4px 1px rgba(11, 4, 60, 0.0);
