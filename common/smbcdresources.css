@@ -56,13 +56,13 @@
 	color:white;
 	}
 	
-	.switchbuttons {
+	.switchbuttons, .enemyswitchbuttons {
 	float:right;
 	padding:15px 2% 10px 10px;
 	transition: ease-in 0.07s;
 	}
 	
-	.switchbuttongrid, .switchbuttonlist {
+	.switchbuttongrid, .switchbuttonlist, .switchbuttonanim {
 	width:40px;
 	background-color: #51469d;
 	border: 3px solid #4c4097;
@@ -71,14 +71,18 @@
 	transition: ease-in 0.07s;
 	}
 		
-	.supporttabname, .supporttabnamebottom {
+	.supporttabname, .supporttabnamebottom, .smbcdteamtabname {
 	font-size:40px;
 	margin:0;
 	padding-left:2%;
 	padding-top:60px;
 	}
 	
-	.supportcontentbar {
+	.smbcdteamtabname {
+	padding-top:0;
+	}
+	
+	.supportcontentbar, .enemycontentbar {
 	height:4px;
 	width:96%;
 	background-color: #4c4097;
@@ -86,7 +90,7 @@
 	margin-right:auto;
 	}
 	
-	.supportcontent, .smbcdteamgrids {
+	.supportcontent, .smbcdteamgrids, .enemycontent, .smbcdteamcontent {
 	padding:35px 25px 20px 20px;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -94,9 +98,49 @@
 	display: none;
 	}
 	
-	.smbcdteamgrids {
-	grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-	display: grid !important;
+	.smbcdteamcontent {
+	grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+	display: grid;
+	}
+	
+	.enemycontentbar {
+	margin-top: 100px;
+	}
+	
+	.enemycontent {
+	display: flex;
+	flex-direction: column;
+	flex:1;
+	}
+	
+	.enemyright {
+	padding: 35px 25px 20px 5px;
+	}
+	
+	.enemyleft {
+	padding: 35px 5px 20px 20px;
+	}
+	
+	.flextheenemystuff.visible, .flextheenemystufflist.visible {
+	display:flex;
+	gap: 10px;
+	align-items: flex-start;
+	}
+	
+	.flextheenemystufflist {
+		
+	.enemynameandtags {
+	margin-top: 3%;
+	}
+	
+	.padenemiesonmobile {
+	padding: 8px;
+	}
+	
+	}
+	
+	.flextheenemystuff, .flextheenemystufflist {
+	display:none;
 	}
 	
 	.supportcontentlist {
@@ -104,6 +148,36 @@
 	margin:1% 0% 0% 1% !important;
     height:65px !important;
 	}
+	}
+	
+	.crisprender, .enemystufficons, .switchbuttonanim, .enemytagicon {	
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: crisp-edges;
+	-ms-interpolation-mode: nearest-neighbor;
+	image-rendering: pixelated;
+	}
+	
+	.smbcdteamposition, .smbcdrepresenting {
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 0% 0% 5% 5%;
+	display: inline-block;
+	vertical-align: top;
+	opacity: 0.7;
+	margin:0;
+	width: 100%;
+	}
+	
+	.smbcdrepresenting {
+	padding: 0% 0% 0% 3%;
+	}
+	
+	.representbanner {
+	width: 95%;
+	border-radius: 20px;
+	margin-left: 2.5%;
+	transition: ease-in 0.07s;
 	}
 	
 	.supportcontentlist {
@@ -120,8 +194,8 @@
 	
 	.supportstuffnames {
 	padding: 10px 0% 0% 2%;
-    display: inline-block;
-    vertical-align: top;
+	display: inline-block;
+	vertical-align: top;
 	font-size: 23px;
 	}
 	
@@ -178,27 +252,31 @@
 	display: block;
 	}
 	
-	.switchbuttongrid.active {
+	.switchbuttongrid.active, .switchbuttonlist.active, .switchbuttonanim.active {
 	background-color:#7d71cf;
 	border: 3px solid #6659b7;
 	}
 	
-	.switchbuttonlist.active {
-	background-color:#7d71cf;
-	border: 3px solid #6659b7;
-	}
-	
-	.supportthings {
+	.supportthings, .enemythings, .smbcdteamthings {
 	width:100%;
 	height:100%;
 	background-color: #51469d;
 	border: 3px solid #4c4097;
 	border-radius: 30px;
 	transition: ease-in 0.07s;
+	}
+	
+	.supportthings {
 	cursor: pointer;
 	}
 	
-	.supportthings:hover, .switchbuttongrid:hover, .switchbuttonlist:hover, .method:hover, .installstepdetailsbutton:hover {
+	.enemythings {
+	break-inside: avoid;
+	display: block;
+	align-items: flex-start;
+	}
+	
+	.supportthings:hover, .switchbuttongrid:hover, .switchbuttonlist:hover, .switchbuttonanim:hover, .method:hover, .installstepdetailsbutton:hover, .switchbuttonanim:hover {
 	transform: translateY(-3px) scale(1.01);
 	box-shadow: 0px 3px 5px rgba(11, 4, 60, 0.3);
 	
@@ -212,23 +290,89 @@
 	transform: translateY(0px) scale(1.01);
 	}
 		
-	.supportthings:active, .switchbuttongrid:active, .switchbuttonlist:active, .method:active, .installstepdetailsbutton:active {
+	.supportthings:active, .switchbuttongrid:active, .switchbuttonlist:active, .switchbuttonanim:active, .method:active, .installstepdetailsbutton:active {
 	transform: translateY(2px) scale(0.99);
 	filter: brightness(90%) hue-rotate(4deg);
 	box-shadow: 0px 4px 1px rgba(11, 4, 60, 0.0);
 	}
 	
-	.supportstufficons {
+	.supportstufficons, .enemystufficons, .smbcdteamdevicons {
 	margin:6% 0% 0% 3%;
 	width:auto;
 	height: 135px;
 	text-align:center;
 	}
+	
+	.smbcdteamdevicons {
+	margin:3% 0% 0% 3%;
+	border-radius:15px;
+	display:inline-block;
+	}
+	
+	.nameandstuffflex2 {
+	display:inline-block;
+	vertical-align:top;
+	margin-top: 5.5%;
+	}
+	
+	.enemystufficons {
+	margin: 2% 2% 0% 2%;
+	z-index:50;
+	position: relative;
+	cursor:pointer;
+	}
+	
+	.enemynameandtags {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 4.5%;
+	padding: 0 0 10px 0;
+	}
+	
+	.enemytagicon {
+	width: 20px;
+	vertical-align: middle;
+	padding-bottom: 4px;
+	}
+	
+	.allowtextselect, .enemydescmargins, .enemystuffnames {
+	-webkit-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+	}
+	
+	.enemydescmargins {
+	margin: 0 1% 1%;
+	}
+	
+	.padenemiesonmobile {
+	padding: 20px;
+	}
+	
+	.buttonsdivider {
+	width:4px;
+	height:66px;
+	display:inline-block;
+	background-color: #4c4097;
+	margin: 0 10px;
+	float:none;
+	}
 
-	.supportstuffnames {
+	.supportstuffnames, .enemystuffnames, .smbcdteamstuffnames {
 	padding:0% 0% 0% 5%;
 	margin:0;
 	font-size:25px;
+	}
+	
+	.smbcdteamstuffnames {
+	line-height: 1.2;
+	margin-bottom:4px;
+	width:100%;
+	}
+	
+	.enemystuffnames {
+	padding: 0;
 	}
 	
 	.supportplatformfortext {
@@ -238,15 +382,33 @@
 	display:inline;
 	}
 	
-	.supportplatformicons, .supportplaformiconleft, .supportplatformiconssmall, .supportplatformiconleftsmall{
+	.supportplatformicons, .supportplaformiconleft, .supportplatformiconssmall, .supportplatformiconleftsmall, .smbcdteamicons, .smbcdteamiconsleft {
 	height: 26px;
 	vertical-align:middle;
 	display:inline;
-	padding:0% 0% 6% 0%;
+	margin:0% 0% 6% 0%;
+	}
+	
+	.smbcdteamicons {
+	margin:0% 0% 6% 1%;
+	}
+	
+	.smbcdteamicons, .smbcdteamiconsleft {
+	height: 37px;
+	border-radius:10px;
+	transition: ease-in 0.07s;
 	}
 	
 	.supportplaformiconleft, .supportplatformiconleftsmall {
-	padding:0% 0% 6% 6%;
+	margin:0% 0% 6% 6%;
+	}
+	
+	.smbcdteamiconslefta {
+	margin:0% 0% 6% 5%;
+	}
+	
+	.smbcdteamiconsa {
+	margin:0% 0% 6% 3%;
 	}
 	
 	.supportplatformiconssmall, .supportplatformiconleftsmall {
@@ -332,6 +494,11 @@
 	margin-top: 20px;
 	}
 	
+	.keepthestuffflexsmbcdteam {
+	display:flex;
+	width:100%;
+	}
+	
 	.installstepdetails {
 	background-color: #51469d;
 	padding:20px;
@@ -398,6 +565,17 @@
 	}
 	
 	
+	@media (max-width: 1190px) {
+		
+	.enemynameandtags {
+	display: block;
+	margin-top: 0;
+	padding: 0 0 10px 0;
+	}	
+		
+	}
+	
+	
 	@media (max-width: 1090px) {
 	
 	.installiconholder {
@@ -432,20 +610,18 @@
 	text-align: center;
 	}
 	
-	.switchbuttons {
+	.switchbuttons, .enemyswitchbuttons {
 	padding:15px 2% 10px 10px;
 	transition: ease-in 0.07s;
-	width:200px;
 	display:none;
 	}
 	
-	.switchbuttongrid, .switchbuttonlist {
-	width:60px;
-	background-color: #51469d;
-	border: 3px solid #4c4097;
-	padding:10px;
-	border-radius: 15px;
-	transition: ease-in 0.07s;
+	.enemycontentbar {
+	margin-top: 110px;
+	}
+	
+	.enemyswitchbuttons {
+	display:inherit !important;
 	}
 	
 	.nameandstuffflex {
