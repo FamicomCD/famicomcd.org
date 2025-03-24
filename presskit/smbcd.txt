@@ -1,0 +1,15 @@
+Super Mario Bros. CD (SMBCD) is a ROM hack of Super Mario World, imagining what an SMB game might be like on a CD-based console. The console in this scenario is the fictional FamicomCD, an add-on for the Famicom/NES, distinct from the Super NES CD/SuperDisc, which some people confuse it with.
+
+SMBCD utilizes the MSU-1 chip to deliver original, rich CD-quality music, fully animated cutscenes, and more complex environments. The game also heavily uses Mode 0, a SNES background mode akin to Mode 7, for its levels. This provides more layers for foreground environments and background parallax, allowing for 4 layers at once instead of the usual 2-3 layers found in SMW. However, it also restricts all layers to 2BPP or 4 colors per tile. 
+
+
+
+Super Mario Bros. CD (SMBCD) takes place on the small yet diverse Archipelago of Brixurei. One day, mysteriously, The Guardian of Brixurei — the primary source of protection and security for the archipelago — went mad, causing adverse weather and rampant wildlife. The locals were left baffled and worried. Those who left their towns to discover what was happening were never heard from again.
+
+Amidst the chaos caused by the Guardian's sudden outburst, the locals called upon the one and only Mario Bros. for help. As the Mushroom Kingdom bid them farewell, Mario set off by boat towards the Archipelago of Brixurei, bringing Luigi along for the ride. During this journey, the brothers will meet a new friendly face who will accompany them.
+
+
+
+Contrary to popular belief, SMBCD is not inspired much by Sonic CD. SMBCD takes more inspiration from surrealist fantasy, Nintendo's Research and Development 1 (R&D1), City Pop (artists such as Masayoshi Takanaka and T Square) and 80s music, and more sundries.
+
+This also indirectly means that SMBCD and Sonic CD will not share many features, at least not intentionally (e.g. time travel). 
