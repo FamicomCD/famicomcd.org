@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		ru: 'https://raw.githubusercontent.com/FamicomCD/famicomcd-translators/refs/heads/main/ru/ru.txt',
 		pt: 'https://raw.githubusercontent.com/FamicomCD/famicomcd-translators/refs/heads/main/pt/pt.txt',
 		id: 'https://raw.githubusercontent.com/FamicomCD/famicomcd-translators/refs/heads/main/id/id.txt',
-		fr: 'https://raw.githubusercontent.com/FamicomCD/famicomcd-translators/refs/heads/main/de/de.txt',
+		de: 'https://raw.githubusercontent.com/FamicomCD/famicomcd-translators/refs/heads/main/de/de.txt',
     };
 
     let strings = {};
