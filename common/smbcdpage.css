@@ -36,13 +36,13 @@
 	}
 	
 	.zoomedoutbg {
-	background-image: url(graphics/smbcdnew/toofarzoombg.png);
+	background-image: url(https://famicomcd.org/graphics/smbcdnew/toofarzoombg.png);
 	background-position: center;
 	background-repeat: repeat;
 	}
 	
 	.bg {
-	background: url(graphics/bgdiamond.svg);
+	background: url(https://famicomcd.org/graphics/bgdiamond.svg);
 	}
 	
 	.famicomcdcontact{
@@ -351,7 +351,7 @@
 	
 	
 	.infooverlap {
-	background-image: url(graphics/smbcdnew/mask/whitenoisechrome.png);
+	background-image: url(https://famicomcd.org/graphics/smbcdnew/mask/whitenoisechrome.png);
 	background-color: #6d4db4;
 	position:absolute;
 	overflow:hidden;
@@ -372,7 +372,7 @@
 	}
 	
 	.infowrapper {
-	background-image: url(graphics/smbcdnew/mask/whitenoisechrome.png);
+	background-image: url(https://famicomcd.org/graphics/smbcdnew/mask/whitenoisechrome.png);
 	background-color: #6d4db4;
 	width:100%;
 	z-index:10;
@@ -408,7 +408,7 @@
 	}
 	
 	.screenshotswrapper {
-	background-image: url(graphics/smbcdnew/bg/funstuff.svg);
+	background-image: url(https://famicomcd.org/graphics/smbcdnew/bg/funstuff.svg);
 	/* background-attachment: fixed; */
 	position:relative;
 	overflow:hidden;
@@ -699,7 +699,7 @@
 	}
 	
 	.powerupholder {
-	background-image: url(graphics/smbcdnew/bg/powerupsbg.png);
+	background-image: url(https://famicomcd.org/graphics/smbcdnew/bg/powerupsbg.png);
 	height:2990px;
 	width:100%;
 	/* padding-bottom:220px; */
