@@ -1,0 +1,2009 @@
+	html {
+	overflow-x: hidden;
+	}
+	
+	/* a {
+	color: #7e6ee3;
+	cursor: url('https://famicomcd.org/graphics/smbcdnew/cursor.png') 1 1, auto;
+	de
+	}
+	
+	a:visited {
+	color: #7e6ee3;
+	}
+	
+	a:hover {
+	color: #6858cf;
+	}
+	
+	a:active {
+	color: #423883;
+	} */
+	
+	
+	body{
+	margin:0;
+	font-family: "Seurat Pro";
+	background-color: #332451;
+	position: relative;
+	overflow-x: hidden;
+    max-width: 2560px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	/* cursor: url('https://famicomcd.org/graphics/smbcdnew/cursor.png') 1 1, auto; */
+	
+	}
+	
+	.zoomedoutbg {
+	background-image: url(graphics/smbcdnew/toofarzoombg.png);
+	background-position: center;
+	background-repeat: repeat;
+	}
+	
+	.bg {
+	background: url(graphics/bgdiamond.svg);
+	}
+	
+	.famicomcdcontact{
+	Width: 100%;
+	text-align:center;
+	display:inline-block;
+	padding-top:10px;
+	overflow:hidden;
+	}
+	
+	#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: top 0.5s ease;
+    z-index: 1000;
+	height:70px;
+	background-color: white;
+	/* backdrop-filter: blur(10px); */
+	/* background-color: rgba(256, 256, 256, 0.7); */
+	}
+	
+	.inlinewhenneeded{
+	display:inline;
+	}
+	
+	.uppersection {
+	padding-bottom:28%;
+	}
+	
+	.bannerimage, .bannerimagephone {
+	overflow:hidden;
+	height: auto;
+	width:100%;
+	position: absolute;
+	filter:blur(8px) brightness(80%);
+	padding-top:2.6%;
+	background-color:white;
+	transform:scale(1.03);
+	clip-path: inset(0% 1.45% 0% 1.45%);
+	display: block;
+	mask-repeat: no-repeat;
+	mask-size: 100%;
+    mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/trianglemasklongbottom.png');
+    mask-size: 100% auto;
+	mask-position: bottom;
+	-webkit-mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/trianglemasklongbottom.png');
+	-webkit-mask-size: 100% auto;
+	-webkit-mask-position: bottom;
+	}
+	
+	.bannerimagephone {
+	display:none;
+	}
+	
+	.bannerwrapper {
+	overflow: hidden;
+	}
+	
+/*	.bannerwrapper {
+    transform: translateX(-40px) scale(1.06);
+    transition: transform 0.6s ease-out;
+    will-change: transform;
+	}
+	
+	.bannerwrapper.visible { 
+	transform: translateX(0px) scale(1);
+	} */
+	
+	.famicomcdlogo {
+	padding-left:16px;
+	padding-top:9px;
+	width:240px;
+	vertical-align:top;
+	}
+	
+	.smbcdlogo {
+	position:relative;
+	width:60%;
+	z-index:50;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	pointer-events:some;
+	}
+	
+	.padthelogo {
+	padding-top:14%;
+	padding-bottom:6%;
+	}
+	
+	.smbcdlogo, .bannermario, .bannerlobba, .bannerkoopa, .bannerpiranha, .buttons, .bannerimage, .bannerimagephone, .innerbuttontextlearnmore, .innerbuttontext, .powerupholder, .titletextsc, .compatibleimg, .smbcdmainbuttons, .carouselscreenshot {
+	user-select: none;
+	-webkit-user-drag: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	}
+	
+	.bannermario, .bannerlobba, .bannerkoopa, .bannerpiranha {
+	position:absolute;
+	z-index:2;
+	transform-origin: center;
+	will-change: transform;
+	animation-fill-mode: forwards;
+	}
+	
+	.bannermario {
+	width:45%;
+	transform: rotateY(180deg) translate(-27%, 23%);
+	right:0;
+	clip-path: inset(0% 0% 0% 26.93%);
+	}
+	
+	.bannerlobba {
+	width:23%;
+	left: 15%;
+	z-index:10 !important;
+	transform: translateY(120%);
+	}
+	
+	.bannerkoopa {
+	width:37%;
+	right:15%;
+	transform: translateY(54%);
+	z-index:10 !important;
+	clip-path: inset(5%);
+	}
+	
+	.bannerpiranha {
+	width:43%;
+	transform: translate(-35%, 28%);
+	clip-path: inset(0% 0% 0% 34.90%);
+	}
+	
+	.bannerlobba.animate {
+	animation: hovershakelobba 0.5s ease-in-out;
+	}
+	
+	.bannerkoopa.animate {
+	animation: hovershakekoopa 0.5s ease-in-out;
+	}
+	
+	.bannermario.animate {
+	animation: mariojump 0.5s ease-in-out;
+	}
+	
+	.bannerpiranha.animate {
+	animation: pirahnajump 0.5s ease-in-out;
+	}
+
+	@keyframes hovershakelobba {
+	0% { transform: translateY(120%) rotate(0deg); }
+	25% { transform: translateY(120%) rotate(-5deg); }
+	50% { transform: translateY(120%) rotate(5deg); }
+	75% { transform: translateY(120%) rotate(-3deg); }
+	100% { transform: translateY(120%) rotate(0deg); }
+	}
+	
+	@keyframes hovershakekoopa {
+	0% { transform: translateY(54%) rotate(0deg); }
+	25% { transform: translateY(54%) rotate(-5deg); }
+	50% { transform: translateY(54%) rotate(5deg); }
+	75% { transform: translateY(54%) rotate(-3deg); }
+	100% { transform: translateY(54%) rotate(0deg); }
+	}
+	
+	@keyframes mariojump {
+	0% { transform: rotateY(180deg) translate(-27%, 23%) }
+	50% { transform: rotateY(180deg) translate(-27%, 14%) }
+	100% { transform: rotateY(180deg) translate(-27%, 23%) }
+	}
+	
+	@keyframes pirahnajump {
+	0% { transform: translate(-35%, 28%) }
+	50% { transform: translate(-35%, 24%) }
+	100% { transform: translate(-35%, 28%) }
+	}
+	
+	@keyframes hovershakelobbamobile {
+	0% { transform: translate(-18%, 80%) rotate(0deg); }
+	25% { transform: translate(-18%, 80%) rotate(-5deg); }
+	50% { transform: translate(-18%, 80%) rotate(5deg); }
+	75% { transform: translate(-18%, 80%) rotate(-3deg); }
+	100% { transform: translate(-18%, 80%) rotate(0deg); }
+	}
+	
+	@keyframes mariojumpmobile {
+	0% { transform: rotateY(180deg) translate(-27%, 26%) }
+	50% { transform: rotateY(180deg) translate(-27%, 16%) }
+	100% { transform: rotateY(180deg) translate(-27%, 26%) }
+	}
+
+	.buttons {
+	transition: all 0.25s ease-in-out;
+	padding:10px;
+	width: 650px;
+	border-radius: 25px;
+	}
+	
+	.buttons:hover {	
+	transform: scale(1.07);
+	transition: all 0.25s ease-in-out;
+	}
+	
+	.buttons:active {
+	transition: all 0.1s ease-in-out;	
+	transform: scale(0.96);
+	filter: brightness(80%) hue-rotate(8deg);
+	}
+	
+	.wrapperlogo {
+    opacity: 0;
+    transform: translateY(10%) scale(0.90);
+    transition: opacity 0.4s ease-out, transform 0.5s ease-out;
+    will-change: opacity, transform;
+	z-index: 20;
+	position: relative;
+	pointer-events: none;
+	}
+
+	.wrapperlogo.visible {
+    opacity: 1;
+    transform: translateY(0%) scale(1);
+	}
+	
+	.thosebuttons {
+	z-index:5;
+	display:flex;
+	float: right;
+	margin-right:2%;
+	}
+	
+	#playButton {
+	width:250px;
+	height:100px;
+	}
+	
+	.learnmorebutton {
+	margin:0 0 0 20px;
+	width:340px;
+	height:100px;
+	}
+	
+	.convincingbutton {
+	width:370px;
+	height:100px;
+	display: inline-block;
+	}
+	
+	.learnmorebutton, #playButton, .convincingbutton {
+	border-radius:11px;
+	background-color: #7265d1;
+	transition: ease-in 0.07s;
+	text-align:center;
+	font-size:34px;
+	color:white;
+	cursor:pointer;
+	background-image: url('https://famicomcd.org/graphics/smbcdnew/bg/blockboltblue.svg'), url('https://famicomcd.org/graphics/smbcdnew/bg/blockboltblue.svg'), url('https://famicomcd.org/graphics/smbcdnew/bg/blockboltblue.svg'), url('https://famicomcd.org/graphics/smbcdnew/bg/blockboltblue.svg');
+	background-size: 11px 11px;
+	background-repeat: no-repeat;
+	background-position: 10px 10px, calc(100% - 10px) 10px, 10px calc(100% - 10px), calc(100% - 10px) calc(100% - 10px);
+	}
+	
+	.innerbuttontext {
+	margin:0;
+	padding-top:5%;
+	}
+	
+	.innerbuttontextlearnmore {
+	margin:0;
+	padding-top:3.6%;
+	}
+	
+	.titletextsc {
+	font-size:150px;
+	margin:0;
+	padding:0;
+	line-height: 1;
+	top:110px;
+	left:60px;
+	color:white;
+	position:absolute;
+	text-shadow: 10px 10px #39317c;
+	overflow:hidden;
+	width:100%;
+	}
+	
+	.infowrapperunderlap {
+	width:100%;
+	z-index:1;
+	transform: translateY(-350px);
+	}
+	
+	.mainvideoholder {
+	mask-repeat: no-repeat;
+	mask-size: 100%;
+    mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/trianglemask.png');
+    mask-size: 100% auto;
+	-webkit-mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/trianglemask.png');
+	-webkit-mask-size: 100% auto;
+	margin-top: 19%;
+	position: absolute;
+	width:100%;
+	}
+	
+	
+	.infooverlap {
+	background-image: url(graphics/smbcdnew/mask/whitenoisechrome.png);
+	background-color: #6d4db4;
+	position:absolute;
+	overflow:hidden;
+	height:250px;
+	width:100%;
+	mask-repeat: no-repeat;
+	mask-size: 100%;
+    mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/trianglemaskbottom.png');
+    mask-size: 100% auto;
+	-webkit-mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/trianglemaskbottom.png');
+	-webkit-mask-size: 100% auto;
+	z-index:3;
+	transform: translateY(-4%);
+	}
+	
+	.padthescreenshotsbelowthething {
+	padding-bottom:71%;
+	}
+	
+	.infowrapper {
+	background-image: url(graphics/smbcdnew/mask/whitenoisechrome.png);
+	background-color: #6d4db4;
+	width:100%;
+	z-index:10;
+	color:white;
+	font-size: 22px;
+	}
+	
+	.infotext {
+	margin-left:2%;
+	margin-right:2%;
+	}
+	
+	.infotext2 {
+	float:left;
+	margin-left:2%;
+	color:white;
+	font-size:20px;
+	width:50%;
+	transform: translateY(-10%);
+	}
+	
+	.infotextstory,
+	.infotextimage	{
+	margin-left:2%;
+	margin-right:2%;
+	width:50%;
+	display:inline-flex;
+	}
+	
+	.infotextimage {
+	width:42% !important;
+	float:right;
+	}
+	
+	.screenshotswrapper {
+	background-image: url(graphics/smbcdnew/bg/funstuff.svg);
+	/* background-attachment: fixed; */
+	position:relative;
+	overflow:hidden;
+	height:1250px;
+	mask-repeat: no-repeat;
+	mask-size: 100%;
+    mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/trianglemask.png');
+    mask-size: 100% auto;
+	-webkit-mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/trianglemask.png');
+	-webkit-mask-size: 100% auto;
+	z-index:3;
+	}
+	
+	.pushcarousel{
+	padding-top:175px;	
+	overflow:hidden;
+	}
+	
+	.carouselholder{
+	padding-top:55px;
+	rotate: -3deg;
+	transform: scale(1.04);
+	overflow:hidden;
+	}
+		
+	.carousel {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	}
+
+	.carouseltrack {
+	display: flex;
+	width: fit-content;
+	animation: scroll 35s linear infinite;
+	overflow:hidden;
+	}
+
+	.carouseltrackright {
+	display: flex;
+	width: fit-content;
+	animation: scrollr 40s linear infinite;
+	overflow:hidden;
+	}
+
+	.carouselscreenshot {
+	width: 400px;
+	object-fit: cover;
+	padding:10px;
+	overflow:hidden;
+	}
+
+	@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(-50%); }
+	}
+
+	@keyframes scrollr {
+	0% { transform: translateX(-50%); }
+	100% { transform: translateX(0%); }	
+	}
+	
+	.toowide {
+	display:none;
+	position:fixed;
+	z-index:60;
+	}
+	
+	.platformsupport {
+	background-color:white;
+	overflow:hidden;
+	margin-top:40px;
+	}
+	
+	.platformsupportoverlap {
+	background-color:white;
+	width:100%;
+	height:252px;
+	mask-repeat: no-repeat;
+	mask-size: 100%;
+    mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/wave.png');
+    mask-size: 100% auto;
+	-webkit-mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/wave.png');
+	-webkit-mask-size: 100% auto;
+	transform: translateY(-195px);
+	position:absolute;
+	pointer-events: none;
+	z-index:4;
+	}
+	
+	.platformsupportbottom {
+	width:100%;
+	height:7%;
+	overflow:hidden;
+	z-index:9;
+	background-color:white;
+	mask-repeat: no-repeat;
+	mask-size: 100%;
+    mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/wavebottom.png');
+    mask-size: 100% auto;
+	position: absolute;
+	-webkit-mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/wavebottom.png');
+	-webkit-mask-size: 100% auto;
+	transform:translateY(-3px);
+	pointer-events:none;
+	}
+	
+	.compatibleimg {
+	width:75%;
+	margin-right: auto;
+	margin-left: auto;
+	display:block;
+	transform: translateY(75px);
+	opacity:0;
+	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    will-change: opacity, transform;
+	position:relative;
+	z-index:5;
+	}
+	
+	.compatibleimgphone {
+	width:100%;
+	display:none;
+	transform: translateY(75px);
+	opacity:0;
+	transition: opacity 0.5s ease-out 0.5s, transform 0.5s ease-out 0.1s;
+    will-change: opacity, transform;
+	position:relative;
+	z-index:5;
+	}
+	
+	.compatibleimg.visible, .compatibleimgphone.visible {
+	transform: translateY(0px);
+	opacity:1;
+	}
+	
+	.compatibletext {
+	font-size:28px;
+	width:85%;
+	margin-right: auto;
+	margin-left: auto;
+	display:block;
+	color: #483c97;
+	/* text-shadow: 3px 3px #231d4a; */
+	margin-top:15px;
+	line-height:1.5;
+	z-index:3;
+	}
+	
+	.compatibletext a {
+	color:#9b93d1;
+	}
+		
+	.compatibletext a:hover {
+	color:#7b73b3;
+	}
+		
+	.compatibletext a:active {
+	color:#60579a;
+	}
+	
+	.consoleicon {
+	width:4%;
+	vertical-align:middle;
+	padding: 0px 5px 0px 2px;
+	}
+	
+	.tagline {
+	color: #39317c;
+	font-size:60px;
+	margin:0;
+	line-height:2;
+	text-stroke: 3px #39317c;
+	text-shadow: 3px 3px 000; 
+	}
+	
+	.piranhaplant {
+	position: absolute;
+	width:120px;
+	right: 2%;
+	transition: all 0.25s ease-in-out;
+	image-rendering: crisp-edges;
+	}
+	
+	.piranhaplant:hover {
+	transform: translateY(-16px);
+	}
+	
+	.platformcontainer {
+	overflow:hidden;
+	width:100%;
+	}
+	
+	.powerupicon {
+	width:400px;
+	background-color:white;
+	border-radius:500px;
+	display:inline-grid;
+	}
+	
+	.powerupaccentmushroom, .powerupaccentfire, .powerupaccentstar {
+	position:absolute;
+	height:200px;
+	image-rendering: crisp-edges;
+	}
+	
+	.powerupaccentmushroom {
+	transform: translateX(-70px) translateY(250px);
+	}
+	
+	.powerupaccentfire {
+	transform: translateX(260px) translateY(140px);
+	}
+	
+	.powerupaccentstar {
+	transform: translateX(-245px) translateY(250px);
+	}
+	
+	.powerupleft {
+	padding-left:15%;
+	transform: translateY(75px);
+	opacity:0;
+	transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+    will-change: opacity, transform;
+	position:relative;
+	z-index:10;
+	clear:right;
+	}
+	
+	.powerupright {
+	padding-right:15%;
+	padding-bottom:0.5%;
+	float:right;
+	transform: translateY(75px);
+	opacity:0;
+	transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+    will-change: opacity, transform;
+	position:relative;
+	z-index:10;
+	}
+	
+	
+	.powerupleft.visible, .powerupright.visible {
+	transform: translateY(0px);
+	opacity:1;
+	}
+	
+	.powerupinfo {
+	display:inline-block;
+	vertical-align:top;
+	padding-top:110px;
+	padding-left:20px;
+	}
+	
+	.infotop {
+	padding-top:12%;
+	width:100%;
+	height:400px;
+	background-color:#574aaa;
+	mask-repeat: no-repeat;
+    mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/waveleft.png');
+    mask-size: 100% auto;
+	position: absolute;
+	-webkit-mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/waveleft.png');
+	-webkit-mask-size: 100% auto;
+	}
+	
+	.powerupinforight, .powerupinforightmobile {
+	display:inline-block;
+	vertical-align:top;
+	padding-top:110px;
+	padding-right:20px;
+	text-align:right;
+	}
+	
+	.powerupinforightmobile {
+	display:none;
+	}
+	
+	.powerupname, .powerupdesc {
+	font-size:50px;
+	color:white;
+	margin:0;
+	}
+	
+	.powerupdesc {
+	font-size:25px;
+	}
+	
+	.powerupholder {
+	background-image: url(graphics/smbcdnew/bg/powerupsbg.png);
+	height:2990px;
+	width:100%;
+	/* padding-bottom:220px; */
+	mask-repeat: no-repeat, no-repeat;
+    mask-image: url('https://famicomcd.org/graphics/smbcdnew/mask/wave.png');
+    mask-size: 100% auto, 100% calc(100% - 1800px);
+	-webkit-mask: url('https://famicomcd.org/graphics/smbcdnew/mask/wave.png') top, url('https://famicomcd.org/graphics/smbcdnew/mask/square.png') bottom;
+	-webkit-mask-size: 100% auto, 100% calc(100% - 300px);
+	-webkit-mask-repeat: no-repeat, no-repeat;
+	transform: translateY(-240px);
+	z-index: 3;
+	position: absolute;
+	pointer-events: none;
+	}
+	
+	.platformcontainer {
+	margin-top: 2700px !important;
+	}
+	
+	.padpowerup {
+	padding-bottom:290px;
+	}
+	
+	#waitformario {
+	position: absolute;
+	left: -100px;
+	width: 118px;
+	height: 118px;
+	background-image: url('https://famicomcd.org/graphics/smbcdnew/mariopose/runmariogame.gif');
+	background-size: cover;
+	background-position: center;
+	transform: translateY(-110px);
+	z-index:10;
+	opacity: 0;
+	transition: left linear, opacity 0.5s linear;
+	}
+	
+	.infotextimagemobile {
+	margin-left:auto;
+	margin-right:auto;
+	width:98%;
+	display:none;
+	}
+
+	#DPADmiddle, #body {
+	pointer-events:none;
+	}
+
+	#DPADback, #DPADmiddle, #A, #B, #X, #Y, #shoulderL, #shoulderR, #STA, #SEL {
+	transform-style: preserve-3d;
+	transition: transform 0.1s ease;
+	}
+
+	.controllerwrapper {
+	margin-left:auto;
+	margin-right:auto;
+	display:flex;
+	}
+
+	#sfccontroller {
+	margin-left:auto;
+	margin-right:auto;
+	display:flex;
+	transform: scale(3.02);
+	padding:110px;
+	}
+	
+	.buttonmapwrapper {
+	background-color:white;
+	}
+	
+	footer {
+	background-color:black !important;
+	}
+	
+	.groundbg, .grasslandbg, .middletiles {
+	background-repeat:repeat;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: crisp-edges;
+	-ms-interpolation-mode: nearest-neighbor;
+	image-rendering: pixelated;
+	background-position:center;
+	width:100%;
+	background-size: cover;
+	}
+	
+	.groundbg {
+	height:256px;
+	background-image:url('https://famicomcd.org/graphics/smbcdnew/gamegraphics/groundfade.png');
+	background-repeat:repeat-x;
+	}
+	
+	.grasslandbg {
+	height:1088px;
+	background-image: url('https://famicomcd.org/graphics/smbcdnew/gamegraphics/grasslandbackground.png');
+	position:relative;
+	}
+	
+	.middletiles {
+	height:768px;
+	background-image: url('https://famicomcd.org/graphics/smbcdnew/gamegraphics/middletiles.gif');
+	position:absolute;
+	bottom:0;
+	}
+
+	.convincingbox {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fff;
+	border: 3px solid #c2bcef;
+	border-radius: 30px;
+	text-align: center;
+	padding: 1%;
+	font-size: 28px;
+	color: #6f62c2;
+	backdrop-filter: blur(10px);
+	}
+
+	.convincetext {
+	margin: 1%;
+	}
+	
+	.convincingor {
+	margin: 0;
+	display: inline;
+	}
+
+	.padtheconvincing {
+	padding-top: 20%;
+	z-index: 200;
+	position: relative;
+	}
+	
+	.smbcdmainbuttontext {
+	font-size:36px;
+	margin: 4.5% 0 0 10%;
+	position:relative;
+	z-index:20;
+	}
+	
+	.smbcdmainbuttons {
+	width:650px;
+	height:140px;
+	display:inline-block;
+	position:relative;
+	border-radius: 90px;
+	margin:30px 10px 30px 10px;
+	color:white;
+	transition: ease-in 0.07s;
+	}
+	
+	.smbcdmainbuttonicons {
+	position:absolute;
+	width:200px;
+	left:0;
+	transform: translate(-24%, -20%);
+	transition: ease-in 0.1s;
+	}
+	
+	.smbcdbuttonsupportsheet {
+	background: linear-gradient(#2b2b2a, #242323);
+	text-shadow: 4px 4px #533C77;
+	border:4px solid #151417;
+	}
+	
+	.smbcdbuttontutorials {
+	background: linear-gradient(#5f539e, #51388c);
+	text-shadow: 4px 4px #3e2673;
+	border: 4px solid #341e66;
+	}
+	
+	.smbcdbuttonteam {
+	background-image: url('https://famicomcd.org/graphics/smbcdnew/bg/funstuff.png');
+	background-size:34.5px;
+	background-repeat:repeat;
+	text-shadow: 4px 4px #3e2673;
+	border: 4px solid #3e2673;
+	}
+	
+	.smbcdbuttondownload {
+	background: linear-gradient(#764b7b, #603d64);
+	text-shadow: 4px 4px #4f2c53;
+	border: 4px solid #4f2c53;
+	}
+	
+	.smbcdbuttoninfo {
+	background: linear-gradient(#64b2a0, #1a7579);
+	text-shadow: 4px 4px #286366;
+	border: 4px solid #286366;
+	}
+	
+	.smbcdbuttonenemies {
+	background: linear-gradient(#c5665d, #b33b30);
+	text-shadow: 4px 4px #8e180e;
+	border: 4px solid #8e180e;
+	}
+	
+	.smbcdbuttonsupportsheet:hover, .smbcdbuttonteam:hover, .smbcdbuttonenemies:hover {
+	animation-fill-mode: none;
+	
+	.smbcdmainbuttonicons {
+	animation: iconshake 0.5s ease-in-out;
+	}
+	
+	}
+	
+	.smbcdbuttondownload:hover {
+	
+	.smbcdmainbuttonicons {
+	animation: iconjump 0.8s ease-in-out;
+	}
+	
+	}
+	
+	.smbcdbuttontutorials:hover {
+	
+	.smbcdmainbuttonicons {
+	animation: icontiltfrombottom 1.2s ease-in-out;
+	transform-origin: 1% 100%;
+	}
+	
+	}
+	
+	.smbcdbuttoninfo:hover {
+	
+	.smbcdmainbuttonicons {
+	animation: iconstretch 0.5s ease-in-out;
+	}
+	
+	}
+
+	
+	@keyframes iconshake {
+	0% { transform: translate(-24%, -20%) rotate(0deg); }
+	25% { transform: translate(-24%, -20%) rotate(-5deg); }
+	50% { transform: translate(-24%, -20%) rotate(5deg); }
+	75% { transform: translate(-24%, -20%) rotate(-3deg); }
+	100% { transform: translate(-24%, -20%) rotate(0deg); }
+	}
+	
+	@keyframes iconjump {
+	0% { transform: translate(-24%, -20%) rotate(0deg); }
+	25% { transform: translate(-24%, -28%) rotate(-2deg); }
+	50% { transform: translate(-24%, -20%) rotate(0deg); }
+	75% { transform: translate(-24%, -28%) rotate(-2deg); }
+	100% { transform: translate(-24%, -20%) rotate(0deg); }
+	}
+	
+	@keyframes icontiltfrombottom {
+	0% { transform: translate(-24%, -20%) rotate(0deg); }
+	25% { transform: translate(-24%, -27%) rotate(10deg); }
+	50% { transform: translate(-24%, -20%) rotate(0deg); }
+	75% { transform: translate(-24%, -25%) rotate(7deg); }
+	100% { transform: translate(-24%, -20%) rotate(0deg); }
+	}
+	
+	@keyframes iconstretch {
+	0% { transform: translate(-24%, -20%) scale(1, 1);; }
+	50% { transform: translate(-24%, -20%) scale(1, 1.2); }
+	100% { transform: translate(-24%, -20%) scale(1, 1); }
+	}
+	
+	@keyframes iconshakemobile {
+	0% { transform: translate(-24%, -9%) rotate(0deg); }
+	25% { transform: translate(-24%, -9%) rotate(-5deg); }
+	50% { transform: translate(-24%, -9%) rotate(5deg); }
+	75% { transform: translate(-24%, -9%) rotate(-3deg); }
+	100% { transform: translate(-24%, -9%) rotate(0deg); }
+	}
+	
+	@keyframes iconjumpmobile {
+	0% { transform: translate(-24%, -9%); }
+	50% { transform: translate(-24%, -15%); }
+	100% { transform: translate(-24%, -9%); }
+	}
+	
+	@keyframes icontiltfrombottommobile {
+	0% { transform: translate(-24%, -9%) rotate(0deg); }
+	25% { transform: translate(-24%, -15%) rotate(10deg); }
+	50% { transform: translate(-24%, -9%) rotate(0deg); }
+	75% { transform: translate(-24%, -15%) rotate(10deg); }
+	100% { transform: translate(-24%, -9%) rotate(0deg); }
+	}
+	
+	@keyframes iconstretchmobile {
+	0% { transform: translate(-24%, -9%) scale(1, 1);; }
+	50% { transform: translate(-24%, -9%) scale(1, 1.2); }
+	100% { transform: translate(-24%, -9%) scale(1, 1); }
+	}
+
+
+
+
+	@media (min-width: 2562px) {
+	
+	body {
+	margin-left:auto;
+	margin-right:auto;
+	}
+	
+	}
+	
+	
+	
+	@media (min-width: 2262px) {
+	
+	.platformsupportoverlap {
+	transform: translateY(-230px);
+	height:350px;
+	}
+	
+	.infowrapper{
+	height: 998px;
+	}
+	
+	.compatibletext {
+	font-size:34px;
+	}
+	
+	.infotext2 {
+	font-size:30px !important;
+	margin-top:20px !important;
+	}
+
+	.infowrapperunderlap {
+	transform: translateY(-480px);
+	}
+	
+	.padthescreenshotsbelowthething {
+	padding-bottom: 67%;
+	}
+
+	}
+	
+	
+	@media (min-width: 1962px) {
+	
+	#nav {
+	height:85px;
+	background-color:white;
+	}
+	
+	.famicomcdlogo {
+	padding-left:16px;
+	padding-top:9px;
+	width:300px;
+	vertical-align:top;
+	}
+	
+	.buttons {
+	width: 750px;
+	padding:12px;
+	}
+	
+	.powerupicon {
+	width:520px;
+	}
+	
+	.powerupname {
+	font-size:70px;
+	}
+	
+	.powerupdesc {
+	font-size:35px;
+	}
+	
+	.powerupholder {
+	background-color:#39317b;
+	height:3400px;
+	width:100%;
+	padding-bottom:390px;
+	}
+	
+	.platformcontainer {
+	margin-top: 3500px !important;
+	}
+	
+	.powerupaccentmushroom, .powerupaccentfire, .powerupaccentstar {
+	height:230px;
+	}
+	
+	.powerupaccentmushroom {
+	transform: translateX(-70px) translateY(340px);
+	}
+	
+	.powerupaccentfire {
+	transform: translateX(330px) translateY(230px);
+	}
+	
+	.powerupaccentstar {
+	transform: translateX(-265px) translateY(350px);
+	}
+	
+	.infowrapper {
+	font-size: 25px;
+	}
+	
+	.bannerimage {
+	filter:blur(10px) brightness(80%);
+	}
+
+	.smbcdmainbuttons {
+	width: 740px;
+	height: 150px;
+	}
+	
+	.smbcdmainbuttontext {
+	font-size: 40px;
+    margin: 4% 0 0 10%;
+	}
+	
+	.smbcdmainbuttonicons {
+	width:218px;
+	}
+	
+	}
+	
+	
+	@media (min-width: 1562px) {
+	
+	.infotext2 {
+	margin-left:5%;
+	font-size:36px;
+	width:50%;
+	transform: translateY(-24%);
+	}
+
+	}
+	
+	
+	
+	@media (min-width: 1462px) {
+
+	.infotext2 {
+	margin-left:5%;
+	font-size:24px;
+	transform: translateY(-24%);
+	}
+	
+	.thosebuttons {
+	margin-right:4%;
+	}
+
+	}
+	
+	
+	@media (max-width: 1850px) {
+	
+	.padthescreenshotsbelowthething {
+	padding-bottom: 68%;
+	}
+	
+	}
+
+
+	@media (max-width: 1722px) {
+	
+	.infotextimage {
+	padding-top: 5%;
+	}
+	
+	.infotext2 {
+	width:48%;
+	font-size: 20px;
+	}
+	
+	.mainvideoholder {
+	margin-top: 23%;
+	}
+	
+	}
+	
+	
+	@media (max-width: 1562px) {
+	
+	.carouselscreenshot {
+	width: 350px;
+	object-fit: cover;
+	padding:10px;
+	}
+	
+	.screenshotswrapper {
+	height:1220px;
+	}
+	
+	.buttons {
+	width: 550px;
+	padding:8px;
+	}
+	
+	.platformsupportoverlap {
+	transform: translateY(-170px);
+	}
+	
+	.consoleicon {
+	width:6%;
+	}
+	
+	.infotextimage {
+	padding-top: 9%;
+	}
+	
+	.padthescreenshotsbelowthething {
+	padding-bottom: 68%;
+	}
+	
+	}
+	
+	
+		
+	@media (max-width: 1375px) {
+	
+	.infotextstory {
+	margin-left:2%;
+	margin-right:2%;
+	}
+	
+	.infotextimage {
+	margin-left:2%;
+	margin-right:2%;
+	}
+	
+	.infotextstory {
+	margin-left:2%;
+	margin-right:2%;
+	width:96%;
+	display:block;
+	}
+	
+	.infotextimage {
+	margin-left:2%;
+	margin-right:2%;
+	width:98%;
+	display:none;
+	}
+	
+	.infotextimagemobile {
+	display:block;
+	}
+	
+	.infowrapper {
+	font-size:18px;
+	}
+	
+	.mainvideoholder {
+	margin-top: 23%;
+	}
+	
+	.infotext2 {
+	margin-left: 2%;
+    font-size: 17px;
+    width: 51%;
+	transform: translateY(-24%);
+	}
+    
+	}
+	
+	
+	
+	@media (max-width: 1362px) {
+	
+	.carouselscreenshot {
+	width: 320px;
+	object-fit: cover;
+	padding:10px;
+	}
+	
+	.buttons {
+	width: 470px;
+	padding:6px;
+	border-radius: 15px;	
+	}
+	
+	.screenshotswrapper {
+	height:1110px;
+	}
+	
+	.titletextsc {
+	font-size:115px;
+	top:95px;
+	left:50px;
+	text-shadow: 5px 5px #39317c;
+    }
+	
+	.pushcarousel{
+	padding-top:127px;	
+	}
+	
+	.compatibleimg {
+	width:80%;
+	}
+	
+	.powerupicon {
+	border-radius:500px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	}
+	
+	.powerupleft {
+	padding-left:0%;
+	display:block;
+	}
+	
+	.powerupright {
+	padding-bottom:0%;
+	padding-right:0%;
+	float:none;
+	display:block;
+	}
+	
+	.powerupinfo {
+	display:block;
+	vertical-align:top;
+	padding-top:0;
+	padding-left:0;
+	padding-bottom:40px;	
+	text-align:center;
+	}
+	
+	.powerupinforight {
+	display:none;
+	}
+	
+	.powerupinforightmobile {
+	display:block;
+	padding-top:10px;
+	padding-right:0;
+	text-align:center;
+	padding-bottom:60px;	
+	}
+	
+	.powerupname {
+	font-size:50px;
+	color:white;
+	padding-top:10px;
+	margin:0;
+	line-height: 1;
+	}
+	
+	.powerupdesc {
+	font-size:25px;
+	color:white;
+	margin:10px;
+	display:block;
+	}
+	
+	.powerupholder {
+	height:3500px;
+	padding-bottom:390px;
+	}
+	
+	.platformcontainer {
+	margin-top: 3600px !important;
+	}
+	
+	.padpowerup {
+	padding-bottom:200px;
+	}
+	
+	.powerupaccentmushroom {
+	display:none;
+	}
+	
+	.powerupaccentfire {
+	display:none;
+	}
+	
+	.powerupaccentstar {
+	display:none;
+	}
+	
+	#playButton, .learnmorebutton, .convincingbutton {
+	font-size: 24px;
+	height:70px;
+	background-size: 8px 8px;
+	}
+	
+	#playButton {
+	width:180px;
+	border-radius:11px;
+	}
+	
+	.learnmorebutton {
+	margin-left:20px;
+	width:230px;
+	border-radius:11px;
+	}
+	
+	.convincingbutton {
+	width: 340px;
+	}
+	
+	.convincingbox .innerbuttontextlearnmore {
+	padding-top: 2.8%;
+	}
+	
+	.innerbuttontextlearnmore {
+	padding-top: 3.6%;
+	}
+	
+	.convincingbox {
+	font-size:24px;
+	width:750px;
+	}
+	
+	.padtheconvincing {
+	padding-top: 27%;
+	}
+	
+	.bannerimage {
+	filter:blur(6px) brightness(80%);
+	}
+	
+	.smbcdmainbuttons {
+	width: 476px;
+	}
+
+	.smbcdmainbuttontext {
+	font-size: 26px;
+	margin: 7.8% 0 0 24%;
+	}
+	
+	.padthescreenshotsbelowthething {
+	padding-bottom: 66%;
+	}
+
+	
+	}
+	
+	
+	@media (max-width: 1240px) {
+	
+	.padthescreenshotsbelowthething {
+	padding-bottom: 63%;
+	}
+	
+	}
+	
+	
+	
+	@media (max-width: 1140px) {
+	
+	.padthescreenshotsbelowthething {
+	padding-bottom: 60%;
+	}
+	
+	}
+	
+	
+	
+	@media (max-width: 1050px) {
+	
+	.carouselscreenshot {
+	width: 320px;
+	object-fit: cover;
+	padding:10px;
+	}
+	
+	.buttons {
+	width: 400px;
+	padding:5px;
+	}
+	
+	.titletextsc {
+	font-size:95px;
+	top:95px;
+	left:50px;
+    }
+	
+	.pushcarousel{
+	padding-top:113px;	
+	}
+	
+	.consoleicon {
+	width:8%;
+	}
+	
+	.compatibleimg {
+	width:95%;
+	}
+	
+	.compatibletext {
+	width:95%;
+	font-size:26px;
+	}
+	
+	.infotext2 {
+	font-size: 15px;
+    width: 47%;
+	}
+	
+	#playButton, .learnmorebutton {
+	font-size: 21px;
+	background-size: 6px 6px;
+	height: 60px;
+	border-radius: 8px;
+	}
+	
+	#playButton {
+    width: 150px;
+	}
+	
+	.learnmorebutton {
+	margin-left: 10px;
+	width: 200px;
+	}
+	
+	.bannerimage {
+	filter:blur(5px) brightness(80%);
+	}
+	
+	.smbcdmainbuttons {
+	width: 90%;
+	}
+	
+	.smbcdmainbuttontext {
+	font-size: 47px;
+	margin: 2.2% 0 0 0%;
+	}
+	
+	.padtheconvincing {
+	padding-top: 35%;
+	}
+	
+	.mainvideoholder {
+	margin-top: 24%;
+	}
+	
+	.infowrapperunderlap {
+	transform: translateY(0px);
+	}
+	
+	.padthescreenshotsbelowthething {
+	padding-bottom: 92%;
+	}
+	
+
+	}
+	
+	
+	
+	@media (max-width: 800px) {
+	
+	body{
+	overflow-x: hidden;
+    max-width: 100%;
+	}
+	
+	.screenshotswrapper {
+	height:880px;
+	mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/trianglemaskphone.png');
+	-webkit-mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/trianglemaskphone.png');
+	}
+	
+	.platformsupportoverlap {
+    mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/wavephone.png');
+	-webkit-mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/wavephone.png');
+	transform: translateY(-115px);
+	}
+	
+	.powerupholder {
+	mask-repeat: no-repeat, no-repeat;
+    mask-image: url('https://famicomcd.org/graphics/smbcdnew/mask/wavephone.png');
+    mask-size: 100% auto, 100% calc(100% - 1800px);
+	-webkit-mask: url('https://famicomcd.org/graphics/smbcdnew/mask/wavephone.png') top, url('https://famicomcd.org/graphics/smbcdnew/mask/square.png') bottom;
+	-webkit-mask-size: 100% auto, 100% calc(100% - 300px);
+	-webkit-mask-repeat: no-repeat, no-repeat;
+	}
+	
+	.platformsupportbottom {
+    mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/wavephonebottom.png');
+	-webkit-mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/wavephonebottom.png');
+	}
+	
+	.infooverlap {	
+    mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/trianglemaskphonebottomsmall.png');
+    mask-size: 100% auto;
+	-webkit-mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/trianglemaskphonebottomsmall.png');
+	-webkit-mask-size: 100% auto;
+	transform: translateY(-5%);
+	}
+	
+	.carouselscreenshot {
+	width: 230px;
+	object-fit: cover;
+	padding:10px;
+	}
+	
+	.titletextsc {
+	font-size:80px;
+	top:127px;
+	left:40px;
+    }
+	
+	.pushcarousel{
+	padding-top:133px;
+	}
+	
+	.bannerimage {
+	display:none;
+	}
+	
+	.bannerimagephone {
+	display:block;
+	filter:blur(4px) brightness(80%);
+	mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/trianglemasklongbottomphone.png');
+	-webkit-mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/trianglemasklongbottomphone.png');
+	}
+	
+	.wrapperlogo {
+	padding-top: 0%;
+	padding-bottom: 80%;
+	}
+	
+	.bannerwrapper {
+	padding-bottom:27%;
+	}
+	
+	.smbcdlogo {
+	position:relative;
+	padding-top:0%;
+	width:98%;
+	}
+	
+	.uppersection {
+	padding-bottom: 3%;
+	}
+	
+	.padthelogo {
+	padding-left:2%;
+	padding-top:0%;
+	}
+	
+	.compatibleimg {
+	display:none;
+	}
+	
+	.compatibleimgphone {
+	display:block;
+	}
+	
+	.compatibletext {
+	font-size:24px;
+	}
+	
+	.powerupicon {
+	width:260px;
+	}
+	
+	.powerupname {
+	font-size:45px;
+	color:white;
+	padding-top:10px;
+	margin:0;
+	line-height: 1;
+	}
+	
+	.powerupdesc {
+	font-size:20px;
+	color:white;
+	margin:10px;
+	display:block;
+	}
+	
+	.powerupholder {
+	height:2540px;
+	}
+
+	.platformcontainer {
+	margin-top: 2640px !important;
+	}
+	
+	.buttons {
+	width: 96.5%;
+	}
+	
+	.padthescreenshotsbelowthething {
+	padding-bottom:144%;
+	}
+	
+	.infotop {
+	height:800px;
+	padding-top: 17%;
+	mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/waveleftmobile.png');
+    mask-size: 100% auto;
+	position: absolute;
+	-webkit-mask-image:url('https://famicomcd.org/graphics/smbcdnew/mask/waveleftmobile.png');
+	}
+	
+	.infotext2 {
+	margin-left: 0;
+	font-size: 20px;
+	width: auto;
+	margin: 3%;
+	transform: translateY(-4%);
+	}
+	
+	.thosebuttons {
+	z-index:5;
+    display:inline-block;
+	float: none;
+	margin-right:0;
+	margin-left:0;
+	width:100%;
+	}
+	
+	#nav {
+	text-align:center;
+	height:80px;
+	}
+	
+	.famicomcdlogo {
+	padding-left: 0px;
+	width: 290px;
+	}
+	
+	.bannermario {
+	width: 84%;
+    transform: rotateY(180deg) translate(-27%, 26%);
+	clip-path: inset(0% 0% 0% 26.93%);
+	}
+	
+	.bannerlobba {
+	width:53%;
+	transform: translate(-18%, 80%);
+	left: 0%;
+	}
+	
+	.bannerlobba.animate {
+	animation: hovershakelobbamobile 0.5s ease-in-out;
+	}
+	
+	.bannermario.animate {
+	animation: mariojumpmobile 0.5s ease-in-out;
+	}
+	
+	.bannerkoopa, .bannerpiranha {
+	display:none;
+	}
+	
+	.learnmorebutton {
+	margin:0;
+	}
+	
+	.butlikepadthemwhen800px {
+	margin-top: 2.2%;
+	}
+	
+	#playButton, .learnmorebutton, .convincingbutton {
+	font-size: 25px;
+	height: 86px;
+	width: 88%;
+	display:block;
+	border-radius:15px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+	
+	.innerbuttontext {
+	padding-top:2.2%;
+	}
+	
+	.innerbuttontextlearnmore {
+	padding-top:2.2%;
+	}
+	
+	.convincingbox {
+	width: auto;
+	padding: 0 0 3% 0;
+	border-radius:0;
+	}
+
+	.convincetext {
+	margin: 1%;
+	}
+	
+	.convincingor {
+	margin: 0;
+	display: inline;
+	}
+	
+	.smbcdmainbuttons {
+	height: 120px;
+	}
+	
+	.smbcdmainbuttontext {
+	font-size: 33px;
+	margin: 3.5% 0 0 10%;
+	}
+	
+	.innerbuttontext {
+	padding-top: 3.6%;
+	}
+	
+	.innerbuttontextlearnmore {
+	padding-top: 3.2%;
+	}
+	
+	.padtheconvincing {
+	padding-top: 45%;
+	}
+	
+	.piranhaplant {
+	display:none;
+	}
+	
+	.mainvideoholder {
+    mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/trianglemaskphone.png');
+	-webkit-mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/trianglemaskphone.png');
+	margin-top: 66%;
+	}
+	
+	.padthescreenshotsbelowthething {
+	padding-bottom: 129%;
+	}
+    
+	}
+	
+	
+	@media (max-width: 760px) {	
+	
+	.mainvideoholder {
+	margin-top: 70%;
+	}
+	
+	.padthescreenshotsbelowthething {
+	padding-bottom: 133%;
+	}
+	
+	}
+
+	
+	@media (max-width: 700px) {	
+
+	.titletextsc {
+	font-size:70px;
+	top:127px;
+	left:40px;
+    }
+	
+	.pushcarousel{
+	padding-top:123px;	
+	}
+	
+	.compatibletext {
+	font-size:21px;
+	}
+	
+	.groundbg {
+	height:192px;
+	}
+	
+	.grasslandbg {
+	height:816px;
+	}
+	
+	.middletiles {
+	height:576px;
+	}
+	
+	.smbcdmainbuttonicons {
+	width:166px;
+	}
+	
+	.smbcdmainbuttons {
+	margin: 20px 10px 20px 10px;
+	}
+	
+	.mainvideoholder {
+	margin-top: 76%;
+	}
+	
+	.padthescreenshotsbelowthething {
+	padding-bottom: 140%;
+	}
+	
+	}
+	
+	
+	@media (max-width: 620px) {	
+	
+	.titletextsc {
+	font-size:60px;
+	top:120px;
+	left:30px;
+	text-shadow: 4px 4px #39317c;
+    }
+	
+	.pushcarousel{
+	padding-top:108px;	
+	}
+	
+	.smbcdmainbuttontext {
+	font-size: 30px;
+	margin: 4.8% 0 0 15%;
+	}
+	
+	.smbcdmainbuttonicons {
+	width: 132px;
+    transform: translate(-24%, -9%);
+	}
+	
+	.smbcdbuttonsupportsheet:hover, .smbcdbuttontutorials:hover, .smbcdbuttonteam:hover, .smbcdbuttonenemies:hover {
+	
+	.smbcdmainbuttonicons {
+	animation: iconshakemobile 0.5s ease-in-out;
+	}
+	
+	}
+	
+	.smbcdbuttondownload:hover {
+	
+	.smbcdmainbuttonicons {
+	animation: iconjumpmobile 0.5s ease-in-out;
+	}
+	
+	}
+	
+	.smbcdbuttoninfo:hover {
+	
+	.smbcdmainbuttonicons {
+	animation: iconstretchmobile 0.5s ease-in-out;
+	}
+	
+	}
+	
+	.smbcdbuttontutorials:hover {
+	
+	.smbcdmainbuttonicons {
+	animation: icontiltfrombottommobile 1.2s ease-in-out;
+	}
+	
+	}
+	
+	.smbcdmainbuttons {
+	margin: 10px;
+	}
+	
+	.mainvideoholder {
+	margin-top: 80%;
+	}
+	
+	.padthescreenshotsbelowthething {
+	padding-bottom: 144%;
+	}
+	
+	}
+	
+	
+	@media (max-width: 550px) {	
+	
+	.titletextsc {
+	font-size:57px;
+	top:105px;
+	left:24px;
+	text-shadow: 3.5px 3.5px #39317c;
+    }
+	
+	.pushcarousel{
+	padding-top:90px;	
+	}
+	
+	.famicomcdcontact{
+	padding-top:10px;
+	}
+	
+	.smbcdmainbuttontext {
+	font-size: 28px;
+    margin: 5.8% 0 0 15%;
+	}
+	
+	.mainvideoholder {
+	margin-top: 84%;
+	}
+	
+	.padthescreenshotsbelowthething {
+	padding-bottom: 148%;
+	}
+	
+	}
+	
+	
+	@media (max-width: 500px) {
+	
+	.titletextsc {
+	font-size:49px;
+	top:106px;
+    }
+	
+	.pushcarousel{
+	padding-top:85px;	
+	}
+	
+	.smbcdmainbuttonicons {
+	display:none;
+	}
+	
+	.smbcdmainbuttontext {
+	font-size: 28px;
+    margin: 5.8% 0 0 0%;
+	}
+	
+	
+	}
