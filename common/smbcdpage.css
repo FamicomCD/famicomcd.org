@@ -1771,7 +1771,7 @@
 	
 	.convincingbox {
 	width: auto;
-	padding: 0 0 3% 0;
+	padding: 2% 0 6% 0;
 	border-radius:0;
 	}
 
@@ -1796,11 +1796,11 @@
 	.innerbuttontext {
 	padding-top: 3.6%;
 	}
-	
+
 	.innerbuttontextlearnmore {
-	padding-top: 3.2%;
+	padding-top: 3%;
 	}
-	
+
 	.padtheconvincing {
 	padding-top: 45%;
 	}
@@ -1877,6 +1877,10 @@
 	
 	.padthescreenshotsbelowthething {
 	padding-bottom: 140%;
+	}
+	
+	.innerbuttontextlearnmore {
+	padding-top: 3.2%;
 	}
 	
 	}
