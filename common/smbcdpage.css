@@ -2011,8 +2011,18 @@
 	
 	.smbcdmainbuttontext {
 	font-size: 28px;
-    margin: 5.8% 0 0 0%;
+ margin: 5.8% 0 0 0%;
 	}
 	
 	
 	}
+	
+	
+	@media (max-width: 466px) {
+	
+ .infotext2 {
+	font-size:17px;
+	}
+	
+	}
+	
