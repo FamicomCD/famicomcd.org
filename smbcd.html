@@ -53,7 +53,7 @@
 					
 						<div class=wrapperlogo>
 							<div class=padthelogo>
-								<img class="smbcdlogo" draggable="false" src="graphics/smbcdlogo/smbcdlogo.png">
+								<img class="smbcdlogo" draggable="false" data-imgid="smbcd_main_logo" src="graphics/smbcdlogo/smbcdlogo.png">
 							</div>
 						</div>
 				
@@ -69,7 +69,7 @@
 						<a href="https://famicomcd.org/smbcd/supportsheet">
 							<div class="smbcdmainbuttons smbcdbuttonsupportsheet">
 								<img class="smbcdmainbuttonicons" draggable="false" src="graphics/smbcdnew/illustration/MarioSupportSheet.png">
-								<p class="smbcdmainbuttontext">Support Sheet</p>
+								<p class="smbcdmainbuttontext" data-strid="support_sheet_smbcd_button"></p>
 							</div>
 						</a>
 			
@@ -77,7 +77,7 @@
 						<a href="https://famicomcd.org/smbcd/installation">
 							<div class="smbcdmainbuttons smbcdbuttontutorials">
 								<img class="smbcdmainbuttonicons" draggable="false" src="graphics/smbcdnew/illustration/MarioManual.png">
-								<p class="smbcdmainbuttontext">Installation Tutorials</p>
+								<p class="smbcdmainbuttontext" data-strid="tutorial_smbcd_button"></p>
 							</div>
 						</a>
 
@@ -90,7 +90,7 @@
 						<a href="https://famicomcd.org/smbcd/smbcdteam">
 							<div class="smbcdmainbuttons smbcdbuttonteam">
 								<img class="smbcdmainbuttonicons" draggable="false" src="graphics/smbcdnew/illustration/MarioSMBCDTeam.png">
-								<p class="smbcdmainbuttontext">SMBCD Team Members</p>
+								<p class="smbcdmainbuttontext" data-strid="smbcd_team_button"></p>
 							</div>
 						</a>
 						
@@ -98,7 +98,7 @@
 						<a href="https://famicomcd.org/smbcd/download">
 							<div class="smbcdmainbuttons smbcdbuttondownload">
 								<img class="smbcdmainbuttonicons" draggable="false" src="graphics/smbcdnew/illustration/MarioJump.png">
-								<p class="smbcdmainbuttontext">Download SMBCD</p>
+								<p class="smbcdmainbuttontext" data-strid="download_smbcd_button"></p>
 							</div>
 						</a>
 					</div>
@@ -117,7 +117,7 @@
 						<a href="https://famicomcd.org/smbcd/info">
 							<div class="smbcdmainbuttons smbcdbuttoninfo">
 								<img class="smbcdmainbuttonicons" draggable="false" src="graphics/smbcdnew/illustration/Photos.png">
-								<p class="smbcdmainbuttontext">Story and Info</p>
+								<p class="smbcdmainbuttontext" data-strid="smbcd_button_story_info"></p>
 							</div>
 						</a>
 					</div>
@@ -129,11 +129,11 @@
 			<div>
 				<div class="infotop">
 				
-					<p class=infotext2>Super Mario Bros. CD (SMBCD) is a ROM hack of Super Mario World, imagining what an SMB game might be like on a CD-based console.</p>
+					<p class=infotext2 data-strid="smbcd_tagline"></p>
 				
 					<div class="thosebuttons">
 						<div id="playButton" onclick="togglePlay()"><p id="bgmPlayText" class="innerbuttontext" data-strid="smbcd_button_play_bgm"></p></div>
-						<a href="https://famicomcd.org/smbcd/info"><div class="learnmorebutton butlikepadthemwhen800px"><p class="innerbuttontextlearnmore">Learn More ➜</p></div></a>
+						<a href="https://famicomcd.org/smbcd/info"><div class="learnmorebutton butlikepadthemwhen800px"><p class="innerbuttontextlearnmore" data-strid="smbcd_button_learn_more"></p></div></a>
 					</div>
 				
 				</div>
@@ -152,7 +152,7 @@
 			
 			<div class=screenshotswrapper>
 				<div class=carouselholder>
-					<p class="titletextsc">SCREENSHOTS</p>
+					<p class="titletextsc" data-strid="smbcd_heading_screenshots"></p>
 
 					<div class="carousel">
 						<div class=pushcarousel>
@@ -214,7 +214,7 @@
 					<img loading="lazy" class="powerupicon" src="graphics/smbcdnew/illustration/Mushroom.png">
 					
 					<div class="powerupinfo">
-						<p class="powerupname">Super Mushroom</p><p class="powerupdesc">Bash bricks with your head!</p>
+						<p class="powerupname" data-strid="smbcd_name_powerup_mushroom"></p><p class="powerupdesc" data-strid="smbcd_desc_powerup_mushroom"></p>
 					</div>
 
 				</div>
@@ -224,7 +224,7 @@
 				
 					<div class="powerupinforight">
 					<img loading="lazy" class="powerupaccentfire" src="graphics/smbcdnew/mariopose/firemariogame.png">
-						<p class="powerupname">Fire Flower</p><p class="powerupdesc">Shoot fireballs from your finger tips!</p>
+						<p class="powerupname" data-strid="smbcd_name_powerup_flower"></p><p class="powerupdesc" data-strid="smbcd_desc_powerup_flower"></p>
 					</div>
 					
 					<!-- lightning will shoot from my finger tips -->
@@ -232,7 +232,7 @@
 					<img loading="lazy" class="powerupicon" src="graphics/smbcdnew/illustration/FireFlower.png">
 					
 					<div class="powerupinforightmobile">
-						<p class="powerupname">Fire Flower</p><p class="powerupdesc">Shoot fireballs from your finger tips!</p>
+						<p class="powerupname" data-strid="smbcd_name_powerup_flower"></p><p class="powerupdesc" data-strid="smbcd_desc_powerup_flower"></p>
 					</div>
 				</div>
 				
@@ -242,7 +242,7 @@
 					<img loading="lazy" class="powerupicon" src="graphics/smbcdnew/illustration/Star.png">
 					
 					<div class="powerupinfo">
-						<p class="powerupname">Starman</p><p class="powerupdesc">Invincibility against most threats (aside from pits)!</p>
+						<p class="powerupname" data-strid="smbcd_name_powerup_star"></p><p class="powerupdesc" data-strid="smbcd_desc_powerup_star"></p>
 					</div>
 					
 				</div>
@@ -299,7 +299,7 @@
 						
 							<div id=waitformario></div>
 						
-						<p class=compatibletext>Compatible with supported emulators and Super NES hardware with use of the <img class=consoleicon loading="lazy" src="graphics/icons/consoles/fxpak.png">FXPak Pro flashcart! For the most up-to-date list of supported emulators, refer to the <a class=supportlink href="https://famicomcd.org/smbcd/supportsheet">support sheet</a>.</p>
+						<p class=compatibletext data-strid="smbcd_support_tagline"></p>
 					</div>
 				</div>
 				
@@ -320,19 +320,19 @@
 			
 				<div class="padtheconvincing">
 					<div class="convincingbox">
-						<p class="convincetext">Not convinced? You can also:</p>
+						<p class="convincetext" data-strid="smbcd_end_convincing"></p>
 						
 						<a href="https://famicomcd.org/smbcd/info">
 							<div class="convincingbutton">
-								<p class="innerbuttontextlearnmore">Learn More</p>
+								<p class="innerbuttontextlearnmore" data-strid="smbcd_end_convincing_learn"></p>
 							</div>
 						</a>
 						
-						<p class="convincingor">or</p>
+						<p class="convincingor" data-strid="smbcd_end_convincing_or"></p>
 					
 						<a href="https://famicomcd.org/smbcd/download">
 							<div class="convincingbutton">
-								<p class="innerbuttontextlearnmore">Try out SMBCD</p>
+								<p class="innerbuttontextlearnmore" data-strid="smbcd_end_convincing_download"></p>
 							</div>
 						</a>
 					

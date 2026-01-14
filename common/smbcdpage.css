@@ -288,7 +288,7 @@
 	}
 	
 	.convincingbutton {
-	width:370px;
+	width:350px;
 	height:100px;
 	display: inline-block;
 	}
@@ -305,6 +305,8 @@
 	background-size: 11px 11px;
 	background-repeat: no-repeat;
 	background-position: 10px 10px, calc(100% - 10px) 10px, 10px calc(100% - 10px), calc(100% - 10px) calc(100% - 10px);
+	min-width: max-content;
+	padding: 0 10px;
 	}
 	
 	.innerbuttontext {
@@ -807,7 +809,7 @@
 	}
 
 	.convincingbox {
-	width: 800px;
+	width: fit-content;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #fff;
@@ -830,7 +832,7 @@
 	}
 
 	.padtheconvincing {
-	padding-top: 20%;
+	padding-top: 26%;
 	z-index: 200;
 	position: relative;
 	}
@@ -1032,6 +1034,10 @@
 	
 	.padthescreenshotsbelowthething {
 	padding-bottom: 67%;
+	}
+	
+	.padtheconvincing {
+	padding-top: 20%;
 	}
 
 	}
@@ -1405,7 +1411,6 @@
 	
 	.convincingbox {
 	font-size:24px;
-	width:750px;
 	}
 	
 	.padtheconvincing {
