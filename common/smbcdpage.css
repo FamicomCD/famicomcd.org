@@ -1259,6 +1259,10 @@
 	.mainvideoholder {
 	margin-top: 23%;
 	}
+	
+	.infotopflex {
+	margin: 1%;	
+	}
     
 	}
 	
@@ -2000,6 +2004,10 @@
 	
 	.padthescreenshotsbelowthething {
 	padding-bottom: 148%;
+	}
+	
+	.smbcdmainbuttons {
+	min-width:0;	
 	}
 	
 	}
