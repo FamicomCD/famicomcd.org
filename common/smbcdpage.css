@@ -394,6 +394,12 @@
 	transform: translateY(-20%);
 	}
 	
+	.upperbuttonsnstuff {
+	text-align:center;
+	padding-bottom:2%;
+	z-index:1;
+	}
+	
 	.infotextstory,
 	.infotextimage	{
 	margin-left:2%;
@@ -1822,6 +1828,12 @@
 	.infotopflex {
 	display: block;
     }
+	
+	.upperbuttonsnstuff {
+	text-align:center;
+	padding-bottom:9%;
+	z-index:1;
+	}
 	
 	}
 	
