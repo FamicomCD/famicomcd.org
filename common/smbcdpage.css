@@ -345,7 +345,6 @@
     mask-size: 100% auto;
 	-webkit-mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/trianglemask.png');
 	-webkit-mask-size: 100% auto;
-	margin-top: calc(19% + (anchor-size(--infotext height) / 4)) !important;
 	margin-top: 19%;
 	position: absolute;
 	width:100%;
@@ -675,13 +674,13 @@
 	position: absolute;
 	-webkit-mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/waveleft.png');
 	-webkit-mask-size: 100% auto;
+	transform: translateY(-4%);
 	}
 	
 	.infotopflex {
 	display: flex;
 	gap: 5%;
 	justify-content: center;
-	anchor-name:--infotext;
 	}
 	
 	.powerupinforight, .powerupinforightmobile {
@@ -852,7 +851,8 @@
 	
 	.smbcdmainbuttons {
 	width:650px;
-	height:140px;
+	height:fit-content;
+	min-height:140px;
 	display:inline-block;
 	position:relative;
 	border-radius: 90px;
@@ -1117,7 +1117,8 @@
 
 	.smbcdmainbuttons {
 	width: 740px;
-	height: 150px;
+	height: fit-content;
+	min-height:150px;
 	}
 	
 	.smbcdmainbuttontext {
@@ -1172,7 +1173,6 @@
 	}
 	
 	.mainvideoholder {
-	margin-top: calc(23% + (anchor-size(--infotext height) / 4)) !important;
 	margin-top: 23%;
 	}
 	
@@ -1251,7 +1251,6 @@
 	}
 	
 	.mainvideoholder {
-	margin-top: calc(23% + (anchor-size(--infotext height) / 4)) !important;
 	margin-top: 23%;
 	}
     
@@ -1414,7 +1413,8 @@
 	}
 	
 	.smbcdmainbuttons {
-	width: 476px;
+	width: fit-content;
+    min-width: 490px;
 	}
 
 	.smbcdmainbuttontext {
@@ -1530,7 +1530,6 @@
 	}
 	
 	.mainvideoholder {
-	margin-top: calc(24% + (anchor-size(--infotext height) / 4)) !important;
 	margin-top: 24%;
 	}
 	
@@ -1785,7 +1784,8 @@
 	}
 	
 	.smbcdmainbuttons {
-	height: 120px;
+	height: fit-content;
+	min-height:120px;
 	}
 	
 	.smbcdmainbuttontext {
@@ -1812,8 +1812,7 @@
 	.mainvideoholder {
     mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/trianglemaskphone.png');
 	-webkit-mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/trianglemaskphone.png');
-	margin-top: calc(66% + (anchor-size(--infotext height) / 4)) !important;
-	margin-top: 66%;	
+	margin-top: 66%;
 	}
 	
 	.padthescreenshotsbelowthething {
@@ -1830,7 +1829,6 @@
 	@media (max-width: 760px) {	
 	
 	.mainvideoholder {
-	margin-top: calc(70% + (anchor-size(--infotext height) / 4)) !important;
 	margin-top: 70%;
 	}
 	
@@ -1878,7 +1876,6 @@
 	}
 	
 	.mainvideoholder {
-	margin-top: calc(76% + (anchor-size(--infotext height) / 4)) !important;
 	margin-top: 76%;
 	}
 	
@@ -1953,7 +1950,6 @@
 	}
 	
 	.mainvideoholder {
-	margin-top: calc(80% + (anchor-size(--infotext height) / 4)) !important;
 	margin-top: 80%;
 	}
 	
@@ -1987,7 +1983,6 @@
 	}
 	
 	.mainvideoholder {
-	margin-top: calc(84% + (anchor-size(--infotext height) / 4)) !important;
 	margin-top: 84%;
 	}
 	
@@ -2028,7 +2023,6 @@
 	}
 	
 	.mainvideoholder {
-	margin-top: calc(89% + (anchor-size(--infotext height) / 4)) !important;
 	margin-top: 89%;
 	}
 	
@@ -2043,7 +2037,6 @@
 	@media (max-width: 446px) {
 		
 	.mainvideoholder {
-	margin-top: calc(108% + (anchor-size(--infotext height) / 4)) !important;
 	margin-top: 108%;
 	}
 	
