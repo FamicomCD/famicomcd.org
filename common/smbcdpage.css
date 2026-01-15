@@ -273,7 +273,6 @@
 	z-index:5;
 	display:flex;
 	float: right;
-	margin-right:2%;
 	}
 	
 	#playButton {
@@ -346,6 +345,7 @@
     mask-size: 100% auto;
 	-webkit-mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/trianglemask.png');
 	-webkit-mask-size: 100% auto;
+	margin-top: calc(19% + (anchor-size(--infotext height) / 4)) !important;
 	margin-top: 19%;
 	position: absolute;
 	width:100%;
@@ -389,11 +389,10 @@
 	
 	.infotext2 {
 	float:left;
-	margin-left:2%;
 	color:white;
 	font-size:20px;
 	width:50%;
-	transform: translateY(-10%);
+	transform: translateY(-20%);
 	}
 	
 	.infotextstory,
@@ -676,6 +675,13 @@
 	position: absolute;
 	-webkit-mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/waveleft.png');
 	-webkit-mask-size: 100% auto;
+	}
+	
+	.infotopflex {
+	display: flex;
+	gap: 5%;
+	justify-content: center;
+	anchor-name:--infotext;
 	}
 	
 	.powerupinforight, .powerupinforightmobile {
@@ -1129,7 +1135,6 @@
 	@media (min-width: 1562px) {
 	
 	.infotext2 {
-	margin-left:5%;
 	font-size:36px;
 	}
 
@@ -1141,10 +1146,6 @@
 
 	.infotext2 {
 	font-size:24px;
-	}
-	
-	.thosebuttons {
-	margin-right:4%;
 	}
 
 	}
@@ -1171,6 +1172,7 @@
 	}
 	
 	.mainvideoholder {
+	margin-top: calc(23% + (anchor-size(--infotext height) / 4)) !important;
 	margin-top: 23%;
 	}
 	
@@ -1249,6 +1251,7 @@
 	}
 	
 	.mainvideoholder {
+	margin-top: calc(23% + (anchor-size(--infotext height) / 4)) !important;
 	margin-top: 23%;
 	}
     
@@ -1424,7 +1427,6 @@
 	}
 	
 	.infotext2 {
-	margin-left: 2%;
     font-size: 17px;
     width: 49%;
 	}
@@ -1528,6 +1530,7 @@
 	}
 	
 	.mainvideoholder {
+	margin-top: calc(24% + (anchor-size(--infotext height) / 4)) !important;
 	margin-top: 24%;
 	}
 	
@@ -1693,7 +1696,6 @@
 	}
 	
 	.infotext2 {
-	margin-left: 0;
 	font-size: 20px;
 	width: auto;
 	margin: 3%;
@@ -1704,8 +1706,6 @@
 	z-index:5;
     display:inline-block;
 	float: none;
-	margin-right:0;
-	margin-left:0;
 	width:100%;
 	}
 	
@@ -1812,19 +1812,25 @@
 	.mainvideoholder {
     mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/trianglemaskphone.png');
 	-webkit-mask-image:  url('https://famicomcd.org/graphics/smbcdnew/mask/trianglemaskphone.png');
-	margin-top: 66%;
+	margin-top: calc(66% + (anchor-size(--infotext height) / 4)) !important;
+	margin-top: 66%;	
 	}
 	
 	.padthescreenshotsbelowthething {
 	padding-bottom: 129%;
 	}
-    
+	
+	.infotopflex {
+	display: block;
+    }
+	
 	}
 	
 	
 	@media (max-width: 760px) {	
 	
 	.mainvideoholder {
+	margin-top: calc(70% + (anchor-size(--infotext height) / 4)) !important;
 	margin-top: 70%;
 	}
 	
@@ -1872,6 +1878,7 @@
 	}
 	
 	.mainvideoholder {
+	margin-top: calc(76% + (anchor-size(--infotext height) / 4)) !important;
 	margin-top: 76%;
 	}
 	
@@ -1946,6 +1953,7 @@
 	}
 	
 	.mainvideoholder {
+	margin-top: calc(80% + (anchor-size(--infotext height) / 4)) !important;
 	margin-top: 80%;
 	}
 	
@@ -1979,6 +1987,7 @@
 	}
 	
 	.mainvideoholder {
+	margin-top: calc(84% + (anchor-size(--infotext height) / 4)) !important;
 	margin-top: 84%;
 	}
 	
@@ -2019,6 +2028,7 @@
 	}
 	
 	.mainvideoholder {
+	margin-top: calc(89% + (anchor-size(--infotext height) / 4)) !important;
 	margin-top: 89%;
 	}
 	
@@ -2033,6 +2043,7 @@
 	@media (max-width: 446px) {
 		
 	.mainvideoholder {
+	margin-top: calc(108% + (anchor-size(--infotext height) / 4)) !important;
 	margin-top: 108%;
 	}
 	
